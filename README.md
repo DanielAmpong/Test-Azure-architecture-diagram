@@ -226,6 +226,6 @@
 │   ├── ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** p-adds-test2/MDE.Windows - Microsoft.Compute/virtualMachines/extensions
 │   ├── ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** p-adds-test2/DSCExtension - Microsoft.Compute/virtualMachines/extensions
 │   └── ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** p-adds-test1/DSCExtension - Microsoft.Compute/virtualMachines/extensions
-├── ![Resource Group](https://code.benco.io/icon-collection/azure-icons/Resource-Groups.svg) **Resource Group:** cloud-shell-storage-westeurope
-│   ├── ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** csb100320041428ff8f - Microsoft.Storage/storageAccounts
-│   └── ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** csb1003200033b9b8b7 - Microsoft.Storage/storageAccounts
+└── ![Resource Group](https://code.benco.io/icon-collection/azure-icons/Resource-Groups.svg) **Resource Group:** cloud-shell-storage-westeurope
+    ├── ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** csb100320041428ff8f - Microsoft.Storage/storageAccounts
+    └── ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** csb1003200033b9b8b7 - Microsoft.Storage/storageAccounts
