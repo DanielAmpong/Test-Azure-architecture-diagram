@@ -1,14 +1,11 @@
 # Test-Azure-architecture-diagram
 
-<details>
-<summary>Root</summary>
+Root
+├── Branch 1
+│   ├── Leaf 1.1
+│   └── Leaf 1.2
+└── Branch 2
+    └── Leaf 2.1
+        └── Sub-leaf 2.1.1
 
-- Branch 1
-  - Leaf 1.1
-  - Leaf 1.2
-- Branch 2
-  - Leaf 2.1
-    - Sub-leaf 2.1.1
-
-</details>
 
