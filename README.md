@@ -43,69 +43,69 @@
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** p-log-emailpoc-dcr - Microsoft.Insights/dataCollectionRules
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** email-poc-sre/klp-test.no - Microsoft.Communication/EmailServices/Domains
 - ![Resource Group](https://code.benco.io/icon-collection/azure-icons/Resource-Groups.svg) **Resource Group:** lz-network-norwayeast
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** lz-network-norwayeast-vnet - Microsoft.Network/virtualNetworks
+  - ![Virtual Network](https://code.benco.io/icon-collection/azure-icons/Virtual-Networks.svg) **Resource:** lz-network-norwayeast-vnet - Microsoft.Network/virtualNetworks
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** lz-network-norwayeast-vnet-dna-test-1-nsg - Microsoft.Network/networkSecurityGroups
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg - Microsoft.Network/networkSecurityGroups
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** privatelink.vaultcore.azure.net - Microsoft.Network/privateDnsZones
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** privatelink.vaultcore.azure.net/g3yhvcrentrzk - Microsoft.Network/privateDnsZones/virtualNetworkLinks
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** lz-network-norwayeast-vnet-adds-test-nsg - Microsoft.Network/networkSecurityGroups
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** lz-network-norwayeast-vnet-ip - Microsoft.Network/publicIPAddresses
+  - ![Public IP Address](https://code.benco.io/icon-collection/azure-icons/Public-IP-Addresses.svg) **Resource:** lz-network-norwayeast-vnet-ip - Microsoft.Network/publicIPAddresses
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** lz-network-norwayeast-vnet-bastion - Microsoft.Network/bastionHosts
 - ![Resource Group](https://code.benco.io/icon-collection/azure-icons/Resource-Groups.svg) **Resource Group:** linux-test
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-linux-vm-nic - Microsoft.Network/networkInterfaces
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-linux-vm - Microsoft.Compute/virtualMachines
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-linux-vm-osdisk - Microsoft.Compute/disks
+  - ![Virtual Machine](https://code.benco.io/icon-collection/azure-icons/Virtual-Machine.svg) **Resource:** t-linux-vm - Microsoft.Compute/virtualMachines
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** t-linux-vm-osdisk - Microsoft.Compute/disks
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** shutdown-computevm-t-linux-vm - Microsoft.DevTestLab/schedules
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-linux-vm/MDE.Linux - Microsoft.Compute/virtualMachines/extensions
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-linux-vm/AADSSHLogin - Microsoft.Compute/virtualMachines/extensions
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-linux-vm/enablevmAccess - Microsoft.Compute/virtualMachines/extensions
 - ![Resource Group](https://code.benco.io/icon-collection/azure-icons/Resource-Groups.svg) **Resource Group:** rg-audun
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** azuremonitorlogs-3 - Microsoft.Web/connections
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** FailedEmails - Microsoft.Logic/workflows
+  - ![Logic App](https://code.benco.io/icon-collection/azure-icons/Logic-Apps.svg) **Resource:** FailedEmails - Microsoft.Logic/workflows
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** acsemail - Microsoft.Web/connections
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** acsConnection - Microsoft.Web/connections
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** azuremonitorlogs - Microsoft.Web/connections
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** lawConnection - Microsoft.Web/connections
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** p-mails-logic - Microsoft.Logic/workflows
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** sweethomealabamaandback - Microsoft.Storage/storageAccounts
+  - ![Logic App](https://code.benco.io/icon-collection/azure-icons/Logic-Apps.svg) **Resource:** p-mails-logic - Microsoft.Logic/workflows
+  - ![Storage Account](https://code.benco.io/icon-collection/azure-icons/Storage-Accounts.svg) **Resource:** sweethomealabamaandback - Microsoft.Storage/storageAccounts
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** rsv-audun - Microsoft.DataProtection/BackupVaults
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** svmaujtest-osdisk-20241128-110010 - Microsoft.Compute/disks
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** svmaujtest-datadisk-000-20241128-110010 - Microsoft.Compute/disks
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** svmaujtest-osdisk-20241128-110010 - Microsoft.Compute/disks
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** svmaujtest-datadisk-000-20241128-110010 - Microsoft.Compute/disks
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** s-vm-aujtest-nic-68983728f2824ec69836f3235bd9dd73 - Microsoft.Network/networkInterfaces
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** s-vm-aujtest - Microsoft.Compute/virtualMachines
+  - ![Virtual Machine](https://code.benco.io/icon-collection/azure-icons/Virtual-Machine.svg) **Resource:** s-vm-aujtest - Microsoft.Compute/virtualMachines
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** s-vm-aujtest/MDE.Windows - Microsoft.Compute/virtualMachines/extensions
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** lz-network-norwayeast-vnet - Microsoft.Network/virtualNetworks
+  - ![Virtual Network](https://code.benco.io/icon-collection/azure-icons/Virtual-Networks.svg) **Resource:** lz-network-norwayeast-vnet - Microsoft.Network/virtualNetworks
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** linux-backup-testNSG - Microsoft.Network/networkSecurityGroups
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** linux-backup-testVMNic - Microsoft.Network/networkInterfaces
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** linux-backup-test - Microsoft.Compute/virtualMachines
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** linux-backup-test_OsDisk_1_129dd182211d4de2935e0c81ea1c731a - Microsoft.Compute/disks
+  - ![Virtual Machine](https://code.benco.io/icon-collection/azure-icons/Virtual-Machine.svg) **Resource:** linux-backup-test - Microsoft.Compute/virtualMachines
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** linux-backup-test_OsDisk_1_129dd182211d4de2935e0c81ea1c731a - Microsoft.Compute/disks
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** linux-backup-test/MDE.Linux - Microsoft.Compute/virtualMachines/extensions
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** linux-backup-test-rp1-coll - Microsoft.Compute/restorePointCollections
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** LinuxDataDisk - Microsoft.Compute/disks
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** LinuxDataDisk - Microsoft.Compute/disks
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** linux-backup-test-rp2-coll - Microsoft.Compute/restorePointCollections
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** linuxbackuptest-osdisk-20250114-100722 - Microsoft.Compute/disks
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** linuxbackuptest-osdisk-20250114-105029 - Microsoft.Compute/disks
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** linuxbackuptest-datadisk-000-20250114-105029 - Microsoft.Compute/disks
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** linuxbackuptest-osdisk-20250114-123657 - Microsoft.Compute/disks
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** linuxbackuptest-osdisk-20250114-100722 - Microsoft.Compute/disks
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** linuxbackuptest-osdisk-20250114-105029 - Microsoft.Compute/disks
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** linuxbackuptest-datadisk-000-20250114-105029 - Microsoft.Compute/disks
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** linuxbackuptest-osdisk-20250114-123657 - Microsoft.Compute/disks
 - ![Resource Group](https://code.benco.io/icon-collection/azure-icons/Resource-Groups.svg) **Resource Group:** rg-bjornjorgen
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** testbjs2 - Microsoft.Storage/storageAccounts
+  - ![Storage Account](https://code.benco.io/icon-collection/azure-icons/Storage-Accounts.svg) **Resource:** testbjs2 - Microsoft.Storage/storageAccounts
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** basicNsgvnet-norwayeast-nic01 - Microsoft.Network/networkSecurityGroups
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** vnet-norwayeast - Microsoft.Network/virtualNetworks
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** bjsScaleset1 - Microsoft.Compute/virtualMachineScaleSets
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** bjsScaleset1_ff6a1be6 - Microsoft.Compute/virtualMachines
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** bjsScaleset1_bf585774 - Microsoft.Compute/virtualMachines
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** bjsScaleset1_ff6a1be6_OsDisk_1_bbef783febe54664b36726be0739d16c - Microsoft.Compute/disks
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** bjsScaleset1_bf585774_OsDisk_1_c491f3779cb94873b00f269bbb890b2c - Microsoft.Compute/disks
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** publicIp-vnet-norwayeast-nic01-28e3bab2 - Microsoft.Network/publicIPAddresses
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** publicIp-vnet-norwayeast-nic01-ebe7168c - Microsoft.Network/publicIPAddresses
+  - ![Virtual Network](https://code.benco.io/icon-collection/azure-icons/Virtual-Networks.svg) **Resource:** vnet-norwayeast - Microsoft.Network/virtualNetworks
+  - ![VM Scale Set](https://code.benco.io/icon-collection/azure-icons/VM-Scale-Sets.svg) **Resource:** bjsScaleset1 - Microsoft.Compute/virtualMachineScaleSets
+  - ![Virtual Machine](https://code.benco.io/icon-collection/azure-icons/Virtual-Machine.svg) **Resource:** bjsScaleset1_ff6a1be6 - Microsoft.Compute/virtualMachines
+  - ![Virtual Machine](https://code.benco.io/icon-collection/azure-icons/Virtual-Machine.svg) **Resource:** bjsScaleset1_bf585774 - Microsoft.Compute/virtualMachines
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** bjsScaleset1_ff6a1be6_OsDisk_1_bbef783febe54664b36726be0739d16c - Microsoft.Compute/disks
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** bjsScaleset1_bf585774_OsDisk_1_c491f3779cb94873b00f269bbb890b2c - Microsoft.Compute/disks
+  - ![Public IP Address](https://code.benco.io/icon-collection/azure-icons/Public-IP-Addresses.svg) **Resource:** publicIp-vnet-norwayeast-nic01-28e3bab2 - Microsoft.Network/publicIPAddresses
+  - ![Public IP Address](https://code.benco.io/icon-collection/azure-icons/Public-IP-Addresses.svg) **Resource:** publicIp-vnet-norwayeast-nic01-ebe7168c - Microsoft.Network/publicIPAddresses
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** vnet-norwayeast-nic01-28e3bab2 - Microsoft.Network/networkInterfaces
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** vnet-norwayeast-nic01-ebe7168c - Microsoft.Network/networkInterfaces
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** tbjs2windiagsettk4 - Microsoft.Storage/storageAccounts
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-bjs2-win-kv-k4l6 - Microsoft.KeyVault/vaults
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-bjs2-win-avail - Microsoft.Compute/availabilitySets
+  - ![Storage Account](https://code.benco.io/icon-collection/azure-icons/Storage-Accounts.svg) **Resource:** tbjs2windiagsettk4 - Microsoft.Storage/storageAccounts
+  - ![Key Vault](https://code.benco.io/icon-collection/azure-icons/Key-Vaults.svg) **Resource:** t-bjs2-win-kv-k4l6 - Microsoft.KeyVault/vaults
+  - ![Availability Set](https://code.benco.io/icon-collection/azure-icons/Availability-Sets.svg) **Resource:** t-bjs2-win-avail - Microsoft.Compute/availabilitySets
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-bjs2-win1-nic - Microsoft.Network/networkInterfaces
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-bjs2-win1 - Microsoft.Compute/virtualMachines
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-bjs2-win1-osdisk - Microsoft.Compute/disks
+  - ![Virtual Machine](https://code.benco.io/icon-collection/azure-icons/Virtual-Machine.svg) **Resource:** t-bjs2-win1 - Microsoft.Compute/virtualMachines
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** t-bjs2-win1-osdisk - Microsoft.Compute/disks
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-bjs2-win1/IaaSDiagnostics - Microsoft.Compute/virtualMachines/extensions
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-bjs2-win1/DependencyAgentWindows - Microsoft.Compute/virtualMachines/extensions
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-bjs2-win1/NetworkWatcherAgentWindows - Microsoft.Compute/virtualMachines/extensions
@@ -118,24 +118,24 @@
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-bjs2-win1/MDE.Windows - Microsoft.Compute/virtualMachines/extensions
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-bjs2-win1/AdminCenter - Microsoft.Compute/virtualMachines/extensions
 - ![Resource Group](https://code.benco.io/icon-collection/azure-icons/Resource-Groups.svg) **Resource Group:** rg-daniel
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** soctestsnap - Microsoft.Storage/storageAccounts
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** test-aa - Microsoft.Automation/automationAccounts
+  - ![Storage Account](https://code.benco.io/icon-collection/azure-icons/Storage-Accounts.svg) **Resource:** soctestsnap - Microsoft.Storage/storageAccounts
+  - ![Automation Account](https://code.benco.io/icon-collection/azure-icons/Automation-Accounts.svg) **Resource:** test-aa - Microsoft.Automation/automationAccounts
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** test-aa/New-ForensicsSnapshot - Microsoft.Automation/automationAccounts/runbooks
 - ![Resource Group](https://code.benco.io/icon-collection/azure-icons/Resource-Groups.svg) **Resource Group:** rg-aleksander
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** rg-aleksander-klp-no - Microsoft.Communication/EmailServices
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** rg-aleksander-klp-no/klp.no - Microsoft.Communication/EmailServices/Domains
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** sandboxbcptest - Microsoft.Storage/storageAccounts
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-kv-bcptest - Microsoft.KeyVault/vaults
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** d-awh-wm-kv-3fpr - Microsoft.KeyVault/vaults
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** d-awh-wm-avail - Microsoft.Compute/availabilitySets
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** d-awh-wm1-datadisk1 - Microsoft.Compute/disks
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** d-awh-wm2-datadisk1 - Microsoft.Compute/disks
+  - ![Storage Account](https://code.benco.io/icon-collection/azure-icons/Storage-Accounts.svg) **Resource:** sandboxbcptest - Microsoft.Storage/storageAccounts
+  - ![Key Vault](https://code.benco.io/icon-collection/azure-icons/Key-Vaults.svg) **Resource:** t-kv-bcptest - Microsoft.KeyVault/vaults
+  - ![Key Vault](https://code.benco.io/icon-collection/azure-icons/Key-Vaults.svg) **Resource:** d-awh-wm-kv-3fpr - Microsoft.KeyVault/vaults
+  - ![Availability Set](https://code.benco.io/icon-collection/azure-icons/Availability-Sets.svg) **Resource:** d-awh-wm-avail - Microsoft.Compute/availabilitySets
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** d-awh-wm1-datadisk1 - Microsoft.Compute/disks
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** d-awh-wm2-datadisk1 - Microsoft.Compute/disks
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** d-awh-wm1-nic - Microsoft.Network/networkInterfaces
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** d-awh-wm1 - Microsoft.Compute/virtualMachines
+  - ![Virtual Machine](https://code.benco.io/icon-collection/azure-icons/Virtual-Machine.svg) **Resource:** d-awh-wm1 - Microsoft.Compute/virtualMachines
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** d-awh-wm2-nic - Microsoft.Network/networkInterfaces
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** d-awh-wm2 - Microsoft.Compute/virtualMachines
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** d-awh-wm2-osdisk - Microsoft.Compute/disks
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** d-awh-wm1-osdisk - Microsoft.Compute/disks
+  - ![Virtual Machine](https://code.benco.io/icon-collection/azure-icons/Virtual-Machine.svg) **Resource:** d-awh-wm2 - Microsoft.Compute/virtualMachines
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** d-awh-wm2-osdisk - Microsoft.Compute/disks
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** d-awh-wm1-osdisk - Microsoft.Compute/disks
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** d-awh-wm1/DependencyAgentWindows - Microsoft.Compute/virtualMachines/extensions
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** d-awh-wm2/DependencyAgentWindows - Microsoft.Compute/virtualMachines/extensions
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** d-awh-wm1/NetworkWatcherAgentWindows - Microsoft.Compute/virtualMachines/extensions
@@ -151,17 +151,17 @@
 - ![Resource Group](https://code.benco.io/icon-collection/azure-icons/Resource-Groups.svg) **Resource Group:** rg-thomas
 - ![Resource Group](https://code.benco.io/icon-collection/azure-icons/Resource-Groups.svg) **Resource Group:** rg-sven
 - ![Resource Group](https://code.benco.io/icon-collection/azure-icons/Resource-Groups.svg) **Resource Group:** rg-tom
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** pgithubbackupstorage - Microsoft.Storage/storageAccounts
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** GitHubBackupAutomation - Microsoft.Automation/automationAccounts
+  - ![Storage Account](https://code.benco.io/icon-collection/azure-icons/Storage-Accounts.svg) **Resource:** pgithubbackupstorage - Microsoft.Storage/storageAccounts
+  - ![Automation Account](https://code.benco.io/icon-collection/azure-icons/Automation-Accounts.svg) **Resource:** GitHubBackupAutomation - Microsoft.Automation/automationAccounts
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** GitHubBackupAutomation/githubbackup - Microsoft.Automation/automationAccounts/runbooks
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** test12345789 - Microsoft.KeyVault/vaults
+  - ![Key Vault](https://code.benco.io/icon-collection/azure-icons/Key-Vaults.svg) **Resource:** test12345789 - Microsoft.KeyVault/vaults
 - ![Resource Group](https://code.benco.io/icon-collection/azure-icons/Resource-Groups.svg) **Resource Group:** dna-test
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** dna-test-kv-fhca - Microsoft.KeyVault/vaults
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-dna-rhel-avail - Microsoft.Compute/availabilitySets
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-dna-rhel1-datadisk1 - Microsoft.Compute/disks
+  - ![Key Vault](https://code.benco.io/icon-collection/azure-icons/Key-Vaults.svg) **Resource:** dna-test-kv-fhca - Microsoft.KeyVault/vaults
+  - ![Availability Set](https://code.benco.io/icon-collection/azure-icons/Availability-Sets.svg) **Resource:** t-dna-rhel-avail - Microsoft.Compute/availabilitySets
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** t-dna-rhel1-datadisk1 - Microsoft.Compute/disks
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-dna-rhel1-nic - Microsoft.Network/networkInterfaces
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-dna-rhel1 - Microsoft.Compute/virtualMachines
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-dna-rhel1-osdisk - Microsoft.Compute/disks
+  - ![Virtual Machine](https://code.benco.io/icon-collection/azure-icons/Virtual-Machine.svg) **Resource:** t-dna-rhel1 - Microsoft.Compute/virtualMachines
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** t-dna-rhel1-osdisk - Microsoft.Compute/disks
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-dna-rhel1/DependencyAgentLinux - Microsoft.Compute/virtualMachines/extensions
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-dna-rhel1/NetworkWatcherAgentLinux - Microsoft.Compute/virtualMachines/extensions
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-dna-rhel1/MDE.Linux - Microsoft.Compute/virtualMachines/extensions
@@ -179,26 +179,26 @@
 - ![Resource Group](https://code.benco.io/icon-collection/azure-icons/Resource-Groups.svg) **Resource Group:** DefaultResourceGroup-null
 - ![Resource Group](https://code.benco.io/icon-collection/azure-icons/Resource-Groups.svg) **Resource Group:** rbac-test
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-linux-vm-nic - Microsoft.Network/networkInterfaces
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-linux-vm - Microsoft.Compute/virtualMachines
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-linux-vm-osdisk - Microsoft.Compute/disks
+  - ![Virtual Machine](https://code.benco.io/icon-collection/azure-icons/Virtual-Machine.svg) **Resource:** t-linux-vm - Microsoft.Compute/virtualMachines
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** t-linux-vm-osdisk - Microsoft.Compute/disks
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** t-linux-vm/MDE.Linux - Microsoft.Compute/virtualMachines/extensions
 - ![Resource Group](https://code.benco.io/icon-collection/azure-icons/Resource-Groups.svg) **Resource Group:** maksym-finops
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** MyHubPublic-engine-tj5eravonizvq - Microsoft.DataFactory/factories
+  - ![Data Factory](https://code.benco.io/icon-collection/azure-icons/Data-Factory.svg) **Resource:** MyHubPublic-engine-tj5eravonizvq - Microsoft.DataFactory/factories
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** myhubpublictj5eravonizvq_blobManager - Microsoft.ManagedIdentity/userAssignedIdentities
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** myhubpublictj5eravonizvq - Microsoft.Storage/storageAccounts
+  - ![Storage Account](https://code.benco.io/icon-collection/azure-icons/Storage-Accounts.svg) **Resource:** myhubpublictj5eravonizvq - Microsoft.Storage/storageAccounts
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** MyHubPublic-engine-tj5eravonizvq_triggerManager - Microsoft.ManagedIdentity/userAssignedIdentities
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** myhubpublictj5eravonizvq-a0d0457d-f302-4876-ae91-5bc42dbd3223 - Microsoft.EventGrid/systemTopics
 - ![Resource Group](https://code.benco.io/icon-collection/azure-icons/Resource-Groups.svg) **Resource Group:** maksym-maintenanceConfig
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** maksym-maintenanceconfig-vnet - Microsoft.Network/virtualNetworks
+  - ![Virtual Network](https://code.benco.io/icon-collection/azure-icons/Virtual-Networks.svg) **Resource:** maksym-maintenanceconfig-vnet - Microsoft.Network/virtualNetworks
 - ![Resource Group](https://code.benco.io/icon-collection/azure-icons/Resource-Groups.svg) **Resource Group:** p-adds-test
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** paddstestdiagsett55 - Microsoft.Storage/storageAccounts
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** p-adds-test-kv-55es - Microsoft.KeyVault/vaults
+  - ![Storage Account](https://code.benco.io/icon-collection/azure-icons/Storage-Accounts.svg) **Resource:** paddstestdiagsett55 - Microsoft.Storage/storageAccounts
+  - ![Key Vault](https://code.benco.io/icon-collection/azure-icons/Key-Vaults.svg) **Resource:** p-adds-test-kv-55es - Microsoft.KeyVault/vaults
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** p-adds-test1-nic - Microsoft.Network/networkInterfaces
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** p-adds-test1 - Microsoft.Compute/virtualMachines
+  - ![Virtual Machine](https://code.benco.io/icon-collection/azure-icons/Virtual-Machine.svg) **Resource:** p-adds-test1 - Microsoft.Compute/virtualMachines
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** p-adds-test2-nic - Microsoft.Network/networkInterfaces
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** p-adds-test2 - Microsoft.Compute/virtualMachines
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** p-adds-test1-osdisk - Microsoft.Compute/disks
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** p-adds-test2-osdisk - Microsoft.Compute/disks
+  - ![Virtual Machine](https://code.benco.io/icon-collection/azure-icons/Virtual-Machine.svg) **Resource:** p-adds-test2 - Microsoft.Compute/virtualMachines
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** p-adds-test1-osdisk - Microsoft.Compute/disks
+  - ![Disk](https://code.benco.io/icon-collection/azure-icons/Disks.svg) **Resource:** p-adds-test2-osdisk - Microsoft.Compute/disks
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** p-adds-test1/IaaSDiagnostics - Microsoft.Compute/virtualMachines/extensions
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** p-adds-test2/IaaSDiagnostics - Microsoft.Compute/virtualMachines/extensions
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** p-adds-test2/DependencyAgentWindows - Microsoft.Compute/virtualMachines/extensions
@@ -226,10 +226,11 @@
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** p-adds-test2/DSCExtension - Microsoft.Compute/virtualMachines/extensions
   - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** p-adds-test1/DSCExtension - Microsoft.Compute/virtualMachines/extensions
 - ![Resource Group](https://code.benco.io/icon-collection/azure-icons/Resource-Groups.svg) **Resource Group:** cloud-shell-storage-westeurope
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** csb100320041428ff8f - Microsoft.Storage/storageAccounts
-  - ![Resource](https://code.benco.io/icon-collection/azure-icons/All-Resources.svg) **Resource:** csb1003200033b9b8b7 - Microsoft.Storage/storageAccounts
+  - ![Storage Account](https://code.benco.io/icon-collection/azure-icons/Storage-Accounts.svg) **Resource:** csb100320041428ff8f - Microsoft.Storage/storageAccounts
+  - ![Storage Account](https://code.benco.io/icon-collection/azure-icons/Storage-Accounts.svg) **Resource:** csb1003200033b9b8b7 - Microsoft.Storage/storageAccounts
 
 </details>
+
 
 
 
