@@ -1,0 +1,752 @@
+{
+  "Microsoft.Compute/snapshots": {
+    "AzureDiskSnapshot": "Compute/AzureDiskSnapshot.puml"
+  },
+  "Microsoft.Compute/diskEncryptionSets": {
+    "AzureDiskEncryptionSet": "Compute/AzureDiskEncryptionSet.puml"
+  },
+  "Microsoft.Compute/batchAI": {
+    "AzureBatchAI": "Compute/AzureBatchAI.puml"
+  },
+  "Microsoft.BotService/botServices": {
+    "AzureBotService": "AIMachineLearning/AzureBotService.puml"
+  },
+  "Microsoft.MachineLearning/batchAI": {
+    "AzureBatchAI": "AIMachineLearning/AzureBatchAI.puml"
+  },
+  "Microsoft.CognitiveServices/accounts": {
+    "AzureCognitiveServices": "AIMachineLearning/AzureCognitiveServices.puml"
+  },
+  "Microsoft.MachineLearningServices/workspaces": {
+    "AzureMachineLearningService": "AIMachineLearning/AzureMachineLearningService.puml"
+  },
+  "Microsoft.MachineLearning/webServices": {
+    "AzureMachineLearningStudio": "AIMachineLearning/AzureMachineLearningStudio.puml"
+  },
+  "Microsoft.MachineLearning/commitmentPlans": {
+    "AzureMachineLearningStudioClassic": "AIMachineLearning/AzureMachineLearningStudioClassic.puml"
+  },
+  "Microsoft.MachineLearning/webServicePlans": {
+    "AzureMachineLearningStudioWebServicePlan": "AIMachineLearning/AzureMachineLearningStudioWebServicePlan.puml"
+  },
+  "Microsoft.MachineLearning/workspaces": {
+    "AzureMachineLearningStudioWorkspace": "AIMachineLearning/AzureMachineLearningStudioWorkspace.puml"
+  },
+  "Microsoft.CognitiveServices/translatorText": {
+    "AzureTranslatorText": "AIMachineLearning/AzureTranslatorText.puml"
+  },
+  "Microsoft.Genomics/accounts": {
+    "MicrosoftGenomics": "AIMachineLearning/MicrosoftGenomics.puml"
+  },
+  "Microsoft.AnalysisServices/servers": {
+    "AzureAnalysisServices": "Analytics/AzureAnalysisServices.puml"
+  },
+  "Microsoft.Databricks/workspaces": {
+    "AzureDatabricks": "Analytics/AzureDatabricks.puml"
+  },
+  "Microsoft.DataCatalog/catalogs": {
+    "AzureDataCatalog": "Analytics/AzureDataCatalog.puml"
+  },
+  "Microsoft.Kusto/clusters": {
+    "AzureDataExplorer": "Analytics/AzureDataExplorer.puml"
+  },
+  "Microsoft.DataLakeStore/accounts": {
+    "AzureDataLakeStoreGen1": "Analytics/AzureDataLakeStoreGen1.puml"
+  },
+  "Microsoft.EventHub/namespaces": {
+    "AzureEventHub": "Analytics/AzureEventHub.puml"
+  },
+  "Microsoft.EventHub/clusters": {
+    "AzureEventHubCluster": "Analytics/AzureEventHubCluster.puml"
+  },
+  "Microsoft.HDInsight/clusters": {
+    "AzureHDInsightCluster": "Analytics/AzureHDInsightCluster.puml"
+  },
+  "Microsoft.OperationalInsights/workspaces": {
+    "AzureLogAnalyticsWorkspace": "Analytics/AzureLogAnalyticsWorkspace.puml"
+  },
+  "Microsoft.PowerBIDedicated/capacities": {
+    "AzurePowerBIEmbedded": "Analytics/AzurePowerBIEmbedded.puml"
+  },
+  "Microsoft.Purview/accounts": {
+    "AzurePurviewAccount": "Analytics/AzurePurviewAccount.puml"
+  },
+  "Microsoft.StreamAnalytics/streamingjobs": {
+    "AzureStreamAnalyticsJob": "Analytics/AzureStreamAnalyticsJob.puml"
+  },
+  "Microsoft.Synapse/workspaces": {
+    "AzureSynapseAnalytics": "Analytics/AzureSynapseAnalytics.puml"
+  },
+  "Microsoft.PowerBI/workspaceCollections": {
+    "PowerBI": "Analytics/PowerBI.puml"
+  },
+  "Microsoft.Blockchain/blockchainMembers": {
+    "AzurBlockchainMember": "Blockchain/AzurBlockchainMember.puml"
+  },
+  "Microsoft.Blockchain/blockchainServices": {
+    "AzurBlockchainService": "Blockchain/AzurBlockchainService.puml"
+  },
+  "Microsoft.Blockchain/tokenServices": {
+    "AzurBlockchainTokenService": "Blockchain/AzurBlockchainTokenService.puml"
+  },
+  "Microsoft.Blockchain/connections": {
+    "AzureBlockchainConnection": "Blockchain/AzureBlockchainConnection.puml"
+  },
+  "Microsoft.Blockchain/consortiums": {
+    "AzureBlockchainConsortium": "Blockchain/AzureBlockchainConsortium.puml"
+  },
+  "Microsoft.Web/serverFarms": {
+    "AzureAppServicePlan": "Compute/AzureAppServicePlan.puml"
+  },
+  "Microsoft.Web/serverFarms/linux": {
+    "AzureAppServicePlanLinux": "Compute/AzureAppServicePlanLinux.puml"
+  },
+  "Microsoft.Compute/virtualMachines/automanaged": {
+    "AzureAutomanagedVirtualMachine": "Compute/AzureAutomanagedVirtualMachine.puml"
+  },
+  "Microsoft.Compute/availabilitySets": {
+    "AzureAvailabiltySet": "Compute/AzureAvailabiltySet.puml"
+  },
+  "Microsoft.Batch/batchAccounts": {
+    "AzureBatch": "Compute/AzureBatch.puml"
+  },
+  "Microsoft.Batch/accounts": {
+    "AzureBatchAccount": "Compute/AzureBatchAccount.puml"
+  },
+  "Microsoft.ClassicCompute/domainNames": {
+    "AzureCloudServices": "Compute/AzureCloudServices.puml"
+  },
+  "Microsoft.ContainerService/containerServices": {
+    "AzureContainerService": "Compute/AzureContainerService.puml"
+  },
+  "Microsoft.Compute/disks": {
+    "AzureDisk": "Compute/AzureDisk.puml"
+  },
+  "Microsoft.Web/sites/functions": {
+    "AzureFunction": "Compute/AzureFunction.puml"
+  },
+  "Microsoft.ClassicCompute/images": {
+    "AzureImageClassic": "Compute/AzureImageClassic.puml"
+  },
+  "Microsoft.Compute/galleries/images": {
+    "AzureImageDefinition": "Compute/AzureImageDefinition.puml"
+  },
+  "Microsoft.Compute/galleries/images/versions": {
+    "AzureImageVersion": "Compute/AzureImageVersion.puml"
+  },
+  "Microsoft.ServiceFabricMesh/applications": {
+    "AzureMeshApplication": "Compute/AzureMeshApplication.puml"
+  },
+  "Microsoft.Web/serverfarms": {
+    "AzureServerFarm": "Compute/AzureServerFarm.puml"
+  },
+  "Microsoft.ServiceFabric/clusters": {
+    "AzureServiceFabric": "Compute/AzureServiceFabric.puml"
+  },
+  "Microsoft.Compute/galleries": {
+    "AzureSharedImageGallery": "Compute/AzureSharedImageGallery.puml"
+  },
+  "Microsoft.AppPlatform/Spring": {
+    "AzureSpringCloud": "Compute/AzureSpringCloud.puml"
+  },
+  "Microsoft.DesktopVirtualization/hostPools": {
+    "AzureVirtualDesktop": "Compute/AzureVirtualDesktop.puml"
+  },
+  "Microsoft.DesktopVirtualization/applicationGroups": {
+    "AzureVirtualDesktopApplicationGroup": "Compute/AzureVirtualDesktopApplicationGroup.puml"
+  },
+  "Microsoft.DesktopVirtualization/hostpools": {
+    "AzureVirtualDesktopHostPool": "Compute/AzureVirtualDesktopHostPool.puml"
+  },
+  "Microsoft.DesktopVirtualization/workspaces": {
+    "AzureVirtualDesktopWorkspace": "Compute/AzureVirtualDesktopWorkspace.puml"
+  },
+  "Microsoft.Compute/virtualMachines": {
+    "AzureVirtualMachine": "Compute/AzureVirtualMachine.puml"
+  },
+  "Microsoft.ClassicCompute/virtualMachines": {
+    "AzureVirtualMachineClassic": "Compute/AzureVirtualMachineClassic.puml"
+  },
+  "Microsoft.Compute/virtualMachineScaleSets": {
+    "AzureVirtualMachineScaleSet": "Compute/AzureVirtualMachineScaleSet.puml"
+  },
+  "Microsoft.Web/sites/slots": {
+    "AzureWebSlot": "Compute/AzureWebSlot.puml"
+  },
+  "Microsoft.Insights/webtests": {
+    "AzureWebTest": "Compute/AzureWebTest.puml"
+  },
+  "Microsoft.App/containerApps": {
+    "AzureContainerApp": "Containers/AzureContainerApp.puml"
+  },
+  "Microsoft.ContainerInstance/containerGroups": {
+    "AzureContainerInstance": "Containers/AzureContainerInstance.puml"
+  },
+  "Microsoft.ContainerRegistry/registries": {
+    "AzureContainerRegistry": "Containers/AzureContainerRegistry.puml"
+  },
+  "Microsoft.ContainerService/managedClusters": {
+    "AzureKubernetesService": "Containers/AzureKubernetesService.puml"
+  },
+  "Microsoft.Web/hostingEnvironments": {
+    "AzureServiceEnvironment": "Containers/AzureServiceEnvironment.puml"
+  },
+  "Microsoft.DocumentDB/databaseAccounts": {
+    "AzureCosmosDb": "Databases/AzureCosmosDb.puml"
+  },
+  "Microsoft.DBforMariaDB/servers": {
+    "AzureDatabaseForMariaDB": "Databases/AzureDatabaseForMariaDB.puml"
+  },
+  "Microsoft.DBforMySQL/servers": {
+    "AzureDatabaseForMySQL": "Databases/AzureDatabaseForMySQL.puml"
+  },
+  "Microsoft.DBforPostgreSQL/servers": {
+    "AzureDatabaseForPostgreSQL": "Databases/AzureDatabaseForPostgreSQL.puml"
+  },
+  "Microsoft.DataMigration/services": {
+    "AzureDatabaseMigrationService": "Databases/AzureDatabaseMigrationService.puml"
+  },
+  "Microsoft.Kusto clusters/databases": {
+    "AzureDataExplorerCluster": "Databases/AzureDataExplorerCluster.puml"
+  },
+  "Microsoft.DataFactory/factories": {
+    "AzureDataFactory": "Databases/AzureDataFactory.puml"
+  },
+  "Microsoft.Sql/instancePools": {
+    "AzureInstancePool": "Databases/AzureInstancePool.puml"
+  },
+  "Microsoft.Sql/managedInstances/databases": {
+    "AzureManagedDatabase": "Databases/AzureManagedDatabase.puml"
+  },
+  "Microsoft.Cache/Redis": {
+    "AzureRedisCache": "Databases/AzureRedisCache.puml"
+  },
+  "Microsoft.Sql/servers": {
+    "AzureSql": "Databases/AzureSql.puml"
+  },
+  "Microsoft.Sql/servers/databases": {
+    "AzureSqlDatabase": "Databases/AzureSqlDatabase.puml"
+  },
+  "Microsoft.Sql/servers/databases/dataWarehouse": {
+    "AzureSqlDataWarehouse": "Databases/AzureSqlDataWarehouse.puml"
+  },
+  "Microsoft.Sql/servers/elasticPools": {
+    "AzureSqlElasticPool": "Databases/AzureSqlElasticPool.puml"
+  },
+  "Microsoft.Sql/managedInstances": {
+    "AzureSqlManagedInstance": "Databases/AzureSqlManagedInstance.puml"
+  },
+  "Microsoft.Sql/servers/databases/stretchDatabase": {
+    "AzureSqlStretchDatabase": "Databases/AzureSqlStretchDatabase.puml"
+  },
+  "Microsoft.SqlVirtualMachine/SqlVirtualMachines": {
+    "AzureSqlVirtualMachine": "Databases/AzureSqlVirtualMachine.puml"
+  },
+  "Microsoft.DataFactory/factories/integrationRuntimes": {
+    "AzureSSISLiftAndShift": "Databases/AzureSSISLiftAndShift.puml"
+  },
+  "Microsoft.Sql/virtualClusters": {
+    "AzureVirtualCluster": "Databases/AzureVirtualCluster.puml"
+  },
+  "Microsoft.Insights/components": {
+    "AzureApplicationInsights": "DevOps/AzureApplicationInsights.puml"
+  },
+  "Microsoft.VisualStudio/account/project/artifacts": {
+    "AzureArtifacts": "DevOps/AzureArtifacts.puml"
+  },
+  "Microsoft.VisualStudio/account/project/boards": {
+    "AzureBoards": "DevOps/AzureBoards.puml"
+  },
+  "Microsoft.VisualStudio/account": {
+    "AzureDevOps": "DevOps/AzureDevOps.puml"
+  },
+  "Microsoft.VisualStudio/account/organization": {
+    "AzureDevOpsOrganisation": "DevOps/AzureDevOpsOrganisation.puml"
+  },
+  "Microsoft.DevTestLab/labs": {
+    "AzureDevTestLabs": "DevOps/AzureDevTestLabs.puml"
+  },
+  "Microsoft.LabServices/labaccounts": {
+    "AzureLabServices": "DevOps/AzureLabServices.puml"
+  },
+  "Microsoft.VisualStudio/account/project/pipelines": {
+    "AzurePipelines": "DevOps/AzurePipelines.puml"
+  },
+  "Microsoft.VisualStudio/account/project/repos": {
+    "AzureRepos": "DevOps/AzureRepos.puml"
+  },
+  "Microsoft.VisualStudio/account/project/testPlans": {
+    "AzureTestPlans": "DevOps/AzureTestPlans.puml"
+  },
+  "Microsoft.Insights/workbooks": {
+    "AzureWorkbook": "General/AzureWorkbook.puml"
+  },
+  "Microsoft.HealthcareApis/services/dicom": {
+    "DICOMService": "Health/DICOMService.puml"
+  },
+  "Microsoft.HealthcareApis/services/fhir": {
+    "FHIRService": "Health/FHIRService.puml"
+  },
+  "Microsoft.HealthcareApis/workspaces": {
+    "HealthDataServices": "Health/HealthDataServices.puml"
+  },
+  "Microsoft.HealthcareApis/services/iot": {
+    "MedTechService": "Health/MedTechService.puml"
+  },
+  "Microsoft.AzureActiveDirectory/b2cDirectories": {
+    "AzureActiveDirectory": "Identity/AzureActiveDirectory.puml"
+  },
+  "Microsoft.AzureActiveDirectory/b2ctenants": {
+    "AzureActiveDirectoryB2C": "Identity/AzureActiveDirectoryB2C.puml"
+  },
+  "Microsoft.ADHybridHealthService/services": {
+    "AzureActiveDirectoryConnectHealth": "Identity/AzureActiveDirectoryConnectHealth.puml"
+  },
+  "Microsoft.AAD/domainServices": {
+    "AzureActiveDirectoryDomainServices": "Identity/AzureActiveDirectoryDomainServices.puml"
+  },
+  "Microsoft.AzureActiveDirectory/groups": {
+    "AzureActiveDirectoryGroup": "Identity/AzureActiveDirectoryGroup.puml"
+  },
+  "Microsoft.AzureActiveDirectory/identityProtection": {
+    "AzureActiveDirectoryIdentityProtection": "Identity/AzureActiveDirectoryIdentityProtection.puml"
+  },
+  "Microsoft.AzureActiveDirectory/roles": {
+    "AzureActiveDirectoryRolesAndAdministrators": "Identity/AzureActiveDirectoryRolesAndAdministrators.puml"
+  },
+  "Microsoft.AzureActiveDirectory/users": {
+    "AzureActiveDirectoryUser": "Identity/AzureActiveDirectoryUser.puml"
+  },
+  "Microsoft.AzureActiveDirectory/applications": {
+    "AzureAppRegistration": "Identity/AzureAppRegistration.puml"
+  },
+  "Microsoft.AzureActiveDirectory/applications/enterpriseApplications": {
+    "AzureEnterpriseApplication": "Identity/AzureEnterpriseApplication.puml"
+  },
+  "Microsoft.AzureActiveDirectory/identityGovernance": {
+    "AzureIdentityGovernance": "Identity/AzureIdentityGovernance.puml"
+  },
+  "Microsoft.ManagedIdentity/userAssignedIdentities": {
+    "AzureManagedIdentity": "Identity/AzureManagedIdentity.puml"
+  },
+  "Microsoft.BizTalkServices/BizTalk": {
+    "AzureBizTalk": "Integration/AzureBizTalk.puml"
+  },
+  "Microsoft.EventGrid/domains": {
+    "AzureEventGridDomain": "Integration/AzureEventGridDomain.puml"
+  },
+  "Microsoft.EventGrid/eventSubscriptions": {
+    "AzureEventGridSubscription": "Integration/AzureEventGridSubscription.puml"
+  },
+  "Microsoft.EventGrid/topics": {
+    "AzureEventGridTopic": "Integration/AzureEventGridTopic.puml"
+  },
+  "Microsoft.Logic/integrationAccounts": {
+    "AzureIntegrationAccount": "Integration/AzureIntegrationAccount.puml"
+  },
+  "Microsoft.Logic/workflows": {
+    "AzureLogicApps": "Integration/AzureLogicApps.puml"
+  },
+  "Microsoft.EventGrid/partnerTopics": {
+    "AzurePartnerTopic": "Integration/AzurePartnerTopic.puml"
+  },
+  "Microsoft.ServiceBus/namespaces": {
+    "AzureServiceBus": "Integration/AzureServiceBus.puml"
+  },
+  "Microsoft.ServiceBus/namespaces/queues": {
+    "AzureServiceBusQueue": "Integration/AzureServiceBusQueue.puml"
+  },
+  "Microsoft.ServiceBus/namespaces/topics": {
+    "AzureServiceBusTopic": "Integration/AzureServiceBusTopic.puml"
+  },
+  "Microsoft.EventGrid/systemTopics": {
+    "AzureSystemTopic": "Integration/AzureSystemTopic.puml"
+  },
+  "Microsoft.Devices/provisioningServices": {
+    "AzureDeviceProvisioningService": "InternetOfThings/AzureDeviceProvisioningService.puml"
+  },
+  "Microsoft.DigitalTwins/digitalTwinsInstances": {
+    "AzureDigitalTwins": "InternetOfThings/AzureDigitalTwins.puml"
+  },
+  "Microsoft.IoTCentral/IoTApps": {
+    "AzureIoTCentral": "InternetOfThings/AzureIoTCentral.puml"
+  },
+  "Microsoft.IoTCentral/iotApps": {
+    "AzureIoTCentralApplications": "InternetOfThings/AzureIoTCentralApplications.puml"
+  },
+  "Microsoft.Devices/IotHubs/iotEdge": {
+    "AzureIoTEdge": "InternetOfThings/AzureIoTEdge.puml"
+  },
+  "Microsoft.Devices/IotHubs": {
+    "AzureIoTHub": "InternetOfThings/AzureIoTHub.puml"
+  },
+  "Microsoft.Maps/accounts": {
+    "AzureMaps": "InternetOfThings/AzureMaps.puml"
+  },
+  "Microsoft.TimeSeriesInsights/environments/referenceDataSets": {
+    "AzureTimeSeriesDataSet": "InternetOfThings/AzureTimeSeriesDataSet.puml"
+  },
+  "Microsoft.TimeSeriesInsights/environments/accessPolicies": {
+    "AzureTimeSeriesInsightsAccessPolicy": "InternetOfThings/AzureTimeSeriesInsightsAccessPolicy.puml"
+  },
+  "Microsoft.TimeSeriesInsights/environments": {
+    "AzureTimeSeriesInsightsEnvironment": "InternetOfThings/AzureTimeSeriesInsightsEnvironment.puml"
+  },
+  "Microsoft.TimeSeriesInsights/environments/eventSources": {
+    "AzureTimeSeriesInsightsEventSource": "InternetOfThings/AzureTimeSeriesInsightsEventSource.puml"
+  },
+  "Microsoft.Intune/deviceManagement": {
+    "AzureIntune": "Intune/AzureIntune.puml"
+  },
+  "Microsoft.Intune/deviceManagement/apple": {
+    "AzureIntuneApple": "Intune/AzureIntuneApple.puml"
+  },
+  "Microsoft.Intune/deviceManagement/google": {
+    "AzureIntuneGoogle": "Intune/AzureIntuneGoogle.puml"
+  },
+  "Microsoft.Intune/deviceManagement/windows": {
+    "AzureIntuneWindows": "Intune/AzureIntuneWindows.puml"
+  },
+  "Microsoft.AppConfiguration/configurationStores": {
+    "AppConfiguration": "Management/AppConfiguration.puml"
+  },
+  "Microsoft.HybridCompute/machines": {
+    "AzureArcMachine": "Management/AzureArcMachine.puml"
+  },
+  "Microsoft.Automation/automationAccounts": {
+    "AzureAutomation": "Management/AzureAutomation.puml"
+  },
+  "Microsoft.RecoveryServices/vaults/backupJobs": {
+    "AzureBackup": "Management/AzureBackup.puml"
+  },
+  "Microsoft.Blueprint/blueprints": {
+    "AzureBlueprints": "Management/AzureBlueprints.puml"
+  },
+  "Microsoft.PolicyInsights/policyStates": {
+    "AzureCompliance": "Management/AzureCompliance.puml"
+  },
+  "Microsoft.CostManagement/alerts": {
+    "AzureCostAlert": "Management/AzureCostAlert.puml"
+  },
+  "Microsoft.CostManagement/query": {
+    "AzureCostAnalysis": "Management/AzureCostAnalysis.puml"
+  },
+  "Microsoft.Consumption/budgets": {
+    "AzureCostBudget": "Management/AzureCostBudget.puml"
+  },
+  "Microsoft.CostManagement/costManagement": {
+    "AzureCostManagement": "Management/AzureCostManagement.puml"
+  },
+  "Microsoft.CostManagement/billing": {
+    "AzureCostManagementAndBilling": "Management/AzureCostManagementAndBilling.puml"
+  },
+  "Microsoft.RecoveryServices/vaults/replicationJobs": {
+    "AzureGeoRecovery": "Management/AzureGeoRecovery.puml"
+  },
+  "Microsoft.ManagedServices/registrationDefinitions": {
+    "AzureLighthouse": "Management/AzureLighthouse.puml"
+  },
+  "Microsoft.Solutions/applicationDefinitions": {
+    "AzureManagedApplicationCenter": "Management/AzureManagedApplicationCenter.puml"
+  },
+  "Microsoft.Solutions/applications": {
+    "AzureManagedApplications": "Management/AzureManagedApplications.puml"
+  },
+  "Microsoft.Management/managementGroups": {
+    "AzureManagementGroups": "Management/AzureManagementGroups.puml"
+  },
+  "Microsoft.Portal/dashboards": {
+    "AzureManagementPortal": "Management/AzureManagementPortal.puml"
+  },
+  "Microsoft.Insights/metrics": {
+    "AzureMetrics": "Management/AzureMetrics.puml"
+  },
+  "Microsoft.Insights/activityLogAlerts": {
+    "AzureMonitor": "Management/AzureMonitor.puml"
+  },
+  "Microsoft.Authorization/policyDefinitions": {
+    "AzurePolicy": "Management/AzurePolicy.puml"
+  },
+  "Microsoft.RecoveryServices/vaults": {
+    "AzureRecoveryServiceVault": "Management/AzureRecoveryServiceVault.puml"
+  },
+  "Microsoft.ResourceGraph/queries": {
+    "AzureResourceGraphExplorer": "Management/AzureResourceGraphExplorer.puml"
+  },
+  "Microsoft.Resources/resourceGroups/list": {
+    "AzureResourceGroupList": "Management/AzureResourceGroupList.puml"
+  },
+  "Microsoft.Resources/resourceGroups": {
+    "AzureResourceGroups": "Management/AzureResourceGroups.puml"
+  },
+  "Microsoft.Resources/links": {
+    "AzureResourceLinked": "Management/AzureResourceLinked.puml"
+  },
+  "Microsoft.Scheduler/jobCollections": {
+    "AzureScheduler": "Management/AzureScheduler.puml"
+  },
+  "Microsoft.RecoveryServices/vaults/replicationPolicies": {
+    "AzureSiteRecovery": "Management/AzureSiteRecovery.puml"
+  },
+  "Microsoft.Solutions/solutions": {
+    "AzureSolutions": "Management/AzureSolutions.puml"
+  },
+  "Microsoft.Resources/subscriptions": {
+    "AzureSubscription": "Management/AzureSubscription.puml"
+  },
+  "Microsoft.Resources/tags": {
+    "AzureTag": "Management/AzureTag.puml"
+  },
+  "Microsoft.Portal/usersettings": {
+    "AzureUserPrivacy": "Management/AzureUserPrivacy.puml"
+  },
+  "Microsoft.Media/mediaservices": {
+    "AzureMedia": "Media/AzureMedia.puml"
+  },
+  "Microsoft.Media/mediaservices/assets": {
+    "AzureMediaFile": "Media/AzureMediaFile.puml"
+  },
+  "Microsoft.Media/mediaServices": {
+    "AzureMediaServices": "Media/AzureMediaServices.puml"
+  },
+  "Microsoft.DataBoxEdge/dataBoxEdgeDevices": {
+    "AzureDataBoxEdge": "Migrate/AzureDataBoxEdge.puml"
+  },
+  "Microsoft.Migrate/projects": {
+    "AzureMigrate": "Migrate/AzureMigrate.puml"
+  },
+  "Microsoft.Web/sites/mobile": {
+    "AzureMobileApp": "Mobile/AzureMobileApp.puml"
+  },
+  "Microsoft.MobileEngagement/appcollections": {
+    "AzureMobileEngagement": "Mobile/AzureMobileEngagement.puml"
+  },
+  "Microsoft.NotificationHubs/namespaces/notificationHubs": {
+    "AzureNotificationHub": "Mobile/AzureNotificationHub.puml"
+  },
+  "Microsoft.NotificationHubs/namespaces": {
+    "AzureNotificationHubNamespace": "Mobile/AzureNotificationHubNamespace.puml"
+  },
+  "Microsoft.Network/applicationGateways": {
+    "AzureApplicationGateway": "Networking/AzureApplicationGateway.puml"
+  },
+  "Microsoft.Network/ddosProtectionPlans": {
+    "AzureAzureDDoSProtection": "Networking/AzureAzureDDoSProtection.puml"
+  },
+  "Microsoft.Network/bastionHosts": {
+    "AzureBastion": "Networking/AzureBastion.puml"
+  },
+  "Microsoft.Cdn/profiles": {
+    "AzureCDNProfile": "Networking/AzureCDNProfile.puml"
+  },
+  "Microsoft.Network/dnsZones": {
+    "AzureDNS": "Networking/AzureDNS.puml"
+  },
+  "Microsoft.Network/dnsServers": {
+    "AzureDNSServer": "Networking/AzureDNSServer.puml"
+  },
+  "Microsoft.Network/expressRouteCircuits": {
+    "AzureExpressRouteCircuit": "Networking/AzureExpressRouteCircuit.puml"
+  },
+  "Microsoft.Network/expressRoutePorts": {
+    "AzureExpressRouteDirect": "Networking/AzureExpressRouteDirect.puml"
+  },
+  "Microsoft.Network/azureFirewalls": {
+    "AzureFirewall": "Networking/AzureFirewall.puml"
+  },
+  "Microsoft.Network/firewallPolicies": {
+    "AzureFirewallManager": "Networking/AzureFirewallManager.puml"
+  },
+  "Microsoft.Network/frontDoors": {
+    "AzureFrontDoor": "Networking/AzureFrontDoor.puml"
+  },
+  "Microsoft.Network/frontdoorWebApplicationFirewallPolicies": {
+    "AzureFrontDoorService": "Networking/AzureFrontDoorService.puml"
+  },
+  "Microsoft.Network/ipAddressSpaces": {
+    "AzureIPAddressSpace": "Networking/AzureIPAddressSpace.puml"
+  },
+  "Microsoft.Network/ipGroups": {
+    "AzureIPGroups": "Networking/AzureIPGroups.puml"
+  },
+  "Microsoft.Network/loadBalancers": {
+    "AzureLoadBalancer": "Networking/AzureLoadBalancer.puml"
+  },
+  "Microsoft.Network/natGateways": {
+    "AzureNAT": "Networking/AzureNAT.puml"
+  },
+  "Microsoft.Network/networkInterfaces": {
+    "AzureNetworkInterface": "Networking/AzureNetworkInterface.puml"
+  },
+  "Microsoft.Network/networkSecurityGroups": {
+    "AzureNSG": "Networking/AzureNSG.puml"
+  },
+  "Microsoft.Network/privateEndpoints": {
+    "AzurePrivateLink": "Networking/AzurePrivateLink.puml"
+  },
+  "Microsoft.Network/privateLinkHubs": {
+    "AzurePrivateLinkHub": "Networking/AzurePrivateLinkHub.puml"
+  },
+  "Microsoft.Network/privateLinkServices": {
+    "AzurePrivateLinkService": "Networking/AzurePrivateLinkService.puml"
+  },
+  "Microsoft.Network/publicIPAddresses": {
+    "AzurePublicIPAddress": "Networking/AzurePublicIPAddress.puml"
+  },
+  "Microsoft.ClassicNetwork/reservedIps": {
+    "AzurePublicIPAddressClassic": "Networking/AzurePublicIPAddressClassic.puml"
+  },
+  "Microsoft.Network/publicIPPrefixes": {
+    "AzurePublicIPPrefix": "Networking/AzurePublicIPPrefix.puml"
+  },
+  "Microsoft.Network/routeFilters": {
+    "AzureRouteFilter": "Networking/AzureRouteFilter.puml"
+  },
+  "Microsoft.Network/routeTables": {
+    "AzureRouteTable": "Networking/AzureRouteTable.puml"
+  },
+  "Microsoft.Network/serviceEndpointPolicies": {
+    "AzureServiceEndpointPolicy": "Networking/AzureServiceEndpointPolicy.puml"
+  },
+  "Microsoft.Network/virtualNetworks/subnets": {
+    "AzureSubnet": "Networking/AzureSubnet.puml"
+  },
+  "Microsoft.Network/trafficManagerProfiles": {
+    "AzureTrafficManager": "Networking/AzureTrafficManager.puml"
+  },
+  "Microsoft.Network/virtualNetworks": {
+    "AzureVirtualNetwork": "Networking/AzureVirtualNetwork.puml"
+  },
+  "Microsoft.Network/virtualNetworks/virtualNetworkPeerings": {
+    "AzureVirtualNetworkPeering": "Networking/AzureVirtualNetworkPeering.puml"
+  },
+  "Microsoft.Network/virtualWans": {
+    "AzureVirtualWAN": "Networking/AzureVirtualWAN.puml"
+  },
+  "Microsoft.Network/vpnGateways": {
+    "AzureVPNGateway": "Networking/AzureVPNGateway.puml"
+  },
+  "Microsoft.Network/ApplicationGatewayWebApplicationFirewallPolicies": {
+    "AzureWAFPolicies": "Networking/AzureWAFPolicies.puml"
+  },
+  "Microsoft.Authorization/roleAssignments": {
+    "AzureAccessControl": "Security/AzureAccessControl.puml"
+  },
+  "Microsoft.Network/applicationSecurityGroups": {
+    "AzureApplicationSecurityGroup": "Security/AzureApplicationSecurityGroup.puml"
+  },
+  "Microsoft.ManagedIdentity/conditionalAccess": {
+    "AzureConditionalAccess": "Security/AzureConditionalAccess.puml"
+  },
+  "Microsoft.Security/defenderForCloud": {
+    "AzureDefender": "Security/AzureDefender.puml"
+  },
+  "Microsoft.KeyVault/vaults": {
+    "AzureKeyVault": "Security/AzureKeyVault.puml"
+  },
+  "Microsoft.Security/securityCenter": {
+    "AzureSecurityCenter": "Security/AzureSecurityCenter.puml"
+  },
+  "Microsoft.SecurityInsights/alertRules": {
+    "AzureSentinel": "Security/AzureSentinel.puml"
+  },
+  "Microsoft.AzureStack/registrations": {
+    "AzureStack": "Stack/AzureStack.puml"
+  },
+  "Microsoft.AzureStack/registrations/customerSubscriptions": {
+    "AzureStackCapacity": "Stack/AzureStackCapacity.puml"
+  },
+  "Microsoft.AzureStack/registrations/products": {
+    "AzureStackInfrastructureBackup": "Stack/AzureStackInfrastructureBackup.puml"
+  },
+  "Microsoft.AzureStack/registrations/products/listDetails": {
+    "AzureStackMultiTenancy": "Stack/AzureStackMultiTenancy.puml"
+  },
+  "Microsoft.AzureStack/offers": {
+    "AzureStackOffer": "Stack/AzureStackOffer.puml"
+  },
+  "Microsoft.AzureStack/plans": {
+    "AzureStackPlan": "Stack/AzureStackPlan.puml"
+  },
+  "Microsoft.AzureStack/updates": {
+    "AzureStackUpdate": "Stack/AzureStackUpdate.puml"
+  },
+  "Microsoft.AzureStack/linkedSubscriptions": {
+    "AzureStackUserSubscription": "Stack/AzureStackUserSubscription.puml"
+  },
+  "Microsoft.Storage/storageAccounts/blobServices": {
+    "AzureBlobStorage": "Storage/AzureBlobStorage.puml"
+  },
+  "Microsoft.DataBox/jobs": {
+    "AzureDataBox": "Storage/AzureDataBox.puml"
+  },
+  "Microsoft.Storage/storageAccounts/datalakeStorage": {
+    "AzureDataLakeStorage": "Storage/AzureDataLakeStorage.puml"
+  },
+  "Microsoft.ClassicStorage/storageAccounts/disks": {
+    "AzureDiskStorageClassic": "Storage/AzureDiskStorageClassic.puml"
+  },
+  "Microsoft.Storage/storageAccounts/fileServices": {
+    "AzureFileStorage": "Storage/AzureFileStorage.puml"
+  },
+  "Microsoft.NetApp/netAppAccounts": {
+    "AzureNetAppFiles": "Storage/AzureNetAppFiles.puml"
+  },
+  "Microsoft.Storage/storageAccounts/queueServices": {
+    "AzureQueueStorage": "Storage/AzureQueueStorage.puml"
+  },
+  "Microsoft.Storage/storageAccounts": {
+    "AzureStorage": "Storage/AzureStorage.puml"
+  },
+  "Microsoft.ClassicStorage/storageAccounts": {
+    "AzureStorageClassic": "Storage/AzureStorageClassic.puml"
+  },
+  "Microsoft.Storage/storageAccounts/blobServices/containers": {
+    "AzureStorageContainer": "Storage/AzureStorageContainer.puml"
+  },
+  "Microsoft.StorSimple/managers": {
+    "AzureStorSimple": "Storage/AzureStorSimple.puml"
+  },
+  "Microsoft.Web/sites/config": {
+    "AzureAdvancedTools": "Web/AzureAdvancedTools.puml"
+  },
+  "Microsoft.ApiManagement/service": {
+    "AzureAPIManagement": "Web/AzureAPIManagement.puml"
+  },
+  "Microsoft.Web/certificates": {
+    "AzureAppServiceCertificate": "Web/AzureAppServiceCertificate.puml"
+  },
+  "Microsoft.DomainRegistration/domains": {
+    "AzureAppServiceDomain": "Web/AzureAppServiceDomain.puml"
+  },
+  "Microsoft.Cdn/profiles/endpoints": {
+    "AzureCDN": "Web/AzureCDN.puml"
+  },
+  "Microsoft.Web/sites/config/container": {
+    "AzureContainerSettings": "Web/AzureContainerSettings.puml"
+  },
+  "Microsoft.Web/sites/config/cors": {
+    "AzureCORS": "Web/AzureCORS.puml"
+  },
+  "Microsoft.Web/sites/config/publishingCredentials": {
+    "AzureDeploymentCredentials": "Web/AzureDeploymentCredentials.puml"
+  },
+  "Microsoft.Web/sites/logStream": {
+    "AzureLogStream": "Web/AzureLogStream.puml"
+  },
+  "Microsoft.Web/sites/config/appsettings": {
+    "AzureProperties": "Web/AzureProperties.puml"
+  },
+  "Microsoft.Web/quotas": {
+    "AzureQuota": "Web/AzureQuota.puml"
+  },
+  "Microsoft.Search/searchServices": {
+    "AzureSearch": "Web/AzureSearch.puml"
+  },
+  "Microsoft.SignalRService/SignalR": {
+    "AzureSignalRService": "Web/AzureSignalRService.puml"
+  },
+  "Microsoft.Web/sites": {
+    "AzureWebApp": "Web/AzureWebApp.puml"
+  }
+}

@@ -1,0 +1,79 @@
+name: Generate PlantUML Diagrams
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - '**.puml'
+      - '**.plantuml'
+  workflow_dispatch:
+
+jobs:
+  generate-diagrams:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Setup Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '11'
+    
+    - name: Download PlantUML
+      run: |
+        curl -L -o plantuml.jar https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar
+    
+    - name: Create output directory
+      run: mkdir -p diagrams
+    
+    - name: Generate PNG diagrams
+      run: |
+        find . -name "*.puml" -o -name "*.plantuml" | while read file; do
+          echo "Processing $file"
+          base_name=$(basename "$file" | sed 's/\.[^.]*$//')
+          java -jar plantuml.jar -tpng "$file" -o "$(pwd)/diagrams"
+          # Rename the output file to include the base name if needed
+          if [ -f "diagrams/$(basename "$file" | sed 's/\.[^.]*$//')".png ]; then
+            echo "Generated: diagrams/${base_name}.png"
+          fi
+        done
+    
+    - name: Generate SVG diagrams
+      run: |
+        find . -name "*.puml" -o -name "*.plantuml" | while read file; do
+          echo "Processing $file for SVG"
+          base_name=$(basename "$file" | sed 's/\.[^.]*$//')
+          java -jar plantuml.jar -tsvg "$file" -o "$(pwd)/diagrams"
+          if [ -f "diagrams/$(basename "$file" | sed 's/\.[^.]*$//')".svg ]; then
+            echo "Generated: diagrams/${base_name}.svg"
+          fi
+        done
+    
+    - name: List generated files
+      run: ls -la diagrams/
+    
+    - name: Commit generated diagrams
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add diagrams/
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Auto-generate PlantUML diagrams [skip ci]"
+          git push
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Upload diagrams as artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: plantuml-diagrams
+        path: diagrams/
+        retention-days: 30
