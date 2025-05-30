@@ -1,0 +1,34 @@
+Dynamic Diagram Switching in Confluence
+Method 1: Tab Macro Approach (Recommended)
+This is the most user-friendly approach using Confluence's built-in Tab macro:
+{tabs}
+{tab:title=Overview}
+![Architecture Overview](diagrams/architecture-overview.svg)
+
+**System Overview**
+This diagram shows the high-level architecture of our system including:
+- Main components
+- Data flow
+- External integrations
+{tab}
+
+{tab:title=Detailed View}
+![Architecture Detailed](diagrams/architecture-detailed.svg)
+
+**Detailed Architecture**
+This detailed view includes:
+- Internal component structure
+- Database schemas
+- API endpoints
+{tab}
+
+{tab:title=Deployment}
+![Deployment Diagram](diagrams/deployment-diagram.svg)
+
+**Deployment Architecture**
+Shows how components are deployed across:
+- Development environment
+- Staging environment  
+- Production environment
+{tab}
+{tabs}
