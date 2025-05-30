@@ -1,4 +1,9 @@
-name: Generate PlantUML Diagrams
+name: Generate PlantUML 
+
+permissions:
+    actions: write
+    pull-requests: write
+    contents: write
 
 on:
   push:
@@ -6,6 +11,7 @@ on:
     paths:
       - '**.puml'
       - '**.plantuml'
+
   workflow_dispatch:
 
 jobs:
