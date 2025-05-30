@@ -1,5 +1,5 @@
 # Variable
-$outputFile = "$((Get-item -Path ".\architectureDesign\PUML").FullName)\AzureHierarchy.puml"
+$outputFile = "$((Get-item -Path ".\architectureDesign\PUML").FullName)\subscriptionAzureHierarchy.puml"
 $SubscriptionName = "KLP LZ SRE playground Sandbox"
 
 if (Test-Path -Path $outputFile) { Remove-Item -Path $outputFile | Out-Null }
@@ -46,8 +46,31 @@ foreach ($resourceGroup in $resourceGroups) {
     $rel.replace("''", """") | Out-File -FilePath $outputFile -Append -Encoding utf8
     "" | Out-File -FilePath $outputFile -Append -Encoding utf8
 
+    "LAYOUT_WITH_LEGEND()" | Out-File -FilePath $outputFile -Append -Encoding utf8
+    "@enduml" | Out-File -FilePath $outputFile -Append -Encoding utf8
+
     $resources = Get-AzResource -ResourceGroupName $rgLabel
     foreach ($resource in $resources) {
+        if ($resource.Name -like "*/*") {
+            $splitResourceName = $resource.Name -split "/"
+            $outputFile = "$((Get-item -Path ".\architectureDesign\PUML").FullName)\$($splitResourceName[1])AzureHierarchy.puml"
+            if (Test-Path -Path $outputFile) { Remove-Item -Path $outputFile | Out-Null }
+        }
+        else {
+            $outputFile = "$((Get-item -Path ".\architectureDesign\PUML").FullName)\$($resource.Name)AzureHierarchy.puml"
+            if (Test-Path -Path $outputFile) { Remove-Item -Path $outputFile | Out-Null }
+        }
+
+        "@startuml" | Out-File -FilePath $outputFile -Encoding utf8
+        "!pragma revision 1" | Out-File -FilePath $outputFile -Append -Encoding utf8
+        "" | Out-File -FilePath $outputFile -Append -Encoding utf8
+        "!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml" | Out-File -FilePath $outputFile -Append -Encoding utf8
+        "" | Out-File -FilePath $outputFile -Append -Encoding utf8
+        "!define AzurePuml https://raw.githubusercontent.com/plantuml-stdlib/Azure-PlantUML/master/dist" | Out-File -FilePath $outputFile -Append -Encoding utf8
+        "!includeurl AzurePuml/AzureCommon.puml" | Out-File -FilePath $outputFile -Append -Encoding utf8
+        "!includeurl AzurePuml/AzureC4Integration.puml" | Out-File -FilePath $outputFile -Append -Encoding utf8
+        "!includeurl AzurePuml/Management/AzureResourceGroups.puml" | Out-File -FilePath $outputFile -Append -Encoding utf8
+
         $resourceLabel = $resource.Name
         $resourceLabel_ = $resourceLabel.replace("-", "_")
         $resourceLabel_ = $resourceLabel_.replace(" ", "_")
@@ -66,11 +89,10 @@ foreach ($resourceGroup in $resourceGroups) {
             "" | Out-File -FilePath $outputFile -Append -Encoding utf8
         }
 
-        #"***[#Lightgreen] $resourceLabel : $resourceLabelType" | Out-File -FilePath $outputFile -Append -Encoding utf8
+        "LAYOUT_WITH_LEGEND()" | Out-File -FilePath $outputFile -Append -Encoding utf8
+        "@enduml" | Out-File -FilePath $outputFile -Append -Encoding utf8
     }
 
 }
 
-"LAYOUT_WITH_LEGEND()" | Out-File -FilePath $outputFile -Append -Encoding utf8
-"@enduml" | Out-File -FilePath $outputFile -Append -Encoding utf8
 Write-Host "Azure-PlantUML is completed for AzureHierarchy.puml"
