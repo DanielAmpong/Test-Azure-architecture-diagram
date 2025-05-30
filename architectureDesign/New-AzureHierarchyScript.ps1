@@ -46,20 +46,20 @@ foreach ($resourceGroup in $resourceGroups) {
     $rel.replace("''", """") | Out-File -FilePath $outputFile -Append -Encoding utf8
     "" | Out-File -FilePath $outputFile -Append -Encoding utf8
 
-    "LAYOUT_WITH_LEGEND()" | Out-File -FilePath $outputFile -Append -Encoding utf8
-    "@enduml" | Out-File -FilePath $outputFile -Append -Encoding utf8
+}
 
-    $resources = Get-AzResource -ResourceGroupName $rgLabel
+"LAYOUT_WITH_LEGEND()" | Out-File -FilePath $outputFile -Append -Encoding utf8
+"@enduml" | Out-File -FilePath $outputFile -Append -Encoding utf8
+
+$resourceGroupNames = (Get-AzResourceGroup).ResourceGroupName
+foreach ($resourceGroupName in $resourceGroupNames) {
+
+    $resources = Get-AzResource -ResourceGroupName $resourceGroupName
     foreach ($resource in $resources) {
-        if ($resource.Name -like "*/*") {
-            $splitResourceName = $resource.Name -split "/"
-            $outputFile = "$((Get-item -Path ".\architectureDesign\PUML").FullName)\$($splitResourceName[1])AzureHierarchy.puml"
-            if (Test-Path -Path $outputFile) { Remove-Item -Path $outputFile | Out-Null }
-        }
-        else {
-            $outputFile = "$((Get-item -Path ".\architectureDesign\PUML").FullName)\$($resource.Name)AzureHierarchy.puml"
-            if (Test-Path -Path $outputFile) { Remove-Item -Path $outputFile | Out-Null }
-        }
+        
+        $outputFile = "$((Get-item -Path ".\architectureDesign\PUML").FullName)\$($resourceGroupName)AzureHierarchy.puml"
+        if (Test-Path -Path $outputFile) { Remove-Item -Path $outputFile | Out-Null }
+
 
         "@startuml" | Out-File -FilePath $outputFile -Encoding utf8
         "!pragma revision 1" | Out-File -FilePath $outputFile -Append -Encoding utf8
@@ -70,6 +70,12 @@ foreach ($resourceGroup in $resourceGroups) {
         "!includeurl AzurePuml/AzureCommon.puml" | Out-File -FilePath $outputFile -Append -Encoding utf8
         "!includeurl AzurePuml/AzureC4Integration.puml" | Out-File -FilePath $outputFile -Append -Encoding utf8
         "!includeurl AzurePuml/Management/AzureResourceGroups.puml" | Out-File -FilePath $outputFile -Append -Encoding utf8
+
+        $rgLabel = $resourceGroupName
+        $rgLabel_ = $rgLabel.replace("-", "_")
+        $rgLabel_ = $rgLabel_.replace(" ", "_") 
+        $rgLevel = "AzureResourceGroups($rgLabel_, '$rgLabel', 'Azure Resource Group')" 
+        $rgLevel.replace("''", """") | Out-File -FilePath $outputFile -Append -Encoding utf8
 
         $resourceLabel = $resource.Name
         $resourceLabel_ = $resourceLabel.replace("-", "_")
