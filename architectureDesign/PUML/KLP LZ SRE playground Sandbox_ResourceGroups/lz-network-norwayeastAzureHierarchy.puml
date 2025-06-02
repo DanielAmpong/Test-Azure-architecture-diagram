@@ -1,0 +1,42 @@
+@startuml
+!pragma revision 1
+
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+!define AzurePuml https://raw.githubusercontent.com/plantuml-stdlib/Azure-PlantUML/master/dist
+!includeurl AzurePuml/AzureCommon.puml
+!includeurl AzurePuml/AzureC4Integration.puml
+!includeurl AzurePuml/Management/AzureResourceGroups.puml
+
+AzureResourceGroups(lz_network_norwayeast, 'lz-network-norwayeast', 'Azure Resource Group')
+
+!includeurl AzurePuml/Networking/AzureVirtualNetwork.puml
+AzureVirtualNetwork(lz_network_norwayeast_vnet, 'lz-network-norwayeast-vnet', 'Microsoft.Network/virtualNetworks')
+Rel(lz_network_norwayeast, lz_network_norwayeast_vnet, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Networking/AzureNSG.puml
+AzureNSG(lz_network_norwayeast_vnet_dna_test_1_nsg, 'lz-network-norwayeast-vnet-dna-test-1-nsg', 'Microsoft.Network/networkSecurityGroups')
+Rel(lz_network_norwayeast, lz_network_norwayeast_vnet_dna_test_1_nsg, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Networking/AzureNSG.puml
+AzureNSG(lz_network_norwayeast_vnet_maksym_maintenanceconfig_nsg, 'lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg', 'Microsoft.Network/networkSecurityGroups')
+Rel(lz_network_norwayeast, lz_network_norwayeast_vnet_maksym_maintenanceconfig_nsg, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Networking/AzureNSG.puml
+AzureNSG(lz_network_norwayeast_vnet_adds_test_nsg, 'lz-network-norwayeast-vnet-adds-test-nsg', 'Microsoft.Network/networkSecurityGroups')
+Rel(lz_network_norwayeast, lz_network_norwayeast_vnet_adds_test_nsg, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Networking/AzurePublicIPAddress.puml
+AzurePublicIPAddress(lz_network_norwayeast_vnet_ip, 'lz-network-norwayeast-vnet-ip', 'Microsoft.Network/publicIPAddresses')
+Rel(lz_network_norwayeast, lz_network_norwayeast_vnet_ip, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Networking/AzureBastion.puml
+AzureBastion(lz_network_norwayeast_vnet_bastion, 'lz-network-norwayeast-vnet-bastion', 'Microsoft.Network/bastionHosts')
+Rel(lz_network_norwayeast, lz_network_norwayeast_vnet_bastion, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Networking/AzureNSG.puml
+AzureNSG(lz_network_norwayeast_vnet_default_nsg, 'lz-network-norwayeast-vnet-default-nsg', 'Microsoft.Network/networkSecurityGroups')
+Rel(lz_network_norwayeast, lz_network_norwayeast_vnet_default_nsg, 'Uses', 'Resource' )
+
+LAYOUT_WITH_LEGEND()
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+!pragma revision 1
+
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+!define AzurePuml https://raw.githubusercontent.com/plantuml-stdlib/Azure-PlantUML/master/dist
+!includeurl AzurePuml/AzureCommon.puml
+!includeurl AzurePuml/AzureC4Integration.puml
+!includeurl AzurePuml/Management/AzureResourceGroups.puml
+
+AzureResourceGroups(maksym_maintenanceConfig, 'maksym-maintenanceConfig', 'Azure Resource Group')
+
+!includeurl AzurePuml/Networking/AzureVirtualNetwork.puml
+AzureVirtualNetwork(maksym_maintenanceconfig_vnet, 'maksym-maintenanceconfig-vnet', 'Microsoft.Network/virtualNetworks')
+Rel(maksym_maintenanceConfig, maksym_maintenanceconfig_vnet, 'Uses', 'Resource' )
+
+LAYOUT_WITH_LEGEND()
+@enduml
