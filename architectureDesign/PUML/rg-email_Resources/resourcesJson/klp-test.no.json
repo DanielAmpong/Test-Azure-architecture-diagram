@@ -1,0 +1,52 @@
+{
+  "provisioningState": "Succeeded",
+  "dataLocation": "norway",
+  "userEngagementTracking": "Disabled",
+  "mailFromSenderDomain": "klp-test.no",
+  "verificationRecords": {
+    "Domain": {
+      "name": "klp-test.no",
+      "type": "TXT",
+      "value": "ms-domain-verification=c37fd847-ec16-4e6e-831c-48f8e8e17e65",
+      "ttl": 3600
+    },
+    "DKIM2": {
+      "name": "selector2-azurecomm-prod-net._domainkey",
+      "type": "CNAME",
+      "value": "selector2-azurecomm-prod-net._domainkey.azurecomm.net",
+      "ttl": 3600
+    },
+    "DKIM": {
+      "name": "selector1-azurecomm-prod-net._domainkey",
+      "type": "CNAME",
+      "value": "selector1-azurecomm-prod-net._domainkey.azurecomm.net",
+      "ttl": 3600
+    },
+    "SPF": {
+      "name": "klp-test.no",
+      "type": "TXT",
+      "value": "v=spf1 include:spf.protection.outlook.com -all",
+      "ttl": 3600
+    }
+  },
+  "verificationStates": {
+    "Domain": {
+      "status": "VerificationFailed",
+      "errorCode": "DnsRecordsNotMatched"
+    },
+    "DKIM2": {
+      "status": "NotStarted"
+    },
+    "DKIM": {
+      "status": "NotStarted"
+    },
+    "SPF": {
+      "status": "NotStarted"
+    },
+    "DMARC": {
+      "status": "NotStarted"
+    }
+  },
+  "fromSenderDomain": "klp-test.no",
+  "domainManagement": "CustomerManaged"
+}

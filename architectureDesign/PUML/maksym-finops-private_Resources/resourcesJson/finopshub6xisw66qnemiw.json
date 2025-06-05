@@ -1,0 +1,94 @@
+{
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Enabled",
+  "privateEndpointConnections": [
+    {
+      "properties": {
+        "provisioningState": "Succeeded",
+        "privateLinkServiceConnectionState": {
+          "description": "Auto-Approved",
+          "status": "Approved",
+          "actionRequired": "None"
+        },
+        "privateEndpoint": {
+          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Network/privateEndpoints/finopshub6xisw66qnemiw-blob-ep"
+        }
+      },
+      "name": "finopshub6xisw66qnemiw.979e699e-eb2a-43a7-91df-bea87d1b0e57",
+      "type": "Microsoft.Storage/storageAccounts/privateEndpointConnections",
+      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Storage/storageAccounts/finopshub6xisw66qnemiw/privateEndpointConnections/finopshub6xisw66qnemiw.979e699e-eb2a-43a7-91df-bea87d1b0e57"
+    },
+    {
+      "properties": {
+        "provisioningState": "Succeeded",
+        "privateLinkServiceConnectionState": {
+          "description": "Auto-Approved",
+          "status": "Approved",
+          "actionRequired": "None"
+        },
+        "privateEndpoint": {
+          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Network/privateEndpoints/finopshub6xisw66qnemiw-dfs-ep"
+        }
+      },
+      "name": "finopshub6xisw66qnemiw.7acd69d9-489e-48be-9719-80e4ccda7721",
+      "type": "Microsoft.Storage/storageAccounts/privateEndpointConnections",
+      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Storage/storageAccounts/finopshub6xisw66qnemiw/privateEndpointConnections/finopshub6xisw66qnemiw.7acd69d9-489e-48be-9719-80e4ccda7721"
+    },
+    {
+      "properties": {
+        "provisioningState": "Succeeded",
+        "privateLinkServiceConnectionState": {
+          "description": "Requested by DataFactory:finopshub-engine-6xisw66qnemiw, Name:finopshub6xisw66qnemiw",
+          "status": "Pending",
+          "actionRequired": "None"
+        },
+        "privateEndpoint": {
+          "id": "/subscriptions/1b5ab6d2-a8ac-4bf5-bd65-32fa94881a8a/resourceGroups/vnet-1b5ab6d2-norwayeast-85-rg/providers/Microsoft.Network/privateEndpoints/finopshub-engine-6xisw66qnemiw.finopshub6xisw66qnemiw"
+        }
+      },
+      "name": "finopshub6xisw66qnemiw.9e0d298e-9d67-4fc9-ba4a-881f4feece18",
+      "type": "Microsoft.Storage/storageAccounts/privateEndpointConnections",
+      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Storage/storageAccounts/finopshub6xisw66qnemiw/privateEndpointConnections/finopshub6xisw66qnemiw.9e0d298e-9d67-4fc9-ba4a-881f4feece18"
+    }
+  ],
+  "encryption": {
+    "keySource": "Microsoft.Storage",
+    "services": {
+      "blob": {
+        "enabled": true,
+        "lastEnabledTime": "2025-06-05T09:59:36.7352978Z",
+        "keyType": "Account"
+      },
+      "file": {
+        "enabled": true,
+        "lastEnabledTime": "2025-06-05T09:59:36.7352978Z",
+        "keyType": "Account"
+      }
+    }
+  },
+  "supportsHttpsTrafficOnly": true,
+  "allowBlobPublicAccess": false,
+  "minimumTlsVersion": "TLS1_2",
+  "primaryEndpoints": {
+    "blob": "https://finopshub6xisw66qnemiw.blob.core.windows.net/",
+    "web": "https://finopshub6xisw66qnemiw.z1.web.core.windows.net/",
+    "dfs": "https://finopshub6xisw66qnemiw.dfs.core.windows.net/"
+  },
+  "allowCrossTenantReplication": false,
+  "keyCreationTime": {
+    "key2": "2025-06-05T09:59:36.719623Z",
+    "key1": "2025-06-05T09:59:36.719623Z"
+  },
+  "statusOfPrimary": "available",
+  "primaryLocation": "norwayeast",
+  "creationTime": "2025-06-05T09:59:36.6414969Z",
+  "networkAcls": {
+    "virtualNetworkRules": [],
+    "defaultAction": "Deny",
+    "ipv6Rules": [],
+    "ipRules": [],
+    "bypass": "AzureServices"
+  },
+  "allowSharedKeyAccess": true,
+  "isHnsEnabled": true
+}

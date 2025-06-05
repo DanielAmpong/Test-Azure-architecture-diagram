@@ -1,0 +1,23 @@
+[
+  {
+    "provisioningState": "Succeeded",
+    "type": "BGInfo",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "2.1",
+    "publisher": "Microsoft.Compute"
+  },
+  {
+    "provisioningState": "Succeeded",
+    "type": "BGInfo",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "2.1",
+    "publisher": "Microsoft.Compute"
+  },
+  {
+    "provisioningState": "Succeeded",
+    "type": "BGInfo",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "2.1",
+    "publisher": "Microsoft.Compute"
+  }
+]

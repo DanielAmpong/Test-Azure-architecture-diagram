@@ -1,0 +1,20 @@
+{
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Enabled",
+  "networkAccessPolicy": "AllowAll",
+  "timeCreated": "2024-11-28T11:00:13.5618557Z",
+  "diskSizeGB": 100,
+  "encryption": {
+    "type": "EncryptionAtRestWithPlatformKey"
+  },
+  "diskSizeBytes": 107374182400,
+  "creationData": {
+    "createOption": "Restore",
+    "sourceResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/AzureBackupRG_norwayeast_1/providers/Microsoft.Compute/restorePointCollections/AzureBackup_t-bjs1-win1_7566064967228651926/restorePoints/AzureBackup_20241125_090522/disks/t-bjs1-win1-datadisk1?id=1f7ae7ba-156b-4f49-8b5c-3bacf6139957"
+  },
+  "diskState": "Reserved",
+  "LastOwnershipUpdateTime": "2025-05-07T08:13:17.7075633Z",
+  "uniqueId": "6841f596-4183-482d-8cb5-d89daad776ae",
+  "diskIOPSReadWrite": 500,
+  "diskMBpsReadWrite": 100
+}

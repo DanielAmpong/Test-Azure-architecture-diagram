@@ -1,0 +1,23 @@
+[
+  {
+    "provisioningState": "Succeeded",
+    "type": "NetworkWatcherAgentWindows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.4",
+    "publisher": "Microsoft.Azure.NetworkWatcher"
+  },
+  {
+    "provisioningState": "Succeeded",
+    "type": "NetworkWatcherAgentWindows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.4",
+    "publisher": "Microsoft.Azure.NetworkWatcher"
+  },
+  {
+    "provisioningState": "Succeeded",
+    "type": "NetworkWatcherAgentWindows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.4",
+    "publisher": "Microsoft.Azure.NetworkWatcher"
+  }
+]

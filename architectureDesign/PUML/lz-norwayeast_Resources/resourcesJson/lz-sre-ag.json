@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "automationRunbookReceivers": [],
+  "azureFunctionReceivers": [],
+  "azureAppPushReceivers": [],
+  "logicAppReceivers": [],
+  "eventHubReceivers": [],
+  "webhookReceivers": [],
+  "armRoleReceivers": [],
+  "groupShortName": "lz-sre-ag",
+  "emailReceivers": [
+    {
+      "name": "SRE-Team@klp.no",
+      "status": "Enabled",
+      "useCommonAlertSchema": false,
+      "emailAddress": "SRE-Team@klp.no"
+    }
+  ],
+  "voiceReceivers": [],
+  "itsmReceivers": [],
+  "smsReceivers": []
+}

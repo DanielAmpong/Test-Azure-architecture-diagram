@@ -1,0 +1,52 @@
+{
+  "provisioningState": "Succeeded",
+  "enableAcceleratedNetworking": false,
+  "resourceGuid": "cee0d5fc-1b71-4367-8c36-66ba12e5f129",
+  "defaultOutboundConnectivityEnabled": false,
+  "disableTcpStateTracking": false,
+  "vnetEncryptionSupported": false,
+  "ipConfigurations": [
+    {
+      "properties": {
+        "provisioningState": "Succeeded",
+        "privateIPAddressVersion": "IPv4",
+        "privateIPAllocationMethod": "Dynamic",
+        "privateIPAddress": "172.16.0.5",
+        "primary": true,
+        "subnet": {
+          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/virtualNetworks/vnet-norwayeast/subnets/snet-norwayeast-1"
+        },
+        "publicIPAddress": {
+          "properties": {
+            "deleteOption": "Delete"
+          },
+          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/publicIPAddresses/publicIp-vnet-norwayeast-nic01-ebe7168c"
+        }
+      },
+      "name": "vnet-norwayeast-nic01-defaultIpConfiguration",
+      "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
+      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkInterfaces/vnet-norwayeast-nic01-ebe7168c/ipConfigurations/vnet-norwayeast-nic01-defaultIpConfiguration",
+      "etag": "W/\"64a05381-7286-41bc-a01e-2d2e6a1a8460\""
+    }
+  ],
+  "enableIPForwarding": false,
+  "tapConfigurations": [],
+  "primary": true,
+  "hostedWorkloads": [],
+  "allowPort25Out": true,
+  "auxiliaryMode": "None",
+  "dnsSettings": {
+    "appliedDnsServers": [],
+    "dnsServers": []
+  },
+  "auxiliarySku": "None",
+  "macAddress": "00-22-48-DC-7C-52",
+  "virtualMachine": {
+    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Compute/virtualMachines/bjsScaleset1_ff6a1be6"
+  },
+  "networkSecurityGroup": {
+    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkSecurityGroups/basicNsgvnet-norwayeast-nic01"
+  },
+  "nicType": "Standard",
+  "defaultOutboundAccess": false
+}

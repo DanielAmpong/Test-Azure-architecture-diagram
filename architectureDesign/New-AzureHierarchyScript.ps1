@@ -110,9 +110,15 @@ foreach ($resourceGroupName in $resourceGroupNames) {
         }
 
     
-        if (!(Test-Path -Path "architectureDesign\PUML\$($subscription.Name)_ResourceGroups\resourceJson")) {
+        if (!(Test-Path -Path "architectureDesign\PUML\$($resourceGroupName)_Resources")) {
     
-            New-Item -Path "$((Get-item -path "architectureDesign\PUML\$($subscription.Name)_ResourceGroups").FullName)" -Name "resourceJson" -ItemType Directory | Out-Null
+            New-Item -Path "$((Get-item -path "architectureDesign\PUML").FullName)" -Name "$($resourceGroupName)_Resources" -ItemType Directory | Out-Null
+        
+        }
+
+        if (!(Test-Path -Path "architectureDesign\PUML\$($resourceGroupName)_Resources\resourcesJson")) {
+    
+            New-Item -Path "$((Get-item -path "architectureDesign\PUML\$($resourceGroupName)_Resources").FullName)" -Name "resourcesJson" -ItemType Directory | Out-Null
         
         }
         
@@ -128,9 +134,24 @@ resources
             $propertiesJson = $azureResourceGraph.properties | ConvertTo-Json -Depth 30
     
 
-            $resourceOutputFile = "$((Get-item -Path ".\architectureDesign\PUML\$($subscription.Name)_ResourceGroups\resourceJson").FullName)\$($splitResourceLabel[1]).json"
+            $resourceOutputFile = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources\resourcesJson").FullName)\$($splitResourceLabel[1]).json"
             if (Test-Path -Path $resourceOutputFile) { Remove-Item -Path $resourceOutputFile | Out-Null }
             $propertiesJson | Out-File -FilePath $resourceOutputFile -Append -Encoding utf8
+
+            $resourceOutputFolder = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources").FullName)\$($splitResourceLabel[1]).puml"
+            if (Test-Path -Path $resourceOutputFolder) { Remove-Item -Path $resourceOutputFolder | Out-Null }
+
+            "@startuml" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
+            "" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
+            "title Resources Display - Component Diagram" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
+            "" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
+            "component Component {" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
+            "" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
+            "json  Resource_Properties $($ct)" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
+            "}" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
+            "@enduml" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
+
+
         }
         else {
             $query = @"
@@ -142,9 +163,22 @@ resources
             $azureResourceGraph = Search-AzGraph -Query $query -Subscription $subscription.Id
             $propertiesJson = $azureResourceGraph.properties | ConvertTo-Json -Depth 30
     
-            $resourceOutputFile = "$((Get-item -Path ".\architectureDesign\PUML\$($subscription.Name)_ResourceGroups\resourceJson").FullName)\$($resourceLabel).json"
+            $resourceOutputFile = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources\resourcesJson").FullName)\$($resourceLabel).json"
             if (Test-Path -Path $resourceOutputFile) { Remove-Item -Path $resourceOutputFile | Out-Null }
             $propertiesJson | Out-File -FilePath $resourceOutputFile -Append -Encoding utf8
+
+            $resourceOutputFolder = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources").FullName)\$($resourceLabel).puml"
+            if (Test-Path -Path $resourceOutputFolder) { Remove-Item -Path $resourceOutputFolder | Out-Null }
+
+            "@startuml" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
+            "" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
+            "title Resources Display - Component Diagram" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
+            "" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
+            "component Component {" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
+            "" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
+            "json  Resource_Properties $($ct)" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
+            "}" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
+            "@enduml" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
         }
 
         

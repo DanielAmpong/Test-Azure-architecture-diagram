@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "automationRunbookReceivers": [],
+  "azureFunctionReceivers": [],
+  "azureAppPushReceivers": [],
+  "logicAppReceivers": [],
+  "eventHubReceivers": [],
+  "webhookReceivers": [],
+  "armRoleReceivers": [],
+  "emailReceivers": [
+    {
+      "name": "cyberwarriors@klp.no",
+      "status": "Enabled",
+      "useCommonAlertSchema": false,
+      "emailAddress": "cyberwarriors@klp.no"
+    }
+  ],
+  "groupShortName": "lz-sec-ag",
+  "voiceReceivers": [],
+  "itsmReceivers": [],
+  "smsReceivers": []
+}

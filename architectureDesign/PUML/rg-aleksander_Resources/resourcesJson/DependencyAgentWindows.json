@@ -1,0 +1,35 @@
+[
+  {
+    "provisioningState": "Succeeded",
+    "type": "DependencyAgentWindows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "9.6",
+    "enableAutomaticUpgrade": true,
+    "publisher": "Microsoft.Azure.Monitoring.DependencyAgent",
+    "settings": {
+      "enableAMA": "true"
+    }
+  },
+  {
+    "provisioningState": "Succeeded",
+    "type": "DependencyAgentWindows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "9.6",
+    "enableAutomaticUpgrade": true,
+    "publisher": "Microsoft.Azure.Monitoring.DependencyAgent",
+    "settings": {
+      "enableAMA": "true"
+    }
+  },
+  {
+    "provisioningState": "Succeeded",
+    "type": "DependencyAgentWindows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "9.6",
+    "enableAutomaticUpgrade": true,
+    "publisher": "Microsoft.Azure.Monitoring.DependencyAgent",
+    "settings": {
+      "enableAMA": "true"
+    }
+  }
+]
