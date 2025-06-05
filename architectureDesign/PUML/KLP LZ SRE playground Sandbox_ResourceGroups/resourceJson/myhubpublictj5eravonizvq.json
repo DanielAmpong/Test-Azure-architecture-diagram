@@ -1,0 +1,45 @@
+{
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Enabled",
+  "encryption": {
+    "keySource": "Microsoft.Storage",
+    "services": {
+      "blob": {
+        "enabled": true,
+        "lastEnabledTime": "2025-04-11T15:45:39.1651584Z",
+        "keyType": "Account"
+      },
+      "file": {
+        "enabled": true,
+        "lastEnabledTime": "2025-04-11T15:45:39.1651584Z",
+        "keyType": "Account"
+      }
+    }
+  },
+  "privateEndpointConnections": [],
+  "supportsHttpsTrafficOnly": true,
+  "allowBlobPublicAccess": false,
+  "minimumTlsVersion": "TLS1_2",
+  "allowCrossTenantReplication": false,
+  "primaryEndpoints": {
+    "blob": "https://myhubpublictj5eravonizvq.blob.core.windows.net/",
+    "web": "https://myhubpublictj5eravonizvq.z1.web.core.windows.net/",
+    "dfs": "https://myhubpublictj5eravonizvq.dfs.core.windows.net/"
+  },
+  "primaryLocation": "norwayeast",
+  "keyCreationTime": {
+    "key2": "2025-04-11T15:45:39.1495327Z",
+    "key1": "2025-04-11T15:45:39.1495327Z"
+  },
+  "statusOfPrimary": "available",
+  "creationTime": "2025-04-11T15:45:39.0870457Z",
+  "networkAcls": {
+    "virtualNetworkRules": [],
+    "defaultAction": "Allow",
+    "ipv6Rules": [],
+    "ipRules": [],
+    "bypass": "AzureServices"
+  },
+  "allowSharedKeyAccess": true,
+  "isHnsEnabled": true
+}

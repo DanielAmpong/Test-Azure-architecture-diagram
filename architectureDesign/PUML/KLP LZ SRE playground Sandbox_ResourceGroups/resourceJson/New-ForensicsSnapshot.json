@@ -1,0 +1,35 @@
+{
+  "provisioningState": "Succeeded",
+  "description": null,
+  "state": "Published",
+  "creationTime": "2025-04-08T11:50:13.6366667Z",
+  "parameters": {
+    "ResourceGroupName": {
+      "type": "System.String",
+      "position": 0,
+      "defaultValue": null,
+      "isMandatory": true
+    },
+    "SubscriptionName": {
+      "type": "System.String",
+      "position": 2,
+      "defaultValue": null,
+      "isMandatory": true
+    },
+    "VirtualMachineNames": {
+      "type": "System.String",
+      "position": 1,
+      "defaultValue": null,
+      "isMandatory": true
+    }
+  },
+  "lastModifiedTime": "2025-04-09T20:34:19.6433333Z",
+  "serviceManagementTags": null,
+  "lastModifiedBy": null,
+  "logActivityTrace": 0,
+  "outputTypes": [],
+  "runbookType": "PowerShell72",
+  "logProgress": false,
+  "logVerbose": false,
+  "jobCount": 0
+}

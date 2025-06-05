@@ -1,0 +1,19 @@
+{
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Enabled",
+  "networkAccessPolicy": "AllowAll",
+  "timeCreated": "2024-12-07T10:08:28.1161501Z",
+  "diskSizeGB": 100,
+  "encryption": {
+    "type": "EncryptionAtRestWithPlatformKey"
+  },
+  "diskSizeBytes": 107374182400,
+  "creationData": {
+    "createOption": "Empty"
+  },
+  "LastOwnershipUpdateTime": "2024-12-07T10:08:52.6789836Z",
+  "diskState": "Attached",
+  "uniqueId": "2afc34f1-2535-4dfc-8bc1-65c7189f40bc",
+  "diskMBpsReadWrite": 100,
+  "diskIOPSReadWrite": 500
+}

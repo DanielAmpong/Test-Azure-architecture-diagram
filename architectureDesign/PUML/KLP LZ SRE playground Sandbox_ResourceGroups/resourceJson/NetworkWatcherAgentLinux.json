@@ -1,0 +1,7 @@
+{
+  "provisioningState": "Succeeded",
+  "type": "NetworkWatcherAgentLinux",
+  "autoUpgradeMinorVersion": true,
+  "typeHandlerVersion": "1.4",
+  "publisher": "Microsoft.Azure.NetworkWatcher"
+}

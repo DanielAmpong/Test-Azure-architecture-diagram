@@ -1,0 +1,61 @@
+{
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Enabled",
+  "encryption": {
+    "keySource": "Microsoft.Storage",
+    "services": {
+      "blob": {
+        "enabled": true,
+        "lastEnabledTime": "2024-12-03T11:53:31.4331991Z",
+        "keyType": "Account"
+      },
+      "file": {
+        "enabled": true,
+        "lastEnabledTime": "2024-12-03T11:53:31.4331991Z",
+        "keyType": "Account"
+      }
+    },
+    "requireInfrastructureEncryption": false
+  },
+  "privateEndpointConnections": [],
+  "supportsHttpsTrafficOnly": true,
+  "allowBlobPublicAccess": false,
+  "minimumTlsVersion": "TLS1_2",
+  "primaryEndpoints": {
+    "blob": "https://sandboxbcptest.blob.core.windows.net/",
+    "file": "https://sandboxbcptest.file.core.windows.net/",
+    "table": "https://sandboxbcptest.table.core.windows.net/",
+    "queue": "https://sandboxbcptest.queue.core.windows.net/",
+    "web": "https://sandboxbcptest.z1.web.core.windows.net/",
+    "dfs": "https://sandboxbcptest.dfs.core.windows.net/"
+  },
+  "primaryLocation": "norwayeast",
+  "statusOfPrimary": "available",
+  "keyCreationTime": {
+    "key2": "2024-12-03T11:53:31.0112682Z",
+    "key1": "2024-12-03T11:53:31.0112682Z"
+  },
+  "allowCrossTenantReplication": false,
+  "creationTime": "2024-12-03T11:53:30.9644485Z",
+  "networkAcls": {
+    "virtualNetworkRules": [],
+    "defaultAction": "Allow",
+    "ipv6Rules": [],
+    "ipRules": [],
+    "bypass": "AzureServices"
+  },
+  "allowSharedKeyAccess": true,
+  "accessTier": "Hot",
+  "defaultToOAuthAuthentication": false,
+  "statusOfSecondary": "available",
+  "secondaryLocation": "norwaywest",
+  "secondaryEndpoints": {
+    "blob": "https://sandboxbcptest-secondary.blob.core.windows.net/",
+    "table": "https://sandboxbcptest-secondary.table.core.windows.net/",
+    "queue": "https://sandboxbcptest-secondary.queue.core.windows.net/",
+    "web": "https://sandboxbcptest-secondary.z1.web.core.windows.net/",
+    "dfs": "https://sandboxbcptest-secondary.dfs.core.windows.net/"
+  },
+  "dnsEndpointType": "Standard",
+  "largeFileSharesState": "Enabled"
+}

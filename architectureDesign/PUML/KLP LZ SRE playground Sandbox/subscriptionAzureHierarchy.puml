@@ -79,6 +79,9 @@ Rel(KLP_LZ_SRE_playground_Sandbox, maksym_finops, 'Uses', 'Subscription' )
 AzureResourceGroups(maksym_maintenanceConfig, 'maksym-maintenanceConfig', 'Azure Resource Group')
 Rel(KLP_LZ_SRE_playground_Sandbox, maksym_maintenanceConfig, 'Uses', 'Subscription' )
 
+AzureResourceGroups(maksym_finops_private, 'maksym-finops-private', 'Azure Resource Group')
+Rel(KLP_LZ_SRE_playground_Sandbox, maksym_finops_private, 'Uses', 'Subscription' )
+
 AzureResourceGroups(cloud_shell_storage_westeurope, 'cloud-shell-storage-westeurope', 'Azure Resource Group')
 Rel(KLP_LZ_SRE_playground_Sandbox, cloud_shell_storage_westeurope, 'Uses', 'Subscription' )
 

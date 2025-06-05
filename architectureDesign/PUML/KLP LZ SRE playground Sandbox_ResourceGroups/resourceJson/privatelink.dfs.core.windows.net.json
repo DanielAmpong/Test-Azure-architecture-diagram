@@ -1,0 +1,10 @@
+{
+  "provisioningState": "Succeeded",
+  "maxNumberOfVirtualNetworkLinksWithRegistration": 100,
+  "numberOfVirtualNetworkLinksWithRegistration": 0,
+  "maxNumberOfVirtualNetworkLinks": 1000,
+  "numberOfVirtualNetworkLinks": 1,
+  "maxNumberOfRecordSets": 25000,
+  "numberOfRecordSets": 2,
+  "internalId": "SW1tdXRhYmxlWm9uZUlkZW50aXR5O2JiYTUwYjIzLWVkYzYtNGUxZi1iYTZhLTZhNmQyMTczNGQwOTsw"
+}

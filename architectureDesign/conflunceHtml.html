@@ -1,0 +1,684 @@
+# Confluence HTML Macro Implementation
+
+## Step 1: Enable HTML Macro
+First, ensure your Confluence administrator has enabled the HTML macro. You'll need:
+- HTML macro permissions
+- Ability to include JavaScript (may require admin approval)
+
+## Step 2: Create the HTML Macro Block
+
+In your Confluence page, add an HTML macro with this code:
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Landing Zone Interactive Diagrams</title>
+</head>
+
+<body>
+    <div id="dynamic-diagram-container">
+        <style>
+            .confluence-diagram-container {
+                max-width: 100%;
+                margin: 20px 0;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            }
+
+            .confluence-diagram-header {
+                background: linear-gradient(135deg, #0052cc 0%, #2684ff 100%);
+                color: white;
+                padding: 15px 20px;
+                font-weight: bold;
+                font-size: 18px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .confluence-diagram-controls {
+                background: #f4f5f7;
+                padding: 15px 20px;
+                border-bottom: 1px solid #ddd;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+                align-items: center;
+            }
+
+            .confluence-control-group {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .confluence-control-group label {
+                font-weight: 500;
+                color: #42526e;
+                font-size: 14px;
+                min-width: 60px;
+            }
+
+            .confluence-btn {
+                padding: 6px 12px;
+                border: 1px solid #ddd;
+                border-radius: 3px;
+                cursor: pointer;
+                font-size: 13px;
+                font-weight: 500;
+                transition: all 0.2s ease;
+                background: white;
+                color: #42526e;
+            }
+
+            .confluence-btn:hover {
+                background: #f4f5f7;
+                border-color: #0052cc;
+            }
+
+            .confluence-btn.active {
+                background: #0052cc;
+                color: white;
+                border-color: #0052cc;
+            }
+
+            .confluence-btn-group {
+                display: flex;
+                gap: 2px;
+            }
+
+            .confluence-btn-group .confluence-btn {
+                border-radius: 0;
+            }
+
+            .confluence-btn-group .confluence-btn:first-child {
+                border-radius: 3px 0 0 3px;
+            }
+
+            .confluence-btn-group .confluence-btn:last-child {
+                border-radius: 0 3px 3px 0;
+            }
+
+            .confluence-diagram-content {
+                position: relative;
+                background: white;
+                min-height: 400px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                overflow: hidden;
+            }
+
+            .confluence-clickable-areas {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+                z-index: 5;
+            }
+
+            .confluence-click-area {
+                position: absolute;
+                cursor: pointer;
+                pointer-events: all;
+                transition: all 0.3s ease;
+                border: 2px solid transparent;
+                border-radius: 4px;
+            }
+
+            .confluence-click-area:hover {
+                background: rgba(0, 82, 204, 0.1);
+                border-color: rgba(0, 82, 204, 0.3);
+            }
+
+            .confluence-click-area::after {
+                content: attr(data-label);
+                position: absolute;
+                bottom: 5px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: rgba(0, 82, 204, 0.9);
+                color: white;
+                padding: 4px 8px;
+                border-radius: 3px;
+                font-size: 11px;
+                font-weight: 500;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                pointer-events: none;
+                white-space: nowrap;
+            }
+
+            .confluence-click-area:hover::after {
+                opacity: 1;
+            }
+
+            .confluence-click-overlay {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: rgba(0, 82, 204, 0.9);
+                color: white;
+                padding: 8px 12px;
+                border-radius: 4px;
+                font-size: 12px;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                pointer-events: none;
+                text-align: center;
+            }
+
+            .confluence-diagram-content:hover .confluence-click-overlay {
+                opacity: 1;
+            }
+
+            .confluence-diagram-img {
+                max-width: 100%;
+                height: auto;
+                transition: all 0.3s ease;
+                border-radius: 4px;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+            }
+
+            .confluence-diagram-img.zoomed {
+                cursor: pointer;
+            }
+
+            .confluence-diagram-img:hover {
+                box-shadow: 0 2px 8px rgba(0, 82, 204, 0.2);
+                transform: translateY(-1px);
+            }
+
+            .confluence-diagram-meta {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background: rgba(0, 0, 0, 0.7);
+                color: white;
+                padding: 4px 8px;
+                border-radius: 3px;
+                font-size: 11px;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                pointer-events: none;
+            }
+
+            .confluence-diagram-content:hover .confluence-diagram-meta {
+                opacity: 1;
+            }
+
+            .confluence-diagram-description {
+                padding: 15px 20px;
+                background: #f4f5f7;
+                border-top: 1px solid #ddd;
+            }
+
+            .confluence-diagram-description h4 {
+                margin: 0 0 8px 0;
+                color: #172b4d;
+                font-size: 16px;
+            }
+
+            .confluence-diagram-description p {
+                margin: 0;
+                color: #6b778c;
+                line-height: 1.4;
+                font-size: 14px;
+            }
+
+            .confluence-loading {
+                display: none;
+                color: #0052cc;
+                font-size: 14px;
+            }
+
+            .confluence-loading.active {
+                display: block;
+            }
+
+            .confluence-zoom-controls {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                z-index: 10;
+            }
+
+            .confluence-zoom-btn {
+                width: 28px;
+                height: 28px;
+                border: 1px solid #ddd;
+                background: rgba(255, 255, 255, 0.9);
+                color: #42526e;
+                border-radius: 3px;
+                cursor: pointer;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.2s ease;
+            }
+
+            .confluence-zoom-btn:hover {
+                background: white;
+                border-color: #0052cc;
+                color: #0052cc;
+            }
+
+            .confluence-zoom-btn:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+
+            .confluence-error {
+                color: #de350b;
+                font-size: 14px;
+                text-align: center;
+                padding: 20px;
+                background: #ffebe6;
+                border-radius: 4px;
+                margin: 10px;
+            }
+
+            @media (max-width: 768px) {
+                .confluence-diagram-controls {
+                    flex-direction: column;
+                    align-items: stretch;
+                    gap: 10px;
+                }
+
+                .confluence-control-group {
+                    justify-content: space-between;
+                }
+
+                .confluence-zoom-controls {
+                    position: relative;
+                    top: auto;
+                    left: auto;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                }
+            }
+        </style>
+
+        <div class="confluence-diagram-container">
+            <div class="confluence-diagram-header">
+                <span id="confluence-diagram-title">Azure Landing Zone Architecture - Overview</span>
+                <span style="font-size: 12px; opacity: 0.8;">Interactive Diagrams</span>
+            </div>
+
+            <div class="confluence-diagram-controls">
+                <div class="confluence-control-group">
+                    <label>View:</label>
+                    <div class="confluence-btn-group">
+                        <button class="confluence-btn active" onclick="confluenceSwitchDiagram('AzLandingZone')">Azure
+                            Landing Zone</button>
+                        <button class="confluence-btn" onclick="confluenceSwitchDiagram('resourceGroup')">Resource
+                            Group</button>
+                        <button class="confluence-btn" onclick="confluenceSwitchDiagram('deployment')">Deploy</button>
+                    </div>
+                </div>
+
+                <div class="confluence-control-group">
+                    <label>Env:</label>
+                    <select id="confluence-environment-select" onchange="confluenceUpdateEnvironment()"
+                        class="confluence-btn" style="padding: 6px 8px;">
+                        <option value="dev">Development</option>
+                        <option value="staging">Staging</option>
+                        <option value="prod" selected>Production</option>
+                    </select>
+                </div>
+
+                <div class="confluence-control-group">
+                    <label>Format:</label>
+                    <div class="confluence-btn-group">
+                        <button class="confluence-btn active" onclick="confluenceSwitchFormat('svg')">SVG</button>
+                        <button class="confluence-btn" onclick="confluenceSwitchFormat('png')">PNG</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="confluence-diagram-content">
+                <div class="confluence-zoom-controls">
+                    <button class="confluence-zoom-btn" onclick="confluenceZoomIn()" title="Zoom In">+</button>
+                    <button class="confluence-zoom-btn" onclick="confluenceZoomOut()" title="Zoom Out">−</button>
+                    <button class="confluence-zoom-btn" onclick="confluenceResetZoom()" title="Reset Zoom">⌂</button>
+                </div>
+
+                <!-- Clickable areas overlay -->
+                <div class="confluence-clickable-areas" id="confluence-clickable-areas">
+                    <div class="confluence-click-area" style="top: 10%; left: 10%; width: 35%; height: 35%;"
+                        data-label="AzLandingZone" onclick="confluenceSwitchDiagram('AzLandingZone')"
+                        title="Click for Azure Landing Zone Architecture Overview"></div>
+                    <div class="confluence-click-area" style="top: 10%; right: 10%; width: 35%; height: 35%;"
+                        data-label="resourceGroup" onclick="confluenceSwitchDiagram('resourceGroup')"
+                        title="Click for Resource Group View"></div>
+                    <div class="confluence-click-area" style="bottom: 10%; left: 10%; width: 35%; height: 35%;"
+                        data-label="Deploy" onclick="confluenceSwitchDiagram('deployment')"
+                        title="Click for Deployment View"></div>
+                </div>
+
+                <div class="confluence-click-overlay">
+                    Click different areas of the diagram to switch views
+                </div>
+
+                <img id="confluence-main-diagram" class="confluence-diagram-img"
+                    src="https://via.placeholder.com/800x600/0052cc/white?text=System+Overview"
+                    alt="Azure Landing Zone Architecture Diagram" onerror="confluenceHandleImageError(this)">
+
+                <div class="confluence-diagram-meta" id="confluence-diagram-meta">
+                    Production | SVG | Updated: 2025-06-02
+                </div>
+
+                <div class="confluence-loading" id="confluence-loading">Loading diagram...</div>
+            </div>
+
+            <div class="confluence-diagram-description">
+                <h4 id="confluence-description-title">Azure Landing Zone Interactive Diagrams</h4>
+                <p id="confluence-description-text">This diagram shows the high-level architecture of our Azure Landing
+                    Zone including Subscription, Resource Groups, and Resources.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            // Confluence-specific namespace to avoid conflicts
+            window.ConfluenceDiagrams = {
+                config: {
+                    AzLandingZone: {
+                        title: "Azure Landing Zone Architecture - Overview",
+                        description: "High-level architecture showing subscription, and which resource group that is included.",
+                        filename: "AzLandingZone-overview"
+                    },
+                    resourceGroup: {
+                        title: "Resource Group Architecture - Detailed View",
+                        description: "Detailed component architecture of Resource Group including internal resources.",
+                        filename: "resourceGroup-detailed"
+                    },
+                    deployment: {
+                        title: "Deployment Architecture",
+                        description: "Infrastructure layout showing container orchestration, load balancing, and deployment strategy.",
+                        filename: "deployment-architecture"
+                    }
+                },
+
+                state: {
+                    currentDiagram: 'AzLandingZone',
+                    currentEnvironment: 'prod',
+                    currentFormat: 'svg',
+                    currentZoom: 1,
+                    pageId: 'PAGE_ID', // Replace with actual page ID
+                    maxZoom: 3,
+                    minZoom: 0.5,
+                    zoomStep: 0.25
+                },
+
+                // Build the diagram URL
+                buildDiagramUrl: function (diagram, environment, format) {
+                    // Replace PAGE_ID with actual page ID in production
+                    const baseUrl = '/download/attachments/' + this.state.pageId + '/';
+                    const filename = this.config[diagram].filename;
+                    return baseUrl + filename + '-' + environment + '.' + format;
+                },
+
+                // Update diagram display
+                updateDiagram: function () {
+                    try {
+                        const config = this.config[this.state.currentDiagram];
+                        const img = document.getElementById('confluence-main-diagram');
+                        const title = document.getElementById('confluence-diagram-title');
+                        const descTitle = document.getElementById('confluence-description-title');
+                        const descText = document.getElementById('confluence-description-text');
+                        const meta = document.getElementById('confluence-diagram-meta');
+                        const loading = document.getElementById('confluence-loading');
+
+                        if (!config) {
+                            throw new Error('Invalid diagram configuration');
+                        }
+
+                        // Show loading state
+                        loading.classList.add('active');
+                        img.style.opacity = '0.5';
+
+                        // Update content
+                        title.textContent = config.title;
+                        descTitle.textContent = config.title.replace('System Architecture - ', '');
+                        descText.textContent = config.description;
+
+                        // Update meta information
+                        const envName = this.state.currentEnvironment.charAt(0).toUpperCase() +
+                            this.state.currentEnvironment.slice(1);
+                        const formatName = this.state.currentFormat.toUpperCase();
+                        const currentDate = new Date().toISOString().split('T')[0];
+                        meta.textContent = `${envName} | ${formatName} | Updated: ${currentDate}`;
+
+                        // Update image source
+                        const newSrc = this.buildDiagramUrl(
+                            this.state.currentDiagram,
+                            this.state.currentEnvironment,
+                            this.state.currentFormat
+                        );
+
+                        // For demo purposes, use placeholder images
+                        const placeholderUrl = `https://via.placeholder.com/800x600/0052cc/white?text=${encodeURIComponent(config.title)}`;
+                        img.src = placeholderUrl;
+
+                        // Set fallback for real implementation
+                        img.setAttribute('data-real-src', newSrc);
+
+                        // Reset zoom
+                        this.resetZoom();
+
+                        // Hide loading after image loads
+                        img.onload = function () {
+                            loading.classList.remove('active');
+                            img.style.opacity = '1';
+                        };
+
+                        this.updateZoomControls();
+
+                    } catch (error) {
+                        console.error('Error updating diagram:', error);
+                        this.showError('Failed to load diagram: ' + error.message);
+                    }
+                },
+
+                // Update button states
+                updateButtonStates: function () {
+                    try {
+                        // Update diagram buttons
+                        const diagramButtons = document.querySelectorAll('.confluence-btn-group .confluence-btn');
+                        diagramButtons.forEach(btn => {
+                            btn.classList.remove('active');
+                            const onclick = btn.getAttribute('onclick');
+                            if (onclick && onclick.includes(this.state.currentDiagram)) {
+                                btn.classList.add('active');
+                            }
+                        });
+
+                        // Update format buttons
+                        const formatButtons = document.querySelectorAll('.confluence-btn-group:last-child .confluence-btn');
+                        formatButtons.forEach(btn => {
+                            btn.classList.remove('active');
+                            const onclick = btn.getAttribute('onclick');
+                            if (onclick && onclick.includes(this.state.currentFormat)) {
+                                btn.classList.add('active');
+                            }
+                        });
+
+                        // Update environment select
+                        const envSelect = document.getElementById('confluence-environment-select');
+                        if (envSelect) {
+                            envSelect.value = this.state.currentEnvironment;
+                        }
+                    } catch (error) {
+                        console.error('Error updating button states:', error);
+                    }
+                },
+
+                // Update zoom controls
+                updateZoomControls: function () {
+                    const zoomInBtn = document.querySelector('.confluence-zoom-btn[onclick*="ZoomIn"]');
+                    const zoomOutBtn = document.querySelector('.confluence-zoom-btn[onclick*="ZoomOut"]');
+
+                    if (zoomInBtn) {
+                        zoomInBtn.disabled = this.state.currentZoom >= this.state.maxZoom;
+                    }
+                    if (zoomOutBtn) {
+                        zoomOutBtn.disabled = this.state.currentZoom <= this.state.minZoom;
+                    }
+                },
+
+                // Apply zoom to image
+                applyZoom: function () {
+                    const img = document.getElementById('confluence-main-diagram');
+                    if (img) {
+                        img.style.transform = `scale(${this.state.currentZoom})`;
+                        img.classList.toggle('zoomed', this.state.currentZoom > 1);
+                    }
+                    this.updateZoomControls();
+                },
+
+                // Reset zoom
+                resetZoom: function () {
+                    this.state.currentZoom = 1;
+                    this.applyZoom();
+                },
+
+                // Show error message
+                showError: function (message) {
+                    const content = document.querySelector('.confluence-diagram-content');
+                    const existing = content.querySelector('.confluence-error');
+                    if (existing) {
+                        existing.remove();
+                    }
+
+                    const errorDiv = document.createElement('div');
+                    errorDiv.className = 'confluence-error';
+                    errorDiv.textContent = message;
+                    content.appendChild(errorDiv);
+
+                    setTimeout(() => {
+                        if (errorDiv.parentNode) {
+                            errorDiv.parentNode.removeChild(errorDiv);
+                        }
+                    }, 5000);
+                },
+
+                // Update clickable areas based on current diagram
+                updateClickableAreas: function () {
+                    const areas = document.querySelectorAll('.confluence-click-area');
+                    const currentDiagram = this.state.currentDiagram;
+
+                    areas.forEach(area => {
+                        const onclick = area.getAttribute('onclick');
+                        if (onclick && onclick.includes(currentDiagram)) {
+                            area.style.backgroundColor = 'rgba(0, 82, 204, 0.2)';
+                            area.style.borderColor = 'rgba(0, 82, 204, 0.5)';
+                        } else {
+                            area.style.backgroundColor = 'transparent';
+                            area.style.borderColor = 'transparent';
+                        }
+                    });
+                }
+            };
+
+            // Global functions for onclick handlers
+            window.confluenceSwitchDiagram = function (diagram) {
+                if (window.ConfluenceDiagrams.config[diagram]) {
+                    window.ConfluenceDiagrams.state.currentDiagram = diagram;
+                    window.ConfluenceDiagrams.updateDiagram();
+                    window.ConfluenceDiagrams.updateButtonStates();
+                    window.ConfluenceDiagrams.updateClickableAreas();
+                }
+            };
+
+            window.confluenceUpdateEnvironment = function () {
+                const select = document.getElementById('confluence-environment-select');
+                if (select) {
+                    window.ConfluenceDiagrams.state.currentEnvironment = select.value;
+                    window.ConfluenceDiagrams.updateDiagram();
+                }
+            };
+
+            window.confluenceSwitchFormat = function (format) {
+                window.ConfluenceDiagrams.state.currentFormat = format;
+                window.ConfluenceDiagrams.updateDiagram();
+                window.ConfluenceDiagrams.updateButtonStates();
+            };
+
+            window.confluenceZoomIn = function () {
+                const cd = window.ConfluenceDiagrams;
+                if (cd.state.currentZoom < cd.state.maxZoom) {
+                    cd.state.currentZoom = Math.min(cd.state.maxZoom, cd.state.currentZoom + cd.state.zoomStep);
+                    cd.applyZoom();
+                }
+            };
+
+            window.confluenceZoomOut = function () {
+                const cd = window.ConfluenceDiagrams;
+                if (cd.state.currentZoom > cd.state.minZoom) {
+                    cd.state.currentZoom = Math.max(cd.state.minZoom, cd.state.currentZoom - cd.state.zoomStep);
+                    cd.applyZoom();
+                }
+            };
+
+            window.confluenceResetZoom = function () {
+                window.ConfluenceDiagrams.resetZoom();
+            };
+
+            // Toggle clickable areas visibility
+            window.confluenceToggleClickAreas = function (show) {
+                const areas = document.getElementById('confluence-clickable-areas');
+                const overlay = document.querySelector('.confluence-click-overlay');
+                if (areas) {
+                    areas.style.display = show ? 'block' : 'none';
+                }
+                if (overlay) {
+                    overlay.style.display = show ? 'block' : 'none';
+                }
+            };
+
+            window.confluenceHandleImageError = function (img) {
+                const fallbackUrl = img.getAttribute('data-real-src') ||
+                    'https://via.placeholder.com/800x400/cccccc/666666?text=Diagram+Not+Found';
+                if (img.src !== fallbackUrl) {
+                    img.src = fallbackUrl;
+                } else {
+                    window.ConfluenceDiagrams.showError('Failed to load diagram image');
+                }
+            };
+
+            // Initialize when DOM is ready
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', function () {
+                    window.ConfluenceDiagrams.updateDiagram();
+                    window.ConfluenceDiagrams.updateButtonStates();
+                    window.ConfluenceDiagrams.updateClickableAreas();
+                });
+            } else {
+                window.ConfluenceDiagrams.updateDiagram();
+                window.ConfluenceDiagrams.updateButtonStates();
+                window.ConfluenceDiagrams.updateClickableAreas();
+            }
+        })();
+    </script>
+
+</body>
+
+</html>

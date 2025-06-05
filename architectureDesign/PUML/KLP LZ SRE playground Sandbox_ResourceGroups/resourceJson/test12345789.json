@@ -1,0 +1,23 @@
+{
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Enabled",
+  "networkAcls": {
+    "virtualNetworkRules": [],
+    "defaultAction": "Allow",
+    "ipRules": [],
+    "bypass": "None"
+  },
+  "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
+  "enabledForTemplateDeployment": false,
+  "sku": {
+    "name": "Standard",
+    "family": "A"
+  },
+  "enabledForDiskEncryption": false,
+  "enabledForDeployment": false,
+  "accessPolicies": [],
+  "enableSoftDelete": true,
+  "softDeleteRetentionInDays": 90,
+  "enableRbacAuthorization": true,
+  "vaultUri": "https://test12345789.vault.azure.net/"
+}

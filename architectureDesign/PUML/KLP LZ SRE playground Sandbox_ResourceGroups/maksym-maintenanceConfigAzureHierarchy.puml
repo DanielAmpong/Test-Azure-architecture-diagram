@@ -10,9 +10,5 @@
 
 AzureResourceGroups(maksym_maintenanceConfig, 'maksym-maintenanceConfig', 'Azure Resource Group')
 
-!includeurl AzurePuml/Networking/AzureVirtualNetwork.puml
-AzureVirtualNetwork(maksym_maintenanceconfig_vnet, 'maksym-maintenanceconfig-vnet', 'Microsoft.Network/virtualNetworks')
-Rel(maksym_maintenanceConfig, maksym_maintenanceconfig_vnet, 'Uses', 'Resource' )
-
 LAYOUT_WITH_LEGEND()
 @enduml

@@ -108,11 +108,50 @@ foreach ($resourceGroupName in $resourceGroupNames) {
             $rel.replace("''", """") | Out-File -FilePath $outputFile -Append -Encoding utf8 -Force
             "" | Out-File -FilePath $outputFile -Append -Encoding utf8 -Force
         }
+
+    
+        if (!(Test-Path -Path "architectureDesign\PUML\$($subscription.Name)_ResourceGroups\resourceJson")) {
+    
+            New-Item -Path "$((Get-item -path "architectureDesign\PUML\$($subscription.Name)_ResourceGroups").FullName)" -Name "resourceJson" -ItemType Directory | Out-Null
+        
+        }
+        
+        if ($resourceLabel -like "*/*") {
+            $splitResourceLabel = $resourceLabel -split "/"
+            $query = @"
+resources
+| where name == "$($splitResourceLabel[1])"
+| project properties
+"@
+  
+            $azureResourceGraph = Search-AzGraph -Query $query -Subscription $subscription.Id
+            $propertiesJson = $azureResourceGraph.properties | ConvertTo-Json -Depth 30
+    
+
+            $resourceOutputFile = "$((Get-item -Path ".\architectureDesign\PUML\$($subscription.Name)_ResourceGroups\resourceJson").FullName)\$($splitResourceLabel[1]).json"
+            if (Test-Path -Path $resourceOutputFile) { Remove-Item -Path $resourceOutputFile | Out-Null }
+            $propertiesJson | Out-File -FilePath $resourceOutputFile -Append -Encoding utf8
+        }
+        else {
+            $query = @"
+resources
+| where name == "$($resourceLabel)"
+| project properties
+"@
+    
+            $azureResourceGraph = Search-AzGraph -Query $query -Subscription $subscription.Id
+            $propertiesJson = $azureResourceGraph.properties | ConvertTo-Json -Depth 30
+    
+            $resourceOutputFile = "$((Get-item -Path ".\architectureDesign\PUML\$($subscription.Name)_ResourceGroups\resourceJson").FullName)\$($resourceLabel).json"
+            if (Test-Path -Path $resourceOutputFile) { Remove-Item -Path $resourceOutputFile | Out-Null }
+            $propertiesJson | Out-File -FilePath $resourceOutputFile -Append -Encoding utf8
+        }
+
+        
     }
 
     "LAYOUT_WITH_LEGEND()" | Out-File -FilePath $outputFile -Append -Encoding utf8 -Force
     "@enduml" | Out-File -FilePath $outputFile -Append -Encoding utf8 -Force
-
 }
 
 Write-Host "Azure-PlantUML is completed for AzureHierarchy.puml"

@@ -1,0 +1,51 @@
+{
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Enabled",
+  "networkAccessPolicy": "AllowAll",
+  "timeCreated": "2025-05-21T09:52:16.5757089Z",
+  "diskSizeGB": 128,
+  "diskSizeBytes": 137438953472,
+  "encryption": {
+    "type": "EncryptionAtRestWithPlatformKey"
+  },
+  "creationData": {
+    "createOption": "FromImage",
+    "imageReference": {
+      "id": "/Subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/Providers/Microsoft.Compute/Locations/NorwayEast/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer/Skus/2022-Datacenter/Versions/20348.3692.250509"
+    }
+  },
+  "hyperVGeneration": "V1",
+  "LastOwnershipUpdateTime": "2025-05-21T09:52:16.5757089Z",
+  "supportedCapabilities": {
+    "architecture": "x64",
+    "acceleratedNetwork": true,
+    "diskControllerTypes": "SCSI"
+  },
+  "diskState": "Attached",
+  "uniqueId": "aff9f740-e538-448b-8b3a-9d46510c4573",
+  "diskMBpsReadWrite": 100,
+  "diskIOPSReadWrite": 500,
+  "osType": "Windows",
+  "supportsHibernation": true,
+  "tier": "P10",
+  "encryptionSettingsCollection": {
+    "enabled": true,
+    "encryptionSettings": [
+      {
+        "diskEncryptionKey": {
+          "sourceVault": {
+            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr"
+          },
+          "secretUrl": "https://d-awh-wm-kv-3fpr.vault.azure.net/secrets/B10C8122-9C2D-4859-93BD-151EE97DFE73/d66eb77eeef54892831c29ffb6019fbe"
+        },
+        "keyEncryptionKey": {
+          "sourceVault": {
+            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr"
+          },
+          "keyUrl": "https://d-awh-wm-kv-3fpr.vault.azure.net/keys/lz-vm-disk-encrypt-key/844800abf3ac4840adcfc8324e3f63b9"
+        }
+      }
+    ],
+    "encryptionSettingsVersion": "1.1"
+  }
+}
