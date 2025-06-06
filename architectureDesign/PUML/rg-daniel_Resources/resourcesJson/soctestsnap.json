@@ -31,11 +31,11 @@
     "dfs": "https://soctestsnap.dfs.core.windows.net/"
   },
   "primaryLocation": "norwayeast",
+  "statusOfPrimary": "available",
   "keyCreationTime": {
     "key2": "2025-03-26T11:53:42.0100242Z",
     "key1": "2025-03-26T11:53:42.0100242Z"
   },
-  "statusOfPrimary": "available",
   "creationTime": "2025-03-26T11:53:41.9474655Z",
   "networkAcls": {
     "virtualNetworkRules": [],
@@ -47,8 +47,8 @@
   "allowSharedKeyAccess": true,
   "accessTier": "Hot",
   "defaultToOAuthAuthentication": false,
-  "secondaryLocation": "norwaywest",
   "statusOfSecondary": "available",
+  "secondaryLocation": "norwaywest",
   "secondaryEndpoints": {
     "blob": "https://soctestsnap-secondary.blob.core.windows.net/",
     "table": "https://soctestsnap-secondary.table.core.windows.net/",

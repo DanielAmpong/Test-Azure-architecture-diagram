@@ -21,11 +21,11 @@
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-ALEKSANDER/providers/Microsoft.Compute/virtualMachines/d-awh-appwm1",
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
       "vNextEnabled": true,
       "autoUpdate": true
     },
-    "forceUpdateTag": "a8defbb9-998b-4ed5-af69-f30d9e2e47d5"
+    "forceUpdateTag": "99efd676-824b-4eb9-9fd7-9afb880317dd"
   },
   {
     "provisioningState": "Succeeded",
@@ -49,11 +49,11 @@
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-BJORNJORGEN/providers/Microsoft.Compute/virtualMachines/bjsScaleset1_bf585774",
       "vNextEnabled": true,
       "autoUpdate": true
     },
-    "forceUpdateTag": "99efd676-824b-4eb9-9fd7-9afb880317dd"
+    "forceUpdateTag": "0f00e64f-dc16-4cc1-a52a-27a61f6cf497"
   },
   {
     "provisioningState": "Succeeded",
@@ -63,10 +63,10 @@
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-BJORNJORGEN/providers/Microsoft.Compute/virtualMachines/bjsScaleset1_bf585774",
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-ALEKSANDER/providers/Microsoft.Compute/virtualMachines/d-awh-appwm1",
       "vNextEnabled": true,
       "autoUpdate": true
     },
-    "forceUpdateTag": "0f00e64f-dc16-4cc1-a52a-27a61f6cf497"
+    "forceUpdateTag": "a8defbb9-998b-4ed5-af69-f30d9e2e47d5"
   }
 ]

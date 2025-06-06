@@ -9,6 +9,7 @@ json  Resource_Properties {
   "publicNetworkAccess": "Enabled",
   "encryption": {
     "keySource": "Microsoft.Storage",
+    "requireInfrastructureEncryption": false,
     "services": {
       "blob": {
         "enabled": true,
@@ -20,8 +21,7 @@ json  Resource_Properties {
         "lastEnabledTime": "2025-05-27T11:53:44.7289584Z",
         "keyType": "Account"
       }
-    },
-    "requireInfrastructureEncryption": false
+    }
   },
   "privateEndpointConnections": [],
   "supportsHttpsTrafficOnly": true,
@@ -38,8 +38,8 @@ json  Resource_Properties {
   },
   "statusOfPrimary": "available",
   "keyCreationTime": {
-    "key2": "2025-05-27T11:53:44.7289584Z",
-    "key1": "2025-05-27T11:53:44.7289584Z"
+    "key1": "2025-05-27T11:53:44.7289584Z",
+    "key2": "2025-05-27T11:53:44.7289584Z"
   },
   "primaryLocation": "norwayeast",
   "creationTime": "2025-05-27T11:53:44.6664537Z",
@@ -51,10 +51,10 @@ json  Resource_Properties {
     "bypass": "AzureServices"
   },
   "allowSharedKeyAccess": true,
-  "accessTier": "Hot",
   "defaultToOAuthAuthentication": false,
-  "dnsEndpointType": "Standard",
-  "largeFileSharesState": "Enabled"
+  "accessTier": "Hot",
+  "largeFileSharesState": "Enabled",
+  "dnsEndpointType": "Standard"
 }
 }
 @enduml

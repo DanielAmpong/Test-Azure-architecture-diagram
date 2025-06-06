@@ -1,0 +1,143 @@
+{
+  "provisioningState": "Succeeded",
+  "resourceGuid": "ced28179-9da3-466d-9c6b-dcc68eaf5c80",
+  "privateEndpointVNetPolicies": "Disabled",
+  "virtualNetworkPeerings": [],
+  "enableDdosProtection": false,
+  "subnets": [
+    {
+      "properties": {
+        "provisioningState": "Succeeded",
+        "ipConfigurations": [
+          {
+            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-FINOPS-PRIVATE/providers/Microsoft.Network/networkInterfaces/FINOPSHUB-6XISW66QNEMIW-EP.NIC.52B1B6F3-41BA-4E3E-A937-A08516AD44B6/ipConfigurations/PRIVATEENDPOINTIPCONFIG.FDAE19B3-39C7-444D-BA0F-97A26C78B2C5"
+          },
+          {
+            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-FINOPS-PRIVATE/providers/Microsoft.Network/networkInterfaces/FINOPSHUB6XISW66QNEMIW-BLOB-EP.NIC.1BA02160-4050-4902-A685-3221F654CC80/ipConfigurations/PRIVATEENDPOINTIPCONFIG.4EF149A8-C24F-46AD-AD2A-7B9798C17518"
+          },
+          {
+            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-FINOPS-PRIVATE/providers/Microsoft.Network/networkInterfaces/FINOPSHUB6XISW66QNEMIW-DFS-EP.NIC.E81B10BE-A412-46F6-AA0F-BDB6B558D633/ipConfigurations/PRIVATEENDPOINTIPCONFIG.1B1B23FB-C0FA-4CFB-9FCE-BB0D6AD7FEAD"
+          },
+          {
+            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-FINOPS-PRIVATE/providers/Microsoft.Network/networkInterfaces/FINSCRIPT6XISW66QNEMIW-BLOB-EP.NIC.28E1BF09-ABD5-4379-B4FA-FE7CA5E34E03/ipConfigurations/PRIVATEENDPOINTIPCONFIG.2B3436F4-193F-497E-8BAA-9AEC0A9D042F"
+          }
+        ],
+        "addressPrefix": "10.104.13.0/28",
+        "privateLinkServiceNetworkPolicies": "Enabled",
+        "privateEndpointNetworkPolicies": "Disabled",
+        "networkSecurityGroup": {
+          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Network/networkSecurityGroups/finopshub-vnet-norwayeast-nsg"
+        },
+        "delegations": [],
+        "serviceEndpoints": [
+          {
+            "provisioningState": "Succeeded",
+            "locations": [
+              "norwayeast",
+              "norwaywest"
+            ],
+            "service": "Microsoft.Storage"
+          }
+        ],
+        "privateEndpoints": [
+          {
+            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-FINOPS-PRIVATE/providers/Microsoft.Network/privateEndpoints/FINOPSHUB-6XISW66QNEMIW-EP"
+          },
+          {
+            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-FINOPS-PRIVATE/providers/Microsoft.Network/privateEndpoints/FINOPSHUB6XISW66QNEMIW-BLOB-EP"
+          },
+          {
+            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-FINOPS-PRIVATE/providers/Microsoft.Network/privateEndpoints/FINOPSHUB6XISW66QNEMIW-DFS-EP"
+          },
+          {
+            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-FINOPS-PRIVATE/providers/Microsoft.Network/privateEndpoints/FINSCRIPT6XISW66QNEMIW-BLOB-EP"
+          }
+        ],
+        "purpose": "PrivateEndpoints"
+      },
+      "name": "private-endpoint-subnet",
+      "type": "Microsoft.Network/virtualNetworks/subnets",
+      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Network/virtualNetworks/finopshub-vnet-norwayeast/subnets/private-endpoint-subnet",
+      "etag": "W/\"78c55360-35b2-4188-a6b3-93d8da65cb35\""
+    },
+    {
+      "properties": {
+        "provisioningState": "Succeeded",
+        "addressPrefix": "10.104.13.16/28",
+        "privateLinkServiceNetworkPolicies": "Enabled",
+        "privateEndpointNetworkPolicies": "Disabled",
+        "networkSecurityGroup": {
+          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Network/networkSecurityGroups/finopshub-vnet-norwayeast-nsg"
+        },
+        "delegations": [
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "actions": [
+                "Microsoft.Network/virtualNetworks/subnets/action"
+              ],
+              "serviceName": "Microsoft.ContainerInstance/containerGroups"
+            },
+            "name": "Microsoft.ContainerInstance/containerGroups",
+            "type": "Microsoft.Network/virtualNetworks/subnets/delegations",
+            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Network/virtualNetworks/finopshub-vnet-norwayeast/subnets/script-subnet/delegations/Microsoft.ContainerInstance/containerGroups",
+            "etag": "W/\"78c55360-35b2-4188-a6b3-93d8da65cb35\""
+          }
+        ],
+        "serviceEndpoints": [
+          {
+            "provisioningState": "Succeeded",
+            "locations": [
+              "norwayeast",
+              "norwaywest"
+            ],
+            "service": "Microsoft.Storage"
+          }
+        ],
+        "serviceAssociationLinks": [
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "locations": [
+                "norwayeast"
+              ],
+              "enabledForArmDeployments": false,
+              "linkedResourceType": "Microsoft.ContainerInstance/containerGroups",
+              "subnetId": "00000000-0000-0000-0000-000000000000",
+              "allowDelete": true
+            },
+            "name": "acisal",
+            "type": "Microsoft.Network/virtualNetworks/subnets/serviceAssociationLinks",
+            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Network/virtualNetworks/finopshub-vnet-norwayeast/subnets/script-subnet/serviceAssociationLinks/acisal",
+            "etag": "W/\"78c55360-35b2-4188-a6b3-93d8da65cb35\""
+          }
+        ]
+      },
+      "name": "script-subnet",
+      "type": "Microsoft.Network/virtualNetworks/subnets",
+      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Network/virtualNetworks/finopshub-vnet-norwayeast/subnets/script-subnet",
+      "etag": "W/\"78c55360-35b2-4188-a6b3-93d8da65cb35\""
+    },
+    {
+      "properties": {
+        "provisioningState": "Succeeded",
+        "addressPrefix": "10.104.13.32/27",
+        "privateLinkServiceNetworkPolicies": "Enabled",
+        "privateEndpointNetworkPolicies": "Disabled",
+        "networkSecurityGroup": {
+          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Network/networkSecurityGroups/finopshub-vnet-norwayeast-nsg"
+        },
+        "delegations": []
+      },
+      "name": "dataExplorer-subnet",
+      "type": "Microsoft.Network/virtualNetworks/subnets",
+      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Network/virtualNetworks/finopshub-vnet-norwayeast/subnets/dataExplorer-subnet",
+      "etag": "W/\"78c55360-35b2-4188-a6b3-93d8da65cb35\""
+    }
+  ],
+  "addressSpace": {
+    "addressPrefixes": [
+      "10.104.13.0/26"
+    ]
+  }
+}

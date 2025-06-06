@@ -1,6 +1,7 @@
 {
   "provisioningState": "Succeeded",
   "description": null,
+  "state": "Published",
   "parameters": {
     "ResourceGroupName": {
       "type": "System.String",
@@ -21,12 +22,11 @@
       "isMandatory": true
     }
   },
-  "state": "Published",
   "creationTime": "2025-04-08T11:50:13.6366667Z",
   "lastModifiedTime": "2025-04-09T20:34:19.6433333Z",
   "serviceManagementTags": null,
-  "lastModifiedBy": null,
   "runtimeEnvironment": null,
+  "lastModifiedBy": null,
   "logActivityTrace": 0,
   "runbookType": "PowerShell72",
   "logProgress": false,

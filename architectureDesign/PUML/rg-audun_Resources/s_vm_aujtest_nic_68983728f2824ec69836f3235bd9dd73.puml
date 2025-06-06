@@ -1,0 +1,50 @@
+@startuml
+
+title Resources Display - Component Diagram
+
+component Component {
+
+json  Resource_Properties {
+  "provisioningState": "Succeeded",
+  "enableAcceleratedNetworking": false,
+  "resourceGuid": "602c5bd1-25d1-4310-baac-0e0499eac75e",
+  "defaultOutboundConnectivityEnabled": false,
+  "disableTcpStateTracking": false,
+  "vnetEncryptionSupported": false,
+  "ipConfigurations": [
+    {
+      "properties": {
+        "provisioningState": "Succeeded",
+        "privateIPAddressVersion": "IPv4",
+        "privateIPAllocationMethod": "Dynamic",
+        "privateIPAddress": "10.0.0.20",
+        "primary": true,
+        "subnet": {
+          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/default"
+        }
+      },
+      "name": "011a8d02b4f24c578ebdd2be693834ba",
+      "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
+      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkInterfaces/s-vm-aujtest-nic-68983728f2824ec69836f3235bd9dd73/ipConfigurations/011a8d02b4f24c578ebdd2be693834ba",
+      "etag": "W/\"7c3c1b74-5d3d-4644-9e4b-14592a6b86ae\""
+    }
+  ],
+  "enableIPForwarding": false,
+  "tapConfigurations": [],
+  "primary": true,
+  "hostedWorkloads": [],
+  "allowPort25Out": true,
+  "auxiliaryMode": "None",
+  "dnsSettings": {
+    "appliedDnsServers": [],
+    "dnsServers": []
+  },
+  "auxiliarySku": "None",
+  "macAddress": "00-22-48-75-86-7E",
+  "virtualMachine": {
+    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest"
+  },
+  "nicType": "Standard"
+}
+}
+@enduml

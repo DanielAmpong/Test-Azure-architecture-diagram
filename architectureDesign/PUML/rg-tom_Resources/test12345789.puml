@@ -19,11 +19,11 @@ json  Resource_Properties {
     "name": "Standard",
     "family": "A"
   },
-  "enabledForDiskEncryption": false,
   "enabledForDeployment": false,
-  "softDeleteRetentionInDays": 90,
   "enableRbacAuthorization": true,
+  "enabledForDiskEncryption": false,
   "accessPolicies": [],
+  "softDeleteRetentionInDays": 90,
   "enableSoftDelete": true,
   "vaultUri": "https://test12345789.vault.azure.net/"
 }

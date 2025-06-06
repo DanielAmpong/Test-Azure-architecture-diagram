@@ -30,11 +30,13 @@
     "networkProfile": {
       "networkInterfaceConfigurations": [
         {
+          "name": "vnet-norwayeast-nic01",
           "properties": {
             "enableAcceleratedNetworking": false,
             "disableTcpStateTracking": false,
             "ipConfigurations": [
               {
+                "name": "vnet-norwayeast-nic01-defaultIpConfiguration",
                 "properties": {
                   "privateIPAddressVersion": "IPv4",
                   "primary": true,
@@ -45,31 +47,29 @@
                   "applicationSecurityGroups": [],
                   "applicationGatewayBackendAddressPools": [],
                   "publicIPAddressConfiguration": {
+                    "name": "publicIp-vnet-norwayeast-nic01",
                     "properties": {
                       "idleTimeoutInMinutes": 15,
                       "publicIPAddressVersion": "IPv4",
                       "ipTags": []
-                    },
-                    "name": "publicIp-vnet-norwayeast-nic01"
+                    }
                   }
-                },
-                "name": "vnet-norwayeast-nic01-defaultIpConfiguration"
+                }
               }
             ],
             "enableIPForwarding": false,
             "primary": true,
+            "auxiliaryMode": "None",
             "dnsSettings": {
               "dnsServers": []
             },
-            "auxiliaryMode": "None",
-            "deleteOption": "Delete",
             "auxiliarySku": "None",
+            "deleteOption": "Delete",
             "networkSecurityGroup": {
               "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkSecurityGroups/basicNsgvnet-norwayeast-nic01"
             },
             "effectiveEnableAcceleratedNetworking": false
-          },
-          "name": "vnet-norwayeast-nic01"
+          }
         }
       ],
       "networkApiVersion": "2020-11-01"
@@ -77,17 +77,17 @@
     "osProfile": {
       "requireGuestProvisionSignal": true,
       "allowExtensionOperations": true,
+      "adminUsername": "testss",
       "windowsConfiguration": {
         "provisionVMAgent": true,
-        "enableAutomaticUpdates": true,
         "patchSettings": {
           "assessmentMode": "ImageDefault",
           "patchMode": "AutomaticByOS",
           "enableHotpatching": false
-        }
+        },
+        "enableAutomaticUpdates": true
       },
       "secrets": [],
-      "adminUsername": "testss",
       "computerNamePrefix": "bjsscales"
     },
     "diagnosticsProfile": {

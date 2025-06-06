@@ -1,0 +1,30 @@
+@startuml
+
+title Resources Display - Component Diagram
+
+component Component {
+
+json  Resource_Properties {
+  "enabled": true,
+  "automationRunbookReceivers": [],
+  "azureFunctionReceivers": [],
+  "azureAppPushReceivers": [],
+  "eventHubReceivers": [],
+  "logicAppReceivers": [],
+  "armRoleReceivers": [],
+  "webhookReceivers": [],
+  "groupShortName": "lz-sre-ag",
+  "emailReceivers": [
+    {
+      "name": "SRE-Team@klp.no",
+      "status": "Enabled",
+      "useCommonAlertSchema": false,
+      "emailAddress": "SRE-Team@klp.no"
+    }
+  ],
+  "voiceReceivers": [],
+  "itsmReceivers": [],
+  "smsReceivers": []
+}
+}
+@enduml

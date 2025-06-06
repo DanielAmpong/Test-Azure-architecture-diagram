@@ -34,11 +34,11 @@ json  Resource_Properties {
     "web": "https://tbjs2windiagsettk4.z1.web.core.windows.net/",
     "dfs": "https://tbjs2windiagsettk4.dfs.core.windows.net/"
   },
-  "keyCreationTime": {
-    "key2": "2025-05-07T11:20:43.4749907Z",
-    "key1": "2025-05-07T11:20:43.4749907Z"
-  },
   "statusOfPrimary": "available",
+  "keyCreationTime": {
+    "key1": "2025-05-07T11:20:43.4749907Z",
+    "key2": "2025-05-07T11:20:43.4749907Z"
+  },
   "primaryLocation": "norwayeast",
   "creationTime": "2025-05-07T11:20:43.3968631Z",
   "networkAcls": {

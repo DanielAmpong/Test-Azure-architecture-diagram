@@ -28,12 +28,12 @@
     "web": "https://testbjs2.z1.web.core.windows.net/",
     "dfs": "https://testbjs2.dfs.core.windows.net/"
   },
+  "primaryLocation": "norwayeast",
+  "statusOfPrimary": "available",
   "keyCreationTime": {
     "key2": "2025-04-02T10:30:02.4402934Z",
     "key1": "2025-04-02T10:30:02.4402934Z"
   },
-  "statusOfPrimary": "available",
-  "primaryLocation": "norwayeast",
   "creationTime": "2025-04-02T10:30:02.3622202Z",
   "networkAcls": {
     "virtualNetworkRules": [],

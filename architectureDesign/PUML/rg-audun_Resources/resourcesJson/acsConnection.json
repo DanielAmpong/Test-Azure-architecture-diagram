@@ -6,8 +6,8 @@
   "authenticatedUser": {},
   "connectionState": "Enabled",
   "overallStatus": "Connected",
-  "testRequests": [],
   "parameterValues": {},
+  "testRequests": [],
   "testLinks": [],
   "statuses": [
     {

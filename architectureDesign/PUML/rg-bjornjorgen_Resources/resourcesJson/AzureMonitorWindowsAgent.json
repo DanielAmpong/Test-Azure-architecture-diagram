@@ -4,7 +4,6 @@
     "type": "AzureMonitorWindowsAgent",
     "autoUpgradeMinorVersion": true,
     "typeHandlerVersion": "1.0",
-    "enableAutomaticUpgrade": true,
     "publisher": "Microsoft.Azure.Monitor"
   },
   {
@@ -28,6 +27,7 @@
     "type": "AzureMonitorWindowsAgent",
     "autoUpgradeMinorVersion": true,
     "typeHandlerVersion": "1.0",
+    "enableAutomaticUpgrade": true,
     "publisher": "Microsoft.Azure.Monitor"
   }
 ]

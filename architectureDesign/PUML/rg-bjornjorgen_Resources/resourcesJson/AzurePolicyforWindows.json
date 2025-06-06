@@ -2,22 +2,22 @@
   {
     "provisioningState": "Succeeded",
     "type": "ConfigurationforWindows",
-    "autoUpgradeMinorVersion": true,
     "typeHandlerVersion": "1.0",
+    "autoUpgradeMinorVersion": true,
     "publisher": "Microsoft.GuestConfiguration"
   },
   {
     "provisioningState": "Succeeded",
     "type": "ConfigurationforWindows",
-    "autoUpgradeMinorVersion": true,
     "typeHandlerVersion": "1.0",
+    "autoUpgradeMinorVersion": true,
     "publisher": "Microsoft.GuestConfiguration"
   },
   {
     "provisioningState": "Succeeded",
     "type": "ConfigurationforWindows",
-    "autoUpgradeMinorVersion": true,
     "typeHandlerVersion": "1.0",
+    "autoUpgradeMinorVersion": true,
     "publisher": "Microsoft.GuestConfiguration"
   }
 ]

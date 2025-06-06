@@ -19,7 +19,6 @@
   "supportsHttpsTrafficOnly": true,
   "allowBlobPublicAccess": false,
   "minimumTlsVersion": "TLS1_2",
-  "allowCrossTenantReplication": false,
   "primaryEndpoints": {
     "blob": "https://csb100320041428ff8f.blob.core.windows.net/",
     "file": "https://csb100320041428ff8f.file.core.windows.net/",
@@ -28,12 +27,13 @@
     "web": "https://csb100320041428ff8f.z6.web.core.windows.net/",
     "dfs": "https://csb100320041428ff8f.dfs.core.windows.net/"
   },
-  "primaryLocation": "westeurope",
+  "allowCrossTenantReplication": false,
   "keyCreationTime": {
-    "key2": "2025-03-13T13:24:40.335482Z",
-    "key1": "2025-03-13T13:24:40.335482Z"
+    "key1": "2025-03-13T13:24:40.335482Z",
+    "key2": "2025-03-13T13:24:40.335482Z"
   },
   "statusOfPrimary": "available",
+  "primaryLocation": "westeurope",
   "creationTime": "2025-03-13T13:24:40.1792366Z",
   "networkAcls": {
     "virtualNetworkRules": [],

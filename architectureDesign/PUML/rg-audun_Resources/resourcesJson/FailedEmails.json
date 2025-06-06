@@ -16,8 +16,8 @@
       }
     }
   },
-  "version": "08584562864224039892",
   "state": "Enabled",
+  "version": "08584562864224039892",
   "createdTime": "2025-03-12T12:02:48.313927Z",
   "changedTime": "2025-04-22T11:14:23.1111633Z",
   "endpointsConfiguration": {
@@ -126,17 +126,15 @@
         "defaultValue": "audunj@gmail.com"
       }
     },
-    "contentVersion": "1.0.0.0",
-    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
     "actions": {
       "Condition": {
         "type": "If",
-        "actions": {},
         "runAfter": {
           "Run_query_and_visualize_results_V2": [
             "Succeeded"
           ]
         },
+        "actions": {},
         "expression": {
           "and": [
             {
@@ -160,6 +158,7 @@
                     "html": "<p class=\"editor-paragraph\">@{base64ToString(body('Run_query_and_visualize_results_V2')?['body'])}</p>"
                   },
                   "importance": "Normal",
+                  "userEngagementTrackingDisabled": true,
                   "recipients": {
                     "to": [
                       {
@@ -167,8 +166,7 @@
                       }
                     ]
                   },
-                  "senderAddress": "DoNotReply@klp.no",
-                  "userEngagementTrackingDisabled": true
+                  "senderAddress": "DoNotReply@klp.no"
                 },
                 "host": {
                   "connection": {
@@ -185,6 +183,7 @@
       },
       "Run_query_and_visualize_results_V2": {
         "type": "ApiConnection",
+        "runAfter": {},
         "inputs": {
           "method": "post",
           "path": "/visualizeQueryV2",
@@ -200,21 +199,22 @@
           "queries": {
             "subscriptions": "3c30e703-3724-46ce-983a-91b9a78d5941",
             "resourcegroups": "p-log",
-            "resourcename": "p-log-platform-log",
             "resourcetype": "Log Analytics Workspace",
+            "resourcename": "p-log-platform-log",
             "visType": "Html Table"
           }
-        },
-        "runAfter": {}
+        }
       }
     },
+    "contentVersion": "1.0.0.0",
+    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
     "outputs": {},
     "triggers": {
       "Recurrence": {
         "type": "Recurrence",
         "evaluatedRecurrence": {
-          "startTime": "2025-02-09",
           "frequency": "Day",
+          "startTime": "2025-02-09",
           "interval": 1,
           "timeZone": "W. Europe Standard Time",
           "schedule": {
@@ -224,8 +224,8 @@
           }
         },
         "recurrence": {
-          "startTime": "2025-02-09",
           "frequency": "Day",
+          "startTime": "2025-02-09",
           "interval": 1,
           "timeZone": "W. Europe Standard Time",
           "schedule": {

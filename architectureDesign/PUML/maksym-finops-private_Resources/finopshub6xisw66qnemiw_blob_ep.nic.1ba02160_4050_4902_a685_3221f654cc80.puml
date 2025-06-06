@@ -1,0 +1,57 @@
+@startuml
+
+title Resources Display - Component Diagram
+
+component Component {
+
+json  Resource_Properties {
+  "provisioningState": "Succeeded",
+  "enableAcceleratedNetworking": false,
+  "defaultOutboundConnectivityEnabled": false,
+  "resourceGuid": "18b90316-05e5-4ead-8d2c-4a4328eddf8f",
+  "disableTcpStateTracking": false,
+  "vnetEncryptionSupported": false,
+  "ipConfigurations": [
+    {
+      "properties": {
+        "provisioningState": "Succeeded",
+        "privateIPAddressVersion": "IPv4",
+        "privateIPAllocationMethod": "Dynamic",
+        "subnet": {
+          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Network/virtualNetworks/finopshub-vnet-norwayeast/subnets/private-endpoint-subnet"
+        },
+        "privateIPAddress": "10.104.13.7",
+        "primary": true,
+        "privateLinkConnectionProperties": {
+          "requiredMemberName": "blob",
+          "groupId": "blob",
+          "fqdns": [
+            "finopshub6xisw66qnemiw.blob.core.windows.net"
+          ]
+        }
+      },
+      "name": "privateEndpointIpConfig.4ef149a8-c24f-46ad-ad2a-7b9798c17518",
+      "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
+      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Network/networkInterfaces/finopshub6xisw66qnemiw-blob-ep.nic.1ba02160-4050-4902-a685-3221f654cc80/ipConfigurations/privateEndpointIpConfig.4ef149a8-c24f-46ad-ad2a-7b9798c17518",
+      "etag": "W/\"fed868fd-77ef-4563-aaaa-18857995ad92\""
+    }
+  ],
+  "enableIPForwarding": false,
+  "tapConfigurations": [],
+  "hostedWorkloads": [],
+  "allowPort25Out": true,
+  "dnsSettings": {
+    "appliedDnsServers": [],
+    "internalDomainNameSuffix": "pga3ftvdtvwunhdl1tdi3l02qa.oslx.internal.cloudapp.net",
+    "dnsServers": []
+  },
+  "auxiliaryMode": "None",
+  "auxiliarySku": "None",
+  "macAddress": "",
+  "nicType": "Standard",
+  "privateEndpoint": {
+    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Network/privateEndpoints/finopshub6xisw66qnemiw-blob-ep"
+  }
+}
+}
+@enduml

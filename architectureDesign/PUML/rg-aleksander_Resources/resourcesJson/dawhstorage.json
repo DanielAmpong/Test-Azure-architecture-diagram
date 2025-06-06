@@ -29,11 +29,11 @@
     "web": "https://dawhstorage.z1.web.core.windows.net/",
     "dfs": "https://dawhstorage.dfs.core.windows.net/"
   },
+  "primaryLocation": "norwayeast",
   "keyCreationTime": {
     "key2": "2025-05-23T07:16:56.7751993Z",
     "key1": "2025-05-23T07:16:56.7751993Z"
   },
-  "primaryLocation": "norwayeast",
   "statusOfPrimary": "available",
   "creationTime": "2025-05-23T07:16:56.7282732Z",
   "networkAcls": {
@@ -47,8 +47,8 @@
   "accessTier": "Hot",
   "largeFileSharesState": "Enabled",
   "routingPreference": {
-    "publishMicrosoftEndpoints": false,
     "publishInternetEndpoints": false,
+    "publishMicrosoftEndpoints": false,
     "routingChoice": "InternetRouting"
   }
 }

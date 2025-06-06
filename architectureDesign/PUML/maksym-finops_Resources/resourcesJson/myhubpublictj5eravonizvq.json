@@ -29,8 +29,8 @@
   "statusOfPrimary": "available",
   "primaryLocation": "norwayeast",
   "keyCreationTime": {
-    "key1": "2025-04-11T15:45:39.1495327Z",
-    "key2": "2025-04-11T15:45:39.1495327Z"
+    "key2": "2025-04-11T15:45:39.1495327Z",
+    "key1": "2025-04-11T15:45:39.1495327Z"
   },
   "creationTime": "2025-04-11T15:45:39.0870457Z",
   "networkAcls": {

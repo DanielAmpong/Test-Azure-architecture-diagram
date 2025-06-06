@@ -4,17 +4,17 @@
   "networkAccessPolicy": "AllowAll",
   "timeCreated": "2025-01-13T14:53:55.1937281Z",
   "diskSizeGB": 50,
-  "diskSizeBytes": 53687091200,
   "encryption": {
     "type": "EncryptionAtRestWithPlatformKey"
   },
+  "diskSizeBytes": 53687091200,
   "creationData": {
     "createOption": "Empty"
   },
-  "diskState": "Unattached",
   "LastOwnershipUpdateTime": "2025-01-14T10:07:56.8739114Z",
+  "diskState": "Unattached",
   "uniqueId": "e656725a-c155-4b4e-a00e-b4faa78b53df",
-  "diskMBpsReadWrite": 50,
   "diskIOPSReadWrite": 240,
+  "diskMBpsReadWrite": 50,
   "tier": "P6"
 }

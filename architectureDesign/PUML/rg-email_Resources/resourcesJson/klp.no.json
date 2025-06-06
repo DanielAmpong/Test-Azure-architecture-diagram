@@ -38,18 +38,18 @@
       "status": "Verified",
       "errorCode": "None"
     },
+    "DMARC": {
+      "status": "NotStarted"
+    },
     "DKIM": {
       "status": "Verified",
       "errorCode": "None"
-    },
-    "DMARC": {
-      "status": "NotStarted"
     },
     "SPF": {
       "status": "Verified",
       "errorCode": "None"
     }
   },
-  "fromSenderDomain": "klp.no",
-  "domainManagement": "CustomerManaged"
+  "domainManagement": "CustomerManaged",
+  "fromSenderDomain": "klp.no"
 }

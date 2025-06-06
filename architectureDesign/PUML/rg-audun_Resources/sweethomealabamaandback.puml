@@ -7,9 +7,9 @@ component Component {
 json  Resource_Properties {
   "provisioningState": "Succeeded",
   "publicNetworkAccess": "Enabled",
+  "privateEndpointConnections": [],
   "encryption": {
     "keySource": "Microsoft.Storage",
-    "requireInfrastructureEncryption": false,
     "services": {
       "blob": {
         "enabled": true,
@@ -21,13 +21,12 @@ json  Resource_Properties {
         "lastEnabledTime": "2024-11-27T13:03:27.3025065Z",
         "keyType": "Account"
       }
-    }
+    },
+    "requireInfrastructureEncryption": false
   },
-  "privateEndpointConnections": [],
   "supportsHttpsTrafficOnly": true,
   "allowBlobPublicAccess": false,
   "minimumTlsVersion": "TLS1_2",
-  "allowCrossTenantReplication": false,
   "primaryEndpoints": {
     "blob": "https://sweethomealabamaandback.blob.core.windows.net/",
     "file": "https://sweethomealabamaandback.file.core.windows.net/",
@@ -36,12 +35,13 @@ json  Resource_Properties {
     "web": "https://sweethomealabamaandback.z1.web.core.windows.net/",
     "dfs": "https://sweethomealabamaandback.dfs.core.windows.net/"
   },
-  "primaryLocation": "norwayeast",
+  "allowCrossTenantReplication": false,
   "keyCreationTime": {
     "key2": "2024-11-27T13:03:26.9587902Z",
     "key1": "2024-11-27T13:03:26.9587902Z"
   },
   "statusOfPrimary": "available",
+  "primaryLocation": "norwayeast",
   "creationTime": "2024-11-27T13:03:26.8961819Z",
   "networkAcls": {
     "virtualNetworkRules": [],
@@ -51,10 +51,10 @@ json  Resource_Properties {
     "bypass": "AzureServices"
   },
   "allowSharedKeyAccess": true,
-  "defaultToOAuthAuthentication": false,
   "accessTier": "Hot",
-  "largeFileSharesState": "Enabled",
+  "defaultToOAuthAuthentication": false,
   "dnsEndpointType": "Standard",
+  "largeFileSharesState": "Enabled",
   "allowCrossTenantReplicationToAzureBackup": true
 }
 }

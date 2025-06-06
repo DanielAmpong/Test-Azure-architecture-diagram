@@ -1,0 +1,30 @@
+@startuml
+
+title Resources Display - Component Diagram
+
+component Component {
+
+json  Resource_Properties {
+  "enabled": true,
+  "automationRunbookReceivers": [],
+  "azureFunctionReceivers": [],
+  "azureAppPushReceivers": [],
+  "eventHubReceivers": [],
+  "logicAppReceivers": [],
+  "webhookReceivers": [],
+  "armRoleReceivers": [],
+  "groupShortName": "lz-sec-ag",
+  "emailReceivers": [
+    {
+      "name": "cyberwarriors@klp.no",
+      "status": "Enabled",
+      "useCommonAlertSchema": false,
+      "emailAddress": "cyberwarriors@klp.no"
+    }
+  ],
+  "voiceReceivers": [],
+  "itsmReceivers": [],
+  "smsReceivers": []
+}
+}
+@enduml

@@ -83,8 +83,8 @@ json  Resource_Properties {
   },
   "primaryLocation": "norwayeast",
   "keyCreationTime": {
-    "key2": "2025-06-05T09:59:36.719623Z",
-    "key1": "2025-06-05T09:59:36.719623Z"
+    "key1": "2025-06-05T09:59:36.719623Z",
+    "key2": "2025-06-05T09:59:36.719623Z"
   },
   "statusOfPrimary": "available",
   "creationTime": "2025-06-05T09:59:36.6414969Z",

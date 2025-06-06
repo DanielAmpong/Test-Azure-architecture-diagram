@@ -43,13 +43,13 @@ json  Resource_Properties {
     "DKIM2": {
       "status": "NotStarted"
     },
-    "DMARC": {
-      "status": "NotStarted"
-    },
     "DKIM": {
       "status": "NotStarted"
     },
     "SPF": {
+      "status": "NotStarted"
+    },
+    "DMARC": {
       "status": "NotStarted"
     }
   },

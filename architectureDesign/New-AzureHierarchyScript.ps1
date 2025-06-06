@@ -163,11 +163,11 @@ resources
             $azureResourceGraph = Search-AzGraph -Query $query -Subscription $subscription.Id
             $propertiesJson = $azureResourceGraph.properties | ConvertTo-Json -Depth 30
     
-            $resourceOutputFile = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources\resourcesJson").FullName)\$($resourceLabel).json"
+            $resourceOutputFile = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources\resourcesJson").FullName)\$($resourceLabel_).json"
             if (Test-Path -Path $resourceOutputFile) { Remove-Item -Path $resourceOutputFile | Out-Null }
             $propertiesJson | Out-File -FilePath $resourceOutputFile -Append -Encoding utf8
 
-            $resourceOutputFolder = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources").FullName)\$($resourceLabel).puml"
+            $resourceOutputFolder = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources").FullName)\$($resourceLabel_).puml"
             if (Test-Path -Path $resourceOutputFolder) { Remove-Item -Path $resourceOutputFolder | Out-Null }
 
             "@startuml" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8

@@ -42,13 +42,10 @@ json  Resource_Properties {
   "hardwareProfile": {
     "vmSize": "Standard_DS1_v2"
   },
-  "licenseType": "Windows_Server",
   "osProfile": {
     "requireGuestProvisionSignal": true,
     "computerName": "bjsscales05UJOA",
     "allowExtensionOperations": true,
-    "secrets": [],
-    "adminUsername": "testss",
     "windowsConfiguration": {
       "provisionVMAgent": true,
       "patchSettings": {
@@ -58,13 +55,16 @@ json  Resource_Properties {
       },
       "enableAutomaticUpdates": true,
       "enableVMAgentPlatformUpdates": true
-    }
+    },
+    "adminUsername": "testss",
+    "secrets": []
   },
   "diagnosticsProfile": {
     "bootDiagnostics": {
       "enabled": true
     }
   },
+  "licenseType": "Windows_Server",
   "extended": {
     "instanceView": {
       "hyperVGeneration": "V2",

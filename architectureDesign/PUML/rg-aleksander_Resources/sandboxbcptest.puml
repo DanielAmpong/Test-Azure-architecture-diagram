@@ -7,6 +7,7 @@ component Component {
 json  Resource_Properties {
   "provisioningState": "Succeeded",
   "publicNetworkAccess": "Enabled",
+  "privateEndpointConnections": [],
   "encryption": {
     "keySource": "Microsoft.Storage",
     "services": {
@@ -23,11 +24,9 @@ json  Resource_Properties {
     },
     "requireInfrastructureEncryption": false
   },
-  "privateEndpointConnections": [],
   "supportsHttpsTrafficOnly": true,
   "allowBlobPublicAccess": false,
   "minimumTlsVersion": "TLS1_2",
-  "allowCrossTenantReplication": false,
   "primaryEndpoints": {
     "blob": "https://sandboxbcptest.blob.core.windows.net/",
     "file": "https://sandboxbcptest.file.core.windows.net/",
@@ -36,12 +35,13 @@ json  Resource_Properties {
     "web": "https://sandboxbcptest.z1.web.core.windows.net/",
     "dfs": "https://sandboxbcptest.dfs.core.windows.net/"
   },
-  "primaryLocation": "norwayeast",
-  "statusOfPrimary": "available",
+  "allowCrossTenantReplication": false,
   "keyCreationTime": {
     "key2": "2024-12-03T11:53:31.0112682Z",
     "key1": "2024-12-03T11:53:31.0112682Z"
   },
+  "statusOfPrimary": "available",
+  "primaryLocation": "norwayeast",
   "creationTime": "2024-12-03T11:53:30.9644485Z",
   "networkAcls": {
     "virtualNetworkRules": [],

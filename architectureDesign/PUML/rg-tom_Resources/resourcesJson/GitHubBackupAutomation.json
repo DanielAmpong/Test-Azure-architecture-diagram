@@ -13,9 +13,9 @@
     "capacity": null,
     "family": null
   },
+  "disableLocalAuth": false,
   "lastModifiedTime": "2025-02-19T08:20:50.0533333Z",
   "lastModifiedBy": null,
-  "disableLocalAuth": false,
   "automationHybridServiceUrl": "https://8303b635-e1a6-4db3-9026-d345e5acad5e.jrds.noe.azure-automation.net/automationAccounts/8303b635-e1a6-4db3-9026-d345e5acad5e",
   "RuntimeConfiguration": {
     "powershell72": {
