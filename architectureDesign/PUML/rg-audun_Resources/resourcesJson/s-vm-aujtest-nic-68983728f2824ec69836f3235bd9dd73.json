@@ -1,8 +1,8 @@
 {
   "provisioningState": "Succeeded",
   "enableAcceleratedNetworking": false,
-  "defaultOutboundConnectivityEnabled": false,
   "resourceGuid": "602c5bd1-25d1-4310-baac-0e0499eac75e",
+  "defaultOutboundConnectivityEnabled": false,
   "disableTcpStateTracking": false,
   "vnetEncryptionSupported": false,
   "ipConfigurations": [
@@ -33,8 +33,8 @@
     "appliedDnsServers": [],
     "dnsServers": []
   },
-  "auxiliarySku": "None",
   "macAddress": "00-22-48-75-86-7E",
+  "auxiliarySku": "None",
   "virtualMachine": {
     "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest"
   },

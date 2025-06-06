@@ -9,7 +9,6 @@
       {
         "properties": {
           "provisioningState": "Succeeded",
-          "privateLinkServiceNetworkPolicies": "Enabled",
           "ipConfigurations": [
             {
               "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/DNA-TEST/providers/Microsoft.Network/networkInterfaces/T-DNA-RHEL1-NIC/ipConfigurations/IPCONFIG"
@@ -24,8 +23,9 @@
               "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-BJORNJORGEN/providers/Microsoft.Network/networkInterfaces/T-BJS2-WIN1-NIC/ipConfigurations/IPCONFIG"
             }
           ],
-          "privateEndpointNetworkPolicies": "Enabled",
           "addressPrefix": "10.0.0.0/28",
+          "privateLinkServiceNetworkPolicies": "Enabled",
+          "privateEndpointNetworkPolicies": "Enabled",
           "networkSecurityGroup": {
             "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg"
           },
@@ -98,9 +98,9 @@
       {
         "properties": {
           "provisioningState": "Succeeded",
+          "addressPrefix": "10.1.0.0/24",
           "privateLinkServiceNetworkPolicies": "Enabled",
           "privateEndpointNetworkPolicies": "Disabled",
-          "addressPrefix": "10.1.0.0/24",
           "delegations": [],
           "serviceEndpoints": [
             {
@@ -128,9 +128,9 @@
       {
         "properties": {
           "provisioningState": "Succeeded",
+          "addressPrefix": "10.0.0.32/28",
           "privateLinkServiceNetworkPolicies": "Enabled",
           "privateEndpointNetworkPolicies": "Enabled",
-          "addressPrefix": "10.0.0.32/28",
           "networkSecurityGroup": {
             "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-adds-test-nsg"
           },
@@ -203,14 +203,14 @@
       {
         "properties": {
           "provisioningState": "Succeeded",
-          "privateLinkServiceNetworkPolicies": "Enabled",
           "ipConfigurations": [
             {
               "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/LZ-NETWORK-NORWAYEAST/providers/Microsoft.Network/bastionHosts/LZ-NETWORK-NORWAYEAST-VNET-BASTION/bastionHostIpConfigurations/IPCONF"
             }
           ],
-          "privateEndpointNetworkPolicies": "Disabled",
           "addressPrefix": "10.0.0.64/26",
+          "privateLinkServiceNetworkPolicies": "Enabled",
+          "privateEndpointNetworkPolicies": "Disabled",
           "delegations": []
         },
         "name": "AzureBastionSubnet",
@@ -221,7 +221,6 @@
       {
         "properties": {
           "provisioningState": "Succeeded",
-          "privateLinkServiceNetworkPolicies": "Enabled",
           "ipConfigurations": [
             {
               "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-ALEKSANDER/providers/Microsoft.Network/networkInterfaces/D-AWH-APPWM1-NIC/ipConfigurations/IPCONFIG"
@@ -233,8 +232,9 @@
               "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Network/networkInterfaces/S-VM-AUJTEST-NIC-68983728F2824EC69836F3235BD9DD73/ipConfigurations/011A8D02B4F24C578EBDD2BE693834BA"
             }
           ],
-          "privateEndpointNetworkPolicies": "Enabled",
           "addressPrefix": "10.0.0.16/28",
+          "privateLinkServiceNetworkPolicies": "Enabled",
+          "privateEndpointNetworkPolicies": "Enabled",
           "networkSecurityGroup": {
             "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-default-nsg"
           },
@@ -322,14 +322,14 @@
       {
         "properties": {
           "provisioningState": "Succeeded",
-          "privateLinkServiceNetworkPolicies": "Enabled",
           "ipConfigurations": [
             {
               "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Network/networkInterfaces/LINUX-BACKUP-TESTVMNIC/ipConfigurations/IPCONFIGLINUX-BACKUP-TEST"
             }
           ],
-          "privateEndpointNetworkPolicies": "Disabled",
           "addressPrefix": "10.0.0.0/24",
+          "privateLinkServiceNetworkPolicies": "Enabled",
+          "privateEndpointNetworkPolicies": "Disabled",
           "delegations": []
         },
         "name": "default",

@@ -4,17 +4,17 @@
   "networkAccessPolicy": "AllowAll",
   "timeCreated": "2025-01-14T10:50:32.4975466Z",
   "diskSizeGB": 50,
-  "diskSizeBytes": 53687091200,
   "encryption": {
     "type": "EncryptionAtRestWithPlatformKey"
   },
+  "diskSizeBytes": 53687091200,
   "creationData": {
     "createOption": "Restore",
     "sourceResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun-linux-test11/providers/Microsoft.Compute/restorePointCollections/AzureBackup_linux-backup-test_7566064966473037613/restorePoints/AzureBackup_20250113_033334/diskRestorePoints/LinuxDataDisk_c9cc9bd5-9e52-4289-adbb-4ede910d2368"
   },
   "diskState": "Unattached",
-  "uniqueId": "36d874aa-3dfe-4582-8ca3-2785079a00f2",
   "LastOwnershipUpdateTime": "2025-01-14T12:37:32.0945351Z",
+  "uniqueId": "36d874aa-3dfe-4582-8ca3-2785079a00f2",
   "diskIOPSReadWrite": 240,
   "diskMBpsReadWrite": 50,
   "tier": "P6"

@@ -14,11 +14,11 @@
       "osDisk": {
         "name": "t-linux-vm-osdisk",
         "createOption": "FromImage",
+        "osType": "Linux",
         "deleteOption": "Delete",
         "managedDisk": {
           "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/LINUX-TEST/providers/Microsoft.Compute/disks/t-linux-vm-osdisk"
         },
-        "osType": "Linux",
         "caching": "ReadWrite"
       }
     },
@@ -42,8 +42,8 @@
       "secrets": [],
       "adminUsername": "sysadm",
       "linuxConfiguration": {
-        "disablePasswordAuthentication": false,
         "provisionVMAgent": true,
+        "disablePasswordAuthentication": false,
         "patchSettings": {
           "assessmentMode": "ImageDefault",
           "patchMode": "ImageDefault"
@@ -83,12 +83,12 @@
         "name": "t-linux-vm-osdisk",
         "createOption": "FromImage",
         "diskSizeGB": 30,
+        "osType": "Linux",
         "deleteOption": "Delete",
         "managedDisk": {
           "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rbac-test/providers/Microsoft.Compute/disks/t-linux-vm-osdisk",
           "storageAccountType": "Standard_LRS"
         },
-        "osType": "Linux",
         "caching": "ReadWrite"
       }
     },
@@ -112,8 +112,8 @@
       "secrets": [],
       "adminUsername": "sysadm",
       "linuxConfiguration": {
-        "disablePasswordAuthentication": false,
         "provisionVMAgent": true,
+        "disablePasswordAuthentication": false,
         "patchSettings": {
           "assessmentMode": "ImageDefault",
           "patchMode": "ImageDefault"

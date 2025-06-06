@@ -21,11 +21,11 @@
   "dnsName": "bst-16eafad2-44a4-40c0-80b0-80e3693868c6.bastion.azure.com",
   "enableShareableLink": false,
   "enableTunneling": true,
+  "enableIpConnect": false,
   "scaleUnits": 2,
   "disableCopyPaste": false,
-  "enableIpConnect": false,
-  "enablePrivateOnlyBastion": false,
   "enableKerberos": false,
+  "enablePrivateOnlyBastion": false,
   "enableSessionRecording": false,
   "publicUri": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/publicIPAddresses/lz-network-norwayeast-vnet-ip"
 }

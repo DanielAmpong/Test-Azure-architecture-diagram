@@ -3,6 +3,7 @@
   "automationRunbookReceivers": [],
   "azureFunctionReceivers": [],
   "azureAppPushReceivers": [],
+  "logicAppReceivers": [],
   "eventHubReceivers": [
     {
       "name": "security advisories",
@@ -13,7 +14,6 @@
       "eventHubName": "p-securityadvisories-evh"
     }
   ],
-  "logicAppReceivers": [],
   "webhookReceivers": [],
   "armRoleReceivers": [],
   "groupShortName": "SRE Teams",

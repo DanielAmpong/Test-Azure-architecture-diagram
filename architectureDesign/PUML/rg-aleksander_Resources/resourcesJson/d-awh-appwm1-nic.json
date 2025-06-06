@@ -1,9 +1,9 @@
 {
   "provisioningState": "Succeeded",
   "enableAcceleratedNetworking": false,
+  "defaultOutboundConnectivityEnabled": true,
   "resourceGuid": "2c880fef-acfa-4004-bedd-12f699f488b6",
   "disableTcpStateTracking": false,
-  "defaultOutboundConnectivityEnabled": true,
   "vnetEncryptionSupported": false,
   "ipConfigurations": [
     {
@@ -12,10 +12,10 @@
         "privateIPAddressVersion": "IPv4",
         "privateIPAllocationMethod": "Dynamic",
         "privateIPAddress": "10.0.0.22",
+        "primary": true,
         "subnet": {
           "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/default"
-        },
-        "primary": true
+        }
       },
       "name": "ipconfig",
       "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
@@ -28,12 +28,12 @@
   "primary": true,
   "hostedWorkloads": [],
   "allowPort25Out": true,
-  "auxiliaryMode": "None",
   "dnsSettings": {
     "appliedDnsServers": [],
     "internalDomainNameSuffix": "pquq0qan4vse5gqto15kewgzsd.oslx.internal.cloudapp.net",
     "dnsServers": []
   },
+  "auxiliaryMode": "None",
   "auxiliarySku": "None",
   "macAddress": "7C-ED-8D-25-02-E3",
   "virtualMachine": {

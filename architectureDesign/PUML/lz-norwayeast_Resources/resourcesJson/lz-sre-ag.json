@@ -7,7 +7,6 @@
   "eventHubReceivers": [],
   "webhookReceivers": [],
   "armRoleReceivers": [],
-  "groupShortName": "lz-sre-ag",
   "emailReceivers": [
     {
       "name": "SRE-Team@klp.no",
@@ -16,6 +15,7 @@
       "emailAddress": "SRE-Team@klp.no"
     }
   ],
+  "groupShortName": "lz-sre-ag",
   "voiceReceivers": [],
   "itsmReceivers": [],
   "smsReceivers": []

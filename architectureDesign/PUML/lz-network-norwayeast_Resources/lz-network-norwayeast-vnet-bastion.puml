@@ -4,6 +4,36 @@ title Resources Display - Component Diagram
 
 component Component {
 
-json  Resource_Properties {   "displayName": "mailConnection",   "createdTime": "2025-03-13T14:18:32.3540913Z",   "customParameterValues": {},   "authenticatedUser": {},   "changedTime": "2025-03-13T14:18:32.3540913Z",   "connectionState": "Enabled",   "overallStatus": "Connected",   "testRequests": [],   "parameterValues": {},   "testLinks": [],   "statuses": [     {       "status": "Connected"     }   ],   "api": {     "name": "acsemail",     "type": "Microsoft.Web/locations/managedApis",     "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/providers/Microsoft.Web/locations/norwayeast/managedApis/acsemail",     "description": "Connector to send Email using the domains linked to the Azure Communication Services in your subscription.",     "displayName": "Azure Communication Email",     "category": "Standard",     "brandColor": "#3C1D6E",     "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1677/1.0.1677.3631/acsemail/icon.png"   } }
+json  Resource_Properties {
+  "provisioningState": "Succeeded",
+  "ipConfigurations": [
+    {
+      "properties": {
+        "provisioningState": "Succeeded",
+        "privateIPAllocationMethod": "Dynamic",
+        "subnet": {
+          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/AzureBastionSubnet"
+        },
+        "publicIPAddress": {
+          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/publicIPAddresses/lz-network-norwayeast-vnet-ip"
+        }
+      },
+      "name": "IpConf",
+      "type": "Microsoft.Network/bastionHosts/bastionHostIpConfigurations",
+      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/bastionHosts/lz-network-norwayeast-vnet-bastion/bastionHostIpConfigurations/IpConf",
+      "etag": "W/\"a5fe6cd5-075b-48ad-92ba-acf0c979057a\""
+    }
+  ],
+  "dnsName": "bst-16eafad2-44a4-40c0-80b0-80e3693868c6.bastion.azure.com",
+  "enableShareableLink": false,
+  "enableTunneling": true,
+  "enableIpConnect": false,
+  "scaleUnits": 2,
+  "disableCopyPaste": false,
+  "enableKerberos": false,
+  "enablePrivateOnlyBastion": false,
+  "enableSessionRecording": false,
+  "publicUri": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/publicIPAddresses/lz-network-norwayeast-vnet-ip"
+}
 }
 @enduml

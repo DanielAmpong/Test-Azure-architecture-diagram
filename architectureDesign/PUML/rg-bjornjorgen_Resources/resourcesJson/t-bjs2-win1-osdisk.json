@@ -23,14 +23,13 @@
     "diskControllerTypes": "SCSI"
   },
   "uniqueId": "947197f1-1bd1-4f89-acaa-94c219665f73",
-  "osType": "Windows",
-  "diskMBpsReadWrite": 100,
   "diskIOPSReadWrite": 500,
+  "diskMBpsReadWrite": 100,
+  "osType": "Windows",
   "supportsHibernation": true,
   "tier": "P10",
   "encryptionSettingsCollection": {
     "enabled": true,
-    "encryptionSettingsVersion": "1.1",
     "encryptionSettings": [
       {
         "diskEncryptionKey": {
@@ -46,6 +45,7 @@
           "keyUrl": "https://t-bjs2-win-kv-k4l6.vault.azure.net/keys/lz-vm-disk-encrypt-key/7b93e8f294ef4be5b18fbc6552914237"
         }
       }
-    ]
+    ],
+    "encryptionSettingsVersion": "1.1"
   }
 }

@@ -50,7 +50,6 @@
       }
     }
   },
-  "vmId": "55f01483-d2f8-4db6-8271-c78d6d7a9822",
   "extended": {
     "instanceView": {
       "hyperVGeneration": "V1",
@@ -60,5 +59,6 @@
         "code": "PowerState/deallocated"
       }
     }
-  }
+  },
+  "vmId": "55f01483-d2f8-4db6-8271-c78d6d7a9822"
 }

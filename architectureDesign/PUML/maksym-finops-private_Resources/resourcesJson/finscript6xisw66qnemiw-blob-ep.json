@@ -10,6 +10,7 @@
       "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Network/networkInterfaces/finscript6xisw66qnemiw-blob-ep.nic.28e1bf09-abd5-4379-b4fa-fe7ca5e34e03"
     }
   ],
+  "manualPrivateLinkServiceConnections": [],
   "privateLinkServiceConnections": [
     {
       "properties": {
@@ -30,7 +31,6 @@
       "etag": "W/\"e43eae13-5bcb-47f5-980b-a2877ca5e507\""
     }
   ],
-  "manualPrivateLinkServiceConnections": [],
   "customNetworkInterfaceName": "",
   "customDnsConfigs": [],
   "ipVersionType": "IPv4"

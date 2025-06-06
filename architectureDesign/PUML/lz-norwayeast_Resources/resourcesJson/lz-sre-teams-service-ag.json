@@ -3,6 +3,7 @@
   "automationRunbookReceivers": [],
   "azureFunctionReceivers": [],
   "azureAppPushReceivers": [],
+  "logicAppReceivers": [],
   "eventHubReceivers": [
     {
       "name": "service issue",
@@ -13,11 +14,10 @@
       "eventHubName": "p-serviceissues-evh"
     }
   ],
-  "logicAppReceivers": [],
   "webhookReceivers": [],
   "armRoleReceivers": [],
-  "emailReceivers": [],
   "groupShortName": "SRE Teams",
+  "emailReceivers": [],
   "voiceReceivers": [],
   "itsmReceivers": [],
   "smsReceivers": []

@@ -3,7 +3,6 @@
   "publicNetworkAccess": "Enabled",
   "encryption": {
     "keySource": "Microsoft.Storage",
-    "requireInfrastructureEncryption": false,
     "services": {
       "blob": {
         "enabled": true,
@@ -15,7 +14,8 @@
         "lastEnabledTime": "2025-03-26T11:53:42.0100242Z",
         "keyType": "Account"
       }
-    }
+    },
+    "requireInfrastructureEncryption": false
   },
   "privateEndpointConnections": [],
   "supportsHttpsTrafficOnly": true,
@@ -30,12 +30,12 @@
     "web": "https://soctestsnap.z1.web.core.windows.net/",
     "dfs": "https://soctestsnap.dfs.core.windows.net/"
   },
+  "primaryLocation": "norwayeast",
   "keyCreationTime": {
     "key2": "2025-03-26T11:53:42.0100242Z",
     "key1": "2025-03-26T11:53:42.0100242Z"
   },
   "statusOfPrimary": "available",
-  "primaryLocation": "norwayeast",
   "creationTime": "2025-03-26T11:53:41.9474655Z",
   "networkAcls": {
     "virtualNetworkRules": [],
@@ -45,10 +45,10 @@
     "bypass": "AzureServices"
   },
   "allowSharedKeyAccess": true,
-  "defaultToOAuthAuthentication": false,
   "accessTier": "Hot",
-  "statusOfSecondary": "available",
+  "defaultToOAuthAuthentication": false,
   "secondaryLocation": "norwaywest",
+  "statusOfSecondary": "available",
   "secondaryEndpoints": {
     "blob": "https://soctestsnap-secondary.blob.core.windows.net/",
     "table": "https://soctestsnap-secondary.table.core.windows.net/",

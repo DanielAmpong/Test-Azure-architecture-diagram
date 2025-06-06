@@ -4,6 +4,29 @@ title Resources Display - Component Diagram
 
 component Component {
 
-json  Resource_Properties {   "displayName": "mailConnection",   "createdTime": "2025-03-13T14:18:32.3540913Z",   "customParameterValues": {},   "authenticatedUser": {},   "changedTime": "2025-03-13T14:18:32.3540913Z",   "connectionState": "Enabled",   "overallStatus": "Connected",   "testRequests": [],   "parameterValues": {},   "testLinks": [],   "statuses": [     {       "status": "Connected"     }   ],   "api": {     "name": "acsemail",     "type": "Microsoft.Web/locations/managedApis",     "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/providers/Microsoft.Web/locations/norwayeast/managedApis/acsemail",     "description": "Connector to send Email using the domains linked to the Azure Communication Services in your subscription.",     "displayName": "Azure Communication Email",     "category": "Standard",     "brandColor": "#3C1D6E",     "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1677/1.0.1677.3631/acsemail/icon.png"   } }
+json  Resource_Properties {
+  "provisioningState": "Succeeded",
+  "enabled": true,
+  "retentionPolicy": {
+    "enabled": true,
+    "days": 0
+  },
+  "targetResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/NetworkSecurityGroups/lz-network-norwayeast-vnet-adds-test-nsg",
+  "flowAnalyticsConfiguration": {
+    "networkWatcherFlowAnalyticsConfiguration": {
+      "enabled": true,
+      "workspaceId": "110c7467-ccde-4baa-9a6a-a5a343f22910",
+      "workspaceResourceId": "/subscriptions/3c30e703-3724-46ce-983a-91b9a78d5941/resourcegroups/p-log/providers/microsoft.operationalinsights/workspaces/p-log-platform-log",
+      "trafficAnalyticsInterval": 10,
+      "workspaceRegion": "norwayeast"
+    }
+  },
+  "storageId": "/subscriptions/3c30e703-3724-46ce-983a-91b9a78d5941/resourceGroups/p-log/providers/Microsoft.Storage/storageAccounts/nsgflowlogs14423",
+  "format": {
+    "type": "JSON",
+    "version": 2
+  },
+  "targetResourceGuid": "2d24d254-f0f9-4d5b-8ea9-c50058a02065"
+}
 }
 @enduml

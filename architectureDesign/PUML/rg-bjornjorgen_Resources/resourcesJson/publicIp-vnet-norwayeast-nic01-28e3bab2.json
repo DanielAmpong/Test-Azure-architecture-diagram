@@ -1,7 +1,7 @@
 {
   "provisioningState": "Succeeded",
-  "resourceGuid": "2f01cec8-92d6-482d-9325-f5a28567e6e4",
   "idleTimeoutInMinutes": 15,
+  "resourceGuid": "2f01cec8-92d6-482d-9325-f5a28567e6e4",
   "publicIPAllocationMethod": "Static",
   "publicIPAddressVersion": "IPv4",
   "ipAddress": "20.251.200.196",

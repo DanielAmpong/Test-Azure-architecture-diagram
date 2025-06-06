@@ -37,16 +37,16 @@
     "DKIM2": {
       "status": "NotStarted"
     },
+    "DMARC": {
+      "status": "NotStarted"
+    },
     "DKIM": {
       "status": "NotStarted"
     },
     "SPF": {
       "status": "NotStarted"
-    },
-    "DMARC": {
-      "status": "NotStarted"
     }
   },
-  "fromSenderDomain": "klp-test.no",
-  "domainManagement": "CustomerManaged"
+  "domainManagement": "CustomerManaged",
+  "fromSenderDomain": "klp-test.no"
 }

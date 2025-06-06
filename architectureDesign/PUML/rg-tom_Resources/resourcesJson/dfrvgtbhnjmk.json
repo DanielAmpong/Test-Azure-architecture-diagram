@@ -3,7 +3,6 @@
   "publicNetworkAccess": "Enabled",
   "encryption": {
     "keySource": "Microsoft.Storage",
-    "requireInfrastructureEncryption": false,
     "services": {
       "blob": {
         "enabled": true,
@@ -15,7 +14,8 @@
         "lastEnabledTime": "2025-05-19T08:15:45.8145808Z",
         "keyType": "Account"
       }
-    }
+    },
+    "requireInfrastructureEncryption": false
   },
   "privateEndpointConnections": [],
   "supportsHttpsTrafficOnly": true,
@@ -25,12 +25,12 @@
   "primaryEndpoints": {
     "file": "https://dfrvgtbhnjmk.file.core.windows.net/"
   },
+  "primaryLocation": "norwayeast",
   "statusOfPrimary": "available",
   "keyCreationTime": {
-    "key1": "2025-05-19T08:15:45.7989543Z",
-    "key2": "2025-05-19T08:15:45.7989543Z"
+    "key2": "2025-05-19T08:15:45.7989543Z",
+    "key1": "2025-05-19T08:15:45.7989543Z"
   },
-  "primaryLocation": "norwayeast",
   "creationTime": "2025-05-19T08:15:45.7364021Z",
   "networkAcls": {
     "virtualNetworkRules": [],
@@ -41,7 +41,7 @@
   },
   "allowSharedKeyAccess": true,
   "defaultToOAuthAuthentication": false,
-  "largeFileSharesState": "Enabled",
   "dnsEndpointType": "Standard",
+  "largeFileSharesState": "Enabled",
   "allowedCopyScope": "AAD"
 }

@@ -29,12 +29,12 @@
     "web": "https://pgithubbackupstorage.z1.web.core.windows.net/",
     "dfs": "https://pgithubbackupstorage.dfs.core.windows.net/"
   },
-  "statusOfPrimary": "available",
-  "keyCreationTime": {
-    "key1": "2025-02-05T07:36:57.0128319Z",
-    "key2": "2025-02-05T07:36:57.0128319Z"
-  },
   "primaryLocation": "norwayeast",
+  "keyCreationTime": {
+    "key2": "2025-02-05T07:36:57.0128319Z",
+    "key1": "2025-02-05T07:36:57.0128319Z"
+  },
+  "statusOfPrimary": "available",
   "creationTime": "2025-02-05T07:36:56.9502528Z",
   "networkAcls": {
     "virtualNetworkRules": [],
@@ -45,6 +45,6 @@
     "resourceAccessRules": []
   },
   "allowSharedKeyAccess": true,
-  "defaultToOAuthAuthentication": false,
-  "accessTier": "Cool"
+  "accessTier": "Cool",
+  "defaultToOAuthAuthentication": false
 }

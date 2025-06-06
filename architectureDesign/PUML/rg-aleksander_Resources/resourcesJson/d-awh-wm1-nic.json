@@ -2,8 +2,8 @@
   "provisioningState": "Succeeded",
   "enableAcceleratedNetworking": false,
   "resourceGuid": "b6cf68ae-dc32-4d8c-8986-4d35c50160f8",
-  "disableTcpStateTracking": false,
   "defaultOutboundConnectivityEnabled": true,
+  "disableTcpStateTracking": false,
   "vnetEncryptionSupported": false,
   "ipConfigurations": [
     {
@@ -12,10 +12,10 @@
         "privateIPAddressVersion": "IPv4",
         "privateIPAllocationMethod": "Dynamic",
         "privateIPAddress": "10.0.0.21",
+        "primary": true,
         "subnet": {
           "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/default"
-        },
-        "primary": true
+        }
       },
       "name": "ipconfig",
       "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
@@ -25,8 +25,8 @@
   ],
   "enableIPForwarding": false,
   "tapConfigurations": [],
-  "primary": true,
   "hostedWorkloads": [],
+  "primary": true,
   "allowPort25Out": true,
   "auxiliaryMode": "None",
   "dnsSettings": {
@@ -34,8 +34,8 @@
     "internalDomainNameSuffix": "pquq0qan4vse5gqto15kewgzsd.oslx.internal.cloudapp.net",
     "dnsServers": []
   },
-  "macAddress": "00-22-48-75-4A-0F",
   "auxiliarySku": "None",
+  "macAddress": "00-22-48-75-4A-0F",
   "virtualMachine": {
     "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.Compute/virtualMachines/d-awh-wm1"
   },

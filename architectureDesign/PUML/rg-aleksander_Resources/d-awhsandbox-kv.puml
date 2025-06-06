@@ -4,6 +4,23 @@ title Resources Display - Component Diagram
 
 component Component {
 
-json  Resource_Properties {   "displayName": "mailConnection",   "createdTime": "2025-03-13T14:18:32.3540913Z",   "customParameterValues": {},   "authenticatedUser": {},   "changedTime": "2025-03-13T14:18:32.3540913Z",   "connectionState": "Enabled",   "overallStatus": "Connected",   "testRequests": [],   "parameterValues": {},   "testLinks": [],   "statuses": [     {       "status": "Connected"     }   ],   "api": {     "name": "acsemail",     "type": "Microsoft.Web/locations/managedApis",     "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/providers/Microsoft.Web/locations/norwayeast/managedApis/acsemail",     "description": "Connector to send Email using the domains linked to the Azure Communication Services in your subscription.",     "displayName": "Azure Communication Email",     "category": "Standard",     "brandColor": "#3C1D6E",     "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1677/1.0.1677.3631/acsemail/icon.png"   } }
+json  Resource_Properties {
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Enabled",
+  "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
+  "enabledForTemplateDeployment": true,
+  "sku": {
+    "name": "standard",
+    "family": "A"
+  },
+  "enabledForDiskEncryption": true,
+  "enabledForDeployment": true,
+  "softDeleteRetentionInDays": 90,
+  "enableRbacAuthorization": true,
+  "accessPolicies": [],
+  "enableSoftDelete": true,
+  "enablePurgeProtection": true,
+  "vaultUri": "https://d-awhsandbox-kv.vault.azure.net/"
+}
 }
 @enduml

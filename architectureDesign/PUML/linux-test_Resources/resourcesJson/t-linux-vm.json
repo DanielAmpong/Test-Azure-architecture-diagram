@@ -14,8 +14,8 @@
       "osDisk": {
         "name": "t-linux-vm-osdisk",
         "createOption": "FromImage",
-        "deleteOption": "Delete",
         "osType": "Linux",
+        "deleteOption": "Delete",
         "managedDisk": {
           "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/LINUX-TEST/providers/Microsoft.Compute/disks/t-linux-vm-osdisk"
         },
@@ -39,8 +39,8 @@
       "requireGuestProvisionSignal": true,
       "computerName": "t-linux-vm",
       "allowExtensionOperations": true,
-      "adminUsername": "sysadm",
       "secrets": [],
+      "adminUsername": "sysadm",
       "linuxConfiguration": {
         "provisionVMAgent": true,
         "disablePasswordAuthentication": false,
@@ -55,6 +55,7 @@
         "enabled": true
       }
     },
+    "vmId": "939bbefa-119d-4a93-b521-a639deb2d088",
     "extended": {
       "instanceView": {
         "hyperVGeneration": "V1",
@@ -64,8 +65,7 @@
           "code": "PowerState/deallocated"
         }
       }
-    },
-    "vmId": "939bbefa-119d-4a93-b521-a639deb2d088"
+    }
   },
   {
     "provisioningState": "Succeeded",
@@ -83,8 +83,8 @@
         "name": "t-linux-vm-osdisk",
         "createOption": "FromImage",
         "diskSizeGB": 30,
-        "deleteOption": "Delete",
         "osType": "Linux",
+        "deleteOption": "Delete",
         "managedDisk": {
           "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rbac-test/providers/Microsoft.Compute/disks/t-linux-vm-osdisk",
           "storageAccountType": "Standard_LRS"
@@ -109,8 +109,8 @@
       "requireGuestProvisionSignal": true,
       "computerName": "t-linux-vm",
       "allowExtensionOperations": true,
-      "adminUsername": "sysadm",
       "secrets": [],
+      "adminUsername": "sysadm",
       "linuxConfiguration": {
         "provisionVMAgent": true,
         "disablePasswordAuthentication": false,
@@ -125,6 +125,7 @@
         "enabled": true
       }
     },
+    "vmId": "588330ae-7a6b-41fa-99ce-3d5332a20c36",
     "extended": {
       "instanceView": {
         "hyperVGeneration": "V1",
@@ -137,7 +138,6 @@
         "osVersion": "22.04",
         "osName": "ubuntu"
       }
-    },
-    "vmId": "588330ae-7a6b-41fa-99ce-3d5332a20c36"
+    }
   }
 ]

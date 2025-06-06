@@ -4,6 +4,37 @@ title Resources Display - Component Diagram
 
 component Component {
 
-json  Resource_Properties {   "displayName": "mailConnection",   "createdTime": "2025-03-13T14:18:32.3540913Z",   "customParameterValues": {},   "authenticatedUser": {},   "changedTime": "2025-03-13T14:18:32.3540913Z",   "connectionState": "Enabled",   "overallStatus": "Connected",   "testRequests": [],   "parameterValues": {},   "testLinks": [],   "statuses": [     {       "status": "Connected"     }   ],   "api": {     "name": "acsemail",     "type": "Microsoft.Web/locations/managedApis",     "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/providers/Microsoft.Web/locations/norwayeast/managedApis/acsemail",     "description": "Connector to send Email using the domains linked to the Azure Communication Services in your subscription.",     "displayName": "Azure Communication Email",     "category": "Standard",     "brandColor": "#3C1D6E",     "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1677/1.0.1677.3631/acsemail/icon.png"   } }
+json  Resource_Properties {
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Enabled",
+  "networkAccessPolicy": "AllowAll",
+  "timeCreated": "2025-01-14T10:07:24.2164218Z",
+  "diskSizeGB": 30,
+  "encryption": {
+    "type": "EncryptionAtRestWithPlatformKey"
+  },
+  "diskSizeBytes": 32213303296,
+  "hyperVGeneration": "V2",
+  "creationData": {
+    "createOption": "Restore",
+    "sourceResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun-linux-test11/providers/Microsoft.Compute/restorePointCollections/AzureBackup_linux-backup-test_7566064966473037613/restorePoints/AzureBackup_20250113_011702/diskRestorePoints/linux-backup-test_OsDisk_1_129dd182211d4de2935e0c81ea1c731a_ee7f329f-0752-4d24-b866-3739f090cec0"
+  },
+  "diskState": "Unattached",
+  "LastOwnershipUpdateTime": "2025-01-14T10:51:05.9984407Z",
+  "supportedCapabilities": {
+    "architecture": "x64",
+    "acceleratedNetwork": true,
+    "diskControllerTypes": "SCSI, NVMe"
+  },
+  "uniqueId": "ed853084-6587-4d81-b682-b7c4384d8d10",
+  "diskIOPSReadWrite": 120,
+  "diskMBpsReadWrite": 25,
+  "osType": "Linux",
+  "securityProfile": {
+    "securityType": "TrustedLaunch"
+  },
+  "supportsHibernation": true,
+  "tier": "P4"
+}
 }
 @enduml

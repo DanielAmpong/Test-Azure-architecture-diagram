@@ -4,6 +4,47 @@ title Resources Display - Component Diagram
 
 component Component {
 
-json  Resource_Properties {   "displayName": "mailConnection",   "createdTime": "2025-03-13T14:18:32.3540913Z",   "customParameterValues": {},   "authenticatedUser": {},   "changedTime": "2025-03-13T14:18:32.3540913Z",   "connectionState": "Enabled",   "overallStatus": "Connected",   "testRequests": [],   "parameterValues": {},   "testLinks": [],   "statuses": [     {       "status": "Connected"     }   ],   "api": {     "name": "acsemail",     "type": "Microsoft.Web/locations/managedApis",     "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/providers/Microsoft.Web/locations/norwayeast/managedApis/acsemail",     "description": "Connector to send Email using the domains linked to the Azure Communication Services in your subscription.",     "displayName": "Azure Communication Email",     "category": "Standard",     "brandColor": "#3C1D6E",     "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1677/1.0.1677.3631/acsemail/icon.png"   } }
+json  Resource_Properties {
+  "provisioningState": "Succeeded",
+  "enableAcceleratedNetworking": false,
+  "resourceGuid": "fa46756e-e1bc-4d84-9474-6e799632de72",
+  "defaultOutboundConnectivityEnabled": false,
+  "disableTcpStateTracking": false,
+  "vnetEncryptionSupported": false,
+  "ipConfigurations": [
+    {
+      "properties": {
+        "provisioningState": "Succeeded",
+        "privateIPAddressVersion": "IPv4",
+        "privateIPAllocationMethod": "Dynamic",
+        "privateIPAddress": "10.0.0.12",
+        "primary": true,
+        "subnet": {
+          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/dna-test-1"
+        }
+      },
+      "name": "ipconfig",
+      "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
+      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkInterfaces/t-bjs2-win1-nic/ipConfigurations/ipconfig",
+      "etag": "W/\"5263ec5a-0899-4924-a943-de599b83f7fb\""
+    }
+  ],
+  "enableIPForwarding": false,
+  "tapConfigurations": [],
+  "primary": true,
+  "hostedWorkloads": [],
+  "allowPort25Out": true,
+  "auxiliaryMode": "None",
+  "macAddress": "00-22-48-DD-1B-F0",
+  "dnsSettings": {
+    "appliedDnsServers": [],
+    "dnsServers": []
+  },
+  "auxiliarySku": "None",
+  "virtualMachine": {
+    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Compute/virtualMachines/t-bjs2-win1"
+  },
+  "nicType": "Standard"
+}
 }
 @enduml

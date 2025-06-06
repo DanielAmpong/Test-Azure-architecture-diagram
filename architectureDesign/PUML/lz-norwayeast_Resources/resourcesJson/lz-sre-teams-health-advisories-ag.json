@@ -16,9 +16,9 @@
   ],
   "webhookReceivers": [],
   "armRoleReceivers": [],
-  "voiceReceivers": [],
   "groupShortName": "SRE Teams",
   "emailReceivers": [],
+  "voiceReceivers": [],
   "itsmReceivers": [],
   "smsReceivers": []
 }

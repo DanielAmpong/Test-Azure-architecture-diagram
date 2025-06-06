@@ -147,7 +147,7 @@ resources
             "" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
             "component Component {" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
             "" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
-            "json  Resource_Properties $($ct)" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
+            "json  Resource_Properties $propertiesJson" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
             "}" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
             "@enduml" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
 
@@ -176,7 +176,7 @@ resources
             "" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
             "component Component {" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
             "" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
-            "json  Resource_Properties $($ct)" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
+            "json  Resource_Properties $propertiesJson" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
             "}" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
             "@enduml" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
         }

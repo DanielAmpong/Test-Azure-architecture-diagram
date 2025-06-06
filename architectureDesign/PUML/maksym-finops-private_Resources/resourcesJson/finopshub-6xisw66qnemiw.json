@@ -37,15 +37,10 @@
     "bypass": "AzureServices"
   },
   "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
-  "sku": {
-    "name": "premium",
-    "family": "A"
-  },
   "enabledForTemplateDeployment": true,
+  "enabledForDiskEncryption": true,
   "enabledForDeployment": true,
   "softDeleteRetentionInDays": 90,
-  "enableRbacAuthorization": false,
-  "enabledForDiskEncryption": true,
   "accessPolicies": [
     {
       "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
@@ -57,6 +52,11 @@
       "objectId": "49d4a749-54f5-4adc-8e15-8fc82f0af192"
     }
   ],
+  "sku": {
+    "name": "premium",
+    "family": "A"
+  },
+  "enableRbacAuthorization": false,
   "enableSoftDelete": true,
   "vaultUri": "https://finopshub-6xisw66qnemiw.vault.azure.net/"
 }

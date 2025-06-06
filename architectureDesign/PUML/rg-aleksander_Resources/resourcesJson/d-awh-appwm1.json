@@ -52,8 +52,8 @@
   },
   "osProfile": {
     "requireGuestProvisionSignal": true,
-    "computerName": "d-awh-appwm1",
     "allowExtensionOperations": true,
+    "computerName": "d-awh-appwm1",
     "adminUsername": "sysadmin",
     "secrets": [],
     "windowsConfiguration": {
@@ -62,8 +62,8 @@
         "assessmentMode": "ImageDefault",
         "patchMode": "AutomaticByOS"
       },
-      "enableVMAgentPlatformUpdates": true,
       "enableAutomaticUpdates": true,
+      "enableVMAgentPlatformUpdates": true,
       "timeZone": "W. Europe Standard Time"
     }
   },

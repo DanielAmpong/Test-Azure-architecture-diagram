@@ -4,6 +4,56 @@ title Resources Display - Component Diagram
 
 component Component {
 
-json  Resource_Properties {   "displayName": "mailConnection",   "createdTime": "2025-03-13T14:18:32.3540913Z",   "customParameterValues": {},   "authenticatedUser": {},   "changedTime": "2025-03-13T14:18:32.3540913Z",   "connectionState": "Enabled",   "overallStatus": "Connected",   "testRequests": [],   "parameterValues": {},   "testLinks": [],   "statuses": [     {       "status": "Connected"     }   ],   "api": {     "name": "acsemail",     "type": "Microsoft.Web/locations/managedApis",     "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/providers/Microsoft.Web/locations/norwayeast/managedApis/acsemail",     "description": "Connector to send Email using the domains linked to the Azure Communication Services in your subscription.",     "displayName": "Azure Communication Email",     "category": "Standard",     "brandColor": "#3C1D6E",     "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1677/1.0.1677.3631/acsemail/icon.png"   } }
+json  Resource_Properties {
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Enabled",
+  "networkAccessPolicy": "AllowAll",
+  "timeCreated": "2025-05-21T09:52:16.5757089Z",
+  "diskSizeGB": 128,
+  "encryption": {
+    "type": "EncryptionAtRestWithPlatformKey"
+  },
+  "hyperVGeneration": "V1",
+  "diskSizeBytes": 137438953472,
+  "creationData": {
+    "createOption": "FromImage",
+    "imageReference": {
+      "id": "/Subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/Providers/Microsoft.Compute/Locations/NorwayEast/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer/Skus/2022-Datacenter/Versions/20348.3692.250509"
+    }
+  },
+  "supportedCapabilities": {
+    "architecture": "x64",
+    "acceleratedNetwork": true,
+    "diskControllerTypes": "SCSI"
+  },
+  "LastOwnershipUpdateTime": "2025-05-21T09:52:16.5757089Z",
+  "diskState": "Attached",
+  "uniqueId": "aff9f740-e538-448b-8b3a-9d46510c4573",
+  "diskIOPSReadWrite": 500,
+  "diskMBpsReadWrite": 100,
+  "osType": "Windows",
+  "supportsHibernation": true,
+  "tier": "P10",
+  "encryptionSettingsCollection": {
+    "enabled": true,
+    "encryptionSettings": [
+      {
+        "diskEncryptionKey": {
+          "sourceVault": {
+            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr"
+          },
+          "secretUrl": "https://d-awh-wm-kv-3fpr.vault.azure.net/secrets/B10C8122-9C2D-4859-93BD-151EE97DFE73/d66eb77eeef54892831c29ffb6019fbe"
+        },
+        "keyEncryptionKey": {
+          "sourceVault": {
+            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr"
+          },
+          "keyUrl": "https://d-awh-wm-kv-3fpr.vault.azure.net/keys/lz-vm-disk-encrypt-key/844800abf3ac4840adcfc8324e3f63b9"
+        }
+      }
+    ],
+    "encryptionSettingsVersion": "1.1"
+  }
+}
 }
 @enduml

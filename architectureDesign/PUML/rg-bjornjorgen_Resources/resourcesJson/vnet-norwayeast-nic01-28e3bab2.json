@@ -1,12 +1,13 @@
 {
   "provisioningState": "Succeeded",
   "enableAcceleratedNetworking": false,
-  "resourceGuid": "02c48c81-aafd-4e81-98d0-c7b87259a1c2",
   "defaultOutboundConnectivityEnabled": false,
+  "resourceGuid": "02c48c81-aafd-4e81-98d0-c7b87259a1c2",
   "disableTcpStateTracking": false,
   "vnetEncryptionSupported": false,
   "ipConfigurations": [
     {
+      "name": "vnet-norwayeast-nic01-defaultIpConfiguration",
       "properties": {
         "provisioningState": "Succeeded",
         "privateIPAddressVersion": "IPv4",
@@ -23,7 +24,6 @@
           "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/publicIPAddresses/publicIp-vnet-norwayeast-nic01-28e3bab2"
         }
       },
-      "name": "vnet-norwayeast-nic01-defaultIpConfiguration",
       "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
       "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkInterfaces/vnet-norwayeast-nic01-28e3bab2/ipConfigurations/vnet-norwayeast-nic01-defaultIpConfiguration",
       "etag": "W/\"0db6e8e0-1a1e-4d74-9a60-c3f472d70bcb\""
@@ -31,21 +31,21 @@
   ],
   "enableIPForwarding": false,
   "tapConfigurations": [],
-  "primary": true,
   "hostedWorkloads": [],
+  "primary": true,
   "allowPort25Out": true,
   "auxiliaryMode": "None",
-  "macAddress": "00-22-48-DC-D6-22",
   "dnsSettings": {
     "appliedDnsServers": [],
     "dnsServers": []
   },
   "auxiliarySku": "None",
-  "virtualMachine": {
-    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Compute/virtualMachines/bjsScaleset1_bf585774"
-  },
+  "macAddress": "00-22-48-DC-D6-22",
   "networkSecurityGroup": {
     "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkSecurityGroups/basicNsgvnet-norwayeast-nic01"
+  },
+  "virtualMachine": {
+    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Compute/virtualMachines/bjsScaleset1_bf585774"
   },
   "nicType": "Standard",
   "defaultOutboundAccess": false

@@ -29,8 +29,8 @@
       "name": "t-dna-rhel1-osdisk",
       "createOption": "FromImage",
       "diskSizeGB": 128,
-      "deleteOption": "Detach",
       "osType": "Linux",
+      "deleteOption": "Detach",
       "managedDisk": {
         "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/dna-test/providers/Microsoft.Compute/disks/t-dna-rhel1-osdisk",
         "storageAccountType": "Premium_LRS"
@@ -55,11 +55,11 @@
     "requireGuestProvisionSignal": true,
     "computerName": "t-dna-rhel1",
     "allowExtensionOperations": true,
-    "adminUsername": "sysadmin",
     "secrets": [],
+    "adminUsername": "sysadmin",
     "linuxConfiguration": {
-      "disablePasswordAuthentication": false,
       "provisionVMAgent": true,
+      "disablePasswordAuthentication": false,
       "patchSettings": {
         "assessmentMode": "ImageDefault",
         "patchMode": "ImageDefault"

@@ -26,11 +26,11 @@
     "web": "https://myhubpublictj5eravonizvq.z1.web.core.windows.net/",
     "dfs": "https://myhubpublictj5eravonizvq.dfs.core.windows.net/"
   },
-  "primaryLocation": "norwayeast",
   "statusOfPrimary": "available",
+  "primaryLocation": "norwayeast",
   "keyCreationTime": {
-    "key2": "2025-04-11T15:45:39.1495327Z",
-    "key1": "2025-04-11T15:45:39.1495327Z"
+    "key1": "2025-04-11T15:45:39.1495327Z",
+    "key2": "2025-04-11T15:45:39.1495327Z"
   },
   "creationTime": "2025-04-11T15:45:39.0870457Z",
   "networkAcls": {

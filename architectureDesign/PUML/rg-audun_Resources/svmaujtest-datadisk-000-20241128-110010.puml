@@ -4,6 +4,25 @@ title Resources Display - Component Diagram
 
 component Component {
 
-json  Resource_Properties {   "displayName": "mailConnection",   "createdTime": "2025-03-13T14:18:32.3540913Z",   "customParameterValues": {},   "authenticatedUser": {},   "changedTime": "2025-03-13T14:18:32.3540913Z",   "connectionState": "Enabled",   "overallStatus": "Connected",   "testRequests": [],   "parameterValues": {},   "testLinks": [],   "statuses": [     {       "status": "Connected"     }   ],   "api": {     "name": "acsemail",     "type": "Microsoft.Web/locations/managedApis",     "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/providers/Microsoft.Web/locations/norwayeast/managedApis/acsemail",     "description": "Connector to send Email using the domains linked to the Azure Communication Services in your subscription.",     "displayName": "Azure Communication Email",     "category": "Standard",     "brandColor": "#3C1D6E",     "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1677/1.0.1677.3631/acsemail/icon.png"   } }
+json  Resource_Properties {
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Enabled",
+  "networkAccessPolicy": "AllowAll",
+  "timeCreated": "2024-11-28T11:00:13.5618557Z",
+  "diskSizeGB": 100,
+  "encryption": {
+    "type": "EncryptionAtRestWithPlatformKey"
+  },
+  "diskSizeBytes": 107374182400,
+  "creationData": {
+    "createOption": "Restore",
+    "sourceResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/AzureBackupRG_norwayeast_1/providers/Microsoft.Compute/restorePointCollections/AzureBackup_t-bjs1-win1_7566064967228651926/restorePoints/AzureBackup_20241125_090522/disks/t-bjs1-win1-datadisk1?id=1f7ae7ba-156b-4f49-8b5c-3bacf6139957"
+  },
+  "LastOwnershipUpdateTime": "2025-05-07T08:13:17.7075633Z",
+  "diskState": "Reserved",
+  "uniqueId": "6841f596-4183-482d-8cb5-d89daad776ae",
+  "diskMBpsReadWrite": 100,
+  "diskIOPSReadWrite": 500
+}
 }
 @enduml

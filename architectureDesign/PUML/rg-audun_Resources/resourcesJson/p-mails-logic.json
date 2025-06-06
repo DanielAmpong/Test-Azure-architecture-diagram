@@ -134,12 +134,12 @@
     "actions": {
       "Condition": {
         "type": "If",
-        "actions": {},
         "runAfter": {
           "Run_query_and_visualize_results_V2": [
             "Succeeded"
           ]
         },
+        "actions": {},
         "expression": {
           "and": [
             {
@@ -157,11 +157,6 @@
               "inputs": {
                 "method": "post",
                 "path": "/emails:sendGAVersion",
-                "host": {
-                  "connection": {
-                    "name": "@parameters('$connections')['acsemail']['connectionId']"
-                  }
-                },
                 "body": {
                   "content": {
                     "subject": "@{parameters('querySubstring')} - failed mails",
@@ -175,8 +170,13 @@
                       }
                     ]
                   },
-                  "userEngagementTrackingDisabled": true,
-                  "senderAddress": "DoNotReply@klp.no"
+                  "senderAddress": "DoNotReply@klp.no",
+                  "userEngagementTrackingDisabled": true
+                },
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['acsemail']['connectionId']"
+                  }
                 },
                 "queries": {
                   "api-version": "2023-03-31"
@@ -188,17 +188,18 @@
       },
       "Run_query_and_visualize_results_V2": {
         "type": "ApiConnection",
+        "runAfter": {},
         "inputs": {
           "method": "post",
           "path": "/visualizeQueryV2",
+          "body": {
+            "query": "ACSEmailStatusUpdateOperational \n| where isnotempty(SmtpStatusCode) and SmtpStatusCode <> 200\n| where SenderUsername contains \"@{parameters('querySubstring')}\"\n| where TimeGenerated > ago(1d)\n| project TimeGenerated, OperationName, Category, SmtpStatusCode, EnhancedSmtpStatusCode, SenderUsername, RecipientId, FailureReason",
+            "timerangetype": "3"
+          },
           "host": {
             "connection": {
               "name": "@parameters('$connections')['loganalytics']['connectionId']"
             }
-          },
-          "body": {
-            "query": "ACSEmailStatusUpdateOperational \n| where isnotempty(SmtpStatusCode) and SmtpStatusCode <> 200\n| where SenderUsername contains \"@{parameters('querySubstring')}\"\n| where TimeGenerated > ago(1d)\n| project TimeGenerated, OperationName, Category, SmtpStatusCode, EnhancedSmtpStatusCode, SenderUsername, RecipientId, FailureReason",
-            "timerangetype": "3"
           },
           "queries": {
             "subscriptions": "3c30e703-3724-46ce-983a-91b9a78d5941",
@@ -207,8 +208,7 @@
             "resourcetype": "Log Analytics Workspace",
             "visType": "Html Table"
           }
-        },
-        "runAfter": {}
+        }
       }
     },
     "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",

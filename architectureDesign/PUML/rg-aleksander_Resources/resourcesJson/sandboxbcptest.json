@@ -30,8 +30,8 @@
     "web": "https://sandboxbcptest.z1.web.core.windows.net/",
     "dfs": "https://sandboxbcptest.dfs.core.windows.net/"
   },
-  "statusOfPrimary": "available",
   "primaryLocation": "norwayeast",
+  "statusOfPrimary": "available",
   "keyCreationTime": {
     "key2": "2024-12-03T11:53:31.0112682Z",
     "key1": "2024-12-03T11:53:31.0112682Z"

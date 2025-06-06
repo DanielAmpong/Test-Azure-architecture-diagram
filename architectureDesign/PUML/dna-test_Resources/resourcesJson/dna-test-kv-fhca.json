@@ -14,15 +14,15 @@
   },
   "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
   "enabledForTemplateDeployment": true,
+  "enabledForDeployment": true,
+  "enabledForDiskEncryption": true,
   "sku": {
     "name": "standard",
     "family": "A"
   },
   "enableRbacAuthorization": true,
-  "enabledForDiskEncryption": true,
-  "enabledForDeployment": true,
-  "accessPolicies": [],
   "enableSoftDelete": true,
+  "accessPolicies": [],
   "enablePurgeProtection": true,
   "vaultUri": "https://dna-test-kv-fhca.vault.azure.net/"
 }

@@ -160,15 +160,15 @@
                     "html": "<p class=\"editor-paragraph\">@{base64ToString(body('Run_query_and_visualize_results_V2')?['body'])}</p>"
                   },
                   "importance": "Normal",
-                  "userEngagementTrackingDisabled": true,
-                  "senderAddress": "DoNotReply@klp.no",
                   "recipients": {
                     "to": [
                       {
                         "address": "@parameters('mailToAdress')"
                       }
                     ]
-                  }
+                  },
+                  "senderAddress": "DoNotReply@klp.no",
+                  "userEngagementTrackingDisabled": true
                 },
                 "host": {
                   "connection": {

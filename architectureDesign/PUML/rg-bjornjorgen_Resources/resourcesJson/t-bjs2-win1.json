@@ -14,10 +14,10 @@
       "name": "t-bjs2-win1-osdisk",
       "createOption": "FromImage",
       "deleteOption": "Detach",
-      "osType": "Windows",
       "managedDisk": {
         "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Compute/disks/t-bjs2-win1-osdisk"
       },
+      "osType": "Windows",
       "caching": "ReadWrite"
     }
   },
@@ -36,10 +36,9 @@
   },
   "osProfile": {
     "requireGuestProvisionSignal": true,
-    "computerName": "t-bjs2-win1",
     "allowExtensionOperations": true,
+    "computerName": "t-bjs2-win1",
     "adminUsername": "sysadmin",
-    "secrets": [],
     "windowsConfiguration": {
       "provisionVMAgent": true,
       "patchSettings": {
@@ -49,7 +48,8 @@
       "enableAutomaticUpdates": true,
       "enableVMAgentPlatformUpdates": true,
       "timeZone": "W. Europe Standard Time"
-    }
+    },
+    "secrets": []
   },
   "diagnosticsProfile": {
     "bootDiagnostics": {

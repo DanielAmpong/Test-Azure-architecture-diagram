@@ -2,29 +2,29 @@
   "provisioningState": "Succeeded",
   "publicNetworkAccess": "Enabled",
   "networkAccessPolicy": "AllowAll",
-  "diskSizeGB": 128,
   "timeCreated": "2025-05-21T09:52:16.5757089Z",
+  "diskSizeGB": 128,
   "encryption": {
     "type": "EncryptionAtRestWithPlatformKey"
   },
-  "diskSizeBytes": 137438953472,
   "hyperVGeneration": "V1",
+  "diskSizeBytes": 137438953472,
   "creationData": {
     "createOption": "FromImage",
     "imageReference": {
       "id": "/Subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/Providers/Microsoft.Compute/Locations/NorwayEast/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer/Skus/2022-Datacenter/Versions/20348.3692.250509"
     }
   },
-  "LastOwnershipUpdateTime": "2025-05-21T09:52:16.5757089Z",
-  "diskState": "Attached",
   "supportedCapabilities": {
     "architecture": "x64",
     "acceleratedNetwork": true,
     "diskControllerTypes": "SCSI"
   },
+  "LastOwnershipUpdateTime": "2025-05-21T09:52:16.5757089Z",
+  "diskState": "Attached",
   "uniqueId": "aff9f740-e538-448b-8b3a-9d46510c4573",
-  "diskMBpsReadWrite": 100,
   "diskIOPSReadWrite": 500,
+  "diskMBpsReadWrite": 100,
   "osType": "Windows",
   "supportsHibernation": true,
   "tier": "P10",

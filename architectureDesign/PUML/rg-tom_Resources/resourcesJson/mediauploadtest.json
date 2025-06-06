@@ -3,7 +3,6 @@
   "publicNetworkAccess": "Enabled",
   "encryption": {
     "keySource": "Microsoft.Storage",
-    "requireInfrastructureEncryption": false,
     "services": {
       "blob": {
         "enabled": true,
@@ -15,7 +14,8 @@
         "lastEnabledTime": "2025-05-27T11:53:44.7289584Z",
         "keyType": "Account"
       }
-    }
+    },
+    "requireInfrastructureEncryption": false
   },
   "privateEndpointConnections": [],
   "supportsHttpsTrafficOnly": true,
@@ -30,12 +30,12 @@
     "web": "https://mediauploadtest.z1.web.core.windows.net/",
     "dfs": "https://mediauploadtest.dfs.core.windows.net/"
   },
+  "statusOfPrimary": "available",
   "keyCreationTime": {
-    "key1": "2025-05-27T11:53:44.7289584Z",
-    "key2": "2025-05-27T11:53:44.7289584Z"
+    "key2": "2025-05-27T11:53:44.7289584Z",
+    "key1": "2025-05-27T11:53:44.7289584Z"
   },
   "primaryLocation": "norwayeast",
-  "statusOfPrimary": "available",
   "creationTime": "2025-05-27T11:53:44.6664537Z",
   "networkAcls": {
     "virtualNetworkRules": [],
@@ -45,8 +45,8 @@
     "bypass": "AzureServices"
   },
   "allowSharedKeyAccess": true,
-  "defaultToOAuthAuthentication": false,
   "accessTier": "Hot",
-  "largeFileSharesState": "Enabled",
-  "dnsEndpointType": "Standard"
+  "defaultToOAuthAuthentication": false,
+  "dnsEndpointType": "Standard",
+  "largeFileSharesState": "Enabled"
 }

@@ -26,8 +26,8 @@
   "monitoringSettings": {
     "azureMonitorAlertSettings": {
       "alertsForAllReplicationIssues": "Enabled",
-      "alertsForAllJobFailures": "Enabled",
-      "alertsForAllFailoverIssues": "Enabled"
+      "alertsForAllFailoverIssues": "Enabled",
+      "alertsForAllJobFailures": "Enabled"
     },
     "classicAlertSettings": {
       "emailNotificationsForSiteRecovery": "Disabled",

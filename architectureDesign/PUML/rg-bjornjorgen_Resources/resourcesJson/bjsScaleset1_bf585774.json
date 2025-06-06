@@ -14,11 +14,11 @@
     "osDisk": {
       "name": "bjsScaleset1_bf585774_OsDisk_1_c491f3779cb94873b00f269bbb890b2c",
       "createOption": "FromImage",
-      "osType": "Windows",
       "deleteOption": "Delete",
       "managedDisk": {
         "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Compute/disks/bjsScaleset1_bf585774_OsDisk_1_c491f3779cb94873b00f269bbb890b2c"
       },
+      "osType": "Windows",
       "caching": "ReadWrite"
     }
   },
@@ -36,12 +36,11 @@
   "hardwareProfile": {
     "vmSize": "Standard_DS1_v2"
   },
-  "licenseType": "Windows_Server",
   "osProfile": {
     "requireGuestProvisionSignal": true,
     "computerName": "bjsscalesHXTIMK",
     "allowExtensionOperations": true,
-    "secrets": [],
+    "adminUsername": "testss",
     "windowsConfiguration": {
       "provisionVMAgent": true,
       "patchSettings": {
@@ -52,14 +51,14 @@
       "enableAutomaticUpdates": true,
       "enableVMAgentPlatformUpdates": true
     },
-    "adminUsername": "testss"
+    "secrets": []
   },
+  "licenseType": "Windows_Server",
   "diagnosticsProfile": {
     "bootDiagnostics": {
       "enabled": true
     }
   },
-  "vmId": "d746eccc-c791-4e5f-a144-0a58fc1b0f8f",
   "extended": {
     "instanceView": {
       "hyperVGeneration": "V2",
@@ -70,6 +69,7 @@
       }
     }
   },
+  "vmId": "d746eccc-c791-4e5f-a144-0a58fc1b0f8f",
   "additionalCapabilities": {
     "hibernationEnabled": false
   },

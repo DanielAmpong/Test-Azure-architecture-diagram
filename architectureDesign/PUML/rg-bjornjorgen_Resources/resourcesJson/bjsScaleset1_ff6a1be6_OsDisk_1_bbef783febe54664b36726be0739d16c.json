@@ -8,18 +8,18 @@
     "type": "EncryptionAtRestWithPlatformKey"
   },
   "diskSizeBytes": 32214351872,
-  "hyperVGeneration": "V2",
   "creationData": {
     "createOption": "FromImage",
     "imageReference": {
       "id": "/Subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/Providers/Microsoft.Compute/Locations/NorwayEast/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer/Skus/2022-datacenter-smalldisk-g2/Versions/20348.3561.250409"
     }
   },
+  "hyperVGeneration": "V2",
   "LastOwnershipUpdateTime": "2025-05-07T09:41:38.0650377Z",
   "diskState": "Reserved",
-  "diskMBpsReadWrite": 25,
-  "diskIOPSReadWrite": 120,
   "uniqueId": "bbef783f-ebe5-4664-b367-26be0739d16c",
+  "diskIOPSReadWrite": 120,
+  "diskMBpsReadWrite": 25,
   "supportedCapabilities": {
     "architecture": "x64",
     "acceleratedNetwork": true,

@@ -28,8 +28,8 @@
       "name": "d-awh-wm1-osdisk",
       "createOption": "FromImage",
       "diskSizeGB": 128,
-      "osType": "Windows",
       "deleteOption": "Detach",
+      "osType": "Windows",
       "managedDisk": {
         "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.Compute/disks/d-awh-wm1-osdisk",
         "storageAccountType": "Premium_LRS"
@@ -54,18 +54,18 @@
     "requireGuestProvisionSignal": true,
     "computerName": "d-awh-wm1",
     "allowExtensionOperations": true,
+    "adminUsername": "sysadmin",
+    "secrets": [],
     "windowsConfiguration": {
       "provisionVMAgent": true,
       "patchSettings": {
         "assessmentMode": "ImageDefault",
         "patchMode": "AutomaticByOS"
       },
-      "enableAutomaticUpdates": true,
       "enableVMAgentPlatformUpdates": true,
+      "enableAutomaticUpdates": true,
       "timeZone": "W. Europe Standard Time"
-    },
-    "secrets": [],
-    "adminUsername": "sysadmin"
+    }
   },
   "diagnosticsProfile": {
     "bootDiagnostics": {
@@ -76,17 +76,17 @@
     "instanceView": {
       "hyperVGeneration": "V1",
       "computerName": "d-awh-wm1",
-      "osVersion": "10.0.20348.3692",
       "powerState": {
         "displayStatus": "VM running",
         "level": "Info",
         "code": "PowerState/running"
       },
+      "osVersion": "10.0.20348.3692",
       "osName": "Windows Server 2022 Datacenter"
     }
   },
   "vmId": "1ea2bce9-b964-43de-9aa1-9bd58c8f4134",
   "availabilitySet": {
-    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.Compute/availabilitySets/D-AWH-WM-AVAIL"
+    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-ALEKSANDER/providers/Microsoft.Compute/availabilitySets/D-AWH-WM-AVAIL"
   }
 }

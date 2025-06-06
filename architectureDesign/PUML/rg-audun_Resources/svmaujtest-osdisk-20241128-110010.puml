@@ -4,6 +4,34 @@ title Resources Display - Component Diagram
 
 component Component {
 
-json  Resource_Properties {   "displayName": "mailConnection",   "createdTime": "2025-03-13T14:18:32.3540913Z",   "customParameterValues": {},   "authenticatedUser": {},   "changedTime": "2025-03-13T14:18:32.3540913Z",   "connectionState": "Enabled",   "overallStatus": "Connected",   "testRequests": [],   "parameterValues": {},   "testLinks": [],   "statuses": [     {       "status": "Connected"     }   ],   "api": {     "name": "acsemail",     "type": "Microsoft.Web/locations/managedApis",     "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/providers/Microsoft.Web/locations/norwayeast/managedApis/acsemail",     "description": "Connector to send Email using the domains linked to the Azure Communication Services in your subscription.",     "displayName": "Azure Communication Email",     "category": "Standard",     "brandColor": "#3C1D6E",     "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1677/1.0.1677.3631/acsemail/icon.png"   } }
+json  Resource_Properties {
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Enabled",
+  "networkAccessPolicy": "AllowAll",
+  "diskSizeGB": 128,
+  "timeCreated": "2024-11-28T11:00:12.2962892Z",
+  "hyperVGeneration": "V1",
+  "encryption": {
+    "type": "EncryptionAtRestWithPlatformKey"
+  },
+  "diskSizeBytes": 137438953472,
+  "creationData": {
+    "createOption": "Restore",
+    "sourceResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/AzureBackupRG_norwayeast_1/providers/Microsoft.Compute/restorePointCollections/AzureBackup_t-bjs1-win1_7566064967228651926/restorePoints/AzureBackup_20241125_090522/disks/t-bjs1-win1-osdisk?id=a3d877cd-90d3-4e4b-8060-c266aa7a432a"
+  },
+  "LastOwnershipUpdateTime": "2025-05-07T08:13:17.7075633Z",
+  "supportedCapabilities": {
+    "architecture": "x64",
+    "acceleratedNetwork": true,
+    "diskControllerTypes": "SCSI"
+  },
+  "diskState": "Reserved",
+  "diskIOPSReadWrite": 500,
+  "diskMBpsReadWrite": 100,
+  "uniqueId": "a6e95ab7-122e-4438-a4ed-c36924faa4dd",
+  "osType": "Windows",
+  "supportsHibernation": true,
+  "tier": "P10"
+}
 }
 @enduml
