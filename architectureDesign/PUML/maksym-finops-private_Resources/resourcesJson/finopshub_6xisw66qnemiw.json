@@ -37,15 +37,15 @@
     "bypass": "AzureServices"
   },
   "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
-  "enabledForTemplateDeployment": true,
-  "enabledForDeployment": true,
   "sku": {
     "name": "premium",
     "family": "A"
   },
-  "enabledForDiskEncryption": true,
+  "enabledForTemplateDeployment": true,
+  "enabledForDeployment": true,
   "softDeleteRetentionInDays": 90,
   "enableRbacAuthorization": false,
+  "enabledForDiskEncryption": true,
   "enableSoftDelete": true,
   "accessPolicies": [
     {

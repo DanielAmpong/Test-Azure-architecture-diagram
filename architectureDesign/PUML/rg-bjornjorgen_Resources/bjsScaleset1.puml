@@ -8,10 +8,10 @@ json  Resource_Properties {
   "provisioningState": "Succeeded",
   "timeCreated": "2025-05-07T08:53:56.9395574Z",
   "uniqueId": "cc3b2f6b-c91f-4b3d-9f5f-f9305219256e",
-  "platformFaultDomainCount": 1,
   "additionalCapabilities": {
     "hibernationEnabled": false
   },
+  "platformFaultDomainCount": 1,
   "virtualMachineProfile": {
     "timeCreated": "2025-05-07T08:53:56.9395574Z",
     "storageProfile": {
@@ -25,57 +25,57 @@ json  Resource_Properties {
       "osDisk": {
         "createOption": "FromImage",
         "diskSizeGB": 30,
-        "osType": "Windows",
         "deleteOption": "Delete",
         "managedDisk": {
           "storageAccountType": "Premium_LRS"
         },
+        "osType": "Windows",
         "caching": "ReadWrite"
       }
     },
     "networkProfile": {
       "networkInterfaceConfigurations": [
         {
+          "name": "vnet-norwayeast-nic01",
           "properties": {
             "enableAcceleratedNetworking": false,
             "disableTcpStateTracking": false,
             "ipConfigurations": [
               {
+                "name": "vnet-norwayeast-nic01-defaultIpConfiguration",
                 "properties": {
                   "privateIPAddressVersion": "IPv4",
+                  "primary": true,
                   "subnet": {
                     "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/virtualNetworks/vnet-norwayeast/subnets/snet-norwayeast-1"
                   },
-                  "primary": true,
                   "loadBalancerBackendAddressPools": [],
                   "applicationSecurityGroups": [],
                   "applicationGatewayBackendAddressPools": [],
                   "publicIPAddressConfiguration": {
+                    "name": "publicIp-vnet-norwayeast-nic01",
                     "properties": {
                       "idleTimeoutInMinutes": 15,
                       "publicIPAddressVersion": "IPv4",
                       "ipTags": []
-                    },
-                    "name": "publicIp-vnet-norwayeast-nic01"
+                    }
                   }
-                },
-                "name": "vnet-norwayeast-nic01-defaultIpConfiguration"
+                }
               }
             ],
             "enableIPForwarding": false,
             "primary": true,
             "deleteOption": "Delete",
+            "auxiliaryMode": "None",
             "dnsSettings": {
               "dnsServers": []
             },
-            "auxiliaryMode": "None",
             "auxiliarySku": "None",
             "networkSecurityGroup": {
               "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkSecurityGroups/basicNsgvnet-norwayeast-nic01"
             },
             "effectiveEnableAcceleratedNetworking": false
-          },
-          "name": "vnet-norwayeast-nic01"
+          }
         }
       ],
       "networkApiVersion": "2020-11-01"
@@ -84,6 +84,7 @@ json  Resource_Properties {
       "requireGuestProvisionSignal": true,
       "allowExtensionOperations": true,
       "adminUsername": "testss",
+      "secrets": [],
       "windowsConfiguration": {
         "provisionVMAgent": true,
         "patchSettings": {
@@ -93,7 +94,6 @@ json  Resource_Properties {
         },
         "enableAutomaticUpdates": true
       },
-      "secrets": [],
       "computerNamePrefix": "bjsscales"
     },
     "licenseType": "Windows_Server",

@@ -30,11 +30,11 @@
     "dfs": "https://dawhstorage.dfs.core.windows.net/"
   },
   "keyCreationTime": {
-    "key2": "2025-05-23T07:16:56.7751993Z",
-    "key1": "2025-05-23T07:16:56.7751993Z"
+    "key1": "2025-05-23T07:16:56.7751993Z",
+    "key2": "2025-05-23T07:16:56.7751993Z"
   },
-  "statusOfPrimary": "available",
   "primaryLocation": "norwayeast",
+  "statusOfPrimary": "available",
   "creationTime": "2025-05-23T07:16:56.7282732Z",
   "networkAcls": {
     "virtualNetworkRules": [],

@@ -1,16 +1,6 @@
 {
   "provisioningState": "Succeeded",
   "timeCreated": "2025-05-22T12:24:12.9827876Z",
-  "networkProfile": {
-    "networkInterfaces": [
-      {
-        "properties": {
-          "primary": true
-        },
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.Network/networkInterfaces/d-awh-appwm1-nic"
-      }
-    ]
-  },
   "storageProfile": {
     "imageReference": {
       "publisher": "MicrosoftWindowsServer",
@@ -38,34 +28,49 @@
       "name": "d-awh-appwm1-osdisk",
       "createOption": "FromImage",
       "diskSizeGB": 128,
+      "osType": "Windows",
       "deleteOption": "Detach",
       "managedDisk": {
         "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.Compute/disks/d-awh-appwm1-osdisk",
         "storageAccountType": "Premium_LRS"
       },
-      "osType": "Windows",
       "caching": "ReadWrite"
     }
   },
+  "networkProfile": {
+    "networkInterfaces": [
+      {
+        "properties": {
+          "primary": true
+        },
+        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.Network/networkInterfaces/d-awh-appwm1-nic"
+      }
+    ]
+  },
   "hardwareProfile": {
     "vmSize": "Standard_B2ms"
+  },
+  "diagnosticsProfile": {
+    "bootDiagnostics": {
+      "enabled": true
+    }
   },
   "osProfile": {
     "requireGuestProvisionSignal": true,
     "computerName": "d-awh-appwm1",
     "allowExtensionOperations": true,
     "adminUsername": "sysadmin",
-    "secrets": [],
     "windowsConfiguration": {
       "provisionVMAgent": true,
       "patchSettings": {
         "assessmentMode": "ImageDefault",
         "patchMode": "AutomaticByOS"
       },
-      "enableVMAgentPlatformUpdates": true,
       "enableAutomaticUpdates": true,
+      "enableVMAgentPlatformUpdates": true,
       "timeZone": "W. Europe Standard Time"
-    }
+    },
+    "secrets": []
   },
   "extended": {
     "instanceView": {
@@ -78,11 +83,6 @@
       },
       "osVersion": "10.0.20348.3807",
       "osName": "Windows Server 2022 Datacenter"
-    }
-  },
-  "diagnosticsProfile": {
-    "bootDiagnostics": {
-      "enabled": true
     }
   },
   "vmId": "5dd31082-c241-4ddd-a816-8b6d73dffb1c",

@@ -1,58 +1,58 @@
 {
   "3": {
-    "provisioningState": "Succeeded",
+    "provisioningState": "Updating",
     "type": "MDE.Linux",
-    "autoUpgradeMinorVersion": true,
     "typeHandlerVersion": "1.0",
+    "autoUpgradeMinorVersion": true,
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/LINUX-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
       "vNextEnabled": false,
       "autoUpdate": true
     },
-    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
+    "forceUpdateTag": "f12660af-c0c1-4ade-9ff3-b0f1f6337329"
   },
   "0": {
-    "provisioningState": "Succeeded",
+    "provisioningState": "Updating",
     "type": "MDE.Linux",
-    "autoUpgradeMinorVersion": true,
     "typeHandlerVersion": "1.0",
+    "autoUpgradeMinorVersion": true,
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/LINUX-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
       "vNextEnabled": false,
       "autoUpdate": true
     },
-    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
+    "forceUpdateTag": "f12660af-c0c1-4ade-9ff3-b0f1f6337329"
   },
   "1": {
-    "provisioningState": "Succeeded",
+    "provisioningState": "Updating",
     "type": "MDE.Linux",
-    "autoUpgradeMinorVersion": true,
     "typeHandlerVersion": "1.0",
+    "autoUpgradeMinorVersion": true,
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/LINUX-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
       "vNextEnabled": false,
       "autoUpdate": true
     },
-    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
+    "forceUpdateTag": "f12660af-c0c1-4ade-9ff3-b0f1f6337329"
   },
   "2": {
-    "provisioningState": "Succeeded",
+    "provisioningState": "Updating",
     "type": "MDE.Linux",
-    "autoUpgradeMinorVersion": true,
     "typeHandlerVersion": "1.0",
+    "autoUpgradeMinorVersion": true,
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/LINUX-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
       "vNextEnabled": false,
       "autoUpdate": true
     },
-    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
+    "forceUpdateTag": "f12660af-c0c1-4ade-9ff3-b0f1f6337329"
   }
 }

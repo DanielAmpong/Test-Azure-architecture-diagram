@@ -1,58 +1,82 @@
 {
-  "3": {
+  "2": {
     "provisioningState": "Succeeded",
-    "type": "MDE.Linux",
+    "type": "AzureDiskEncryption",
     "autoUpgradeMinorVersion": true,
-    "typeHandlerVersion": "1.0",
-    "publisher": "Microsoft.Azure.AzureDefenderForServers",
+    "typeHandlerVersion": "2.2",
+    "publisher": "Microsoft.Azure.Security",
     "settings": {
-      "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
-      "vNextEnabled": false,
-      "autoUpdate": true
-    },
-    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
-  },
-  "0": {
-    "provisioningState": "Succeeded",
-    "type": "MDE.Linux",
-    "autoUpgradeMinorVersion": true,
-    "typeHandlerVersion": "1.0",
-    "publisher": "Microsoft.Azure.AzureDefenderForServers",
-    "settings": {
-      "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
-      "vNextEnabled": false,
-      "autoUpdate": true
-    },
-    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
+      "EncryptionOperation": "EnableEncryption",
+      "KeyVaultResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-appwm-kv-3fpr",
+      "KeyVaultURL": "https://d-awh-appwm-kv-3fpr.vault.azure.net/",
+      "VolumeType": "All",
+      "KeyEncryptionAlgorithm": "RSA-OAEP",
+      "KeyEncryptionKeyURL": "https://d-awh-appwm-kv-3fpr.vault.azure.net/keys/lz-vm-disk-encrypt-key/aacd7c1cf0b24d6d8b1e237f42fe443a",
+      "KekVaultResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-appwm-kv-3fpr"
+    }
   },
   "1": {
     "provisioningState": "Succeeded",
-    "type": "MDE.Linux",
+    "type": "AzureDiskEncryption",
     "autoUpgradeMinorVersion": true,
-    "typeHandlerVersion": "1.0",
-    "publisher": "Microsoft.Azure.AzureDefenderForServers",
+    "typeHandlerVersion": "2.2",
+    "publisher": "Microsoft.Azure.Security",
     "settings": {
-      "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
-      "vNextEnabled": false,
-      "autoUpdate": true
-    },
-    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
+      "EncryptionOperation": "EnableEncryption",
+      "KeyVaultResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-appwm-kv-3fpr",
+      "KeyVaultURL": "https://d-awh-appwm-kv-3fpr.vault.azure.net/",
+      "VolumeType": "All",
+      "KeyEncryptionAlgorithm": "RSA-OAEP",
+      "KeyEncryptionKeyURL": "https://d-awh-appwm-kv-3fpr.vault.azure.net/keys/lz-vm-disk-encrypt-key/aacd7c1cf0b24d6d8b1e237f42fe443a",
+      "KekVaultResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-appwm-kv-3fpr"
+    }
   },
-  "2": {
+  "4": {
     "provisioningState": "Succeeded",
-    "type": "MDE.Linux",
+    "type": "AzureDiskEncryption",
     "autoUpgradeMinorVersion": true,
-    "typeHandlerVersion": "1.0",
-    "publisher": "Microsoft.Azure.AzureDefenderForServers",
+    "typeHandlerVersion": "2.2",
+    "publisher": "Microsoft.Azure.Security",
     "settings": {
-      "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
-      "vNextEnabled": false,
-      "autoUpdate": true
-    },
-    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
+      "EncryptionOperation": "EnableEncryption",
+      "KeyVaultResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-appwm-kv-3fpr",
+      "KeyVaultURL": "https://d-awh-appwm-kv-3fpr.vault.azure.net/",
+      "VolumeType": "All",
+      "KeyEncryptionAlgorithm": "RSA-OAEP",
+      "KeyEncryptionKeyURL": "https://d-awh-appwm-kv-3fpr.vault.azure.net/keys/lz-vm-disk-encrypt-key/aacd7c1cf0b24d6d8b1e237f42fe443a",
+      "KekVaultResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-appwm-kv-3fpr"
+    }
+  },
+  "0": {
+    "provisioningState": "Succeeded",
+    "type": "AzureDiskEncryption",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "2.2",
+    "publisher": "Microsoft.Azure.Security",
+    "settings": {
+      "EncryptionOperation": "EnableEncryption",
+      "KeyVaultResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-appwm-kv-3fpr",
+      "KeyVaultURL": "https://d-awh-appwm-kv-3fpr.vault.azure.net/",
+      "VolumeType": "All",
+      "KeyEncryptionAlgorithm": "RSA-OAEP",
+      "KeyEncryptionKeyURL": "https://d-awh-appwm-kv-3fpr.vault.azure.net/keys/lz-vm-disk-encrypt-key/aacd7c1cf0b24d6d8b1e237f42fe443a",
+      "KekVaultResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-appwm-kv-3fpr"
+    }
+  },
+  "3": {
+    "provisioningState": "Succeeded",
+    "type": "AzureDiskEncryption",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "2.2",
+    "publisher": "Microsoft.Azure.Security",
+    "settings": {
+      "EncryptionOperation": "EnableEncryption",
+      "KeyVaultResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-appwm-kv-3fpr",
+      "KeyVaultURL": "https://d-awh-appwm-kv-3fpr.vault.azure.net/",
+      "VolumeType": "All",
+      "KeyEncryptionAlgorithm": "RSA-OAEP",
+      "KeyEncryptionKeyURL": "https://d-awh-appwm-kv-3fpr.vault.azure.net/keys/lz-vm-disk-encrypt-key/aacd7c1cf0b24d6d8b1e237f42fe443a",
+      "KekVaultResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-appwm-kv-3fpr"
+    }
   }
 }

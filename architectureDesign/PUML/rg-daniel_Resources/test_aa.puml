@@ -13,8 +13,8 @@ json  Resource_Properties {
     }
   },
   "privateEndpointConnections": [],
-  "state": "Ok",
   "creationTime": "2025-04-08T11:38:15.2966667Z",
+  "state": "Ok",
   "sku": {
     "name": "Basic",
     "capacity": null,

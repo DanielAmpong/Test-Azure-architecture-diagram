@@ -30,12 +30,12 @@
     "web": "https://sandboxbcptest.z1.web.core.windows.net/",
     "dfs": "https://sandboxbcptest.dfs.core.windows.net/"
   },
-  "primaryLocation": "norwayeast",
   "keyCreationTime": {
     "key2": "2024-12-03T11:53:31.0112682Z",
     "key1": "2024-12-03T11:53:31.0112682Z"
   },
   "statusOfPrimary": "available",
+  "primaryLocation": "norwayeast",
   "creationTime": "2024-12-03T11:53:30.9644485Z",
   "networkAcls": {
     "virtualNetworkRules": [],
@@ -45,10 +45,10 @@
     "bypass": "AzureServices"
   },
   "allowSharedKeyAccess": true,
-  "accessTier": "Hot",
   "defaultToOAuthAuthentication": false,
-  "secondaryLocation": "norwaywest",
+  "accessTier": "Hot",
   "statusOfSecondary": "available",
+  "secondaryLocation": "norwaywest",
   "secondaryEndpoints": {
     "blob": "https://sandboxbcptest-secondary.blob.core.windows.net/",
     "table": "https://sandboxbcptest-secondary.table.core.windows.net/",

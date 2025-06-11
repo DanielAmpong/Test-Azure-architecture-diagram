@@ -17,12 +17,12 @@
     "name": "standard",
     "family": "A"
   },
-  "enabledForDeployment": true,
   "enabledForTemplateDeployment": true,
+  "enabledForDeployment": true,
   "enabledForDiskEncryption": true,
   "enableSoftDelete": true,
-  "accessPolicies": [],
   "enableRbacAuthorization": true,
-  "enablePurgeProtection": true,
-  "vaultUri": "https://vm-mf-kv-gssb.vault.azure.net/"
+  "accessPolicies": [],
+  "vaultUri": "https://vm-mf-kv-gssb.vault.azure.net/",
+  "enablePurgeProtection": true
 }

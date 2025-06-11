@@ -56,8 +56,8 @@ json  Resource_Properties {
       "status": "NotStarted"
     }
   },
-  "domainManagement": "CustomerManaged",
-  "fromSenderDomain": "klp.no"
+  "fromSenderDomain": "klp.no",
+  "domainManagement": "CustomerManaged"
 }
 }
 @enduml

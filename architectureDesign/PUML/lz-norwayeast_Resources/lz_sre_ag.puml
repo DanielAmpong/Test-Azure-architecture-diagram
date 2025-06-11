@@ -13,6 +13,7 @@ json  Resource_Properties {
   "logicAppReceivers": [],
   "webhookReceivers": [],
   "armRoleReceivers": [],
+  "voiceReceivers": [],
   "emailReceivers": [
     {
       "name": "SRE-Team@klp.no",
@@ -22,7 +23,6 @@ json  Resource_Properties {
     }
   ],
   "groupShortName": "lz-sre-ag",
-  "voiceReceivers": [],
   "itsmReceivers": [],
   "smsReceivers": []
 }

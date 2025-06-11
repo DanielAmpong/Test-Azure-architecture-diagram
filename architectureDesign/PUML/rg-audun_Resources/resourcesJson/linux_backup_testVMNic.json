@@ -12,10 +12,10 @@
         "privateIPAddressVersion": "IPv4",
         "privateIPAllocationMethod": "Dynamic",
         "privateIPAddress": "10.0.0.4",
-        "primary": true,
         "subnet": {
           "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/default"
-        }
+        },
+        "primary": true
       },
       "name": "ipconfiglinux-backup-test",
       "type": "Microsoft.Network/networkInterfaces/ipConfigurations",

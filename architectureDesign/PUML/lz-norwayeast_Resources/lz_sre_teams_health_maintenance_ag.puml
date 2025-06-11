@@ -16,15 +16,15 @@ json  Resource_Properties {
       "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
       "useCommonAlertSchema": true,
       "subscriptionId": "c117acbf-d744-4c7f-a748-a9408b250ac3",
-      "eventHubNameSpace": "p-servicehealth-evhns",
-      "eventHubName": "p-plannedmaintenance-evh"
+      "eventHubName": "p-plannedmaintenance-evh",
+      "eventHubNameSpace": "p-servicehealth-evhns"
     }
   ],
-  "armRoleReceivers": [],
   "webhookReceivers": [],
-  "emailReceivers": [],
+  "armRoleReceivers": [],
   "groupShortName": "SRE Teams",
   "voiceReceivers": [],
+  "emailReceivers": [],
   "itsmReceivers": [],
   "smsReceivers": []
 }

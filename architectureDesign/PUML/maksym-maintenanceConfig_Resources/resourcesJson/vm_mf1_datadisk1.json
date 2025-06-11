@@ -11,10 +11,10 @@
   "creationData": {
     "createOption": "Empty"
   },
-  "diskState": "Attached",
   "LastOwnershipUpdateTime": "2025-06-11T13:50:28.11Z",
+  "diskState": "Attached",
   "uniqueId": "27cbc378-56ff-4e5b-a911-4263f1a7e80b",
-  "diskIOPSReadWrite": 1100,
   "diskMBpsReadWrite": 125,
+  "diskIOPSReadWrite": 1100,
   "tier": "P15"
 }

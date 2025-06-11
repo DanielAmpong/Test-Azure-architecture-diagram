@@ -1,37 +1,37 @@
 {
   "provisioningState": "Succeeded",
   "publicNetworkAccess": "Enabled",
-  "privateEndpointStateForSiteRecovery": "None",
   "privateEndpointStateForBackup": "None",
-  "backupStorageVersion": "V1",
-  "bcdrSecurityLevel": "Poor",
+  "privateEndpointStateForSiteRecovery": "None",
+  "monitoringSettings": {
+    "azureMonitorAlertSettings": {
+      "alertsForAllJobFailures": "Enabled",
+      "alertsForAllReplicationIssues": "Enabled",
+      "alertsForAllFailoverIssues": "Enabled"
+    },
+    "classicAlertSettings": {
+      "alertsForCriticalOperations": "Disabled",
+      "emailNotificationsForSiteRecovery": "Disabled"
+    }
+  },
+  "backupStorageVersion": "Unassigned",
+  "securitySettings": {
+    "softDeleteSettings": {
+      "softDeleteRetentionPeriodInDays": 14,
+      "softDeleteState": "Enabled",
+      "enhancedSecurityState": "Invalid"
+    },
+    "multiUserAuthorization": "Disabled"
+  },
   "redundancySettings": {
     "standardTierStorageRedundancy": "ZoneRedundant",
     "crossRegionRestore": "Disabled"
   },
-  "securitySettings": {
-    "multiUserAuthorization": "Disabled",
-    "softDeleteSettings": {
-      "softDeleteRetentionPeriodInDays": 14,
-      "enhancedSecurityState": "Enabled",
-      "softDeleteState": "Enabled"
-    }
-  },
+  "secureScore": "None",
+  "bcdrSecurityLevel": "Poor",
   "restoreSettings": {
     "crossSubscriptionRestoreSettings": {
       "crossSubscriptionRestoreState": "Enabled"
-    }
-  },
-  "secureScore": "None",
-  "monitoringSettings": {
-    "azureMonitorAlertSettings": {
-      "alertsForAllReplicationIssues": "Enabled",
-      "alertsForAllFailoverIssues": "Enabled",
-      "alertsForAllJobFailures": "Enabled"
-    },
-    "classicAlertSettings": {
-      "emailNotificationsForSiteRecovery": "Disabled",
-      "alertsForCriticalOperations": "Disabled"
     }
   }
 }

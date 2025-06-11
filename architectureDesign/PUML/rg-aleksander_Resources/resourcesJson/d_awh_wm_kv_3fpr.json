@@ -19,8 +19,8 @@
     "family": "A"
   },
   "enabledForDeployment": true,
-  "enabledForDiskEncryption": true,
   "enableRbacAuthorization": true,
+  "enabledForDiskEncryption": true,
   "accessPolicies": [],
   "enableSoftDelete": true,
   "enablePurgeProtection": true,

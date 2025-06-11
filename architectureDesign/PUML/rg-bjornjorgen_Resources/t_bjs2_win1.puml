@@ -19,11 +19,11 @@ json  Resource_Properties {
     "osDisk": {
       "name": "t-bjs2-win1-osdisk",
       "createOption": "FromImage",
+      "osType": "Windows",
       "deleteOption": "Detach",
       "managedDisk": {
         "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Compute/disks/t-bjs2-win1-osdisk"
       },
-      "osType": "Windows",
       "caching": "ReadWrite"
     }
   },
@@ -42,10 +42,10 @@ json  Resource_Properties {
   },
   "osProfile": {
     "requireGuestProvisionSignal": true,
-    "computerName": "t-bjs2-win1",
     "allowExtensionOperations": true,
-    "adminUsername": "sysadmin",
+    "computerName": "t-bjs2-win1",
     "secrets": [],
+    "adminUsername": "sysadmin",
     "windowsConfiguration": {
       "provisionVMAgent": true,
       "patchSettings": {

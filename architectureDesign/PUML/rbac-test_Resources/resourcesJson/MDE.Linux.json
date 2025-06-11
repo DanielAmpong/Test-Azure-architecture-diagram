@@ -2,8 +2,8 @@
   "3": {
     "provisioningState": "Succeeded",
     "type": "MDE.Linux",
-    "autoUpgradeMinorVersion": true,
     "typeHandlerVersion": "1.0",
+    "autoUpgradeMinorVersion": true,
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
@@ -11,13 +11,13 @@
       "vNextEnabled": false,
       "autoUpdate": true
     },
-    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
+    "forceUpdateTag": "c37c3df3-2e5c-4f47-8532-b4c7d2c59522"
   },
   "0": {
     "provisioningState": "Succeeded",
     "type": "MDE.Linux",
-    "autoUpgradeMinorVersion": true,
     "typeHandlerVersion": "1.0",
+    "autoUpgradeMinorVersion": true,
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
@@ -25,13 +25,13 @@
       "vNextEnabled": false,
       "autoUpdate": true
     },
-    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
+    "forceUpdateTag": "c37c3df3-2e5c-4f47-8532-b4c7d2c59522"
   },
   "1": {
     "provisioningState": "Succeeded",
     "type": "MDE.Linux",
-    "autoUpgradeMinorVersion": true,
     "typeHandlerVersion": "1.0",
+    "autoUpgradeMinorVersion": true,
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
@@ -39,13 +39,13 @@
       "vNextEnabled": false,
       "autoUpdate": true
     },
-    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
+    "forceUpdateTag": "c37c3df3-2e5c-4f47-8532-b4c7d2c59522"
   },
   "2": {
     "provisioningState": "Succeeded",
     "type": "MDE.Linux",
-    "autoUpgradeMinorVersion": true,
     "typeHandlerVersion": "1.0",
+    "autoUpgradeMinorVersion": true,
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
@@ -53,6 +53,6 @@
       "vNextEnabled": false,
       "autoUpdate": true
     },
-    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
+    "forceUpdateTag": "c37c3df3-2e5c-4f47-8532-b4c7d2c59522"
   }
 }

@@ -52,12 +52,12 @@ json  Resource_Properties {
     "web": "https://finscript6xisw66qnemiw.z1.web.core.windows.net/",
     "dfs": "https://finscript6xisw66qnemiw.dfs.core.windows.net/"
   },
-  "statusOfPrimary": "available",
-  "keyCreationTime": {
-    "key2": "2025-06-05T09:59:36.6102551Z",
-    "key1": "2025-06-05T09:59:36.6102551Z"
-  },
   "primaryLocation": "norwayeast",
+  "keyCreationTime": {
+    "key1": "2025-06-05T09:59:36.6102551Z",
+    "key2": "2025-06-05T09:59:36.6102551Z"
+  },
+  "statusOfPrimary": "available",
   "creationTime": "2025-06-05T09:59:36.5321205Z",
   "networkAcls": {
     "virtualNetworkRules": [

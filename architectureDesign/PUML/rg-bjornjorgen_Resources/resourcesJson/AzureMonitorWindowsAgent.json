@@ -1,58 +1,50 @@
 {
-  "3": {
+  "2": {
     "provisioningState": "Succeeded",
-    "type": "MDE.Linux",
-    "autoUpgradeMinorVersion": true,
+    "type": "AzureMonitorWindowsAgent",
     "typeHandlerVersion": "1.0",
-    "publisher": "Microsoft.Azure.AzureDefenderForServers",
-    "settings": {
-      "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
-      "vNextEnabled": false,
-      "autoUpdate": true
-    },
-    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
-  },
-  "0": {
-    "provisioningState": "Succeeded",
-    "type": "MDE.Linux",
     "autoUpgradeMinorVersion": true,
-    "typeHandlerVersion": "1.0",
-    "publisher": "Microsoft.Azure.AzureDefenderForServers",
-    "settings": {
-      "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
-      "vNextEnabled": false,
-      "autoUpdate": true
-    },
-    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
+    "enableAutomaticUpgrade": true,
+    "publisher": "Microsoft.Azure.Monitor"
   },
   "1": {
     "provisioningState": "Succeeded",
-    "type": "MDE.Linux",
-    "autoUpgradeMinorVersion": true,
+    "type": "AzureMonitorWindowsAgent",
     "typeHandlerVersion": "1.0",
-    "publisher": "Microsoft.Azure.AzureDefenderForServers",
-    "settings": {
-      "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
-      "vNextEnabled": false,
-      "autoUpdate": true
-    },
-    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
+    "autoUpgradeMinorVersion": true,
+    "enableAutomaticUpgrade": true,
+    "publisher": "Microsoft.Azure.Monitor"
   },
-  "2": {
+  "5": {
     "provisioningState": "Succeeded",
-    "type": "MDE.Linux",
-    "autoUpgradeMinorVersion": true,
+    "type": "AzureMonitorWindowsAgent",
     "typeHandlerVersion": "1.0",
-    "publisher": "Microsoft.Azure.AzureDefenderForServers",
-    "settings": {
-      "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
-      "vNextEnabled": false,
-      "autoUpdate": true
-    },
-    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
+    "autoUpgradeMinorVersion": true,
+    "enableAutomaticUpgrade": true,
+    "publisher": "Microsoft.Azure.Monitor"
+  },
+  "4": {
+    "provisioningState": "Succeeded",
+    "type": "AzureMonitorWindowsAgent",
+    "typeHandlerVersion": "1.0",
+    "autoUpgradeMinorVersion": true,
+    "enableAutomaticUpgrade": true,
+    "publisher": "Microsoft.Azure.Monitor"
+  },
+  "0": {
+    "provisioningState": "Succeeded",
+    "type": "AzureMonitorWindowsAgent",
+    "typeHandlerVersion": "1.0",
+    "autoUpgradeMinorVersion": true,
+    "enableAutomaticUpgrade": true,
+    "publisher": "Microsoft.Azure.Monitor"
+  },
+  "3": {
+    "provisioningState": "Succeeded",
+    "type": "AzureMonitorWindowsAgent",
+    "typeHandlerVersion": "1.0",
+    "autoUpgradeMinorVersion": true,
+    "enableAutomaticUpgrade": true,
+    "publisher": "Microsoft.Azure.Monitor"
   }
 }

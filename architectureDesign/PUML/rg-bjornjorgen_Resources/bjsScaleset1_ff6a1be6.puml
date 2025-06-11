@@ -45,8 +45,9 @@ json  Resource_Properties {
   "licenseType": "Windows_Server",
   "osProfile": {
     "requireGuestProvisionSignal": true,
-    "allowExtensionOperations": true,
     "computerName": "bjsscales05UJOA",
+    "allowExtensionOperations": true,
+    "secrets": [],
     "adminUsername": "testss",
     "windowsConfiguration": {
       "provisionVMAgent": true,
@@ -57,8 +58,7 @@ json  Resource_Properties {
       },
       "enableAutomaticUpdates": true,
       "enableVMAgentPlatformUpdates": true
-    },
-    "secrets": []
+    }
   },
   "diagnosticsProfile": {
     "bootDiagnostics": {

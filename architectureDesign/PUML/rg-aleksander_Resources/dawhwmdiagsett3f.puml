@@ -34,12 +34,12 @@ json  Resource_Properties {
     "web": "https://dawhwmdiagsett3f.z1.web.core.windows.net/",
     "dfs": "https://dawhwmdiagsett3f.dfs.core.windows.net/"
   },
-  "statusOfPrimary": "available",
   "keyCreationTime": {
     "key2": "2025-05-21T09:51:33.34107Z",
     "key1": "2025-05-21T09:51:33.34107Z"
   },
   "primaryLocation": "norwayeast",
+  "statusOfPrimary": "available",
   "creationTime": "2025-05-21T09:51:33.278573Z",
   "networkAcls": {
     "virtualNetworkRules": [

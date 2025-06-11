@@ -29,11 +29,11 @@
     "dfs": "https://tbjs2windiagsettk4.dfs.core.windows.net/"
   },
   "statusOfPrimary": "available",
-  "primaryLocation": "norwayeast",
   "keyCreationTime": {
     "key2": "2025-05-07T11:20:43.4749907Z",
     "key1": "2025-05-07T11:20:43.4749907Z"
   },
+  "primaryLocation": "norwayeast",
   "creationTime": "2025-05-07T11:20:43.3968631Z",
   "networkAcls": {
     "virtualNetworkRules": [

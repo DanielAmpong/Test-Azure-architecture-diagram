@@ -7,17 +7,17 @@
   "vnetEncryptionSupported": false,
   "ipConfigurations": [
     {
+      "name": "ipconfig",
       "properties": {
         "provisioningState": "Succeeded",
         "privateIPAddressVersion": "IPv4",
         "privateIPAllocationMethod": "Dynamic",
         "privateIPAddress": "10.0.0.22",
+        "primary": true,
         "subnet": {
           "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/default"
-        },
-        "primary": true
+        }
       },
-      "name": "ipconfig",
       "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
       "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.Network/networkInterfaces/d-awh-appwm1-nic/ipConfigurations/ipconfig",
       "etag": "W/\"0d34ee51-7dac-47f8-ac59-3075d49a6649\""
@@ -34,8 +34,8 @@
     "internalDomainNameSuffix": "pquq0qan4vse5gqto15kewgzsd.oslx.internal.cloudapp.net",
     "dnsServers": []
   },
-  "auxiliarySku": "None",
   "macAddress": "7C-ED-8D-25-02-E3",
+  "auxiliarySku": "None",
   "virtualMachine": {
     "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.Compute/virtualMachines/d-awh-appwm1"
   },

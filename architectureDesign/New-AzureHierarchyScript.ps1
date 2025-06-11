@@ -1,7 +1,7 @@
 # Get subscription
 $SubscriptionName = "KLP LZ SRE playground Sandbox"
 $subscription = Get-AzSubscription -SubscriptionName $SubscriptionName
-Set-AzContext -SubscriptionId $subscription.Id
+Set-AzContext -SubscriptionId $subscription.Id | Out-Null
 
 
 # Variable
@@ -11,7 +11,7 @@ if (!(Test-Path -Path "architectureDesign\PUML\$($subscription.Name)")) {
 }
 
 $outputFile = "$((Get-item -Path ".\architectureDesign\PUML\$($subscription.Name)").FullName)\subscriptionAzureHierarchy.puml"
-if (Test-Path -Path $outputFile) { Remove-Item -Path $outputFile | Out-Null }
+if (Test-Path -Path $outputFile) { Remove-Item -Path $outputFile -Force | Out-Null }
 
 
 $resourceTypeIcons = Get-Content -Path ".\architectureDesign\resourceTypeIcons.json" | ConvertFrom-Json -asHashtable
@@ -67,7 +67,7 @@ $resourceGroupNames = (Get-AzResourceGroup).ResourceGroupName
 foreach ($resourceGroupName in $resourceGroupNames) {
     
     $outputFile = "$((Get-item -Path ".\architectureDesign\PUML\$($subscription.Name)_ResourceGroups").FullName)\$($resourceGroupName)AzureHierarchy.puml"
-    if (Test-Path -Path $outputFile) { Remove-Item -Path $outputFile | Out-Null }
+    if (Test-Path -Path $outputFile) { Remove-Item -Path $outputFile -Force | Out-Null }
 
     "@startuml" | Out-File -FilePath $outputFile -Encoding utf8
     "!pragma revision 1" | Out-File -FilePath $outputFile -Append -Encoding utf8
@@ -131,12 +131,13 @@ resources
 "@
   
             $azureResourceGraph = Search-AzGraph -Query $query -Subscription $subscription.Id
+            $removeArray = $azureResourceGraph.properties
             $propertiesJson = $azureResourceGraph.properties | ConvertTo-Json -Depth 30
 
-            if (($azureResourceGraph.properties) -is [System.Array]) {
+            if ($removeArray -is [System.Array]) {
                 $jsonObject = @{}
-                $convrt | ForEach-Object {
-                    for ($i = 0; $i -lt $convrt.Count; $i++) {
+                $removeArray | ForEach-Object {
+                    for ($i = 0; $i -lt $removeArray.Count; $i++) {
                         $jsonObject[[string]$i] = $_
                     }
                 }
@@ -144,7 +145,7 @@ resources
             } 
     
             $resourceOutputFile = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources\resourcesJson").FullName)\$($splitResourceLabel[1]).json"
-            if (Test-Path -Path $resourceOutputFile) { Remove-Item -Path $resourceOutputFile | Out-Null }
+            if (Test-Path -Path $resourceOutputFile) { Remove-Item -Path $resourceOutputFile -Force | Out-Null }
             $propertiesJson | Out-File -FilePath $resourceOutputFile -Append -Encoding utf8
 
             $resourceOutputFolder = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources").FullName)\$($splitResourceLabel[1]).puml"
@@ -170,12 +171,13 @@ resources
 "@
     
             $azureResourceGraph = Search-AzGraph -Query $query -Subscription $subscription.Id
+            $removeArray = $azureResourceGraph.properties
             $propertiesJson = $azureResourceGraph.properties | ConvertTo-Json -Depth 30
 
-            if (($azureResourceGraph.properties) -is [System.Array]) {
+            if ($removeArray -is [System.Array]) {
                 $jsonObject = @{}
-                $convrt | ForEach-Object {
-                    for ($i = 0; $i -lt $convrt.Count; $i++) {
+                $removeArray | ForEach-Object {
+                    for ($i = 0; $i -lt $removeArray.Count; $i++) {
                         $jsonObject[[string]$i] = $_
                     }
                 }
@@ -183,11 +185,11 @@ resources
             } 
     
             $resourceOutputFile = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources\resourcesJson").FullName)\$($resourceLabel_).json"
-            if (Test-Path -Path $resourceOutputFile) { Remove-Item -Path $resourceOutputFile | Out-Null }
+            if (Test-Path -Path $resourceOutputFile) { Remove-Item -Path $resourceOutputFile -Force | Out-Null }
             $propertiesJson | Out-File -FilePath $resourceOutputFile -Append -Encoding utf8
 
             $resourceOutputFolder = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources").FullName)\$($resourceLabel_).puml"
-            if (Test-Path -Path $resourceOutputFolder) { Remove-Item -Path $resourceOutputFolder | Out-Null }
+            if (Test-Path -Path $resourceOutputFolder) { Remove-Item -Path $resourceOutputFolder -Force | Out-Null }
 
             "@startuml" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
             "" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8

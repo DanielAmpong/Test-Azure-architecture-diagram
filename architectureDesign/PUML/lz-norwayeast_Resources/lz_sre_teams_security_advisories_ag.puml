@@ -14,17 +14,17 @@ json  Resource_Properties {
     {
       "name": "security advisories",
       "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
-      "useCommonAlertSchema": true,
       "subscriptionId": "c117acbf-d744-4c7f-a748-a9408b250ac3",
+      "useCommonAlertSchema": true,
       "eventHubNameSpace": "p-servicehealth-evhns",
       "eventHubName": "p-securityadvisories-evh"
     }
   ],
-  "webhookReceivers": [],
   "armRoleReceivers": [],
-  "emailReceivers": [],
-  "groupShortName": "SRE Teams",
+  "webhookReceivers": [],
   "voiceReceivers": [],
+  "groupShortName": "SRE Teams",
+  "emailReceivers": [],
   "itsmReceivers": [],
   "smsReceivers": []
 }

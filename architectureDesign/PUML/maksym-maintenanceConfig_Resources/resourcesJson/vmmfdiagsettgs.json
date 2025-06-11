@@ -18,8 +18,8 @@
   "privateEndpointConnections": [],
   "supportsHttpsTrafficOnly": true,
   "allowBlobPublicAccess": false,
-  "allowCrossTenantReplication": false,
   "minimumTlsVersion": "TLS1_2",
+  "allowCrossTenantReplication": false,
   "primaryEndpoints": {
     "blob": "https://vmmfdiagsettgs.blob.core.windows.net/",
     "file": "https://vmmfdiagsettgs.file.core.windows.net/",
@@ -28,19 +28,19 @@
     "web": "https://vmmfdiagsettgs.z1.web.core.windows.net/",
     "dfs": "https://vmmfdiagsettgs.dfs.core.windows.net/"
   },
-  "statusOfPrimary": "available",
   "primaryLocation": "norwayeast",
   "keyCreationTime": {
-    "key1": "2025-06-11T13:49:11.97Z",
-    "key2": "2025-06-11T13:49:11.97Z"
+    "key2": "2025-06-11T13:49:11.97Z",
+    "key1": "2025-06-11T13:49:11.97Z"
   },
+  "statusOfPrimary": "available",
   "creationTime": "2025-06-11T13:49:11.892Z",
   "networkAcls": {
     "virtualNetworkRules": [
       {
         "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/maint-test-subnet",
-        "state": "Succeeded",
-        "action": "Allow"
+        "action": "Allow",
+        "state": "Succeeded"
       }
     ],
     "defaultAction": "Deny",

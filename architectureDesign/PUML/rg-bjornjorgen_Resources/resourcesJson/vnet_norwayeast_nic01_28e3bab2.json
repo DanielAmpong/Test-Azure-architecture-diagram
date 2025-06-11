@@ -1,10 +1,9 @@
 {
   "provisioningState": "Succeeded",
   "enableAcceleratedNetworking": false,
-  "resourceGuid": "02c48c81-aafd-4e81-98d0-c7b87259a1c2",
   "defaultOutboundConnectivityEnabled": false,
+  "resourceGuid": "02c48c81-aafd-4e81-98d0-c7b87259a1c2",
   "disableTcpStateTracking": false,
-  "vnetEncryptionSupported": false,
   "ipConfigurations": [
     {
       "properties": {
@@ -29,16 +28,17 @@
       "etag": "W/\"0db6e8e0-1a1e-4d74-9a60-c3f472d70bcb\""
     }
   ],
+  "vnetEncryptionSupported": false,
   "enableIPForwarding": false,
   "tapConfigurations": [],
-  "primary": true,
   "hostedWorkloads": [],
+  "primary": true,
   "allowPort25Out": true,
-  "auxiliaryMode": "None",
   "dnsSettings": {
     "appliedDnsServers": [],
     "dnsServers": []
   },
+  "auxiliaryMode": "None",
   "macAddress": "00-22-48-DC-D6-22",
   "auxiliarySku": "None",
   "networkSecurityGroup": {

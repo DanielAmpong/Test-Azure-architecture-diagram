@@ -8,7 +8,6 @@
   ],
   "defaultSecurityRules": [
     {
-      "name": "AllowVnetInBound",
       "properties": {
         "provisioningState": "Succeeded",
         "destinationAddressPrefixes": [],
@@ -25,12 +24,12 @@
         "priority": 65000,
         "access": "Allow"
       },
+      "name": "AllowVnetInBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
       "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/defaultSecurityRules/AllowVnetInBound",
       "etag": "W/\"07391abd-c9a1-46c7-93ba-7d928565dfcb\""
     },
     {
-      "name": "AllowAzureLoadBalancerInBound",
       "properties": {
         "provisioningState": "Succeeded",
         "destinationAddressPrefixes": [],
@@ -47,12 +46,12 @@
         "priority": 65001,
         "access": "Allow"
       },
+      "name": "AllowAzureLoadBalancerInBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
       "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/defaultSecurityRules/AllowAzureLoadBalancerInBound",
       "etag": "W/\"07391abd-c9a1-46c7-93ba-7d928565dfcb\""
     },
     {
-      "name": "DenyAllInBound",
       "properties": {
         "provisioningState": "Succeeded",
         "destinationAddressPrefixes": [],
@@ -69,12 +68,12 @@
         "priority": 65500,
         "access": "Deny"
       },
+      "name": "DenyAllInBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
       "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/defaultSecurityRules/DenyAllInBound",
       "etag": "W/\"07391abd-c9a1-46c7-93ba-7d928565dfcb\""
     },
     {
-      "name": "AllowVnetOutBound",
       "properties": {
         "provisioningState": "Succeeded",
         "destinationAddressPrefixes": [],
@@ -91,12 +90,12 @@
         "priority": 65000,
         "access": "Allow"
       },
+      "name": "AllowVnetOutBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
       "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/defaultSecurityRules/AllowVnetOutBound",
       "etag": "W/\"07391abd-c9a1-46c7-93ba-7d928565dfcb\""
     },
     {
-      "name": "AllowInternetOutBound",
       "properties": {
         "provisioningState": "Succeeded",
         "destinationAddressPrefixes": [],
@@ -113,12 +112,12 @@
         "priority": 65001,
         "access": "Allow"
       },
+      "name": "AllowInternetOutBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
       "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/defaultSecurityRules/AllowInternetOutBound",
       "etag": "W/\"07391abd-c9a1-46c7-93ba-7d928565dfcb\""
     },
     {
-      "name": "DenyAllOutBound",
       "properties": {
         "provisioningState": "Succeeded",
         "destinationAddressPrefixes": [],
@@ -135,6 +134,7 @@
         "priority": 65500,
         "access": "Deny"
       },
+      "name": "DenyAllOutBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
       "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/defaultSecurityRules/DenyAllOutBound",
       "etag": "W/\"07391abd-c9a1-46c7-93ba-7d928565dfcb\""
@@ -142,7 +142,6 @@
   ],
   "securityRules": [
     {
-      "name": "default-allow-ssh",
       "properties": {
         "provisioningState": "Succeeded",
         "destinationAddressPrefixes": [],
@@ -158,12 +157,12 @@
         "priority": 1001,
         "access": "Allow"
       },
+      "name": "default-allow-ssh",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
       "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/securityRules/default-allow-ssh",
       "etag": "W/\"07391abd-c9a1-46c7-93ba-7d928565dfcb\""
     },
     {
-      "name": "MicrosoftDefenderForCloud-JITRule_1730047975_5C0B6BD3835644F59F9DE2E575618737",
       "properties": {
         "provisioningState": "Succeeded",
         "destinationAddressPrefixes": [],
@@ -180,6 +179,7 @@
         "priority": 1000,
         "access": "Deny"
       },
+      "name": "MicrosoftDefenderForCloud-JITRule_1730047975_5C0B6BD3835644F59F9DE2E575618737",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
       "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/securityRules/MicrosoftDefenderForCloud-JITRule_1730047975_5C0B6BD3835644F59F9DE2E575618737",
       "etag": "W/\"07391abd-c9a1-46c7-93ba-7d928565dfcb\""

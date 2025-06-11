@@ -1,58 +1,62 @@
 {
-  "3": {
-    "provisioningState": "Succeeded",
-    "type": "MDE.Linux",
-    "autoUpgradeMinorVersion": true,
-    "typeHandlerVersion": "1.0",
-    "publisher": "Microsoft.Azure.AzureDefenderForServers",
-    "settings": {
-      "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
-      "vNextEnabled": false,
-      "autoUpdate": true
-    },
-    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
-  },
   "0": {
     "provisioningState": "Succeeded",
-    "type": "MDE.Linux",
-    "autoUpgradeMinorVersion": true,
-    "typeHandlerVersion": "1.0",
-    "publisher": "Microsoft.Azure.AzureDefenderForServers",
-    "settings": {
-      "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
-      "vNextEnabled": false,
-      "autoUpdate": true
+    "publicNetworkAccess": "Enabled",
+    "networkAccessPolicy": "AllowAll",
+    "timeCreated": "2024-09-16T09:09:24.4555473Z",
+    "diskSizeGB": 30,
+    "encryption": {
+      "type": "EncryptionAtRestWithPlatformKey"
     },
-    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
+    "diskSizeBytes": 32213303296,
+    "creationData": {
+      "createOption": "FromImage",
+      "imageReference": {
+        "id": "/Subscriptions/655737a7-e4fa-4f19-8c60-194cc7a2ca11/Providers/Microsoft.Compute/Locations/NorwayEast/Publishers/canonical/ArtifactTypes/VMImage/Offers/0001-com-ubuntu-server-jammy/Skus/22_04-lts/Versions/22.04.202409130"
+      }
+    },
+    "hyperVGeneration": "V1",
+    "LastOwnershipUpdateTime": "2025-03-26T14:43:54.3385019Z",
+    "diskState": "Reserved",
+    "uniqueId": "09fcf68f-4446-415a-b82c-ded944c180b7",
+    "supportedCapabilities": {
+      "architecture": "x64",
+      "acceleratedNetwork": true,
+      "diskControllerTypes": "SCSI, NVMe"
+    },
+    "diskMBpsReadWrite": 60,
+    "diskIOPSReadWrite": 500,
+    "osType": "Linux",
+    "supportsHibernation": true
   },
   "1": {
     "provisioningState": "Succeeded",
-    "type": "MDE.Linux",
-    "autoUpgradeMinorVersion": true,
-    "typeHandlerVersion": "1.0",
-    "publisher": "Microsoft.Azure.AzureDefenderForServers",
-    "settings": {
-      "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
-      "vNextEnabled": false,
-      "autoUpdate": true
+    "publicNetworkAccess": "Enabled",
+    "networkAccessPolicy": "AllowAll",
+    "timeCreated": "2024-09-16T09:09:24.4555473Z",
+    "diskSizeGB": 30,
+    "encryption": {
+      "type": "EncryptionAtRestWithPlatformKey"
     },
-    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
-  },
-  "2": {
-    "provisioningState": "Succeeded",
-    "type": "MDE.Linux",
-    "autoUpgradeMinorVersion": true,
-    "typeHandlerVersion": "1.0",
-    "publisher": "Microsoft.Azure.AzureDefenderForServers",
-    "settings": {
-      "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
-      "vNextEnabled": false,
-      "autoUpdate": true
+    "diskSizeBytes": 32213303296,
+    "creationData": {
+      "createOption": "FromImage",
+      "imageReference": {
+        "id": "/Subscriptions/655737a7-e4fa-4f19-8c60-194cc7a2ca11/Providers/Microsoft.Compute/Locations/NorwayEast/Publishers/canonical/ArtifactTypes/VMImage/Offers/0001-com-ubuntu-server-jammy/Skus/22_04-lts/Versions/22.04.202409130"
+      }
     },
-    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
+    "hyperVGeneration": "V1",
+    "LastOwnershipUpdateTime": "2025-03-26T14:43:54.3385019Z",
+    "diskState": "Reserved",
+    "uniqueId": "09fcf68f-4446-415a-b82c-ded944c180b7",
+    "supportedCapabilities": {
+      "architecture": "x64",
+      "acceleratedNetwork": true,
+      "diskControllerTypes": "SCSI, NVMe"
+    },
+    "diskMBpsReadWrite": 60,
+    "diskIOPSReadWrite": 500,
+    "osType": "Linux",
+    "supportsHibernation": true
   }
 }

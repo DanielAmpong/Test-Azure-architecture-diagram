@@ -17,14 +17,14 @@
   },
   "LastOwnershipUpdateTime": "2025-01-14T10:09:59.6010895Z",
   "diskState": "Unattached",
-  "diskIOPSReadWrite": 120,
-  "diskMBpsReadWrite": 25,
   "supportedCapabilities": {
     "architecture": "x64",
     "acceleratedNetwork": true,
     "diskControllerTypes": "SCSI, NVMe"
   },
   "uniqueId": "129dd182-211d-4de2-935e-0c81ea1c731a",
+  "diskMBpsReadWrite": 25,
+  "diskIOPSReadWrite": 120,
   "osType": "Linux",
   "securityProfile": {
     "securityType": "TrustedLaunch"

@@ -7,6 +7,7 @@
   "logicAppReceivers": [],
   "webhookReceivers": [],
   "armRoleReceivers": [],
+  "voiceReceivers": [],
   "emailReceivers": [
     {
       "name": "SRE-Team@klp.no",
@@ -16,7 +17,6 @@
     }
   ],
   "groupShortName": "lz-sre-ag",
-  "voiceReceivers": [],
   "itsmReceivers": [],
   "smsReceivers": []
 }

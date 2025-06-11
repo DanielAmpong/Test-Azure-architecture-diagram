@@ -6,14 +6,6 @@ component Component {
 
 json  Resource_Properties {
   "enabled": true,
-  "actions": {
-    "actionGroups": [
-      {
-        "actionGroupId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-norwayeast/providers/Microsoft.Insights/actionGroups/lz-sre-teams-service-ag",
-        "webhookProperties": {}
-      }
-    ]
-  },
   "condition": {
     "allOf": [
       {
@@ -37,6 +29,14 @@ json  Resource_Properties {
           "West Europe",
           "Global"
         ]
+      }
+    ]
+  },
+  "actions": {
+    "actionGroups": [
+      {
+        "actionGroupId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-norwayeast/providers/Microsoft.Insights/actionGroups/lz-sre-teams-service-ag",
+        "webhookProperties": {}
       }
     ]
   },

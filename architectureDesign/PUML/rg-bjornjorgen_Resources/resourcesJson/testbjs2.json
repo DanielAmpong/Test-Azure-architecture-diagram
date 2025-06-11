@@ -29,11 +29,11 @@
     "dfs": "https://testbjs2.dfs.core.windows.net/"
   },
   "primaryLocation": "norwayeast",
-  "keyCreationTime": {
-    "key2": "2025-04-02T10:30:02.4402934Z",
-    "key1": "2025-04-02T10:30:02.4402934Z"
-  },
   "statusOfPrimary": "available",
+  "keyCreationTime": {
+    "key1": "2025-04-02T10:30:02.4402934Z",
+    "key2": "2025-04-02T10:30:02.4402934Z"
+  },
   "creationTime": "2025-04-02T10:30:02.3622202Z",
   "networkAcls": {
     "virtualNetworkRules": [],

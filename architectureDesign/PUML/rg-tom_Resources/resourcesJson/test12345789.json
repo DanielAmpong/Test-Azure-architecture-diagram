@@ -14,9 +14,9 @@
     "family": "A"
   },
   "enabledForDeployment": false,
-  "enableRbacAuthorization": true,
   "enabledForDiskEncryption": false,
   "softDeleteRetentionInDays": 90,
+  "enableRbacAuthorization": true,
   "accessPolicies": [],
   "enableSoftDelete": true,
   "vaultUri": "https://test12345789.vault.azure.net/"

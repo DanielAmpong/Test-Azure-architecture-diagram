@@ -34,12 +34,12 @@ json  Resource_Properties {
     "web": "https://csb100320041428ff8f.z6.web.core.windows.net/",
     "dfs": "https://csb100320041428ff8f.dfs.core.windows.net/"
   },
-  "keyCreationTime": {
-    "key1": "2025-03-13T13:24:40.335482Z",
-    "key2": "2025-03-13T13:24:40.335482Z"
-  },
-  "primaryLocation": "westeurope",
   "statusOfPrimary": "available",
+  "primaryLocation": "westeurope",
+  "keyCreationTime": {
+    "key2": "2025-03-13T13:24:40.335482Z",
+    "key1": "2025-03-13T13:24:40.335482Z"
+  },
   "creationTime": "2025-03-13T13:24:40.1792366Z",
   "networkAcls": {
     "virtualNetworkRules": [],

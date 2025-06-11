@@ -8,7 +8,6 @@ json  Resource_Properties {
   "provisioningState": "Succeeded",
   "publicNetworkAccess": "Enabled",
   "encryption": {
-    "requireInfrastructureEncryption": false,
     "keySource": "Microsoft.Storage",
     "services": {
       "blob": {
@@ -21,7 +20,8 @@ json  Resource_Properties {
         "lastEnabledTime": "2025-05-27T11:53:44.7289584Z",
         "keyType": "Account"
       }
-    }
+    },
+    "requireInfrastructureEncryption": false
   },
   "privateEndpointConnections": [],
   "supportsHttpsTrafficOnly": true,
@@ -37,11 +37,11 @@ json  Resource_Properties {
     "dfs": "https://mediauploadtest.dfs.core.windows.net/"
   },
   "keyCreationTime": {
-    "key2": "2025-05-27T11:53:44.7289584Z",
-    "key1": "2025-05-27T11:53:44.7289584Z"
+    "key1": "2025-05-27T11:53:44.7289584Z",
+    "key2": "2025-05-27T11:53:44.7289584Z"
   },
-  "statusOfPrimary": "available",
   "primaryLocation": "norwayeast",
+  "statusOfPrimary": "available",
   "creationTime": "2025-05-27T11:53:44.6664537Z",
   "networkAcls": {
     "virtualNetworkRules": [],
@@ -51,8 +51,8 @@ json  Resource_Properties {
     "bypass": "AzureServices"
   },
   "allowSharedKeyAccess": true,
-  "defaultToOAuthAuthentication": false,
   "accessTier": "Hot",
+  "defaultToOAuthAuthentication": false,
   "largeFileSharesState": "Enabled",
   "dnsEndpointType": "Standard"
 }

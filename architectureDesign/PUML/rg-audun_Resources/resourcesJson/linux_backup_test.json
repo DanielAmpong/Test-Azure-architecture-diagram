@@ -1,6 +1,13 @@
 {
   "provisioningState": "Succeeded",
   "timeCreated": "2025-01-13T11:23:01.9607028Z",
+  "securityProfile": {
+    "securityType": "TrustedLaunch",
+    "uefiSettings": {
+      "secureBootEnabled": true,
+      "vTpmEnabled": true
+    }
+  },
   "storageProfile": {
     "imageReference": {
       "publisher": "Canonical",
@@ -31,17 +38,10 @@
   "hardwareProfile": {
     "vmSize": "Standard_DS1_v2"
   },
-  "securityProfile": {
-    "securityType": "TrustedLaunch",
-    "uefiSettings": {
-      "secureBootEnabled": true,
-      "vTpmEnabled": true
-    }
-  },
   "osProfile": {
     "requireGuestProvisionSignal": true,
-    "allowExtensionOperations": true,
     "computerName": "linux-backup-test",
+    "allowExtensionOperations": true,
     "adminUsername": "audun",
     "secrets": [],
     "linuxConfiguration": {

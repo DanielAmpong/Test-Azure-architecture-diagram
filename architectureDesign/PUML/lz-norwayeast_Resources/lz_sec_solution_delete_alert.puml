@@ -16,12 +16,12 @@ json  Resource_Properties {
   "condition": {
     "allOf": [
       {
-        "equals": "Security",
-        "field": "category"
+        "field": "category",
+        "equals": "Security"
       },
       {
-        "equals": "Microsoft.Security/securitySolutions/delete",
-        "field": "operationName"
+        "field": "operationName",
+        "equals": "Microsoft.Security/securitySolutions/delete"
       },
       {
         "field": "level",

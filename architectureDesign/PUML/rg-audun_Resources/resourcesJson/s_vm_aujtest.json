@@ -19,10 +19,10 @@
       "name": "svmaujtest-osdisk-20241128-110010",
       "createOption": "Attach",
       "deleteOption": "Detach",
-      "osType": "Windows",
       "managedDisk": {
         "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Compute/disks/svmaujtest-osdisk-20241128-110010"
       },
+      "osType": "Windows",
       "caching": "ReadWrite"
     }
   },

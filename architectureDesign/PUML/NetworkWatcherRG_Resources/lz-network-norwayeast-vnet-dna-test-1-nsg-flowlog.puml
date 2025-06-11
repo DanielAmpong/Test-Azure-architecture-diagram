@@ -21,11 +21,11 @@ json  Resource_Properties {
       "workspaceRegion": "norwayeast"
     }
   },
+  "storageId": "/subscriptions/3c30e703-3724-46ce-983a-91b9a78d5941/resourceGroups/p-log/providers/Microsoft.Storage/storageAccounts/nsgflowlogs14423",
   "format": {
     "type": "JSON",
     "version": 2
   },
-  "storageId": "/subscriptions/3c30e703-3724-46ce-983a-91b9a78d5941/resourceGroups/p-log/providers/Microsoft.Storage/storageAccounts/nsgflowlogs14423",
   "targetResourceGuid": "8e8ce61b-1f79-4332-a5c2-e0fe7a2d429d"
 }
 }
