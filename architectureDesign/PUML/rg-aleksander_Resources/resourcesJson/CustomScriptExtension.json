@@ -1,8 +1,0 @@
-{
-  "provisioningState": "Succeeded",
-  "type": "CustomScriptExtension",
-  "autoUpgradeMinorVersion": true,
-  "typeHandlerVersion": "1.9",
-  "publisher": "Microsoft.Compute",
-  "settings": {}
-}

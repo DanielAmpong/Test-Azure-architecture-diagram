@@ -11,7 +11,7 @@ if (!(Test-Path -Path "architectureDesign\PUML\$($subscription.Name)")) {
 }
 
 $outputFile = "$((Get-item -Path ".\architectureDesign\PUML\$($subscription.Name)").FullName)\subscriptionAzureHierarchy.puml"
-if (Test-Path -Path $outputFile) { Remove-Item -Path $outputFile -Force | Out-Null }
+if (Test-Path -Path $outputFile) { Clear-Content -Path $outputFile -Force | Out-Null }
 
 
 $resourceTypeIcons = Get-Content -Path ".\architectureDesign\resourceTypeIcons.json" | ConvertFrom-Json -asHashtable
@@ -67,7 +67,7 @@ $resourceGroupNames = (Get-AzResourceGroup).ResourceGroupName
 foreach ($resourceGroupName in $resourceGroupNames) {
     
     $outputFile = "$((Get-item -Path ".\architectureDesign\PUML\$($subscription.Name)_ResourceGroups").FullName)\$($resourceGroupName)AzureHierarchy.puml"
-    if (Test-Path -Path $outputFile) { Remove-Item -Path $outputFile -Force | Out-Null }
+    if (Test-Path -Path $outputFile) { Clear-Content -Path $outputFile -Force | Out-Null }
 
     "@startuml" | Out-File -FilePath $outputFile -Encoding utf8
     "!pragma revision 1" | Out-File -FilePath $outputFile -Append -Encoding utf8
@@ -145,11 +145,11 @@ resources
             } 
     
             $resourceOutputFile = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources\resourcesJson").FullName)\$($splitResourceLabel[1]).json"
-            if (Test-Path -Path $resourceOutputFile) { Remove-Item -Path $resourceOutputFile -Force | Out-Null }
+            if (Test-Path -Path $resourceOutputFile) { Clear-Content -Path $resourceOutputFile -Force | Out-Null }
             $propertiesJson | Out-File -FilePath $resourceOutputFile -Append -Encoding utf8
 
             $resourceOutputFolder = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources").FullName)\$($splitResourceLabel[1]).puml"
-            if (Test-Path -Path $resourceOutputFolder) { Remove-Item -Path $resourceOutputFolder -Force | Out-Null }
+            if (Test-Path -Path $resourceOutputFolder) { Clear-Content -Path $resourceOutputFolder -Force | Out-Null }
 
             "@startuml" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
             "" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
@@ -185,11 +185,11 @@ resources
             } 
     
             $resourceOutputFile = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources\resourcesJson").FullName)\$($resourceLabel_).json"
-            if (Test-Path -Path $resourceOutputFile) { Remove-Item -Path $resourceOutputFile -Force | Out-Null }
+            if (Test-Path -Path $resourceOutputFile) { Clear-Content -Path $resourceOutputFile -Force | Out-Null }
             $propertiesJson | Out-File -FilePath $resourceOutputFile -Append -Encoding utf8
 
             $resourceOutputFolder = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources").FullName)\$($resourceLabel_).puml"
-            if (Test-Path -Path $resourceOutputFolder) { Remove-Item -Path $resourceOutputFolder -Force | Out-Null }
+            if (Test-Path -Path $resourceOutputFolder) { Clear-Content -Path $resourceOutputFolder -Force | Out-Null }
 
             "@startuml" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
             "" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8

@@ -1,7 +1,0 @@
-{
-  "provisioningState": "Updating",
-  "type": "VMAccessForLinux",
-  "typeHandlerVersion": "1.5",
-  "autoUpgradeMinorVersion": true,
-  "publisher": "Microsoft.OSTCExtensions"
-}
