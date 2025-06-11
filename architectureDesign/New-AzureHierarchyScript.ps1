@@ -149,7 +149,7 @@ resources
             $propertiesJson | Out-File -FilePath $resourceOutputFile -Append -Encoding utf8
 
             $resourceOutputFolder = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources").FullName)\$($splitResourceLabel[1]).puml"
-            if (Test-Path -Path $resourceOutputFolder) { Remove-Item -Path $resourceOutputFolder | Out-Null }
+            if (Test-Path -Path $resourceOutputFolder) { Remove-Item -Path $resourceOutputFolder -Force | Out-Null }
 
             "@startuml" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
             "" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8
