@@ -38,14 +38,15 @@
   },
   "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
   "enabledForTemplateDeployment": true,
+  "enabledForDeployment": true,
   "sku": {
     "name": "premium",
     "family": "A"
   },
   "enabledForDiskEncryption": true,
-  "enabledForDeployment": true,
   "softDeleteRetentionInDays": 90,
   "enableRbacAuthorization": false,
+  "enableSoftDelete": true,
   "accessPolicies": [
     {
       "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
@@ -57,6 +58,5 @@
       "objectId": "49d4a749-54f5-4adc-8e15-8fc82f0af192"
     }
   ],
-  "enableSoftDelete": true,
   "vaultUri": "https://finopshub-6xisw66qnemiw.vault.azure.net/"
 }

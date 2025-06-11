@@ -1,0 +1,92 @@
+{
+  "provisioningState": "Succeeded",
+  "timeCreated": "2025-06-11T13:50:25.7054526Z",
+  "storageProfile": {
+    "imageReference": {
+      "publisher": "MicrosoftWindowsServer",
+      "version": "latest",
+      "exactVersion": "20348.3807.250605",
+      "sku": "2022-Datacenter",
+      "offer": "WindowsServer"
+    },
+    "dataDisks": [
+      {
+        "name": "vm-mf2-datadisk1",
+        "createOption": "Attach",
+        "diskSizeGB": 200,
+        "deleteOption": "Detach",
+        "managedDisk": {
+          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-maintenanceConfig/providers/Microsoft.Compute/disks/vm-mf2-datadisk1",
+          "storageAccountType": "Premium_LRS"
+        },
+        "caching": "None",
+        "toBeDetached": false,
+        "lun": 0
+      }
+    ],
+    "osDisk": {
+      "name": "vm-mf2-osdisk",
+      "createOption": "FromImage",
+      "diskSizeGB": 128,
+      "osType": "Windows",
+      "deleteOption": "Detach",
+      "managedDisk": {
+        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-maintenanceConfig/providers/Microsoft.Compute/disks/vm-mf2-osdisk",
+        "storageAccountType": "Premium_LRS"
+      },
+      "caching": "ReadWrite"
+    }
+  },
+  "networkProfile": {
+    "networkInterfaces": [
+      {
+        "properties": {
+          "primary": true
+        },
+        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-maintenanceConfig/providers/Microsoft.Network/networkInterfaces/vm-mf2-nic"
+      }
+    ]
+  },
+  "hardwareProfile": {
+    "vmSize": "Standard_B2ats_v2"
+  },
+  "osProfile": {
+    "requireGuestProvisionSignal": true,
+    "computerName": "vm-mf2",
+    "allowExtensionOperations": true,
+    "secrets": [],
+    "adminUsername": "sysadmin",
+    "windowsConfiguration": {
+      "provisionVMAgent": true,
+      "patchSettings": {
+        "assessmentMode": "ImageDefault",
+        "patchMode": "AutomaticByOS"
+      },
+      "enableAutomaticUpdates": true,
+      "enableVMAgentPlatformUpdates": false,
+      "timeZone": "W. Europe Standard Time"
+    }
+  },
+  "diagnosticsProfile": {
+    "bootDiagnostics": {
+      "enabled": true
+    }
+  },
+  "vmId": "a455234c-85d8-4d54-9fe5-b904f96db583",
+  "extended": {
+    "instanceView": {
+      "hyperVGeneration": "V1",
+      "computerName": "vm-mf2",
+      "powerState": {
+        "displayStatus": "VM running",
+        "level": "Info",
+        "code": "PowerState/running"
+      },
+      "osVersion": "10.0.20348.3807",
+      "osName": "Windows Server 2022 Datacenter"
+    }
+  },
+  "availabilitySet": {
+    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-MAINTENANCECONFIG/providers/Microsoft.Compute/availabilitySets/VM-MF-AVAIL"
+  }
+}

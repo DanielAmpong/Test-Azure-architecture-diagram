@@ -1,9 +1,10 @@
 {
   "provisioningState": "Succeeded",
   "enableAcceleratedNetworking": false,
-  "resourceGuid": "b6cf68ae-dc32-4d8c-8986-4d35c50160f8",
   "defaultOutboundConnectivityEnabled": true,
+  "resourceGuid": "b6cf68ae-dc32-4d8c-8986-4d35c50160f8",
   "disableTcpStateTracking": false,
+  "vnetEncryptionSupported": false,
   "ipConfigurations": [
     {
       "properties": {
@@ -22,18 +23,17 @@
       "etag": "W/\"0ecded5a-507d-4233-9c6f-c98ec557a15c\""
     }
   ],
-  "vnetEncryptionSupported": false,
   "enableIPForwarding": false,
   "tapConfigurations": [],
   "primary": true,
   "hostedWorkloads": [],
   "allowPort25Out": true,
+  "auxiliaryMode": "None",
   "dnsSettings": {
     "appliedDnsServers": [],
     "internalDomainNameSuffix": "pquq0qan4vse5gqto15kewgzsd.oslx.internal.cloudapp.net",
     "dnsServers": []
   },
-  "auxiliaryMode": "None",
   "auxiliarySku": "None",
   "macAddress": "00-22-48-75-4A-0F",
   "virtualMachine": {

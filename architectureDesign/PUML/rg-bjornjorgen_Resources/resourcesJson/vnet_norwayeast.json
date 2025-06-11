@@ -18,10 +18,10 @@
         ],
         "privateLinkServiceNetworkPolicies": "Enabled",
         "privateEndpointNetworkPolicies": "Disabled",
+        "delegations": [],
         "addressPrefixes": [
           "172.16.0.0/24"
-        ],
-        "delegations": []
+        ]
       },
       "name": "snet-norwayeast-1",
       "type": "Microsoft.Network/virtualNetworks/subnets",

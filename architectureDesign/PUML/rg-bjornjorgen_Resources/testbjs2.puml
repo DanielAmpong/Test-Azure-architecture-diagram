@@ -35,11 +35,11 @@ json  Resource_Properties {
     "dfs": "https://testbjs2.dfs.core.windows.net/"
   },
   "primaryLocation": "norwayeast",
-  "statusOfPrimary": "available",
   "keyCreationTime": {
     "key2": "2025-04-02T10:30:02.4402934Z",
     "key1": "2025-04-02T10:30:02.4402934Z"
   },
+  "statusOfPrimary": "available",
   "creationTime": "2025-04-02T10:30:02.3622202Z",
   "networkAcls": {
     "virtualNetworkRules": [],

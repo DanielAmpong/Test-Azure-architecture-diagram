@@ -26,17 +26,17 @@ json  Resource_Properties {
   "privateEndpointConnections": [],
   "supportsHttpsTrafficOnly": true,
   "allowBlobPublicAccess": false,
-  "minimumTlsVersion": "TLS1_2",
   "allowCrossTenantReplication": false,
+  "minimumTlsVersion": "TLS1_2",
   "primaryEndpoints": {
     "file": "https://dfrvgtbhnjmk.file.core.windows.net/"
   },
   "primaryLocation": "norwayeast",
-  "statusOfPrimary": "available",
   "keyCreationTime": {
-    "key2": "2025-05-19T08:15:45.7989543Z",
-    "key1": "2025-05-19T08:15:45.7989543Z"
+    "key1": "2025-05-19T08:15:45.7989543Z",
+    "key2": "2025-05-19T08:15:45.7989543Z"
   },
+  "statusOfPrimary": "available",
   "creationTime": "2025-05-19T08:15:45.7364021Z",
   "networkAcls": {
     "virtualNetworkRules": [],
@@ -47,8 +47,8 @@ json  Resource_Properties {
   },
   "allowSharedKeyAccess": true,
   "defaultToOAuthAuthentication": false,
-  "largeFileSharesState": "Enabled",
   "dnsEndpointType": "Standard",
+  "largeFileSharesState": "Enabled",
   "allowedCopyScope": "AAD"
 }
 }

@@ -9,6 +9,7 @@ json  Resource_Properties {
   "automationRunbookReceivers": [],
   "azureFunctionReceivers": [],
   "azureAppPushReceivers": [],
+  "logicAppReceivers": [],
   "eventHubReceivers": [
     {
       "name": "health advisories",
@@ -19,11 +20,10 @@ json  Resource_Properties {
       "eventHubName": "p-healthadvisories-evh"
     }
   ],
-  "logicAppReceivers": [],
-  "groupShortName": "SRE Teams",
   "webhookReceivers": [],
   "armRoleReceivers": [],
   "emailReceivers": [],
+  "groupShortName": "SRE Teams",
   "voiceReceivers": [],
   "itsmReceivers": [],
   "smsReceivers": []

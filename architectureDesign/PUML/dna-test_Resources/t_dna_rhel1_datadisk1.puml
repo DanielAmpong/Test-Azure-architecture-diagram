@@ -17,11 +17,11 @@ json  Resource_Properties {
   "creationData": {
     "createOption": "Empty"
   },
-  "diskState": "Attached",
   "LastOwnershipUpdateTime": "2024-12-07T10:08:52.6789836Z",
+  "diskState": "Attached",
   "uniqueId": "2afc34f1-2535-4dfc-8bc1-65c7189f40bc",
-  "diskMBpsReadWrite": 100,
-  "diskIOPSReadWrite": 500
+  "diskIOPSReadWrite": 500,
+  "diskMBpsReadWrite": 100
 }
 }
 @enduml

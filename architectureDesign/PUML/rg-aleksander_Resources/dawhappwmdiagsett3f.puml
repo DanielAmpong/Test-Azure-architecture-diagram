@@ -24,8 +24,8 @@ json  Resource_Properties {
   "privateEndpointConnections": [],
   "supportsHttpsTrafficOnly": true,
   "allowBlobPublicAccess": false,
-  "minimumTlsVersion": "TLS1_2",
   "allowCrossTenantReplication": false,
+  "minimumTlsVersion": "TLS1_2",
   "primaryEndpoints": {
     "blob": "https://dawhappwmdiagsett3f.blob.core.windows.net/",
     "file": "https://dawhappwmdiagsett3f.file.core.windows.net/",
@@ -38,8 +38,8 @@ json  Resource_Properties {
     "key1": "2025-05-22T12:23:05.7887348Z",
     "key2": "2025-05-22T12:23:05.7887348Z"
   },
-  "primaryLocation": "norwayeast",
   "statusOfPrimary": "available",
+  "primaryLocation": "norwayeast",
   "creationTime": "2025-05-22T12:23:05.7262244Z",
   "networkAcls": {
     "virtualNetworkRules": [

@@ -10,18 +10,18 @@ json  Resource_Properties {
   "networkAccessPolicy": "AllowAll",
   "timeCreated": "2025-05-22T12:23:52.5750271Z",
   "diskSizeGB": 100,
+  "diskSizeBytes": 107374182400,
   "encryption": {
     "type": "EncryptionAtRestWithPlatformKey"
   },
-  "diskSizeBytes": 107374182400,
   "creationData": {
     "createOption": "Empty"
   },
-  "diskState": "Attached",
   "LastOwnershipUpdateTime": "2025-05-22T12:24:14.3880342Z",
+  "diskState": "Attached",
   "uniqueId": "6fd30506-5f0f-4ad8-9384-9ceb31bea5b9",
-  "diskMBpsReadWrite": 100,
   "diskIOPSReadWrite": 500,
+  "diskMBpsReadWrite": 100,
   "tier": "P10"
 }
 }

@@ -7,7 +7,6 @@ component Component {
 json  Resource_Properties {
   "provisioningState": "Succeeded",
   "publicNetworkAccess": "Enabled",
-  "privateEndpointConnections": [],
   "encryption": {
     "keySource": "Microsoft.Storage",
     "services": {
@@ -24,6 +23,7 @@ json  Resource_Properties {
     },
     "requireInfrastructureEncryption": false
   },
+  "privateEndpointConnections": [],
   "supportsHttpsTrafficOnly": true,
   "allowBlobPublicAccess": false,
   "minimumTlsVersion": "TLS1_2",
@@ -36,12 +36,12 @@ json  Resource_Properties {
     "dfs": "https://sweethomealabamaandback.dfs.core.windows.net/"
   },
   "allowCrossTenantReplication": false,
+  "statusOfPrimary": "available",
+  "primaryLocation": "norwayeast",
   "keyCreationTime": {
     "key2": "2024-11-27T13:03:26.9587902Z",
     "key1": "2024-11-27T13:03:26.9587902Z"
   },
-  "statusOfPrimary": "available",
-  "primaryLocation": "norwayeast",
   "creationTime": "2024-11-27T13:03:26.8961819Z",
   "networkAcls": {
     "virtualNetworkRules": [],
@@ -53,8 +53,8 @@ json  Resource_Properties {
   "allowSharedKeyAccess": true,
   "accessTier": "Hot",
   "defaultToOAuthAuthentication": false,
-  "dnsEndpointType": "Standard",
   "largeFileSharesState": "Enabled",
+  "dnsEndpointType": "Standard",
   "allowCrossTenantReplicationToAzureBackup": true
 }
 }

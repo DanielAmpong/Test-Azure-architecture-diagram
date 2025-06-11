@@ -22,8 +22,8 @@ json  Resource_Properties {
   ],
   "webhookReceivers": [],
   "armRoleReceivers": [],
-  "groupShortName": "SRE Teams",
   "emailReceivers": [],
+  "groupShortName": "SRE Teams",
   "voiceReceivers": [],
   "itsmReceivers": [],
   "smsReceivers": []

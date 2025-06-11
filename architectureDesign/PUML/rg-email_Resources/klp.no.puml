@@ -44,9 +44,6 @@ json  Resource_Properties {
       "status": "Verified",
       "errorCode": "None"
     },
-    "DMARC": {
-      "status": "NotStarted"
-    },
     "DKIM": {
       "status": "Verified",
       "errorCode": "None"
@@ -54,6 +51,9 @@ json  Resource_Properties {
     "SPF": {
       "status": "Verified",
       "errorCode": "None"
+    },
+    "DMARC": {
+      "status": "NotStarted"
     }
   },
   "domainManagement": "CustomerManaged",

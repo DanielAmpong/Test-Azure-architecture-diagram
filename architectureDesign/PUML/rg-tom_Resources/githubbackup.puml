@@ -12,11 +12,11 @@ json  Resource_Properties {
   "state": "Edit",
   "lastModifiedTime": "2025-02-19T12:25:36.7Z",
   "serviceManagementTags": null,
-  "lastModifiedBy": null,
   "runtimeEnvironment": null,
+  "lastModifiedBy": null,
   "logActivityTrace": 0,
-  "runbookType": "Python3",
   "logProgress": false,
+  "runbookType": "Python3",
   "outputTypes": [],
   "logVerbose": false,
   "jobCount": 0

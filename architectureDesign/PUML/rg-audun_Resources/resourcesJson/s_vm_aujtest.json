@@ -18,8 +18,8 @@
     "osDisk": {
       "name": "svmaujtest-osdisk-20241128-110010",
       "createOption": "Attach",
-      "osType": "Windows",
       "deleteOption": "Detach",
+      "osType": "Windows",
       "managedDisk": {
         "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Compute/disks/svmaujtest-osdisk-20241128-110010"
       },
@@ -50,7 +50,6 @@
       }
     }
   },
-  "vmId": "55f01483-d2f8-4db6-8271-c78d6d7a9822",
   "extended": {
     "instanceView": {
       "hyperVGeneration": "V1",
@@ -60,5 +59,6 @@
         "code": "PowerState/deallocated"
       }
     }
-  }
+  },
+  "vmId": "55f01483-d2f8-4db6-8271-c78d6d7a9822"
 }

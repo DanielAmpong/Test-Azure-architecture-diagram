@@ -21,14 +21,14 @@ json  Resource_Properties {
   "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
   "enabledForTemplateDeployment": true,
   "enabledForDeployment": true,
-  "enabledForDiskEncryption": true,
   "sku": {
     "name": "standard",
     "family": "A"
   },
+  "enabledForDiskEncryption": true,
   "enableRbacAuthorization": true,
-  "enableSoftDelete": true,
   "accessPolicies": [],
+  "enableSoftDelete": true,
   "enablePurgeProtection": true,
   "vaultUri": "https://d-awh-appwm-kv-3fpr.vault.azure.net/"
 }

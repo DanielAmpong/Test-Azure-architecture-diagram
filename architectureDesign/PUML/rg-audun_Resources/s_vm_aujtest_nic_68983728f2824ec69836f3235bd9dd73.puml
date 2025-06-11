@@ -13,6 +13,7 @@ json  Resource_Properties {
   "vnetEncryptionSupported": false,
   "ipConfigurations": [
     {
+      "name": "011a8d02b4f24c578ebdd2be693834ba",
       "properties": {
         "provisioningState": "Succeeded",
         "privateIPAddressVersion": "IPv4",
@@ -23,15 +24,14 @@ json  Resource_Properties {
           "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/default"
         }
       },
-      "name": "011a8d02b4f24c578ebdd2be693834ba",
       "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
       "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkInterfaces/s-vm-aujtest-nic-68983728f2824ec69836f3235bd9dd73/ipConfigurations/011a8d02b4f24c578ebdd2be693834ba",
       "etag": "W/\"7c3c1b74-5d3d-4644-9e4b-14592a6b86ae\""
     }
   ],
   "enableIPForwarding": false,
-  "tapConfigurations": [],
   "primary": true,
+  "tapConfigurations": [],
   "hostedWorkloads": [],
   "allowPort25Out": true,
   "auxiliaryMode": "None",
@@ -39,8 +39,8 @@ json  Resource_Properties {
     "appliedDnsServers": [],
     "dnsServers": []
   },
-  "auxiliarySku": "None",
   "macAddress": "00-22-48-75-86-7E",
+  "auxiliarySku": "None",
   "virtualMachine": {
     "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest"
   },

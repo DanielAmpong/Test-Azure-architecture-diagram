@@ -29,11 +29,11 @@
     "dfs": "https://csb1003200033b9b8b7.dfs.core.windows.net/"
   },
   "keyCreationTime": {
-    "key1": "2024-01-17T11:46:31.9180924Z",
-    "key2": "2024-01-17T11:46:31.9180924Z"
+    "key2": "2024-01-17T11:46:31.9180924Z",
+    "key1": "2024-01-17T11:46:31.9180924Z"
   },
-  "primaryLocation": "westeurope",
   "statusOfPrimary": "available",
+  "primaryLocation": "westeurope",
   "creationTime": "2024-01-17T11:46:31.7617608Z",
   "networkAcls": {
     "virtualNetworkRules": [],

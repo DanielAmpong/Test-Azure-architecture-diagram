@@ -22,8 +22,8 @@ json  Resource_Properties {
       }
     }
   },
-  "state": "Enabled",
   "version": "08584562864224039892",
+  "state": "Enabled",
   "createdTime": "2025-03-12T12:02:48.313927Z",
   "changedTime": "2025-04-22T11:14:23.1111633Z",
   "endpointsConfiguration": {
@@ -132,6 +132,7 @@ json  Resource_Properties {
         "defaultValue": "audunj@gmail.com"
       }
     },
+    "contentVersion": "1.0.0.0",
     "actions": {
       "Condition": {
         "type": "If",
@@ -164,7 +165,6 @@ json  Resource_Properties {
                     "html": "<p class=\"editor-paragraph\">@{base64ToString(body('Run_query_and_visualize_results_V2')?['body'])}</p>"
                   },
                   "importance": "Normal",
-                  "userEngagementTrackingDisabled": true,
                   "recipients": {
                     "to": [
                       {
@@ -172,6 +172,7 @@ json  Resource_Properties {
                       }
                     ]
                   },
+                  "userEngagementTrackingDisabled": true,
                   "senderAddress": "DoNotReply@klp.no"
                 },
                 "host": {
@@ -205,22 +206,21 @@ json  Resource_Properties {
           "queries": {
             "subscriptions": "3c30e703-3724-46ce-983a-91b9a78d5941",
             "resourcegroups": "p-log",
-            "resourcetype": "Log Analytics Workspace",
             "resourcename": "p-log-platform-log",
+            "resourcetype": "Log Analytics Workspace",
             "visType": "Html Table"
           }
         }
       }
     },
-    "contentVersion": "1.0.0.0",
     "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
     "outputs": {},
     "triggers": {
       "Recurrence": {
         "type": "Recurrence",
         "evaluatedRecurrence": {
-          "frequency": "Day",
           "startTime": "2025-02-09",
+          "frequency": "Day",
           "interval": 1,
           "timeZone": "W. Europe Standard Time",
           "schedule": {
@@ -230,8 +230,8 @@ json  Resource_Properties {
           }
         },
         "recurrence": {
-          "frequency": "Day",
           "startTime": "2025-02-09",
+          "frequency": "Day",
           "interval": 1,
           "timeZone": "W. Europe Standard Time",
           "schedule": {

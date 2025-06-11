@@ -4,10 +4,10 @@
   "networkAccessPolicy": "AllowAll",
   "timeCreated": "2025-05-22T12:24:14.3880342Z",
   "diskSizeGB": 128,
-  "diskSizeBytes": 137438953472,
   "encryption": {
     "type": "EncryptionAtRestWithPlatformKey"
   },
+  "diskSizeBytes": 137438953472,
   "hyperVGeneration": "V1",
   "creationData": {
     "createOption": "FromImage",
@@ -15,22 +15,21 @@
       "id": "/Subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/Providers/Microsoft.Compute/Locations/NorwayEast/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer/Skus/2022-Datacenter/Versions/20348.3692.250509"
     }
   },
+  "LastOwnershipUpdateTime": "2025-05-22T12:24:14.3880342Z",
+  "diskState": "Attached",
+  "diskIOPSReadWrite": 500,
+  "diskMBpsReadWrite": 100,
   "supportedCapabilities": {
     "architecture": "x64",
     "acceleratedNetwork": true,
     "diskControllerTypes": "SCSI"
   },
-  "diskState": "Attached",
   "uniqueId": "aede88f2-fd16-4335-ad11-56f6ab51cd98",
-  "LastOwnershipUpdateTime": "2025-05-22T12:24:14.3880342Z",
   "osType": "Windows",
   "supportsHibernation": true,
-  "diskMBpsReadWrite": 100,
-  "diskIOPSReadWrite": 500,
   "tier": "P10",
   "encryptionSettingsCollection": {
     "enabled": true,
-    "encryptionSettingsVersion": "1.1",
     "encryptionSettings": [
       {
         "diskEncryptionKey": {
@@ -46,6 +45,7 @@
           "keyUrl": "https://d-awh-appwm-kv-3fpr.vault.azure.net/keys/lz-vm-disk-encrypt-key/aacd7c1cf0b24d6d8b1e237f42fe443a"
         }
       }
-    ]
+    ],
+    "encryptionSettingsVersion": "1.1"
   }
 }

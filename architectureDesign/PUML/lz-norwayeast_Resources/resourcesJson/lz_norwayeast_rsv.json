@@ -3,7 +3,7 @@
   "publicNetworkAccess": "Enabled",
   "privateEndpointStateForSiteRecovery": "None",
   "privateEndpointStateForBackup": "None",
-  "backupStorageVersion": "Unassigned",
+  "backupStorageVersion": "V1",
   "bcdrSecurityLevel": "Poor",
   "redundancySettings": {
     "standardTierStorageRedundancy": "ZoneRedundant",
@@ -13,7 +13,7 @@
     "multiUserAuthorization": "Disabled",
     "softDeleteSettings": {
       "softDeleteRetentionPeriodInDays": 14,
-      "enhancedSecurityState": "Invalid",
+      "enhancedSecurityState": "Enabled",
       "softDeleteState": "Enabled"
     }
   },
@@ -26,8 +26,8 @@
   "monitoringSettings": {
     "azureMonitorAlertSettings": {
       "alertsForAllReplicationIssues": "Enabled",
-      "alertsForAllJobFailures": "Enabled",
-      "alertsForAllFailoverIssues": "Enabled"
+      "alertsForAllFailoverIssues": "Enabled",
+      "alertsForAllJobFailures": "Enabled"
     },
     "classicAlertSettings": {
       "emailNotificationsForSiteRecovery": "Disabled",

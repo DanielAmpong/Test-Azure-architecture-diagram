@@ -10,18 +10,6 @@
     ]
   },
   "immutableId": "dcr-749553765d5b434392c0cdec53ee91af",
-  "dataFlows": [
-    {
-      "destinations": [
-        "la-1820520036"
-      ],
-      "streams": [
-        "Microsoft-Perf"
-      ],
-      "transformKql": "source",
-      "outputStream": "Microsoft-Perf"
-    }
-  ],
   "dataSources": {
     "performanceCounters": [
       {
@@ -81,5 +69,17 @@
       }
     ]
   },
+  "dataFlows": [
+    {
+      "destinations": [
+        "la-1820520036"
+      ],
+      "streams": [
+        "Microsoft-Perf"
+      ],
+      "transformKql": "source",
+      "outputStream": "Microsoft-Perf"
+    }
+  ],
   "streamDeclarations": {}
 }

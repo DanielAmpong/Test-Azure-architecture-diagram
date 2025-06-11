@@ -132,8 +132,17 @@ resources
   
             $azureResourceGraph = Search-AzGraph -Query $query -Subscription $subscription.Id
             $propertiesJson = $azureResourceGraph.properties | ConvertTo-Json -Depth 30
-    
 
+            if (($azureResourceGraph.properties) -is [System.Array]) {
+                $jsonObject = @{}
+                $convrt | ForEach-Object {
+                    for ($i = 0; $i -lt $convrt.Count; $i++) {
+                        $jsonObject[[string]$i] = $_
+                    }
+                }
+                $propertiesJson = $jsonObject | ConvertTo-Json -Depth 30
+            } 
+    
             $resourceOutputFile = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources\resourcesJson").FullName)\$($splitResourceLabel[1]).json"
             if (Test-Path -Path $resourceOutputFile) { Remove-Item -Path $resourceOutputFile | Out-Null }
             $propertiesJson | Out-File -FilePath $resourceOutputFile -Append -Encoding utf8
@@ -162,6 +171,16 @@ resources
     
             $azureResourceGraph = Search-AzGraph -Query $query -Subscription $subscription.Id
             $propertiesJson = $azureResourceGraph.properties | ConvertTo-Json -Depth 30
+
+            if (($azureResourceGraph.properties) -is [System.Array]) {
+                $jsonObject = @{}
+                $convrt | ForEach-Object {
+                    for ($i = 0; $i -lt $convrt.Count; $i++) {
+                        $jsonObject[[string]$i] = $_
+                    }
+                }
+                $propertiesJson = $jsonObject | ConvertTo-Json -Depth 30
+            } 
     
             $resourceOutputFile = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources\resourcesJson").FullName)\$($resourceLabel_).json"
             if (Test-Path -Path $resourceOutputFile) { Remove-Item -Path $resourceOutputFile | Out-Null }

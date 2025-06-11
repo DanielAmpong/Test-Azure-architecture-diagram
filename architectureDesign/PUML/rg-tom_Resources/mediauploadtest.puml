@@ -8,8 +8,8 @@ json  Resource_Properties {
   "provisioningState": "Succeeded",
   "publicNetworkAccess": "Enabled",
   "encryption": {
-    "keySource": "Microsoft.Storage",
     "requireInfrastructureEncryption": false,
+    "keySource": "Microsoft.Storage",
     "services": {
       "blob": {
         "enabled": true,
@@ -36,11 +36,11 @@ json  Resource_Properties {
     "web": "https://mediauploadtest.z1.web.core.windows.net/",
     "dfs": "https://mediauploadtest.dfs.core.windows.net/"
   },
-  "statusOfPrimary": "available",
   "keyCreationTime": {
-    "key1": "2025-05-27T11:53:44.7289584Z",
-    "key2": "2025-05-27T11:53:44.7289584Z"
+    "key2": "2025-05-27T11:53:44.7289584Z",
+    "key1": "2025-05-27T11:53:44.7289584Z"
   },
+  "statusOfPrimary": "available",
   "primaryLocation": "norwayeast",
   "creationTime": "2025-05-27T11:53:44.6664537Z",
   "networkAcls": {

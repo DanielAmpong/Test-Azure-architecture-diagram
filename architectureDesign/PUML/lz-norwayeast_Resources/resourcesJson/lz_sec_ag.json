@@ -3,11 +3,10 @@
   "automationRunbookReceivers": [],
   "azureFunctionReceivers": [],
   "azureAppPushReceivers": [],
-  "eventHubReceivers": [],
   "logicAppReceivers": [],
+  "eventHubReceivers": [],
   "webhookReceivers": [],
   "armRoleReceivers": [],
-  "groupShortName": "lz-sec-ag",
   "emailReceivers": [
     {
       "name": "cyberwarriors@klp.no",
@@ -16,6 +15,7 @@
       "emailAddress": "cyberwarriors@klp.no"
     }
   ],
+  "groupShortName": "lz-sec-ag",
   "voiceReceivers": [],
   "itsmReceivers": [],
   "smsReceivers": []

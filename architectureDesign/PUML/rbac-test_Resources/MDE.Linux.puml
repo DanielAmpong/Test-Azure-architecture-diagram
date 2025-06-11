@@ -4,12 +4,12 @@ title Resources Display - Component Diagram
 
 component Component {
 
-json  Resource_Properties [
-  {
+json  Resource_Properties {
+  "3": {
     "provisioningState": "Succeeded",
     "type": "MDE.Linux",
-    "typeHandlerVersion": "1.0",
     "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.0",
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
@@ -19,48 +19,48 @@ json  Resource_Properties [
     },
     "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
   },
-  {
+  "0": {
     "provisioningState": "Succeeded",
     "type": "MDE.Linux",
-    "typeHandlerVersion": "1.0",
     "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.0",
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/linux-backup-test",
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
       "vNextEnabled": false,
       "autoUpdate": true
     },
-    "forceUpdateTag": "22008dda-4490-40d4-b499-397f6364be83"
+    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
   },
-  {
-    "provisioningState": "Updating",
-    "type": "MDE.Linux",
-    "typeHandlerVersion": "1.0",
-    "autoUpgradeMinorVersion": true,
-    "publisher": "Microsoft.Azure.AzureDefenderForServers",
-    "settings": {
-      "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/LINUX-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
-      "vNextEnabled": false,
-      "autoUpdate": true
-    },
-    "forceUpdateTag": "f12660af-c0c1-4ade-9ff3-b0f1f6337329"
-  },
-  {
-    "provisioningState": "Failed",
+  "1": {
+    "provisioningState": "Succeeded",
     "type": "MDE.Linux",
     "autoUpgradeMinorVersion": true,
     "typeHandlerVersion": "1.0",
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/DNA-TEST/providers/Microsoft.Compute/virtualMachines/t-dna-rhel1",
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
       "vNextEnabled": false,
       "autoUpdate": true
     },
-    "forceUpdateTag": "b6cc0c7d-462f-4ab9-8d32-fe296a60e27f"
+    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
+  },
+  "2": {
+    "provisioningState": "Succeeded",
+    "type": "MDE.Linux",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.0",
+    "publisher": "Microsoft.Azure.AzureDefenderForServers",
+    "settings": {
+      "forceReOnboarding": false,
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Compute/virtualMachines/t-linux-vm",
+      "vNextEnabled": false,
+      "autoUpdate": true
+    },
+    "forceUpdateTag": "4e69f742-5d6b-4074-945a-6af54d762d57"
   }
-]
+}
 }
 @enduml

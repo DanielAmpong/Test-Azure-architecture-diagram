@@ -2,14 +2,14 @@
   "displayName": "Livsselskapet_FailedMailsLogicApp_Prod",
   "createdTime": "2025-03-25T11:40:45.9266492Z",
   "customParameterValues": {},
-  "changedTime": "2025-06-04T21:00:02.1599077Z",
+  "changedTime": "2025-06-09T21:00:00.6876393Z",
   "authenticatedUser": {
     "name": "Audun.Jensen@klp.no"
   },
   "connectionState": "Enabled",
   "overallStatus": "Connected",
-  "parameterValues": {},
   "testRequests": [],
+  "parameterValues": {},
   "testLinks": [],
   "statuses": [
     {
@@ -19,8 +19,8 @@
   "api": {
     "name": "azuremonitorlogs",
     "type": "Microsoft.Web/locations/managedApis",
-    "description": "Use this connector to query your Azure Monitor Logs across Log Analytics workspace and Application Insights component, to list or visualize results.",
     "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/providers/Microsoft.Web/locations/norwayeast/managedApis/azuremonitorlogs",
+    "description": "Use this connector to query your Azure Monitor Logs across Log Analytics workspace and Application Insights component, to list or visualize results.",
     "displayName": "Azure Monitor Logs",
     "category": "Standard",
     "brandColor": "#0072C6",

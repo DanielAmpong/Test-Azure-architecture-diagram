@@ -20,8 +20,8 @@ json  Resource_Properties {
     "osDisk": {
       "name": "bjsScaleset1_ff6a1be6_OsDisk_1_bbef783febe54664b36726be0739d16c",
       "createOption": "FromImage",
-      "osType": "Windows",
       "deleteOption": "Delete",
+      "osType": "Windows",
       "managedDisk": {
         "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Compute/disks/bjsScaleset1_ff6a1be6_OsDisk_1_bbef783febe54664b36726be0739d16c"
       },
@@ -42,10 +42,12 @@ json  Resource_Properties {
   "hardwareProfile": {
     "vmSize": "Standard_DS1_v2"
   },
+  "licenseType": "Windows_Server",
   "osProfile": {
     "requireGuestProvisionSignal": true,
-    "computerName": "bjsscales05UJOA",
     "allowExtensionOperations": true,
+    "computerName": "bjsscales05UJOA",
+    "adminUsername": "testss",
     "windowsConfiguration": {
       "provisionVMAgent": true,
       "patchSettings": {
@@ -56,7 +58,6 @@ json  Resource_Properties {
       "enableAutomaticUpdates": true,
       "enableVMAgentPlatformUpdates": true
     },
-    "adminUsername": "testss",
     "secrets": []
   },
   "diagnosticsProfile": {
@@ -64,7 +65,6 @@ json  Resource_Properties {
       "enabled": true
     }
   },
-  "licenseType": "Windows_Server",
   "extended": {
     "instanceView": {
       "hyperVGeneration": "V2",

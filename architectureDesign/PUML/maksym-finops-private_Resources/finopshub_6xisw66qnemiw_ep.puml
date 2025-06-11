@@ -19,7 +19,6 @@ json  Resource_Properties {
   "manualPrivateLinkServiceConnections": [],
   "privateLinkServiceConnections": [
     {
-      "name": "keyVaultLink",
       "properties": {
         "provisioningState": "Succeeded",
         "privateLinkServiceConnectionState": {
@@ -32,6 +31,7 @@ json  Resource_Properties {
           "vault"
         ]
       },
+      "name": "keyVaultLink",
       "type": "Microsoft.Network/privateEndpoints/privateLinkServiceConnections",
       "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Network/privateEndpoints/finopshub-6xisw66qnemiw-ep/privateLinkServiceConnections/keyVaultLink",
       "etag": "W/\"929e18af-a3a7-44fd-af68-0651183b394b\""

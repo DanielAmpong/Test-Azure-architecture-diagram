@@ -5,9 +5,8 @@
   "azureAppPushReceivers": [],
   "eventHubReceivers": [],
   "logicAppReceivers": [],
-  "armRoleReceivers": [],
   "webhookReceivers": [],
-  "groupShortName": "lz-sre-ag",
+  "armRoleReceivers": [],
   "emailReceivers": [
     {
       "name": "SRE-Team@klp.no",
@@ -16,6 +15,7 @@
       "emailAddress": "SRE-Team@klp.no"
     }
   ],
+  "groupShortName": "lz-sre-ag",
   "voiceReceivers": [],
   "itsmReceivers": [],
   "smsReceivers": []

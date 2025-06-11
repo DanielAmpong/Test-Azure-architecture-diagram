@@ -28,8 +28,8 @@ json  Resource_Properties {
       "value": "dna-drift@klp.no"
     }
   },
-  "state": "Enabled",
   "version": "08584579389831360141",
+  "state": "Enabled",
   "createdTime": "2025-03-25T11:40:54.3154501Z",
   "changedTime": "2025-04-03T08:11:42.3619531Z",
   "endpointsConfiguration": {
@@ -136,6 +136,8 @@ json  Resource_Properties {
         "type": "String"
       }
     },
+    "contentVersion": "1.0.0.0",
+    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
     "actions": {
       "Condition": {
         "type": "If",
@@ -216,8 +218,6 @@ json  Resource_Properties {
         }
       }
     },
-    "contentVersion": "1.0.0.0",
-    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
     "outputs": {},
     "triggers": {
       "Recurrence": {

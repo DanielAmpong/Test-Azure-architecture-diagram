@@ -9,11 +9,10 @@ json  Resource_Properties {
   "automationRunbookReceivers": [],
   "azureFunctionReceivers": [],
   "azureAppPushReceivers": [],
-  "eventHubReceivers": [],
   "logicAppReceivers": [],
+  "eventHubReceivers": [],
   "webhookReceivers": [],
   "armRoleReceivers": [],
-  "groupShortName": "lz-sec-ag",
   "emailReceivers": [
     {
       "name": "cyberwarriors@klp.no",
@@ -22,6 +21,7 @@ json  Resource_Properties {
       "emailAddress": "cyberwarriors@klp.no"
     }
   ],
+  "groupShortName": "lz-sec-ag",
   "voiceReceivers": [],
   "itsmReceivers": [],
   "smsReceivers": []

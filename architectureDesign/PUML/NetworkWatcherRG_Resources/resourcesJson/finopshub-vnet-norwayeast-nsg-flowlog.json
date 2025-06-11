@@ -5,6 +5,7 @@
     "enabled": true,
     "days": 0
   },
+  "targetResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Network/NetworkSecurityGroups/finopshub-vnet-norwayeast-nsg",
   "flowAnalyticsConfiguration": {
     "networkWatcherFlowAnalyticsConfiguration": {
       "enabled": true,
@@ -14,7 +15,6 @@
       "workspaceRegion": "norwayeast"
     }
   },
-  "targetResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Network/NetworkSecurityGroups/finopshub-vnet-norwayeast-nsg",
   "storageId": "/subscriptions/3c30e703-3724-46ce-983a-91b9a78d5941/resourceGroups/p-log/providers/Microsoft.Storage/storageAccounts/nsgflowlogs14423",
   "format": {
     "type": "JSON",

@@ -11,9 +11,8 @@ json  Resource_Properties {
   "azureAppPushReceivers": [],
   "eventHubReceivers": [],
   "logicAppReceivers": [],
-  "armRoleReceivers": [],
   "webhookReceivers": [],
-  "groupShortName": "lz-sre-ag",
+  "armRoleReceivers": [],
   "emailReceivers": [
     {
       "name": "SRE-Team@klp.no",
@@ -22,6 +21,7 @@ json  Resource_Properties {
       "emailAddress": "SRE-Team@klp.no"
     }
   ],
+  "groupShortName": "lz-sre-ag",
   "voiceReceivers": [],
   "itsmReceivers": [],
   "smsReceivers": []

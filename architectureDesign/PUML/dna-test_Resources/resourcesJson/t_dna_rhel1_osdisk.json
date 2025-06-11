@@ -4,26 +4,26 @@
   "networkAccessPolicy": "AllowAll",
   "timeCreated": "2024-12-07T10:08:52.6789836Z",
   "diskSizeGB": 128,
+  "hyperVGeneration": "V2",
+  "diskSizeBytes": 137438953472,
   "encryption": {
     "type": "EncryptionAtRestWithPlatformKey"
   },
-  "diskSizeBytes": 137438953472,
   "creationData": {
     "createOption": "FromImage",
     "imageReference": {
       "id": "/Subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/Providers/Microsoft.Compute/Locations/NorwayEast/Publishers/RedHat/ArtifactTypes/VMImage/Offers/RHEL/Skus/8-gen2/Versions/8.0.20191024"
     }
   },
-  "hyperVGeneration": "V2",
+  "supportedCapabilities": {
+    "architecture": "x64",
+    "acceleratedNetwork": true
+  },
   "LastOwnershipUpdateTime": "2024-12-07T10:08:52.6789836Z",
   "diskState": "Attached",
   "uniqueId": "3eefdf39-e352-4eda-96f9-a7526d24d84a",
   "diskIOPSReadWrite": 500,
   "diskMBpsReadWrite": 100,
-  "supportedCapabilities": {
-    "architecture": "x64",
-    "acceleratedNetwork": true
-  },
   "osType": "Linux",
   "tier": "P10"
 }

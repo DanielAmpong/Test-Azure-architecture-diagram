@@ -3,6 +3,7 @@
   "automationRunbookReceivers": [],
   "azureFunctionReceivers": [],
   "azureAppPushReceivers": [],
+  "logicAppReceivers": [],
   "eventHubReceivers": [
     {
       "name": "health advisories",
@@ -13,11 +14,10 @@
       "eventHubName": "p-healthadvisories-evh"
     }
   ],
-  "logicAppReceivers": [],
-  "groupShortName": "SRE Teams",
   "webhookReceivers": [],
   "armRoleReceivers": [],
   "emailReceivers": [],
+  "groupShortName": "SRE Teams",
   "voiceReceivers": [],
   "itsmReceivers": [],
   "smsReceivers": []

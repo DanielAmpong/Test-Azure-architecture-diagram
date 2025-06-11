@@ -32,12 +32,12 @@ json  Resource_Properties {
     "web": "https://myhubpublictj5eravonizvq.z1.web.core.windows.net/",
     "dfs": "https://myhubpublictj5eravonizvq.dfs.core.windows.net/"
   },
-  "statusOfPrimary": "available",
-  "primaryLocation": "norwayeast",
   "keyCreationTime": {
-    "key2": "2025-04-11T15:45:39.1495327Z",
-    "key1": "2025-04-11T15:45:39.1495327Z"
+    "key1": "2025-04-11T15:45:39.1495327Z",
+    "key2": "2025-04-11T15:45:39.1495327Z"
   },
+  "primaryLocation": "norwayeast",
+  "statusOfPrimary": "available",
   "creationTime": "2025-04-11T15:45:39.0870457Z",
   "networkAcls": {
     "virtualNetworkRules": [],

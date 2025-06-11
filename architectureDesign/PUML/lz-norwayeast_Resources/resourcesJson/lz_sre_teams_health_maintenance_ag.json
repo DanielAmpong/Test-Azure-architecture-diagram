@@ -3,6 +3,7 @@
   "automationRunbookReceivers": [],
   "azureFunctionReceivers": [],
   "azureAppPushReceivers": [],
+  "logicAppReceivers": [],
   "eventHubReceivers": [
     {
       "name": "planned maintenance",
@@ -13,11 +14,10 @@
       "eventHubName": "p-plannedmaintenance-evh"
     }
   ],
-  "logicAppReceivers": [],
-  "webhookReceivers": [],
-  "groupShortName": "SRE Teams",
   "armRoleReceivers": [],
+  "webhookReceivers": [],
   "emailReceivers": [],
+  "groupShortName": "SRE Teams",
   "voiceReceivers": [],
   "itsmReceivers": [],
   "smsReceivers": []

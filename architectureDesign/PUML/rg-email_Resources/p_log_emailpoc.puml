@@ -12,13 +12,13 @@ json  Resource_Properties {
     "name": "pergb2018",
     "lastSkuUpdate": "2024-02-27T11:25:31.9270684Z"
   },
-  "createdDate": "2024-02-27T11:25:31.9270684Z",
   "workspaceCapping": {
     "dataIngestionStatus": "RespectQuota",
     "quotaNextResetTime": "2024-02-27T21:00:00Z",
     "dailyQuotaGb": -1.0
   },
   "retentionInDays": 30,
+  "createdDate": "2024-02-27T11:25:31.9270684Z",
   "modifiedDate": "2024-02-27T11:25:35.0211804Z",
   "customerId": "4fad04de-874a-4ba9-96f5-9a32c07af5f5",
   "features": {

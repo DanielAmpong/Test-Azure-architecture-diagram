@@ -16,13 +16,13 @@
   "enabledForTemplateDeployment": true,
   "enabledForDeployment": true,
   "enabledForDiskEncryption": true,
+  "enableRbacAuthorization": true,
   "sku": {
     "name": "standard",
     "family": "A"
   },
-  "enableRbacAuthorization": true,
-  "enableSoftDelete": true,
   "accessPolicies": [],
+  "enableSoftDelete": true,
   "enablePurgeProtection": true,
   "vaultUri": "https://dna-test-kv-fhca.vault.azure.net/"
 }

@@ -3,8 +3,8 @@
   "timeCreated": "2025-05-21T09:52:15.2733656Z",
   "storageProfile": {
     "imageReference": {
-      "publisher": "MicrosoftWindowsServer",
       "version": "latest",
+      "publisher": "MicrosoftWindowsServer",
       "exactVersion": "20348.3692.250509",
       "sku": "2022-Datacenter",
       "offer": "WindowsServer"
@@ -54,8 +54,8 @@
     "requireGuestProvisionSignal": true,
     "computerName": "d-awh-wm1",
     "allowExtensionOperations": true,
-    "adminUsername": "sysadmin",
     "secrets": [],
+    "adminUsername": "sysadmin",
     "windowsConfiguration": {
       "provisionVMAgent": true,
       "patchSettings": {

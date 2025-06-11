@@ -22,8 +22,8 @@ json  Resource_Properties {
   "enabledForDeployment": false,
   "enableRbacAuthorization": true,
   "enabledForDiskEncryption": false,
-  "accessPolicies": [],
   "softDeleteRetentionInDays": 90,
+  "accessPolicies": [],
   "enableSoftDelete": true,
   "vaultUri": "https://test12345789.vault.azure.net/"
 }

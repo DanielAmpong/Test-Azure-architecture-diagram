@@ -8,8 +8,8 @@ json  Resource_Properties {
   "provisioningState": "Succeeded",
   "enableAcceleratedNetworking": false,
   "resourceGuid": "bf84c2ef-5630-4163-aefd-c42ee9795a14",
-  "disableTcpStateTracking": false,
   "defaultOutboundConnectivityEnabled": false,
+  "disableTcpStateTracking": false,
   "vnetEncryptionSupported": false,
   "ipConfigurations": [
     {
@@ -30,8 +30,8 @@ json  Resource_Properties {
     }
   ],
   "enableIPForwarding": false,
-  "tapConfigurations": [],
   "primary": true,
+  "tapConfigurations": [],
   "hostedWorkloads": [],
   "allowPort25Out": true,
   "auxiliaryMode": "None",

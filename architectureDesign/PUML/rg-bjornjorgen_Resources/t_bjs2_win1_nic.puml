@@ -7,8 +7,8 @@ component Component {
 json  Resource_Properties {
   "provisioningState": "Succeeded",
   "enableAcceleratedNetworking": false,
-  "resourceGuid": "fa46756e-e1bc-4d84-9474-6e799632de72",
   "defaultOutboundConnectivityEnabled": false,
+  "resourceGuid": "fa46756e-e1bc-4d84-9474-6e799632de72",
   "disableTcpStateTracking": false,
   "vnetEncryptionSupported": false,
   "ipConfigurations": [
@@ -30,8 +30,8 @@ json  Resource_Properties {
     }
   ],
   "enableIPForwarding": false,
-  "tapConfigurations": [],
   "primary": true,
+  "tapConfigurations": [],
   "hostedWorkloads": [],
   "allowPort25Out": true,
   "auxiliaryMode": "None",

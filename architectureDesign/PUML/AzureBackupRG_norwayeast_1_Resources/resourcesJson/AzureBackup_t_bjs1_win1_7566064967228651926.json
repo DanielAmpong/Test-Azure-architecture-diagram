@@ -1,8 +1,8 @@
 {
   "provisioningState": "Succeeded",
-  "restorePointCollectionId": "4c2f4477-18f6-44d8-9e45-813d10d78b28",
   "source": {
     "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Compute/virtualMachines/t-bjs1-win1",
     "location": "NorwayEast"
-  }
+  },
+  "restorePointCollectionId": "4c2f4477-18f6-44d8-9e45-813d10d78b28"
 }

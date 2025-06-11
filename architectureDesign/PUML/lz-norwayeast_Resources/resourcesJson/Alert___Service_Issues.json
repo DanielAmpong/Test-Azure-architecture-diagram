@@ -8,9 +8,6 @@
       }
     ]
   },
-  "scopes": [
-    "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8"
-  ],
   "condition": {
     "allOf": [
       {
@@ -36,5 +33,8 @@
         ]
       }
     ]
-  }
+  },
+  "scopes": [
+    "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8"
+  ]
 }

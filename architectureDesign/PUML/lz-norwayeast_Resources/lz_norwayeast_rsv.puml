@@ -9,7 +9,7 @@ json  Resource_Properties {
   "publicNetworkAccess": "Enabled",
   "privateEndpointStateForSiteRecovery": "None",
   "privateEndpointStateForBackup": "None",
-  "backupStorageVersion": "Unassigned",
+  "backupStorageVersion": "V1",
   "bcdrSecurityLevel": "Poor",
   "redundancySettings": {
     "standardTierStorageRedundancy": "ZoneRedundant",
@@ -19,7 +19,7 @@ json  Resource_Properties {
     "multiUserAuthorization": "Disabled",
     "softDeleteSettings": {
       "softDeleteRetentionPeriodInDays": 14,
-      "enhancedSecurityState": "Invalid",
+      "enhancedSecurityState": "Enabled",
       "softDeleteState": "Enabled"
     }
   },
@@ -32,8 +32,8 @@ json  Resource_Properties {
   "monitoringSettings": {
     "azureMonitorAlertSettings": {
       "alertsForAllReplicationIssues": "Enabled",
-      "alertsForAllJobFailures": "Enabled",
-      "alertsForAllFailoverIssues": "Enabled"
+      "alertsForAllFailoverIssues": "Enabled",
+      "alertsForAllJobFailures": "Enabled"
     },
     "classicAlertSettings": {
       "emailNotificationsForSiteRecovery": "Disabled",

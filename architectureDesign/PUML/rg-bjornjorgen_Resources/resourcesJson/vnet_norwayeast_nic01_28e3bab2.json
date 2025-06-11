@@ -2,8 +2,8 @@
   "provisioningState": "Succeeded",
   "enableAcceleratedNetworking": false,
   "resourceGuid": "02c48c81-aafd-4e81-98d0-c7b87259a1c2",
-  "disableTcpStateTracking": false,
   "defaultOutboundConnectivityEnabled": false,
+  "disableTcpStateTracking": false,
   "vnetEncryptionSupported": false,
   "ipConfigurations": [
     {

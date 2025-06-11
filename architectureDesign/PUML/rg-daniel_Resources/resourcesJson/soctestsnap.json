@@ -30,12 +30,12 @@
     "web": "https://soctestsnap.z1.web.core.windows.net/",
     "dfs": "https://soctestsnap.dfs.core.windows.net/"
   },
-  "primaryLocation": "norwayeast",
-  "statusOfPrimary": "available",
   "keyCreationTime": {
     "key2": "2025-03-26T11:53:42.0100242Z",
     "key1": "2025-03-26T11:53:42.0100242Z"
   },
+  "statusOfPrimary": "available",
+  "primaryLocation": "norwayeast",
   "creationTime": "2025-03-26T11:53:41.9474655Z",
   "networkAcls": {
     "virtualNetworkRules": [],
@@ -45,8 +45,8 @@
     "bypass": "AzureServices"
   },
   "allowSharedKeyAccess": true,
-  "accessTier": "Hot",
   "defaultToOAuthAuthentication": false,
+  "accessTier": "Hot",
   "statusOfSecondary": "available",
   "secondaryLocation": "norwaywest",
   "secondaryEndpoints": {

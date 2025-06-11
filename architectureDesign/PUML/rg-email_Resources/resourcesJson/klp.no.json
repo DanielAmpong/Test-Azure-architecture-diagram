@@ -38,9 +38,6 @@
       "status": "Verified",
       "errorCode": "None"
     },
-    "DMARC": {
-      "status": "NotStarted"
-    },
     "DKIM": {
       "status": "Verified",
       "errorCode": "None"
@@ -48,6 +45,9 @@
     "SPF": {
       "status": "Verified",
       "errorCode": "None"
+    },
+    "DMARC": {
+      "status": "NotStarted"
     }
   },
   "domainManagement": "CustomerManaged",

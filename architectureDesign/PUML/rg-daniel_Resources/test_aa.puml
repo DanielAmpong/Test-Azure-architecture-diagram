@@ -13,16 +13,16 @@ json  Resource_Properties {
     }
   },
   "privateEndpointConnections": [],
-  "creationTime": "2025-04-08T11:38:15.2966667Z",
   "state": "Ok",
+  "creationTime": "2025-04-08T11:38:15.2966667Z",
   "sku": {
     "name": "Basic",
     "capacity": null,
     "family": null
   },
+  "disableLocalAuth": false,
   "lastModifiedTime": "2025-04-08T11:38:15.2966667Z",
   "lastModifiedBy": null,
-  "disableLocalAuth": false,
   "automationHybridServiceUrl": "https://3d7179e6-c0b2-45cd-b50e-4c761730fde1.jrds.noe.azure-automation.net/automationAccounts/3d7179e6-c0b2-45cd-b50e-4c761730fde1",
   "RuntimeConfiguration": {
     "powershell72": {

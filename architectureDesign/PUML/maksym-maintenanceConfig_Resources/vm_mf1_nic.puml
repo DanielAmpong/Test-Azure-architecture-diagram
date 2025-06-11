@@ -1,0 +1,51 @@
+@startuml
+
+title Resources Display - Component Diagram
+
+component Component {
+
+json  Resource_Properties {
+  "provisioningState": "Succeeded",
+  "enableAcceleratedNetworking": false,
+  "defaultOutboundConnectivityEnabled": true,
+  "resourceGuid": "ceccadac-65e8-43a3-85f4-649ee233130e",
+  "disableTcpStateTracking": false,
+  "vnetEncryptionSupported": false,
+  "ipConfigurations": [
+    {
+      "properties": {
+        "provisioningState": "Succeeded",
+        "privateIPAddressVersion": "IPv4",
+        "privateIPAllocationMethod": "Dynamic",
+        "privateIPAddress": "10.1.0.11",
+        "primary": true,
+        "subnet": {
+          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/maint-test-subnet"
+        }
+      },
+      "name": "ipconfig",
+      "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
+      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-maintenanceConfig/providers/Microsoft.Network/networkInterfaces/vm-mf1-nic/ipConfigurations/ipconfig",
+      "etag": "W/\"47bdca23-c999-46e2-b640-369f36a63420\""
+    }
+  ],
+  "enableIPForwarding": false,
+  "primary": true,
+  "tapConfigurations": [],
+  "hostedWorkloads": [],
+  "allowPort25Out": true,
+  "auxiliaryMode": "None",
+  "dnsSettings": {
+    "appliedDnsServers": [],
+    "internalDomainNameSuffix": "pquq0qan4vse5gqto15kewgzsd.oslx.internal.cloudapp.net",
+    "dnsServers": []
+  },
+  "auxiliarySku": "None",
+  "macAddress": "00-22-48-DD-16-84",
+  "virtualMachine": {
+    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-maintenanceConfig/providers/Microsoft.Compute/virtualMachines/vm-mf1"
+  },
+  "nicType": "Standard"
+}
+}
+@enduml

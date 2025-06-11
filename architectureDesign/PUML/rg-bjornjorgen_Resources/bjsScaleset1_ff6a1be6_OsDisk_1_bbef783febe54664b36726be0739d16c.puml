@@ -13,8 +13,8 @@ json  Resource_Properties {
   "encryption": {
     "type": "EncryptionAtRestWithPlatformKey"
   },
-  "diskSizeBytes": 32214351872,
   "hyperVGeneration": "V2",
+  "diskSizeBytes": 32214351872,
   "creationData": {
     "createOption": "FromImage",
     "imageReference": {
@@ -22,15 +22,15 @@ json  Resource_Properties {
     }
   },
   "LastOwnershipUpdateTime": "2025-05-07T09:41:38.0650377Z",
-  "diskState": "Reserved",
   "supportedCapabilities": {
     "architecture": "x64",
     "acceleratedNetwork": true,
     "diskControllerTypes": "SCSI, NVMe"
   },
+  "diskState": "Reserved",
   "uniqueId": "bbef783f-ebe5-4664-b367-26be0739d16c",
-  "diskMBpsReadWrite": 25,
   "diskIOPSReadWrite": 120,
+  "diskMBpsReadWrite": 25,
   "osType": "Windows",
   "supportsHibernation": true,
   "tier": "P4"
