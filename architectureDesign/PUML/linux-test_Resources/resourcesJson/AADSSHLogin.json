@@ -1,0 +1,7 @@
+{
+  "provisioningState": "Updating",
+  "type": "AADSSHLoginForLinux",
+  "typeHandlerVersion": "1.0",
+  "autoUpgradeMinorVersion": true,
+  "publisher": "Microsoft.Azure.ActiveDirectory"
+}

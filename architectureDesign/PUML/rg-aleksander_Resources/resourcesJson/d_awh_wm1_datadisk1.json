@@ -1,0 +1,20 @@
+{
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Enabled",
+  "networkAccessPolicy": "AllowAll",
+  "timeCreated": "2025-05-21T09:51:57.8095669Z",
+  "diskSizeGB": 100,
+  "encryption": {
+    "type": "EncryptionAtRestWithPlatformKey"
+  },
+  "diskSizeBytes": 107374182400,
+  "creationData": {
+    "createOption": "Empty"
+  },
+  "diskState": "Attached",
+  "uniqueId": "864d8c72-4d09-4fdf-bb13-bab2e4b152dd",
+  "LastOwnershipUpdateTime": "2025-05-21T09:52:16.5757089Z",
+  "diskIOPSReadWrite": 500,
+  "diskMBpsReadWrite": 100,
+  "tier": "P10"
+}

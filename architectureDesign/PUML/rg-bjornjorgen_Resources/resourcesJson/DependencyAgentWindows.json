@@ -1,0 +1,57 @@
+{
+  "2": {
+    "provisioningState": "Succeeded",
+    "type": "DependencyAgentWindows",
+    "typeHandlerVersion": "9.6",
+    "autoUpgradeMinorVersion": true,
+    "enableAutomaticUpgrade": true,
+    "publisher": "Microsoft.Azure.Monitoring.DependencyAgent",
+    "settings": {
+      "enableAMA": "true"
+    }
+  },
+  "1": {
+    "provisioningState": "Succeeded",
+    "type": "DependencyAgentWindows",
+    "typeHandlerVersion": "9.6",
+    "autoUpgradeMinorVersion": true,
+    "enableAutomaticUpgrade": true,
+    "publisher": "Microsoft.Azure.Monitoring.DependencyAgent",
+    "settings": {
+      "enableAMA": "true"
+    }
+  },
+  "4": {
+    "provisioningState": "Succeeded",
+    "type": "DependencyAgentWindows",
+    "typeHandlerVersion": "9.6",
+    "autoUpgradeMinorVersion": true,
+    "enableAutomaticUpgrade": true,
+    "publisher": "Microsoft.Azure.Monitoring.DependencyAgent",
+    "settings": {
+      "enableAMA": "true"
+    }
+  },
+  "0": {
+    "provisioningState": "Succeeded",
+    "type": "DependencyAgentWindows",
+    "typeHandlerVersion": "9.6",
+    "autoUpgradeMinorVersion": true,
+    "enableAutomaticUpgrade": true,
+    "publisher": "Microsoft.Azure.Monitoring.DependencyAgent",
+    "settings": {
+      "enableAMA": "true"
+    }
+  },
+  "3": {
+    "provisioningState": "Succeeded",
+    "type": "DependencyAgentWindows",
+    "typeHandlerVersion": "9.6",
+    "autoUpgradeMinorVersion": true,
+    "enableAutomaticUpgrade": true,
+    "publisher": "Microsoft.Azure.Monitoring.DependencyAgent",
+    "settings": {
+      "enableAMA": "true"
+    }
+  }
+}

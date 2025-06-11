@@ -1,0 +1,37 @@
+{
+  "2": {
+    "provisioningState": "Succeeded",
+    "type": "NetworkWatcherAgentWindows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.4",
+    "publisher": "Microsoft.Azure.NetworkWatcher"
+  },
+  "1": {
+    "provisioningState": "Succeeded",
+    "type": "NetworkWatcherAgentWindows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.4",
+    "publisher": "Microsoft.Azure.NetworkWatcher"
+  },
+  "4": {
+    "provisioningState": "Succeeded",
+    "type": "NetworkWatcherAgentWindows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.4",
+    "publisher": "Microsoft.Azure.NetworkWatcher"
+  },
+  "0": {
+    "provisioningState": "Succeeded",
+    "type": "NetworkWatcherAgentWindows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.4",
+    "publisher": "Microsoft.Azure.NetworkWatcher"
+  },
+  "3": {
+    "provisioningState": "Succeeded",
+    "type": "NetworkWatcherAgentWindows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.4",
+    "publisher": "Microsoft.Azure.NetworkWatcher"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "provisioningState": "Succeeded",
+  "timeCreated": "2025-05-07T08:53:59.6895936Z",
+  "storageProfile": {
+    "imageReference": {
+      "version": "latest",
+      "publisher": "MicrosoftWindowsServer",
+      "exactVersion": "20348.3561.250409",
+      "sku": "2022-datacenter-smalldisk-g2",
+      "offer": "WindowsServer"
+    },
+    "diskControllerType": "SCSI",
+    "dataDisks": [],
+    "osDisk": {
+      "name": "bjsScaleset1_bf585774_OsDisk_1_c491f3779cb94873b00f269bbb890b2c",
+      "createOption": "FromImage",
+      "deleteOption": "Delete",
+      "osType": "Windows",
+      "managedDisk": {
+        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Compute/disks/bjsScaleset1_bf585774_OsDisk_1_c491f3779cb94873b00f269bbb890b2c"
+      },
+      "caching": "ReadWrite"
+    }
+  },
+  "networkProfile": {
+    "networkInterfaces": [
+      {
+        "properties": {
+          "primary": true,
+          "deleteOption": "Delete"
+        },
+        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkInterfaces/vnet-norwayeast-nic01-28e3bab2"
+      }
+    ]
+  },
+  "hardwareProfile": {
+    "vmSize": "Standard_DS1_v2"
+  },
+  "licenseType": "Windows_Server",
+  "diagnosticsProfile": {
+    "bootDiagnostics": {
+      "enabled": true
+    }
+  },
+  "osProfile": {
+    "requireGuestProvisionSignal": true,
+    "computerName": "bjsscalesHXTIMK",
+    "allowExtensionOperations": true,
+    "adminUsername": "testss",
+    "secrets": [],
+    "windowsConfiguration": {
+      "provisionVMAgent": true,
+      "patchSettings": {
+        "assessmentMode": "ImageDefault",
+        "patchMode": "AutomaticByOS",
+        "enableHotpatching": false
+      },
+      "enableAutomaticUpdates": true,
+      "enableVMAgentPlatformUpdates": true
+    }
+  },
+  "extended": {
+    "instanceView": {
+      "hyperVGeneration": "V2",
+      "powerState": {
+        "displayStatus": "VM deallocated",
+        "level": "Info",
+        "code": "PowerState/deallocated"
+      }
+    }
+  },
+  "vmId": "d746eccc-c791-4e5f-a144-0a58fc1b0f8f",
+  "additionalCapabilities": {
+    "hibernationEnabled": false
+  },
+  "virtualMachineScaleSet": {
+    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Compute/virtualMachineScaleSets/bjsScaleset1"
+  }
+}

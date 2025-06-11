@@ -1,0 +1,55 @@
+@startuml
+
+title Resources Display - Component Diagram
+
+component Component {
+
+json  Resource_Properties {
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Enabled",
+  "encryption": {
+    "keySource": "Microsoft.Storage",
+    "requireInfrastructureEncryption": false,
+    "services": {
+      "blob": {
+        "enabled": true,
+        "lastEnabledTime": "2025-05-19T08:15:45.8145808Z",
+        "keyType": "Account"
+      },
+      "file": {
+        "enabled": true,
+        "lastEnabledTime": "2025-05-19T08:15:45.8145808Z",
+        "keyType": "Account"
+      }
+    }
+  },
+  "privateEndpointConnections": [],
+  "supportsHttpsTrafficOnly": true,
+  "allowBlobPublicAccess": false,
+  "minimumTlsVersion": "TLS1_2",
+  "allowCrossTenantReplication": false,
+  "primaryEndpoints": {
+    "file": "https://dfrvgtbhnjmk.file.core.windows.net/"
+  },
+  "keyCreationTime": {
+    "key2": "2025-05-19T08:15:45.7989543Z",
+    "key1": "2025-05-19T08:15:45.7989543Z"
+  },
+  "statusOfPrimary": "available",
+  "primaryLocation": "norwayeast",
+  "creationTime": "2025-05-19T08:15:45.7364021Z",
+  "allowSharedKeyAccess": true,
+  "networkAcls": {
+    "virtualNetworkRules": [],
+    "defaultAction": "Allow",
+    "ipv6Rules": [],
+    "ipRules": [],
+    "bypass": "AzureServices"
+  },
+  "defaultToOAuthAuthentication": false,
+  "largeFileSharesState": "Enabled",
+  "dnsEndpointType": "Standard",
+  "allowedCopyScope": "AAD"
+}
+}
+@enduml

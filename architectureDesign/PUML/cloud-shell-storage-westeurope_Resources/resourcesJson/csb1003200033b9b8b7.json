@@ -1,0 +1,46 @@
+{
+  "provisioningState": "Succeeded",
+  "encryption": {
+    "keySource": "Microsoft.Storage",
+    "services": {
+      "blob": {
+        "enabled": true,
+        "lastEnabledTime": "2024-01-17T11:46:32.1836143Z",
+        "keyType": "Account"
+      },
+      "file": {
+        "enabled": true,
+        "lastEnabledTime": "2024-01-17T11:46:32.1836143Z",
+        "keyType": "Account"
+      }
+    }
+  },
+  "privateEndpointConnections": [],
+  "supportsHttpsTrafficOnly": true,
+  "allowBlobPublicAccess": false,
+  "minimumTlsVersion": "TLS1_2",
+  "allowCrossTenantReplication": false,
+  "primaryEndpoints": {
+    "blob": "https://csb1003200033b9b8b7.blob.core.windows.net/",
+    "file": "https://csb1003200033b9b8b7.file.core.windows.net/",
+    "table": "https://csb1003200033b9b8b7.table.core.windows.net/",
+    "queue": "https://csb1003200033b9b8b7.queue.core.windows.net/",
+    "web": "https://csb1003200033b9b8b7.z6.web.core.windows.net/",
+    "dfs": "https://csb1003200033b9b8b7.dfs.core.windows.net/"
+  },
+  "statusOfPrimary": "available",
+  "primaryLocation": "westeurope",
+  "keyCreationTime": {
+    "key1": "2024-01-17T11:46:31.9180924Z",
+    "key2": "2024-01-17T11:46:31.9180924Z"
+  },
+  "creationTime": "2024-01-17T11:46:31.7617608Z",
+  "networkAcls": {
+    "virtualNetworkRules": [],
+    "defaultAction": "Allow",
+    "ipv6Rules": [],
+    "ipRules": [],
+    "bypass": "AzureServices"
+  },
+  "accessTier": "Hot"
+}

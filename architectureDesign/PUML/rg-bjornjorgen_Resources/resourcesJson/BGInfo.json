@@ -1,0 +1,37 @@
+{
+  "2": {
+    "provisioningState": "Succeeded",
+    "type": "BGInfo",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "2.1",
+    "publisher": "Microsoft.Compute"
+  },
+  "1": {
+    "provisioningState": "Succeeded",
+    "type": "BGInfo",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "2.1",
+    "publisher": "Microsoft.Compute"
+  },
+  "4": {
+    "provisioningState": "Succeeded",
+    "type": "BGInfo",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "2.1",
+    "publisher": "Microsoft.Compute"
+  },
+  "0": {
+    "provisioningState": "Succeeded",
+    "type": "BGInfo",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "2.1",
+    "publisher": "Microsoft.Compute"
+  },
+  "3": {
+    "provisioningState": "Succeeded",
+    "type": "BGInfo",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "2.1",
+    "publisher": "Microsoft.Compute"
+  }
+}

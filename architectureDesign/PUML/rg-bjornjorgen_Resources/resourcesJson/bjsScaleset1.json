@@ -1,0 +1,116 @@
+{
+  "provisioningState": "Succeeded",
+  "timeCreated": "2025-05-07T08:53:56.9395574Z",
+  "uniqueId": "cc3b2f6b-c91f-4b3d-9f5f-f9305219256e",
+  "additionalCapabilities": {
+    "hibernationEnabled": false
+  },
+  "platformFaultDomainCount": 1,
+  "virtualMachineProfile": {
+    "timeCreated": "2025-05-07T08:53:56.9395574Z",
+    "storageProfile": {
+      "imageReference": {
+        "publisher": "MicrosoftWindowsServer",
+        "version": "latest",
+        "sku": "2022-datacenter-smalldisk-g2",
+        "offer": "WindowsServer"
+      },
+      "diskControllerType": "SCSI",
+      "osDisk": {
+        "createOption": "FromImage",
+        "diskSizeGB": 30,
+        "osType": "Windows",
+        "deleteOption": "Delete",
+        "managedDisk": {
+          "storageAccountType": "Premium_LRS"
+        },
+        "caching": "ReadWrite"
+      }
+    },
+    "networkProfile": {
+      "networkInterfaceConfigurations": [
+        {
+          "properties": {
+            "enableAcceleratedNetworking": false,
+            "disableTcpStateTracking": false,
+            "ipConfigurations": [
+              {
+                "properties": {
+                  "privateIPAddressVersion": "IPv4",
+                  "subnet": {
+                    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/virtualNetworks/vnet-norwayeast/subnets/snet-norwayeast-1"
+                  },
+                  "primary": true,
+                  "loadBalancerBackendAddressPools": [],
+                  "applicationSecurityGroups": [],
+                  "applicationGatewayBackendAddressPools": [],
+                  "publicIPAddressConfiguration": {
+                    "properties": {
+                      "idleTimeoutInMinutes": 15,
+                      "publicIPAddressVersion": "IPv4",
+                      "ipTags": []
+                    },
+                    "name": "publicIp-vnet-norwayeast-nic01"
+                  }
+                },
+                "name": "vnet-norwayeast-nic01-defaultIpConfiguration"
+              }
+            ],
+            "enableIPForwarding": false,
+            "primary": true,
+            "deleteOption": "Delete",
+            "auxiliaryMode": "None",
+            "dnsSettings": {
+              "dnsServers": []
+            },
+            "auxiliarySku": "None",
+            "networkSecurityGroup": {
+              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkSecurityGroups/basicNsgvnet-norwayeast-nic01"
+            },
+            "effectiveEnableAcceleratedNetworking": false
+          },
+          "name": "vnet-norwayeast-nic01"
+        }
+      ],
+      "networkApiVersion": "2020-11-01"
+    },
+    "licenseType": "Windows_Server",
+    "osProfile": {
+      "requireGuestProvisionSignal": true,
+      "allowExtensionOperations": true,
+      "adminUsername": "testss",
+      "secrets": [],
+      "windowsConfiguration": {
+        "provisionVMAgent": true,
+        "patchSettings": {
+          "assessmentMode": "ImageDefault",
+          "patchMode": "AutomaticByOS",
+          "enableHotpatching": false
+        },
+        "enableAutomaticUpdates": true
+      },
+      "computerNamePrefix": "bjsscales"
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true
+      }
+    },
+    "extensionProfile": {
+      "extensions": []
+    }
+  },
+  "singlePlacementGroup": false,
+  "orchestrationMode": "Flexible",
+  "upgradePolicy": {
+    "mode": "Manual"
+  },
+  "constrainedMaximumCapacity": false,
+  "scaleInPolicy": {
+    "rules": [
+      "Default"
+    ],
+    "forceDeletion": false
+  },
+  "highSpeedInterconnectPlacement": "None"
+}

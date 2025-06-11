@@ -1,0 +1,17 @@
+{
+  "provisioningState": "Succeeded",
+  "description": null,
+  "parameters": {},
+  "state": "Edit",
+  "creationTime": "2025-02-05T07:47:19.9433333Z",
+  "lastModifiedTime": "2025-02-19T12:25:36.7Z",
+  "serviceManagementTags": null,
+  "runtimeEnvironment": null,
+  "lastModifiedBy": null,
+  "logActivityTrace": 0,
+  "logProgress": false,
+  "runbookType": "Python3",
+  "outputTypes": [],
+  "logVerbose": false,
+  "jobCount": 0
+}

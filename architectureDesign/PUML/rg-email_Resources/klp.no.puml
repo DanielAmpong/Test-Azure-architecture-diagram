@@ -1,0 +1,63 @@
+@startuml
+
+title Resources Display - Component Diagram
+
+component Component {
+
+json  Resource_Properties {
+  "provisioningState": "Succeeded",
+  "dataLocation": "norway",
+  "userEngagementTracking": "Disabled",
+  "mailFromSenderDomain": "klp.no",
+  "verificationRecords": {
+    "Domain": {
+      "name": "klp.no",
+      "type": "TXT",
+      "value": "ms-domain-verification=3af2866c-9fd8-4fc2-93b6-3adaf523a203",
+      "ttl": 3600
+    },
+    "DKIM2": {
+      "name": "selector2-azurecomm-prod-net._domainkey",
+      "type": "CNAME",
+      "value": "selector2-azurecomm-prod-net._domainkey.azurecomm.net",
+      "ttl": 3600
+    },
+    "DKIM": {
+      "name": "selector1-azurecomm-prod-net._domainkey",
+      "type": "CNAME",
+      "value": "selector1-azurecomm-prod-net._domainkey.azurecomm.net",
+      "ttl": 3600
+    },
+    "SPF": {
+      "name": "klp.no",
+      "type": "TXT",
+      "value": "v=spf1 include:spf.protection.outlook.com -all",
+      "ttl": 3600
+    }
+  },
+  "verificationStates": {
+    "Domain": {
+      "status": "Verified",
+      "errorCode": "None"
+    },
+    "DKIM2": {
+      "status": "Verified",
+      "errorCode": "None"
+    },
+    "DKIM": {
+      "status": "Verified",
+      "errorCode": "None"
+    },
+    "DMARC": {
+      "status": "NotStarted"
+    },
+    "SPF": {
+      "status": "Verified",
+      "errorCode": "None"
+    }
+  },
+  "domainManagement": "CustomerManaged",
+  "fromSenderDomain": "klp.no"
+}
+}
+@enduml

@@ -1,0 +1,37 @@
+@startuml
+
+title Resources Display - Component Diagram
+
+component Component {
+
+json  Resource_Properties {
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Enabled",
+  "networkAccessPolicy": "AllowAll",
+  "timeCreated": "2024-11-28T11:00:12.2962892Z",
+  "diskSizeGB": 128,
+  "hyperVGeneration": "V1",
+  "encryption": {
+    "type": "EncryptionAtRestWithPlatformKey"
+  },
+  "diskSizeBytes": 137438953472,
+  "creationData": {
+    "createOption": "Restore",
+    "sourceResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/AzureBackupRG_norwayeast_1/providers/Microsoft.Compute/restorePointCollections/AzureBackup_t-bjs1-win1_7566064967228651926/restorePoints/AzureBackup_20241125_090522/disks/t-bjs1-win1-osdisk?id=a3d877cd-90d3-4e4b-8060-c266aa7a432a"
+  },
+  "supportedCapabilities": {
+    "architecture": "x64",
+    "acceleratedNetwork": true,
+    "diskControllerTypes": "SCSI"
+  },
+  "LastOwnershipUpdateTime": "2025-05-07T08:13:17.7075633Z",
+  "diskState": "Reserved",
+  "uniqueId": "a6e95ab7-122e-4438-a4ed-c36924faa4dd",
+  "diskMBpsReadWrite": 100,
+  "diskIOPSReadWrite": 500,
+  "osType": "Windows",
+  "supportsHibernation": true,
+  "tier": "P10"
+}
+}
+@enduml

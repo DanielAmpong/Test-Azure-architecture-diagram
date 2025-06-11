@@ -1,0 +1,26 @@
+@startuml
+
+title Resources Display - Component Diagram
+
+component Component {
+
+json  Resource_Properties {
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Enabled",
+  "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
+  "sku": {
+    "name": "standard",
+    "family": "A"
+  },
+  "enabledForTemplateDeployment": true,
+  "enabledForDeployment": true,
+  "softDeleteRetentionInDays": 90,
+  "enabledForDiskEncryption": true,
+  "enableRbacAuthorization": true,
+  "enableSoftDelete": true,
+  "accessPolicies": [],
+  "enablePurgeProtection": true,
+  "vaultUri": "https://d-awhsandbox-kv.vault.azure.net/"
+}
+}
+@enduml

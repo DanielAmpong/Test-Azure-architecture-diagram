@@ -1,0 +1,12 @@
+{
+  "provisioningState": "Succeeded",
+  "type": "AdminCenter",
+  "typeHandlerVersion": "0.0",
+  "autoUpgradeMinorVersion": true,
+  "enableAutomaticUpgrade": true,
+  "publisher": "Microsoft.AdminCenter",
+  "settings": {
+    "port": "6516",
+    "salt": "0000060472051858564455601300551900087"
+  }
+}

@@ -1,0 +1,14 @@
+@startuml
+!pragma revision 1
+
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+!define AzurePuml https://raw.githubusercontent.com/plantuml-stdlib/Azure-PlantUML/master/dist
+!includeurl AzurePuml/AzureCommon.puml
+!includeurl AzurePuml/AzureC4Integration.puml
+!includeurl AzurePuml/Management/AzureResourceGroups.puml
+
+AzureResourceGroups(rg_audun_linux_test11, 'rg-audun-linux-test11', 'Azure Resource Group')
+
+LAYOUT_WITH_LEGEND()
+@enduml
