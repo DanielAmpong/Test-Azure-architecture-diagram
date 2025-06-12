@@ -1,0 +1,26 @@
+@startuml
+!pragma revision 1
+
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+!define AzurePuml https://raw.githubusercontent.com/plantuml-stdlib/Azure-PlantUML/master/dist
+!includeurl AzurePuml/AzureCommon.puml
+!includeurl AzurePuml/AzureC4Integration.puml
+!includeurl AzurePuml/Management/AzureResourceGroups.puml
+
+AzureResourceGroups(rbac_test, 'rbac-test', 'Azure Resource Group')
+
+!includeurl AzurePuml/Networking/AzureNetworkInterface.puml
+AzureNetworkInterface(t_linux_vm_nic, 't-linux-vm-nic', 'Microsoft.Network/networkInterfaces')
+Rel(rbac_test, t_linux_vm_nic, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Compute/AzureVirtualMachine.puml
+AzureVirtualMachine(t_linux_vm, 't-linux-vm', 'Microsoft.Compute/virtualMachines')
+Rel(rbac_test, t_linux_vm, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Compute/AzureDisk.puml
+AzureDisk(t_linux_vm_osdisk, 't-linux-vm-osdisk', 'Microsoft.Compute/disks')
+Rel(rbac_test, t_linux_vm_osdisk, 'Uses', 'Resource' )
+
+LAYOUT_WITH_LEGEND()
+@enduml

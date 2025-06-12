@@ -1,0 +1,54 @@
+@startuml
+
+title Resources Display - Component Diagram
+
+component Component {
+
+json  Resource_Properties {
+  "provisioningState": "Succeeded",
+  "encryption": {
+    "keySource": "Microsoft.Storage",
+    "services": {
+      "blob": {
+        "enabled": true,
+        "lastEnabledTime": "2025-03-13T13:24:40.335482Z",
+        "keyType": "Account"
+      },
+      "file": {
+        "enabled": true,
+        "lastEnabledTime": "2025-03-13T13:24:40.335482Z",
+        "keyType": "Account"
+      }
+    }
+  },
+  "privateEndpointConnections": [],
+  "supportsHttpsTrafficOnly": true,
+  "allowBlobPublicAccess": false,
+  "minimumTlsVersion": "TLS1_2",
+  "allowCrossTenantReplication": false,
+  "primaryEndpoints": {
+    "blob": "https://csb100320041428ff8f.blob.core.windows.net/",
+    "file": "https://csb100320041428ff8f.file.core.windows.net/",
+    "table": "https://csb100320041428ff8f.table.core.windows.net/",
+    "queue": "https://csb100320041428ff8f.queue.core.windows.net/",
+    "web": "https://csb100320041428ff8f.z6.web.core.windows.net/",
+    "dfs": "https://csb100320041428ff8f.dfs.core.windows.net/"
+  },
+  "statusOfPrimary": "available",
+  "primaryLocation": "westeurope",
+  "keyCreationTime": {
+    "key2": "2025-03-13T13:24:40.335482Z",
+    "key1": "2025-03-13T13:24:40.335482Z"
+  },
+  "creationTime": "2025-03-13T13:24:40.1792366Z",
+  "networkAcls": {
+    "virtualNetworkRules": [],
+    "defaultAction": "Allow",
+    "ipv6Rules": [],
+    "ipRules": [],
+    "bypass": "AzureServices"
+  },
+  "accessTier": "Hot"
+}
+}
+@enduml

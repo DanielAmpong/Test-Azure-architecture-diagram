@@ -1,0 +1,37 @@
+{
+  "2": {
+    "provisioningState": "Succeeded",
+    "type": "ConfigurationforWindows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.0",
+    "publisher": "Microsoft.GuestConfiguration"
+  },
+  "1": {
+    "provisioningState": "Succeeded",
+    "type": "ConfigurationforWindows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.0",
+    "publisher": "Microsoft.GuestConfiguration"
+  },
+  "4": {
+    "provisioningState": "Succeeded",
+    "type": "ConfigurationforWindows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.0",
+    "publisher": "Microsoft.GuestConfiguration"
+  },
+  "0": {
+    "provisioningState": "Succeeded",
+    "type": "ConfigurationforWindows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.0",
+    "publisher": "Microsoft.GuestConfiguration"
+  },
+  "3": {
+    "provisioningState": "Succeeded",
+    "type": "ConfigurationforWindows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.0",
+    "publisher": "Microsoft.GuestConfiguration"
+  }
+}

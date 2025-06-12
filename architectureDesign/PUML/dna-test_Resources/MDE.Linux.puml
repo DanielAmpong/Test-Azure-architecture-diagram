@@ -1,0 +1,66 @@
+@startuml
+
+title Resources Display - Component Diagram
+
+component Component {
+
+json  Resource_Properties {
+  "3": {
+    "provisioningState": "Failed",
+    "type": "MDE.Linux",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.0",
+    "publisher": "Microsoft.Azure.AzureDefenderForServers",
+    "settings": {
+      "forceReOnboarding": false,
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/DNA-TEST/providers/Microsoft.Compute/virtualMachines/t-dna-rhel1",
+      "vNextEnabled": false,
+      "autoUpdate": true
+    },
+    "forceUpdateTag": "78a21514-60c1-42b9-af4a-5211c538d58f"
+  },
+  "0": {
+    "provisioningState": "Failed",
+    "type": "MDE.Linux",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.0",
+    "publisher": "Microsoft.Azure.AzureDefenderForServers",
+    "settings": {
+      "forceReOnboarding": false,
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/DNA-TEST/providers/Microsoft.Compute/virtualMachines/t-dna-rhel1",
+      "vNextEnabled": false,
+      "autoUpdate": true
+    },
+    "forceUpdateTag": "78a21514-60c1-42b9-af4a-5211c538d58f"
+  },
+  "1": {
+    "provisioningState": "Failed",
+    "type": "MDE.Linux",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.0",
+    "publisher": "Microsoft.Azure.AzureDefenderForServers",
+    "settings": {
+      "forceReOnboarding": false,
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/DNA-TEST/providers/Microsoft.Compute/virtualMachines/t-dna-rhel1",
+      "vNextEnabled": false,
+      "autoUpdate": true
+    },
+    "forceUpdateTag": "78a21514-60c1-42b9-af4a-5211c538d58f"
+  },
+  "2": {
+    "provisioningState": "Failed",
+    "type": "MDE.Linux",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.0",
+    "publisher": "Microsoft.Azure.AzureDefenderForServers",
+    "settings": {
+      "forceReOnboarding": false,
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/DNA-TEST/providers/Microsoft.Compute/virtualMachines/t-dna-rhel1",
+      "vNextEnabled": false,
+      "autoUpdate": true
+    },
+    "forceUpdateTag": "78a21514-60c1-42b9-af4a-5211c538d58f"
+  }
+}
+}
+@enduml

@@ -1,0 +1,82 @@
+@startuml
+!pragma revision 1
+
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+!define AzurePuml https://raw.githubusercontent.com/plantuml-stdlib/Azure-PlantUML/master/dist
+!includeurl AzurePuml/AzureCommon.puml
+!includeurl AzurePuml/AzureC4Integration.puml
+!includeurl AzurePuml/Management/AzureResourceGroups.puml
+
+AzureResourceGroups(rg_audun, 'rg-audun', 'Azure Resource Group')
+
+!includeurl AzurePuml/Integration/AzureLogicApps.puml
+AzureLogicApps(FailedEmails, 'FailedEmails', 'Microsoft.Logic/workflows')
+Rel(rg_audun, FailedEmails, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Integration/AzureLogicApps.puml
+AzureLogicApps(p_mails_logic, 'p-mails-logic', 'Microsoft.Logic/workflows')
+Rel(rg_audun, p_mails_logic, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Storage/AzureStorage.puml
+AzureStorage(sweethomealabamaandback, 'sweethomealabamaandback', 'Microsoft.Storage/storageAccounts')
+Rel(rg_audun, sweethomealabamaandback, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Compute/AzureDisk.puml
+AzureDisk(svmaujtest_osdisk_20241128_110010, 'svmaujtest-osdisk-20241128-110010', 'Microsoft.Compute/disks')
+Rel(rg_audun, svmaujtest_osdisk_20241128_110010, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Compute/AzureDisk.puml
+AzureDisk(svmaujtest_datadisk_000_20241128_110010, 'svmaujtest-datadisk-000-20241128-110010', 'Microsoft.Compute/disks')
+Rel(rg_audun, svmaujtest_datadisk_000_20241128_110010, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Networking/AzureNetworkInterface.puml
+AzureNetworkInterface(s_vm_aujtest_nic_68983728f2824ec69836f3235bd9dd73, 's-vm-aujtest-nic-68983728f2824ec69836f3235bd9dd73', 'Microsoft.Network/networkInterfaces')
+Rel(rg_audun, s_vm_aujtest_nic_68983728f2824ec69836f3235bd9dd73, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Compute/AzureVirtualMachine.puml
+AzureVirtualMachine(s_vm_aujtest, 's-vm-aujtest', 'Microsoft.Compute/virtualMachines')
+Rel(rg_audun, s_vm_aujtest, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Networking/AzureVirtualNetwork.puml
+AzureVirtualNetwork(lz_network_norwayeast_vnet, 'lz-network-norwayeast-vnet', 'Microsoft.Network/virtualNetworks')
+Rel(rg_audun, lz_network_norwayeast_vnet, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Networking/AzureNSG.puml
+AzureNSG(linux_backup_testNSG, 'linux-backup-testNSG', 'Microsoft.Network/networkSecurityGroups')
+Rel(rg_audun, linux_backup_testNSG, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Networking/AzureNetworkInterface.puml
+AzureNetworkInterface(linux_backup_testVMNic, 'linux-backup-testVMNic', 'Microsoft.Network/networkInterfaces')
+Rel(rg_audun, linux_backup_testVMNic, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Compute/AzureVirtualMachine.puml
+AzureVirtualMachine(linux_backup_test, 'linux-backup-test', 'Microsoft.Compute/virtualMachines')
+Rel(rg_audun, linux_backup_test, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Compute/AzureDisk.puml
+AzureDisk(linux_backup_test_OsDisk_1_129dd182211d4de2935e0c81ea1c731a, 'linux-backup-test_OsDisk_1_129dd182211d4de2935e0c81ea1c731a', 'Microsoft.Compute/disks')
+Rel(rg_audun, linux_backup_test_OsDisk_1_129dd182211d4de2935e0c81ea1c731a, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Compute/AzureDisk.puml
+AzureDisk(LinuxDataDisk, 'LinuxDataDisk', 'Microsoft.Compute/disks')
+Rel(rg_audun, LinuxDataDisk, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Compute/AzureDisk.puml
+AzureDisk(linuxbackuptest_osdisk_20250114_100722, 'linuxbackuptest-osdisk-20250114-100722', 'Microsoft.Compute/disks')
+Rel(rg_audun, linuxbackuptest_osdisk_20250114_100722, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Compute/AzureDisk.puml
+AzureDisk(linuxbackuptest_osdisk_20250114_105029, 'linuxbackuptest-osdisk-20250114-105029', 'Microsoft.Compute/disks')
+Rel(rg_audun, linuxbackuptest_osdisk_20250114_105029, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Compute/AzureDisk.puml
+AzureDisk(linuxbackuptest_datadisk_000_20250114_105029, 'linuxbackuptest-datadisk-000-20250114-105029', 'Microsoft.Compute/disks')
+Rel(rg_audun, linuxbackuptest_datadisk_000_20250114_105029, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Compute/AzureDisk.puml
+AzureDisk(linuxbackuptest_osdisk_20250114_123657, 'linuxbackuptest-osdisk-20250114-123657', 'Microsoft.Compute/disks')
+Rel(rg_audun, linuxbackuptest_osdisk_20250114_123657, 'Uses', 'Resource' )
+
+LAYOUT_WITH_LEGEND()
+@enduml

@@ -1,0 +1,28 @@
+{
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Enabled",
+  "networkAcls": {
+    "virtualNetworkRules": [
+      {
+        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourcegroups/lz-network-norwayeast/providers/microsoft.network/virtualnetworks/lz-network-norwayeast-vnet/subnets/default",
+        "ignoreMissingVnetServiceEndpoint": false
+      }
+    ],
+    "defaultAction": "Deny",
+    "ipRules": [],
+    "bypass": "AzureServices"
+  },
+  "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
+  "enabledForTemplateDeployment": true,
+  "sku": {
+    "name": "standard",
+    "family": "A"
+  },
+  "enableRbacAuthorization": true,
+  "enabledForDeployment": true,
+  "enabledForDiskEncryption": true,
+  "accessPolicies": [],
+  "enableSoftDelete": true,
+  "enablePurgeProtection": true,
+  "vaultUri": "https://d-awh-wm-kv-3fpr.vault.azure.net/"
+}

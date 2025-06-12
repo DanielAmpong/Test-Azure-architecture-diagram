@@ -1,0 +1,18 @@
+{
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Enabled",
+  "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
+  "enabledForTemplateDeployment": true,
+  "enabledForDeployment": true,
+  "enabledForDiskEncryption": true,
+  "sku": {
+    "name": "standard",
+    "family": "A"
+  },
+  "softDeleteRetentionInDays": 90,
+  "enableSoftDelete": true,
+  "accessPolicies": [],
+  "enableRbacAuthorization": true,
+  "enablePurgeProtection": true,
+  "vaultUri": "https://d-awhsandbox-kv.vault.azure.net/"
+}

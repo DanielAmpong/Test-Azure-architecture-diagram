@@ -1,0 +1,75 @@
+{
+  "provisioningState": "Succeeded",
+  "timeCreated": "2025-01-13T11:23:01.9607028Z",
+  "storageProfile": {
+    "imageReference": {
+      "publisher": "Canonical",
+      "version": "latest",
+      "exactVersion": "22.04.202501080",
+      "sku": "22_04-lts-gen2",
+      "offer": "0001-com-ubuntu-server-jammy"
+    },
+    "diskControllerType": "SCSI",
+    "dataDisks": [],
+    "osDisk": {
+      "name": "linuxbackuptest-osdisk-20250114-123657",
+      "createOption": "FromImage",
+      "managedDisk": {
+        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Compute/disks/linuxbackuptest-osdisk-20250114-123657"
+      },
+      "osType": "Linux",
+      "caching": "ReadWrite"
+    }
+  },
+  "networkProfile": {
+    "networkInterfaces": [
+      {
+        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkInterfaces/linux-backup-testVMNic"
+      }
+    ]
+  },
+  "hardwareProfile": {
+    "vmSize": "Standard_DS1_v2"
+  },
+  "securityProfile": {
+    "securityType": "TrustedLaunch",
+    "uefiSettings": {
+      "secureBootEnabled": true,
+      "vTpmEnabled": true
+    }
+  },
+  "osProfile": {
+    "requireGuestProvisionSignal": true,
+    "computerName": "linux-backup-test",
+    "allowExtensionOperations": true,
+    "adminUsername": "audun",
+    "secrets": [],
+    "linuxConfiguration": {
+      "provisionVMAgent": true,
+      "disablePasswordAuthentication": true,
+      "patchSettings": {
+        "assessmentMode": "ImageDefault",
+        "patchMode": "ImageDefault"
+      },
+      "ssh": {
+        "publicKeys": [
+          {
+            "path": "/home/audun/.ssh/authorized_keys",
+            "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC2EgTQcX8JsFWp50s5uK0SawV/hDM3wUp1S/v9f1H/twBvYdvKRnhdoqIQ/ppjFXblj3SgMd1GQdlSJmmXoWZNVV38xv9RJfmuapI+B60BR5xHt4F8l612FBJHEQQLjWk7H6geDQipCCjlVxZbQdmjEvLeB259OdiBj0fffK0YnI7IgP5wspVpRd2Z4W/KjNBRDOxy0ZbHtZWrpplxXGOMFnh5ROOL2G8wIWrs4CmrFP3k2uuDF1gejuyJaQ/HXIIHtcYAX6meM0PeaveByvKfXZLUEvjpSlyJ1CTk9SvmL9e4AxyfXNavx5L+uU+WMMpEG+roTkN+o4GA0x92iqF3"
+          }
+        ]
+      }
+    }
+  },
+  "extended": {
+    "instanceView": {
+      "hyperVGeneration": "V2",
+      "powerState": {
+        "displayStatus": "VM deallocated",
+        "level": "Info",
+        "code": "PowerState/deallocated"
+      }
+    }
+  },
+  "vmId": "8d0363f6-247f-47da-b569-8339745f3bc3"
+}

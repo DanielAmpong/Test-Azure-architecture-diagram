@@ -1,0 +1,7 @@
+{
+  "provisioningState": "Succeeded",
+  "type": "DependencyAgentLinux",
+  "typeHandlerVersion": "9.6",
+  "autoUpgradeMinorVersion": true,
+  "publisher": "Microsoft.Azure.Monitoring.DependencyAgent"
+}

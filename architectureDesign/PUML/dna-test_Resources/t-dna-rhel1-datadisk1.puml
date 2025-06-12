@@ -1,0 +1,27 @@
+@startuml
+
+title Resources Display - Component Diagram
+
+component Component {
+
+json  Resource_Properties {
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Enabled",
+  "networkAccessPolicy": "AllowAll",
+  "diskSizeGB": 100,
+  "timeCreated": "2024-12-07T10:08:28.1161501Z",
+  "encryption": {
+    "type": "EncryptionAtRestWithPlatformKey"
+  },
+  "diskSizeBytes": 107374182400,
+  "creationData": {
+    "createOption": "Empty"
+  },
+  "LastOwnershipUpdateTime": "2024-12-07T10:08:52.6789836Z",
+  "diskState": "Attached",
+  "uniqueId": "2afc34f1-2535-4dfc-8bc1-65c7189f40bc",
+  "diskIOPSReadWrite": 500,
+  "diskMBpsReadWrite": 100
+}
+}
+@enduml

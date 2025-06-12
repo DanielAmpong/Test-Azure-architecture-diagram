@@ -1,0 +1,22 @@
+@startuml
+
+title Resources Display - Component Diagram
+
+component Component {
+
+json  Resource_Properties {
+  "provisioningState": "Succeeded",
+  "version": "2018-06-01",
+  "createTime": "2025-06-05T09:59:35.8429929Z",
+  "factoryStatistics": {
+    "maxAllowedFactorySizeInGbUnits": 0,
+    "maxAllowedResourceCount": 0,
+    "factorySizeInGbUnits": 0,
+    "totalResourceCount": 0
+  },
+  "globalConfigurations": {
+    "PipelineBillingEnabled": "true"
+  }
+}
+}
+@enduml

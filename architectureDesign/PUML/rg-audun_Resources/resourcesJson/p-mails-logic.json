@@ -1,0 +1,244 @@
+{
+  "provisioningState": "Succeeded",
+  "state": "Enabled",
+  "version": "08584579389831360141",
+  "parameters": {
+    "$connections": {
+      "value": {
+        "acsemail": {
+          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/providers/Microsoft.Web/locations/norwayeast/managedApis/acsemail",
+          "connectionName": "acsemail",
+          "connectionId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Web/connections/acsConnection"
+        },
+        "loganalytics": {
+          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/providers/Microsoft.Web/locations/norwayeast/managedApis/azuremonitorlogs",
+          "connectionName": "loganalytics",
+          "connectionId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Web/connections/lawConnection"
+        }
+      }
+    },
+    "querySubstring": {
+      "value": "alteryx"
+    },
+    "mailtoAdress": {
+      "value": "dna-drift@klp.no"
+    }
+  },
+  "createdTime": "2025-03-25T11:40:54.3154501Z",
+  "changedTime": "2025-04-03T08:11:42.3619531Z",
+  "endpointsConfiguration": {
+    "connector": {
+      "outgoingIpAddresses": [
+        {
+          "address": "51.120.100.192"
+        },
+        {
+          "address": "51.120.92.27"
+        },
+        {
+          "address": "51.120.98.224/28"
+        },
+        {
+          "address": "51.120.100.192/27"
+        },
+        {
+          "address": "20.100.0.96/27"
+        },
+        {
+          "address": "20.100.0.128/28"
+        },
+        {
+          "address": "51.13.18.233"
+        },
+        {
+          "address": "51.13.18.216"
+        }
+      ]
+    },
+    "workflow": {
+      "outgoingIpAddresses": [
+        {
+          "address": "51.120.88.52"
+        },
+        {
+          "address": "51.120.88.51"
+        },
+        {
+          "address": "51.13.65.206"
+        },
+        {
+          "address": "51.13.66.248"
+        },
+        {
+          "address": "51.13.65.90"
+        },
+        {
+          "address": "51.13.65.63"
+        },
+        {
+          "address": "51.13.68.140"
+        },
+        {
+          "address": "51.120.91.248"
+        },
+        {
+          "address": "20.100.26.148"
+        },
+        {
+          "address": "20.100.26.52"
+        },
+        {
+          "address": "20.100.36.49"
+        },
+        {
+          "address": "20.100.36.10"
+        }
+      ],
+      "accessEndpointIpAddresses": [
+        {
+          "address": "51.120.88.93"
+        },
+        {
+          "address": "51.13.66.86"
+        },
+        {
+          "address": "51.120.89.182"
+        },
+        {
+          "address": "51.120.88.77"
+        },
+        {
+          "address": "20.100.27.17"
+        },
+        {
+          "address": "20.100.36.102"
+        }
+      ]
+    }
+  },
+  "accessEndpoint": "https://prod-30.norwayeast.logic.azure.com:443/workflows/915d03d8a7c6464fadbe50eeca71d9d9",
+  "definition": {
+    "actions": {
+      "Condition": {
+        "type": "If",
+        "runAfter": {
+          "Run_query_and_visualize_results_V2": [
+            "Succeeded"
+          ]
+        },
+        "actions": {},
+        "expression": {
+          "and": [
+            {
+              "contains": [
+                "@base64ToString(body('Run_query_and_visualize_results_V2')?['body'])",
+                "The query yielded no dataTable"
+              ]
+            }
+          ]
+        },
+        "else": {
+          "actions": {
+            "Send_email_1": {
+              "type": "ApiConnection",
+              "inputs": {
+                "method": "post",
+                "path": "/emails:sendGAVersion",
+                "body": {
+                  "content": {
+                    "subject": "@{parameters('querySubstring')} - failed mails",
+                    "html": "<p class=\"editor-paragraph\">@{base64ToString(body('Run_query_and_visualize_results_V2')?['body'])}</p>"
+                  },
+                  "importance": "Normal",
+                  "senderAddress": "DoNotReply@klp.no",
+                  "userEngagementTrackingDisabled": true,
+                  "recipients": {
+                    "to": [
+                      {
+                        "address": "@parameters('mailToAdress')"
+                      }
+                    ]
+                  }
+                },
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['acsemail']['connectionId']"
+                  }
+                },
+                "queries": {
+                  "api-version": "2023-03-31"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Run_query_and_visualize_results_V2": {
+        "type": "ApiConnection",
+        "runAfter": {},
+        "inputs": {
+          "method": "post",
+          "path": "/visualizeQueryV2",
+          "body": {
+            "query": "ACSEmailStatusUpdateOperational \n| where isnotempty(SmtpStatusCode) and SmtpStatusCode <> 200\n| where SenderUsername contains \"@{parameters('querySubstring')}\"\n| where TimeGenerated > ago(1d)\n| project TimeGenerated, OperationName, Category, SmtpStatusCode, EnhancedSmtpStatusCode, SenderUsername, RecipientId, FailureReason",
+            "timerangetype": "3"
+          },
+          "host": {
+            "connection": {
+              "name": "@parameters('$connections')['loganalytics']['connectionId']"
+            }
+          },
+          "queries": {
+            "subscriptions": "3c30e703-3724-46ce-983a-91b9a78d5941",
+            "resourcegroups": "p-log",
+            "resourcename": "p-log-platform-log",
+            "resourcetype": "Log Analytics Workspace",
+            "visType": "Html Table"
+          }
+        }
+      }
+    },
+    "parameters": {
+      "$connections": {
+        "type": "Object",
+        "defaultValue": {}
+      },
+      "querySubstring": {
+        "type": "String"
+      },
+      "mailtoAdress": {
+        "type": "String"
+      }
+    },
+    "contentVersion": "1.0.0.0",
+    "triggers": {
+      "Recurrence": {
+        "type": "Recurrence",
+        "evaluatedRecurrence": {
+          "startTime": "2025-02-09",
+          "frequency": "Day",
+          "interval": 1,
+          "timeZone": "W. Europe Standard Time",
+          "schedule": {
+            "hours": [
+              "23"
+            ]
+          }
+        },
+        "recurrence": {
+          "startTime": "2025-02-09",
+          "frequency": "Day",
+          "interval": 1,
+          "timeZone": "W. Europe Standard Time",
+          "schedule": {
+            "hours": [
+              "23"
+            ]
+          }
+        }
+      }
+    },
+    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+    "outputs": {}
+  }
+}

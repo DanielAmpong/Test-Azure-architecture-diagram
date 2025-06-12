@@ -1,0 +1,74 @@
+@startuml
+!pragma revision 1
+
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+!define AzurePuml https://raw.githubusercontent.com/plantuml-stdlib/Azure-PlantUML/master/dist
+!includeurl AzurePuml/AzureCommon.puml
+!includeurl AzurePuml/AzureC4Integration.puml
+!includeurl AzurePuml/Management/AzureResourceGroups.puml
+
+AzureResourceGroups(lz_norwayeast, 'lz-norwayeast', 'Azure Resource Group')
+
+!includeurl AzurePuml/Management/AzureMonitor.puml
+AzureMonitor(lz_sec_solution_delete_alert, 'lz-sec-solution-delete-alert', 'Microsoft.Insights/activityLogAlerts')
+Rel(lz_norwayeast, lz_sec_solution_delete_alert, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Management/AzureMonitor.puml
+AzureMonitor(lz_net_nsg_write_alert, 'lz-net-nsg-write-alert', 'Microsoft.Insights/activityLogAlerts')
+Rel(lz_norwayeast, lz_net_nsg_write_alert, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Management/AzureMonitor.puml
+AzureMonitor(lz_sql_fw_delete_alert, 'lz-sql-fw-delete-alert', 'Microsoft.Insights/activityLogAlerts')
+Rel(lz_norwayeast, lz_sql_fw_delete_alert, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Management/AzureMonitor.puml
+AzureMonitor(lz_net_nsg_delete_alert, 'lz-net-nsg-delete-alert', 'Microsoft.Insights/activityLogAlerts')
+Rel(lz_norwayeast, lz_net_nsg_delete_alert, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Management/AzureMonitor.puml
+AzureMonitor(lz_net_nsgrule_write_alert, 'lz-net-nsgrule-write-alert', 'Microsoft.Insights/activityLogAlerts')
+Rel(lz_norwayeast, lz_net_nsgrule_write_alert, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Management/AzureMonitor.puml
+AzureMonitor(lz_auth_policy_delete_alert, 'lz-auth-policy-delete-alert', 'Microsoft.Insights/activityLogAlerts')
+Rel(lz_norwayeast, lz_auth_policy_delete_alert, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Management/AzureMonitor.puml
+AzureMonitor(lz_auth_policy_write_alert, 'lz-auth-policy-write-alert', 'Microsoft.Insights/activityLogAlerts')
+Rel(lz_norwayeast, lz_auth_policy_write_alert, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Management/AzureMonitor.puml
+AzureMonitor(lz_sql_fw_write_alert, 'lz-sql-fw-write-alert', 'Microsoft.Insights/activityLogAlerts')
+Rel(lz_norwayeast, lz_sql_fw_write_alert, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Management/AzureMonitor.puml
+AzureMonitor(lz_sec_solution_write_alert, 'lz-sec-solution-write-alert', 'Microsoft.Insights/activityLogAlerts')
+Rel(lz_norwayeast, lz_sec_solution_write_alert, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Management/AzureMonitor.puml
+AzureMonitor(lz_net_nsgrule_delete_alert, 'lz-net-nsgrule-delete-alert', 'Microsoft.Insights/activityLogAlerts')
+Rel(lz_norwayeast, lz_net_nsgrule_delete_alert, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Management/AzureRecoveryServiceVault.puml
+AzureRecoveryServiceVault(lz_norwayeast_rsv, 'lz-norwayeast-rsv', 'Microsoft.RecoveryServices/vaults')
+Rel(lz_norwayeast, lz_norwayeast_rsv, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Management/AzureMonitor.puml
+AzureMonitor(Alert___Service_Issues, 'Alert - Service Issues', 'Microsoft.Insights/activityLogAlerts')
+Rel(lz_norwayeast, Alert___Service_Issues, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Management/AzureMonitor.puml
+AzureMonitor(Alert___Security_Advisory, 'Alert - Security Advisory', 'Microsoft.Insights/activityLogAlerts')
+Rel(lz_norwayeast, Alert___Security_Advisory, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Management/AzureMonitor.puml
+AzureMonitor(Alert___Planned_Maintenance, 'Alert - Planned Maintenance', 'Microsoft.Insights/activityLogAlerts')
+Rel(lz_norwayeast, Alert___Planned_Maintenance, 'Uses', 'Resource' )
+
+!includeurl AzurePuml/Management/AzureMonitor.puml
+AzureMonitor(Alert___Health_Advisories, 'Alert - Health Advisories', 'Microsoft.Insights/activityLogAlerts')
+Rel(lz_norwayeast, Alert___Health_Advisories, 'Uses', 'Resource' )
+
+LAYOUT_WITH_LEGEND()
+@enduml

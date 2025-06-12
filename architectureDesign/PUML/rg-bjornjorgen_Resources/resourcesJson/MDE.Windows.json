@@ -1,0 +1,100 @@
+{
+  "2": {
+    "provisioningState": "Succeeded",
+    "type": "MDE.Windows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.0",
+    "publisher": "Microsoft.Azure.AzureDefenderForServers",
+    "settings": {
+      "forceReOnboarding": false,
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "vNextEnabled": true,
+      "autoUpdate": true
+    },
+    "forceUpdateTag": "99efd676-824b-4eb9-9fd7-9afb880317dd"
+  },
+  "1": {
+    "provisioningState": "Succeeded",
+    "type": "MDE.Windows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.0",
+    "publisher": "Microsoft.Azure.AzureDefenderForServers",
+    "settings": {
+      "forceReOnboarding": false,
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "vNextEnabled": true,
+      "autoUpdate": true
+    },
+    "forceUpdateTag": "99efd676-824b-4eb9-9fd7-9afb880317dd"
+  },
+  "5": {
+    "provisioningState": "Succeeded",
+    "type": "MDE.Windows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.0",
+    "publisher": "Microsoft.Azure.AzureDefenderForServers",
+    "settings": {
+      "forceReOnboarding": false,
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "vNextEnabled": true,
+      "autoUpdate": true
+    },
+    "forceUpdateTag": "99efd676-824b-4eb9-9fd7-9afb880317dd"
+  },
+  "4": {
+    "provisioningState": "Succeeded",
+    "type": "MDE.Windows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.0",
+    "publisher": "Microsoft.Azure.AzureDefenderForServers",
+    "settings": {
+      "forceReOnboarding": false,
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "vNextEnabled": true,
+      "autoUpdate": true
+    },
+    "forceUpdateTag": "99efd676-824b-4eb9-9fd7-9afb880317dd"
+  },
+  "0": {
+    "provisioningState": "Succeeded",
+    "type": "MDE.Windows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.0",
+    "publisher": "Microsoft.Azure.AzureDefenderForServers",
+    "settings": {
+      "forceReOnboarding": false,
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "vNextEnabled": true,
+      "autoUpdate": true
+    },
+    "forceUpdateTag": "99efd676-824b-4eb9-9fd7-9afb880317dd"
+  },
+  "6": {
+    "provisioningState": "Succeeded",
+    "type": "MDE.Windows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.0",
+    "publisher": "Microsoft.Azure.AzureDefenderForServers",
+    "settings": {
+      "forceReOnboarding": false,
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "vNextEnabled": true,
+      "autoUpdate": true
+    },
+    "forceUpdateTag": "99efd676-824b-4eb9-9fd7-9afb880317dd"
+  },
+  "3": {
+    "provisioningState": "Succeeded",
+    "type": "MDE.Windows",
+    "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "1.0",
+    "publisher": "Microsoft.Azure.AzureDefenderForServers",
+    "settings": {
+      "forceReOnboarding": false,
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "vNextEnabled": true,
+      "autoUpdate": true
+    },
+    "forceUpdateTag": "99efd676-824b-4eb9-9fd7-9afb880317dd"
+  }
+}

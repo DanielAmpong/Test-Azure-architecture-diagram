@@ -1,0 +1,61 @@
+@startuml
+
+title Resources Display - Component Diagram
+
+component Component {
+
+json  Resource_Properties {
+  "provisioningState": "Succeeded",
+  "encryption": {
+    "keySource": "Microsoft.Storage",
+    "services": {
+      "blob": {
+        "enabled": true,
+        "lastEnabledTime": "2025-05-22T12:23:05.7887348Z",
+        "keyType": "Account"
+      },
+      "file": {
+        "enabled": true,
+        "lastEnabledTime": "2025-05-22T12:23:05.7887348Z",
+        "keyType": "Account"
+      }
+    }
+  },
+  "privateEndpointConnections": [],
+  "supportsHttpsTrafficOnly": true,
+  "allowBlobPublicAccess": false,
+  "minimumTlsVersion": "TLS1_2",
+  "allowCrossTenantReplication": false,
+  "primaryEndpoints": {
+    "blob": "https://dawhappwmdiagsett3f.blob.core.windows.net/",
+    "file": "https://dawhappwmdiagsett3f.file.core.windows.net/",
+    "table": "https://dawhappwmdiagsett3f.table.core.windows.net/",
+    "queue": "https://dawhappwmdiagsett3f.queue.core.windows.net/",
+    "web": "https://dawhappwmdiagsett3f.z1.web.core.windows.net/",
+    "dfs": "https://dawhappwmdiagsett3f.dfs.core.windows.net/"
+  },
+  "statusOfPrimary": "available",
+  "primaryLocation": "norwayeast",
+  "keyCreationTime": {
+    "key2": "2025-05-22T12:23:05.7887348Z",
+    "key1": "2025-05-22T12:23:05.7887348Z"
+  },
+  "creationTime": "2025-05-22T12:23:05.7262244Z",
+  "networkAcls": {
+    "virtualNetworkRules": [
+      {
+        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/default",
+        "state": "Succeeded",
+        "action": "Allow"
+      }
+    ],
+    "defaultAction": "Deny",
+    "ipv6Rules": [],
+    "ipRules": [],
+    "bypass": "AzureServices"
+  },
+  "accessTier": "Hot",
+  "largeFileSharesState": "Enabled"
+}
+}
+@enduml
