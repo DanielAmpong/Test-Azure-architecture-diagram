@@ -12,14 +12,14 @@ json  Resource_Properties {
     "$connections": {
       "value": {
         "acsemail": {
-          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/providers/Microsoft.Web/locations/norwayeast/managedApis/acsemail",
+          "id": "/subscriptions/0/providers/Microsoft.Web/locations/norwayeast/managedApis/acsemail",
           "connectionName": "acsemail",
-          "connectionId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Web/connections/acsConnection"
+          "connectionId": "/subscriptions/0/resourceGroups/rg-audun/providers/Microsoft.Web/connections/acsConnection"
         },
         "loganalytics": {
-          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/providers/Microsoft.Web/locations/norwayeast/managedApis/azuremonitorlogs",
+          "id": "/subscriptions/0/providers/Microsoft.Web/locations/norwayeast/managedApis/azuremonitorlogs",
           "connectionName": "loganalytics",
-          "connectionId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Web/connections/lawConnection"
+          "connectionId": "/subscriptions/0/resourceGroups/rg-audun/providers/Microsoft.Web/connections/lawConnection"
         }
       }
     },
@@ -27,7 +27,7 @@ json  Resource_Properties {
       "value": "alteryx"
     },
     "mailtoAdress": {
-      "value": "dna-drift@klp.no"
+      "value": "dna-drift@kl.no"
     }
   },
   "createdTime": "2025-03-25T11:40:54.3154501Z",
@@ -156,7 +156,7 @@ json  Resource_Properties {
                     "html": "<p class=\"editor-paragraph\">@{base64ToString(body('Run_query_and_visualize_results_V2')?['body'])}</p>"
                   },
                   "importance": "Normal",
-                  "senderAddress": "DoNotReply@klp.no",
+                  "senderAddress": "DoNotReply@kl.no",
                   "userEngagementTrackingDisabled": true,
                   "recipients": {
                     "to": [

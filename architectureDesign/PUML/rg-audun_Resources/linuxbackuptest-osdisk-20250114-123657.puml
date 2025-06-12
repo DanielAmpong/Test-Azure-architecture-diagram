@@ -17,7 +17,7 @@ json  Resource_Properties {
   "hyperVGeneration": "V2",
   "creationData": {
     "createOption": "Restore",
-    "sourceResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun-linux-test11/providers/Microsoft.Compute/restorePointCollections/AzureBackup_linux-backup-test_7566064966473037613/restorePoints/AzureBackup_20250113_015318/diskRestorePoints/linux-backup-test_OsDisk_1_129dd182211d4de2935e0c81ea1c731a_2f1020de-8c6b-4dfa-afad-47854954f75c"
+    "sourceResourceId": "/subscriptions/0/resourceGroups/rg-audun-linux-test11/providers/Microsoft.Compute/restorePointCollections/AzureBackup_linux-backup-test_7566064966473037613/restorePoints/AzureBackup_20250113_015318/diskRestorePoints/linux-backup-test_OsDisk_1_129dd182211d4de2935e0c81ea1c731a_2f1020de-8c6b-4dfa-afad-47854954f75c"
   },
   "LastOwnershipUpdateTime": "2025-05-07T08:12:40.1442932Z",
   "diskState": "Reserved",

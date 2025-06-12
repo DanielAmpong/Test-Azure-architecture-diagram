@@ -13,7 +13,7 @@ json  Resource_Properties {
   "eventHubReceivers": [
     {
       "name": "planned maintenance",
-      "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
+      "tenantId": "0",
       "subscriptionId": "c117acbf-d744-4c7f-a748-a9408b250ac3",
       "useCommonAlertSchema": true,
       "eventHubNameSpace": "p-servicehealth-evhns",

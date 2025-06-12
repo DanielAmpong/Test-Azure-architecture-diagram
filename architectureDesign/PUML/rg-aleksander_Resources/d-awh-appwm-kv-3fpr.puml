@@ -10,7 +10,7 @@ json  Resource_Properties {
   "networkAcls": {
     "virtualNetworkRules": [
       {
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourcegroups/lz-network-norwayeast/providers/microsoft.network/virtualnetworks/lz-network-norwayeast-vnet/subnets/default",
+        "id": "/subscriptions/0/resourcegroups/lz-network-norwayeast/providers/microsoft.network/virtualnetworks/lz-network-norwayeast-vnet/subnets/default",
         "ignoreMissingVnetServiceEndpoint": false
       }
     ],
@@ -18,7 +18,7 @@ json  Resource_Properties {
     "ipRules": [],
     "bypass": "AzureServices"
   },
-  "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
+  "tenantId": "0",
   "sku": {
     "name": "standard",
     "family": "A"

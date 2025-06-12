@@ -27,7 +27,7 @@ json  Resource_Properties {
       },
       "name": "AllowVnetInBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/defaultSecurityRules/AllowVnetInBound",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/defaultSecurityRules/AllowVnetInBound",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -49,7 +49,7 @@ json  Resource_Properties {
       },
       "name": "AllowAzureLoadBalancerInBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/defaultSecurityRules/AllowAzureLoadBalancerInBound",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/defaultSecurityRules/AllowAzureLoadBalancerInBound",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -71,7 +71,7 @@ json  Resource_Properties {
       },
       "name": "DenyAllInBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/defaultSecurityRules/DenyAllInBound",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/defaultSecurityRules/DenyAllInBound",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -93,7 +93,7 @@ json  Resource_Properties {
       },
       "name": "AllowVnetOutBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/defaultSecurityRules/AllowVnetOutBound",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/defaultSecurityRules/AllowVnetOutBound",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -115,7 +115,7 @@ json  Resource_Properties {
       },
       "name": "AllowInternetOutBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/defaultSecurityRules/AllowInternetOutBound",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/defaultSecurityRules/AllowInternetOutBound",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -137,7 +137,7 @@ json  Resource_Properties {
       },
       "name": "DenyAllOutBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/defaultSecurityRules/DenyAllOutBound",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/defaultSecurityRules/DenyAllOutBound",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     }
   ],
@@ -161,7 +161,7 @@ json  Resource_Properties {
       },
       "name": "MicrosoftDefenderForCloud-JITRule_68668532_C01A0FBF6A1E4010B0C783E96CBF76F4",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/MicrosoftDefenderForCloud-JITRule_68668532_C01A0FBF6A1E4010B0C783E96CBF76F4",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/MicrosoftDefenderForCloud-JITRule_68668532_C01A0FBF6A1E4010B0C783E96CBF76F4",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -183,7 +183,7 @@ json  Resource_Properties {
       },
       "name": "MicrosoftDefenderForCloud-JITRule_-1396803557_384BBEA88CDB49C68F0349923F790EC8",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/MicrosoftDefenderForCloud-JITRule_-1396803557_384BBEA88CDB49C68F0349923F790EC8",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/MicrosoftDefenderForCloud-JITRule_-1396803557_384BBEA88CDB49C68F0349923F790EC8",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -205,7 +205,7 @@ json  Resource_Properties {
       },
       "name": "deny-inbound-all",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/deny-inbound-all",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/deny-inbound-all",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -227,7 +227,7 @@ json  Resource_Properties {
       },
       "name": "allow-inbound-azureloadbalancer",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-inbound-azureloadbalancer",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-inbound-azureloadbalancer",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -250,7 +250,7 @@ json  Resource_Properties {
       },
       "name": "allow-inbound-udp-qualys",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-inbound-udp-qualys",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-inbound-udp-qualys",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -275,7 +275,7 @@ json  Resource_Properties {
       },
       "name": "allow-inbound-tcp-cmdb",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-inbound-tcp-cmdb",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-inbound-tcp-cmdb",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -297,7 +297,7 @@ json  Resource_Properties {
       },
       "name": "allow-inbound-icmp-orion",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-inbound-icmp-orion",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-inbound-icmp-orion",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -320,7 +320,7 @@ json  Resource_Properties {
       },
       "name": "allow-inbound-udp-orion",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-inbound-udp-orion",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-inbound-udp-orion",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -349,7 +349,7 @@ json  Resource_Properties {
       },
       "name": "allow-inbound-tcp-orion",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-inbound-tcp-orion",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-inbound-tcp-orion",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -374,7 +374,7 @@ json  Resource_Properties {
       },
       "name": "allow-inbound-avd-entraid",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-inbound-avd-entraid",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-inbound-avd-entraid",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -412,14 +412,14 @@ json  Resource_Properties {
         "sourcePortRanges": [],
         "sourcePortRange": "*",
         "protocol": "tcp",
-        "description": "allow inbound tcp from KLP dc to adds subnet",
+        "description": "allow inbound tcp from kl dc to adds subnet",
         "direction": "Inbound",
         "priority": 1000,
         "access": "Allow"
       },
       "name": "allow-inbound-tcp-dc-adds",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-inbound-tcp-dc-adds",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-inbound-tcp-dc-adds",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -441,7 +441,7 @@ json  Resource_Properties {
       },
       "name": "deny-outbound-all",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/deny-outbound-all",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/deny-outbound-all",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -463,7 +463,7 @@ json  Resource_Properties {
       },
       "name": "allow-outbound-internet",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-outbound-internet",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-outbound-internet",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -581,7 +581,7 @@ json  Resource_Properties {
       },
       "name": "deny-outbound-internal-public-addresses",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/deny-outbound-internal-public-addresses",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/deny-outbound-internal-public-addresses",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -603,7 +603,7 @@ json  Resource_Properties {
       },
       "name": "allow-outbound-dns-fwd",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-outbound-dns-fwd",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-outbound-dns-fwd",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -630,7 +630,7 @@ json  Resource_Properties {
       },
       "name": "allow-outbound-tcp-splunk",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-outbound-tcp-splunk",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-outbound-tcp-splunk",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     },
     {
@@ -653,18 +653,18 @@ json  Resource_Properties {
       },
       "name": "allow-outbound-tcp-snow",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-outbound-tcp-snow",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg/securityRules/allow-outbound-tcp-snow",
       "etag": "W/\"726f3311-3d1d-41f6-94de-da44a76cb226\""
     }
   ],
   "subnets": [
     {
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/dna-test-1"
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/dna-test-1"
     }
   ],
   "flowLogs": [
     {
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_norwayeast/flowLogs/lz-network-norwayeast-vnet-dna-test-1-nsg-flowlog"
+      "id": "/subscriptions/0/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_norwayeast/flowLogs/lz-network-norwayeast-vnet-dna-test-1-nsg-flowlog"
     }
   ]
 }

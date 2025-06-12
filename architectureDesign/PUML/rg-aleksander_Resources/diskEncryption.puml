@@ -14,9 +14,9 @@ json  Resource_Properties {
     "settings": {
       "KeyEncryptionAlgorithm": "RSA-OAEP",
       "EncryptionOperation": "EnableEncryption",
-      "KeyVaultResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr",
+      "KeyVaultResourceId": "/subscriptions/0/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr",
       "KeyEncryptionKeyURL": "https://d-awh-wm-kv-3fpr.vault.azure.net/keys/lz-vm-disk-encrypt-key/844800abf3ac4840adcfc8324e3f63b9",
-      "KekVaultResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr",
+      "KekVaultResourceId": "/subscriptions/0/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr",
       "KeyVaultURL": "https://d-awh-wm-kv-3fpr.vault.azure.net/",
       "VolumeType": "All"
     }
@@ -30,9 +30,9 @@ json  Resource_Properties {
     "settings": {
       "KeyEncryptionAlgorithm": "RSA-OAEP",
       "EncryptionOperation": "EnableEncryption",
-      "KeyVaultResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr",
+      "KeyVaultResourceId": "/subscriptions/0/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr",
       "KeyEncryptionKeyURL": "https://d-awh-wm-kv-3fpr.vault.azure.net/keys/lz-vm-disk-encrypt-key/844800abf3ac4840adcfc8324e3f63b9",
-      "KekVaultResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr",
+      "KekVaultResourceId": "/subscriptions/0/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr",
       "KeyVaultURL": "https://d-awh-wm-kv-3fpr.vault.azure.net/",
       "VolumeType": "All"
     }
@@ -46,9 +46,9 @@ json  Resource_Properties {
     "settings": {
       "KeyEncryptionAlgorithm": "RSA-OAEP",
       "EncryptionOperation": "EnableEncryption",
-      "KeyVaultResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr",
+      "KeyVaultResourceId": "/subscriptions/0/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr",
       "KeyEncryptionKeyURL": "https://d-awh-wm-kv-3fpr.vault.azure.net/keys/lz-vm-disk-encrypt-key/844800abf3ac4840adcfc8324e3f63b9",
-      "KekVaultResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr",
+      "KekVaultResourceId": "/subscriptions/0/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr",
       "KeyVaultURL": "https://d-awh-wm-kv-3fpr.vault.azure.net/",
       "VolumeType": "All"
     }
@@ -62,9 +62,9 @@ json  Resource_Properties {
     "settings": {
       "KeyEncryptionAlgorithm": "RSA-OAEP",
       "EncryptionOperation": "EnableEncryption",
-      "KeyVaultResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr",
+      "KeyVaultResourceId": "/subscriptions/0/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr",
       "KeyEncryptionKeyURL": "https://d-awh-wm-kv-3fpr.vault.azure.net/keys/lz-vm-disk-encrypt-key/844800abf3ac4840adcfc8324e3f63b9",
-      "KekVaultResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr",
+      "KekVaultResourceId": "/subscriptions/0/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr",
       "KeyVaultURL": "https://d-awh-wm-kv-3fpr.vault.azure.net/",
       "VolumeType": "All"
     }
@@ -78,9 +78,9 @@ json  Resource_Properties {
     "settings": {
       "KeyEncryptionAlgorithm": "RSA-OAEP",
       "EncryptionOperation": "EnableEncryption",
-      "KeyVaultResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr",
+      "KeyVaultResourceId": "/subscriptions/0/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr",
       "KeyEncryptionKeyURL": "https://d-awh-wm-kv-3fpr.vault.azure.net/keys/lz-vm-disk-encrypt-key/844800abf3ac4840adcfc8324e3f63b9",
-      "KekVaultResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr",
+      "KekVaultResourceId": "/subscriptions/0/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr",
       "KeyVaultURL": "https://d-awh-wm-kv-3fpr.vault.azure.net/",
       "VolumeType": "All"
     }

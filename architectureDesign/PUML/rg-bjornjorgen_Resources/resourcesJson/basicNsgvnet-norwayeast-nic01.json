@@ -3,10 +3,10 @@
   "resourceGuid": "395800da-4300-49d5-976e-947a6a010645",
   "networkInterfaces": [
     {
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkInterfaces/vnet-norwayeast-nic01-28e3bab2"
+      "id": "/subscriptions/0/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkInterfaces/vnet-norwayeast-nic01-28e3bab2"
     },
     {
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkInterfaces/vnet-norwayeast-nic01-ebe7168c"
+      "id": "/subscriptions/0/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkInterfaces/vnet-norwayeast-nic01-ebe7168c"
     }
   ],
   "defaultSecurityRules": [
@@ -29,7 +29,7 @@
       },
       "name": "AllowVnetInBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkSecurityGroups/basicNsgvnet-norwayeast-nic01/defaultSecurityRules/AllowVnetInBound",
+      "id": "/subscriptions/0/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkSecurityGroups/basicNsgvnet-norwayeast-nic01/defaultSecurityRules/AllowVnetInBound",
       "etag": "W/\"67e0f41c-ff71-4641-95c1-ce1c053890b7\""
     },
     {
@@ -51,7 +51,7 @@
       },
       "name": "AllowAzureLoadBalancerInBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkSecurityGroups/basicNsgvnet-norwayeast-nic01/defaultSecurityRules/AllowAzureLoadBalancerInBound",
+      "id": "/subscriptions/0/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkSecurityGroups/basicNsgvnet-norwayeast-nic01/defaultSecurityRules/AllowAzureLoadBalancerInBound",
       "etag": "W/\"67e0f41c-ff71-4641-95c1-ce1c053890b7\""
     },
     {
@@ -73,7 +73,7 @@
       },
       "name": "DenyAllInBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkSecurityGroups/basicNsgvnet-norwayeast-nic01/defaultSecurityRules/DenyAllInBound",
+      "id": "/subscriptions/0/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkSecurityGroups/basicNsgvnet-norwayeast-nic01/defaultSecurityRules/DenyAllInBound",
       "etag": "W/\"67e0f41c-ff71-4641-95c1-ce1c053890b7\""
     },
     {
@@ -95,7 +95,7 @@
       },
       "name": "AllowVnetOutBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkSecurityGroups/basicNsgvnet-norwayeast-nic01/defaultSecurityRules/AllowVnetOutBound",
+      "id": "/subscriptions/0/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkSecurityGroups/basicNsgvnet-norwayeast-nic01/defaultSecurityRules/AllowVnetOutBound",
       "etag": "W/\"67e0f41c-ff71-4641-95c1-ce1c053890b7\""
     },
     {
@@ -117,7 +117,7 @@
       },
       "name": "AllowInternetOutBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkSecurityGroups/basicNsgvnet-norwayeast-nic01/defaultSecurityRules/AllowInternetOutBound",
+      "id": "/subscriptions/0/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkSecurityGroups/basicNsgvnet-norwayeast-nic01/defaultSecurityRules/AllowInternetOutBound",
       "etag": "W/\"67e0f41c-ff71-4641-95c1-ce1c053890b7\""
     },
     {
@@ -139,14 +139,14 @@
       },
       "name": "DenyAllOutBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkSecurityGroups/basicNsgvnet-norwayeast-nic01/defaultSecurityRules/DenyAllOutBound",
+      "id": "/subscriptions/0/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkSecurityGroups/basicNsgvnet-norwayeast-nic01/defaultSecurityRules/DenyAllOutBound",
       "etag": "W/\"67e0f41c-ff71-4641-95c1-ce1c053890b7\""
     }
   ],
   "securityRules": [],
   "flowLogs": [
     {
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_norwayeast/flowLogs/basicNsgvnet-norwayeast-nic01-flowlog"
+      "id": "/subscriptions/0/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_norwayeast/flowLogs/basicNsgvnet-norwayeast-nic01-flowlog"
     }
   ]
 }

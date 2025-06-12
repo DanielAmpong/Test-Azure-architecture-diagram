@@ -17,7 +17,7 @@
         "diskSizeGB": 100,
         "deleteOption": "Detach",
         "managedDisk": {
-          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/dna-test/providers/Microsoft.Compute/disks/t-dna-rhel1-datadisk1",
+          "id": "/subscriptions/0/resourceGroups/dna-test/providers/Microsoft.Compute/disks/t-dna-rhel1-datadisk1",
           "storageAccountType": "StandardSSD_LRS"
         },
         "caching": "None",
@@ -31,7 +31,7 @@
       "diskSizeGB": 128,
       "deleteOption": "Detach",
       "managedDisk": {
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/dna-test/providers/Microsoft.Compute/disks/t-dna-rhel1-osdisk",
+        "id": "/subscriptions/0/resourceGroups/dna-test/providers/Microsoft.Compute/disks/t-dna-rhel1-osdisk",
         "storageAccountType": "Premium_LRS"
       },
       "osType": "Linux",
@@ -44,7 +44,7 @@
         "properties": {
           "primary": true
         },
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/dna-test/providers/Microsoft.Network/networkInterfaces/t-dna-rhel1-nic"
+        "id": "/subscriptions/0/resourceGroups/dna-test/providers/Microsoft.Network/networkInterfaces/t-dna-rhel1-nic"
       }
     ]
   },
@@ -86,6 +86,6 @@
   },
   "vmId": "c0be3a12-6738-4d44-9f57-08261c8a8796",
   "availabilitySet": {
-    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/dna-test/providers/Microsoft.Compute/availabilitySets/T-DNA-RHEL-AVAIL"
+    "id": "/subscriptions/0/resourceGroups/dna-test/providers/Microsoft.Compute/availabilitySets/T-DNA-RHEL-AVAIL"
   }
 }

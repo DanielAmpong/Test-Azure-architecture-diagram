@@ -12,7 +12,7 @@
   "creationData": {
     "createOption": "FromImage",
     "imageReference": {
-      "id": "/Subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/Providers/Microsoft.Compute/Locations/NorwayEast/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer/Skus/2022-datacenter-smalldisk-g2/Versions/20348.3561.250409"
+      "id": "/subscriptions/0/Providers/Microsoft.Compute/Locations/NorwayEast/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer/Skus/2022-datacenter-smalldisk-g2/Versions/20348.3561.250409"
     }
   },
   "supportedCapabilities": {

@@ -7,7 +7,7 @@ component Component {
 json  Resource_Properties {
   "provisioningState": "Succeeded",
   "publicNetworkAccess": "Enabled",
-  "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
+  "tenantId": "0",
   "enabledForTemplateDeployment": true,
   "enabledForDeployment": true,
   "enabledForDiskEncryption": true,

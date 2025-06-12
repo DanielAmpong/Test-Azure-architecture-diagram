@@ -11,7 +11,7 @@
   "creationData": {
     "createOption": "FromImage",
     "imageReference": {
-      "id": "/Subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/Providers/Microsoft.Compute/Locations/NorwayEast/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer/Skus/2022-Datacenter/Versions/20348.3692.250509"
+      "id": "/subscriptions/0/Providers/Microsoft.Compute/Locations/NorwayEast/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer/Skus/2022-Datacenter/Versions/20348.3692.250509"
     }
   },
   "hyperVGeneration": "V1",
@@ -34,13 +34,13 @@
       {
         "diskEncryptionKey": {
           "sourceVault": {
-            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr"
+            "id": "/subscriptions/0/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr"
           },
           "secretUrl": "https://d-awh-wm-kv-3fpr.vault.azure.net/secrets/B10C8122-9C2D-4859-93BD-151EE97DFE73/d66eb77eeef54892831c29ffb6019fbe"
         },
         "keyEncryptionKey": {
           "sourceVault": {
-            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr"
+            "id": "/subscriptions/0/resourceGroups/rg-aleksander/providers/Microsoft.KeyVault/vaults/d-awh-wm-kv-3fpr"
           },
           "keyUrl": "https://d-awh-wm-kv-3fpr.vault.azure.net/keys/lz-vm-disk-encrypt-key/844800abf3ac4840adcfc8324e3f63b9"
         }

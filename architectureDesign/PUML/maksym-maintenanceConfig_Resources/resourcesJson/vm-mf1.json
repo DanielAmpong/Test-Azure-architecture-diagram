@@ -16,7 +16,7 @@
         "diskSizeGB": 200,
         "deleteOption": "Detach",
         "managedDisk": {
-          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-maintenanceConfig/providers/Microsoft.Compute/disks/vm-mf1-datadisk1",
+          "id": "/subscriptions/0/resourceGroups/maksym-maintenanceConfig/providers/Microsoft.Compute/disks/vm-mf1-datadisk1",
           "storageAccountType": "Premium_LRS"
         },
         "caching": "None",
@@ -30,7 +30,7 @@
       "diskSizeGB": 128,
       "deleteOption": "Detach",
       "managedDisk": {
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-maintenanceConfig/providers/Microsoft.Compute/disks/vm-mf1-osdisk",
+        "id": "/subscriptions/0/resourceGroups/maksym-maintenanceConfig/providers/Microsoft.Compute/disks/vm-mf1-osdisk",
         "storageAccountType": "Premium_LRS"
       },
       "osType": "Windows",
@@ -43,7 +43,7 @@
         "properties": {
           "primary": true
         },
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-maintenanceConfig/providers/Microsoft.Network/networkInterfaces/vm-mf1-nic"
+        "id": "/subscriptions/0/resourceGroups/maksym-maintenanceConfig/providers/Microsoft.Network/networkInterfaces/vm-mf1-nic"
       }
     ]
   },
@@ -87,6 +87,6 @@
   },
   "vmId": "e545b5cf-91e7-4a83-840d-6ef2d726c516",
   "availabilitySet": {
-    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-MAINTENANCECONFIG/providers/Microsoft.Compute/availabilitySets/VM-MF-AVAIL"
+    "id": "/subscriptions/0/resourceGroups/MAKSYM-MAINTENANCECONFIG/providers/Microsoft.Compute/availabilitySets/VM-MF-AVAIL"
   }
 }

@@ -16,7 +16,7 @@
       "deleteOption": "Detach",
       "osType": "Windows",
       "managedDisk": {
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Compute/disks/t-bjs2-win1-osdisk"
+        "id": "/subscriptions/0/resourceGroups/rg-bjornjorgen/providers/Microsoft.Compute/disks/t-bjs2-win1-osdisk"
       },
       "caching": "ReadWrite"
     }
@@ -27,7 +27,7 @@
         "properties": {
           "primary": true
         },
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkInterfaces/t-bjs2-win1-nic"
+        "id": "/subscriptions/0/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkInterfaces/t-bjs2-win1-nic"
       }
     ]
   },
@@ -68,6 +68,6 @@
   },
   "vmId": "71427b19-ed00-446b-b0cb-3dcb055b0fe8",
   "availabilitySet": {
-    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Compute/availabilitySets/T-BJS2-WIN-AVAIL"
+    "id": "/subscriptions/0/resourceGroups/rg-bjornjorgen/providers/Microsoft.Compute/availabilitySets/T-BJS2-WIN-AVAIL"
   }
 }

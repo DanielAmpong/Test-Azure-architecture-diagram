@@ -14,12 +14,12 @@
         "privateIPAddress": "10.0.0.4",
         "primary": true,
         "subnet": {
-          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/default"
+          "id": "/subscriptions/0/resourceGroups/rg-audun/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/default"
         }
       },
       "name": "ipconfiglinux-backup-test",
       "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkInterfaces/linux-backup-testVMNic/ipConfigurations/ipconfiglinux-backup-test",
+      "id": "/subscriptions/0/resourceGroups/rg-audun/providers/Microsoft.Network/networkInterfaces/linux-backup-testVMNic/ipConfigurations/ipconfiglinux-backup-test",
       "etag": "W/\"b6a45b83-ab6e-45b9-a53f-3dc9975ebb79\""
     }
   ],
@@ -34,12 +34,12 @@
     "dnsServers": []
   },
   "networkSecurityGroup": {
-    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG"
+    "id": "/subscriptions/0/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG"
   },
   "auxiliarySku": "None",
   "macAddress": "00-22-48-DE-4E-EE",
   "virtualMachine": {
-    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Compute/virtualMachines/linux-backup-test"
+    "id": "/subscriptions/0/resourceGroups/rg-audun/providers/Microsoft.Compute/virtualMachines/linux-backup-test"
   },
   "nicType": "Standard"
 }

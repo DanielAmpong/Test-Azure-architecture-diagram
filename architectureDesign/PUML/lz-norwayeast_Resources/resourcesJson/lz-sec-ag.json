@@ -10,10 +10,10 @@
   "groupShortName": "lz-sec-ag",
   "emailReceivers": [
     {
-      "name": "cyberwarriors@klp.no",
+      "name": "cyberwarriors@kl.no",
       "status": "Enabled",
       "useCommonAlertSchema": false,
-      "emailAddress": "cyberwarriors@klp.no"
+      "emailAddress": "cyberwarriors@kl.no"
     }
   ],
   "voiceReceivers": [],

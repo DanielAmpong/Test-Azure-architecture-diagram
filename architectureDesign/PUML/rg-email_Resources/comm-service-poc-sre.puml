@@ -10,7 +10,7 @@ json  Resource_Properties {
   "immutableResourceId": "6e03b7c2-3bf7-4cb2-9942-b3f6a4a2cd2d",
   "dataLocation": "norway",
   "linkedDomains": [
-    "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-email/providers/Microsoft.Communication/emailServices/email-poc-sre/domains/klp.no"
+    "/subscriptions/0/resourceGroups/rg-email/providers/Microsoft.Communication/emailServices/email-poc-sre/domains/kl.no"
   ]
 }
 }

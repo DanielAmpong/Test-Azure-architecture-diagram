@@ -18,7 +18,7 @@ json  Resource_Properties {
   "creationData": {
     "createOption": "FromImage",
     "imageReference": {
-      "id": "/Subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/Providers/Microsoft.Compute/Locations/NorwayEast/Publishers/Canonical/ArtifactTypes/VMImage/Offers/0001-com-ubuntu-server-jammy/Skus/22_04-lts-gen2/Versions/22.04.202501080"
+      "id": "/subscriptions/0/Providers/Microsoft.Compute/Locations/NorwayEast/Publishers/Canonical/ArtifactTypes/VMImage/Offers/0001-com-ubuntu-server-jammy/Skus/22_04-lts-gen2/Versions/22.04.202501080"
     }
   },
   "LastOwnershipUpdateTime": "2025-01-14T10:09:59.6010895Z",

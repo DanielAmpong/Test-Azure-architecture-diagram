@@ -8,10 +8,10 @@ json  Resource_Properties {
   "provisioningState": "Succeeded",
   "dataLocation": "norway",
   "userEngagementTracking": "Disabled",
-  "mailFromSenderDomain": "klp.no",
+  "mailFromSenderDomain": "kl.no",
   "verificationRecords": {
     "Domain": {
-      "name": "klp.no",
+      "name": "kl.no",
       "type": "TXT",
       "value": "ms-domain-verification=3af2866c-9fd8-4fc2-93b6-3adaf523a203",
       "ttl": 3600
@@ -29,7 +29,7 @@ json  Resource_Properties {
       "ttl": 3600
     },
     "SPF": {
-      "name": "klp.no",
+      "name": "kl.no",
       "type": "TXT",
       "value": "v=spf1 include:spf.protection.outlook.com -all",
       "ttl": 3600
@@ -56,7 +56,7 @@ json  Resource_Properties {
       "status": "NotStarted"
     }
   },
-  "fromSenderDomain": "klp.no",
+  "fromSenderDomain": "kl.no",
   "domainManagement": "CustomerManaged"
 }
 }

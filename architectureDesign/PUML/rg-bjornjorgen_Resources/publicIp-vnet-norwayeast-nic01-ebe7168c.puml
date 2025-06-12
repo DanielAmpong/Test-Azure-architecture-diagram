@@ -12,7 +12,7 @@ json  Resource_Properties {
   "publicIPAddressVersion": "IPv4",
   "ipAddress": "20.251.200.213",
   "ipConfiguration": {
-    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkInterfaces/vnet-norwayeast-nic01-ebe7168c/ipConfigurations/vnet-norwayeast-nic01-defaultIpConfiguration"
+    "id": "/subscriptions/0/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkInterfaces/vnet-norwayeast-nic01-ebe7168c/ipConfigurations/vnet-norwayeast-nic01-defaultIpConfiguration"
   },
   "ipTags": []
 }

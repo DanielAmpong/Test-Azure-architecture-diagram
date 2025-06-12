@@ -23,7 +23,7 @@ json  Resource_Properties {
     "name": "oauthServicePrincipal",
     "values": {
       "token:TenantId": {
-        "value": "67508d80-2b69-484e-ab62-ab263ca94733"
+        "value": "0"
       },
       "token:clientId": {
         "value": "541fd53c-2052-4176-95c3-5d985a02cfd6"
@@ -33,7 +33,7 @@ json  Resource_Properties {
   "api": {
     "name": "azuremonitorlogs",
     "type": "Microsoft.Web/locations/managedApis",
-    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/providers/Microsoft.Web/locations/norwayeast/managedApis/azuremonitorlogs",
+    "id": "/subscriptions/0/providers/Microsoft.Web/locations/norwayeast/managedApis/azuremonitorlogs",
     "description": "Use this connector to query your Azure Monitor Logs across Log Analytics workspace and Application Insights component, to list or visualize results.",
     "displayName": "Azure Monitor Logs",
     "category": "Standard",

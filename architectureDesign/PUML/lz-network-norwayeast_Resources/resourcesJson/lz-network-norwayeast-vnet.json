@@ -11,23 +11,23 @@
           "provisioningState": "Succeeded",
           "ipConfigurations": [
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/DNA-TEST/providers/Microsoft.Network/networkInterfaces/T-DNA-RHEL1-NIC/ipConfigurations/IPCONFIG"
+              "id": "/subscriptions/0/resourceGroups/DNA-TEST/providers/Microsoft.Network/networkInterfaces/T-DNA-RHEL1-NIC/ipConfigurations/IPCONFIG"
             },
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/LINUX-TEST/providers/Microsoft.Network/networkInterfaces/T-LINUX-VM-NIC/ipConfigurations/IPCONFIG1"
+              "id": "/subscriptions/0/resourceGroups/LINUX-TEST/providers/Microsoft.Network/networkInterfaces/T-LINUX-VM-NIC/ipConfigurations/IPCONFIG1"
             },
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Network/networkInterfaces/T-LINUX-VM-NIC/ipConfigurations/IPCONFIG1"
+              "id": "/subscriptions/0/resourceGroups/RBAC-TEST/providers/Microsoft.Network/networkInterfaces/T-LINUX-VM-NIC/ipConfigurations/IPCONFIG1"
             },
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-BJORNJORGEN/providers/Microsoft.Network/networkInterfaces/T-BJS2-WIN1-NIC/ipConfigurations/IPCONFIG"
+              "id": "/subscriptions/0/resourceGroups/RG-BJORNJORGEN/providers/Microsoft.Network/networkInterfaces/T-BJS2-WIN1-NIC/ipConfigurations/IPCONFIG"
             }
           ],
           "addressPrefix": "10.0.0.0/28",
           "privateLinkServiceNetworkPolicies": "Enabled",
           "privateEndpointNetworkPolicies": "Enabled",
           "networkSecurityGroup": {
-            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg"
+            "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg"
           },
           "delegations": [],
           "serviceEndpoints": [
@@ -92,7 +92,7 @@
         },
         "name": "dna-test-1",
         "type": "Microsoft.Network/virtualNetworks/subnets",
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/dna-test-1",
+        "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/dna-test-1",
         "etag": "W/\"d9c53728-55a0-4e37-ae74-f3297679f2ac\""
       },
       {
@@ -100,10 +100,10 @@
           "provisioningState": "Succeeded",
           "ipConfigurations": [
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-MAINTENANCECONFIG/providers/Microsoft.Network/networkInterfaces/VM-MF1-NIC/ipConfigurations/IPCONFIG"
+              "id": "/subscriptions/0/resourceGroups/MAKSYM-MAINTENANCECONFIG/providers/Microsoft.Network/networkInterfaces/VM-MF1-NIC/ipConfigurations/IPCONFIG"
             },
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-MAINTENANCECONFIG/providers/Microsoft.Network/networkInterfaces/VM-MF2-NIC/ipConfigurations/IPCONFIG"
+              "id": "/subscriptions/0/resourceGroups/MAKSYM-MAINTENANCECONFIG/providers/Microsoft.Network/networkInterfaces/VM-MF2-NIC/ipConfigurations/IPCONFIG"
             }
           ],
           "addressPrefix": "10.1.0.0/24",
@@ -130,7 +130,7 @@
         },
         "name": "maint-test-subnet",
         "type": "Microsoft.Network/virtualNetworks/subnets",
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/maint-test-subnet",
+        "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/maint-test-subnet",
         "etag": "W/\"d9c53728-55a0-4e37-ae74-f3297679f2ac\""
       },
       {
@@ -140,7 +140,7 @@
           "privateLinkServiceNetworkPolicies": "Enabled",
           "privateEndpointNetworkPolicies": "Enabled",
           "networkSecurityGroup": {
-            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-adds-test-nsg"
+            "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-adds-test-nsg"
           },
           "delegations": [],
           "serviceEndpoints": [
@@ -205,7 +205,7 @@
         },
         "name": "adds-test",
         "type": "Microsoft.Network/virtualNetworks/subnets",
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/adds-test",
+        "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/adds-test",
         "etag": "W/\"d9c53728-55a0-4e37-ae74-f3297679f2ac\""
       },
       {
@@ -213,7 +213,7 @@
           "provisioningState": "Succeeded",
           "ipConfigurations": [
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/LZ-NETWORK-NORWAYEAST/providers/Microsoft.Network/bastionHosts/LZ-NETWORK-NORWAYEAST-VNET-BASTION/bastionHostIpConfigurations/IPCONF"
+              "id": "/subscriptions/0/resourceGroups/LZ-NETWORK-NORWAYEAST/providers/Microsoft.Network/bastionHosts/LZ-NETWORK-NORWAYEAST-VNET-BASTION/bastionHostIpConfigurations/IPCONF"
             }
           ],
           "addressPrefix": "10.0.0.64/26",
@@ -223,7 +223,7 @@
         },
         "name": "AzureBastionSubnet",
         "type": "Microsoft.Network/virtualNetworks/subnets",
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/AzureBastionSubnet",
+        "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/AzureBastionSubnet",
         "etag": "W/\"d9c53728-55a0-4e37-ae74-f3297679f2ac\""
       },
       {
@@ -231,20 +231,20 @@
           "provisioningState": "Succeeded",
           "ipConfigurations": [
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-ALEKSANDER/providers/Microsoft.Network/networkInterfaces/D-AWH-APPWM1-NIC/ipConfigurations/IPCONFIG"
+              "id": "/subscriptions/0/resourceGroups/RG-ALEKSANDER/providers/Microsoft.Network/networkInterfaces/D-AWH-APPWM1-NIC/ipConfigurations/IPCONFIG"
             },
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-ALEKSANDER/providers/Microsoft.Network/networkInterfaces/D-AWH-WM1-NIC/ipConfigurations/IPCONFIG"
+              "id": "/subscriptions/0/resourceGroups/RG-ALEKSANDER/providers/Microsoft.Network/networkInterfaces/D-AWH-WM1-NIC/ipConfigurations/IPCONFIG"
             },
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Network/networkInterfaces/S-VM-AUJTEST-NIC-68983728F2824EC69836F3235BD9DD73/ipConfigurations/011A8D02B4F24C578EBDD2BE693834BA"
+              "id": "/subscriptions/0/resourceGroups/RG-AUDUN/providers/Microsoft.Network/networkInterfaces/S-VM-AUJTEST-NIC-68983728F2824EC69836F3235BD9DD73/ipConfigurations/011A8D02B4F24C578EBDD2BE693834BA"
             }
           ],
           "addressPrefix": "10.0.0.16/28",
           "privateLinkServiceNetworkPolicies": "Enabled",
           "privateEndpointNetworkPolicies": "Enabled",
           "networkSecurityGroup": {
-            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-default-nsg"
+            "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-default-nsg"
           },
           "delegations": [],
           "serviceEndpoints": [
@@ -309,7 +309,7 @@
         },
         "name": "default",
         "type": "Microsoft.Network/virtualNetworks/subnets",
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/default",
+        "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/default",
         "etag": "W/\"d9c53728-55a0-4e37-ae74-f3297679f2ac\""
       }
     ],
@@ -332,23 +332,23 @@
           "provisioningState": "Succeeded",
           "ipConfigurations": [
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/DNA-TEST/providers/Microsoft.Network/networkInterfaces/T-DNA-RHEL1-NIC/ipConfigurations/IPCONFIG"
+              "id": "/subscriptions/0/resourceGroups/DNA-TEST/providers/Microsoft.Network/networkInterfaces/T-DNA-RHEL1-NIC/ipConfigurations/IPCONFIG"
             },
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/LINUX-TEST/providers/Microsoft.Network/networkInterfaces/T-LINUX-VM-NIC/ipConfigurations/IPCONFIG1"
+              "id": "/subscriptions/0/resourceGroups/LINUX-TEST/providers/Microsoft.Network/networkInterfaces/T-LINUX-VM-NIC/ipConfigurations/IPCONFIG1"
             },
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RBAC-TEST/providers/Microsoft.Network/networkInterfaces/T-LINUX-VM-NIC/ipConfigurations/IPCONFIG1"
+              "id": "/subscriptions/0/resourceGroups/RBAC-TEST/providers/Microsoft.Network/networkInterfaces/T-LINUX-VM-NIC/ipConfigurations/IPCONFIG1"
             },
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-BJORNJORGEN/providers/Microsoft.Network/networkInterfaces/T-BJS2-WIN1-NIC/ipConfigurations/IPCONFIG"
+              "id": "/subscriptions/0/resourceGroups/RG-BJORNJORGEN/providers/Microsoft.Network/networkInterfaces/T-BJS2-WIN1-NIC/ipConfigurations/IPCONFIG"
             }
           ],
           "addressPrefix": "10.0.0.0/28",
           "privateLinkServiceNetworkPolicies": "Enabled",
           "privateEndpointNetworkPolicies": "Enabled",
           "networkSecurityGroup": {
-            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg"
+            "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-dna-test-1-nsg"
           },
           "delegations": [],
           "serviceEndpoints": [
@@ -413,7 +413,7 @@
         },
         "name": "dna-test-1",
         "type": "Microsoft.Network/virtualNetworks/subnets",
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/dna-test-1",
+        "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/dna-test-1",
         "etag": "W/\"d9c53728-55a0-4e37-ae74-f3297679f2ac\""
       },
       {
@@ -421,10 +421,10 @@
           "provisioningState": "Succeeded",
           "ipConfigurations": [
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-MAINTENANCECONFIG/providers/Microsoft.Network/networkInterfaces/VM-MF1-NIC/ipConfigurations/IPCONFIG"
+              "id": "/subscriptions/0/resourceGroups/MAKSYM-MAINTENANCECONFIG/providers/Microsoft.Network/networkInterfaces/VM-MF1-NIC/ipConfigurations/IPCONFIG"
             },
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-MAINTENANCECONFIG/providers/Microsoft.Network/networkInterfaces/VM-MF2-NIC/ipConfigurations/IPCONFIG"
+              "id": "/subscriptions/0/resourceGroups/MAKSYM-MAINTENANCECONFIG/providers/Microsoft.Network/networkInterfaces/VM-MF2-NIC/ipConfigurations/IPCONFIG"
             }
           ],
           "addressPrefix": "10.1.0.0/24",
@@ -451,7 +451,7 @@
         },
         "name": "maint-test-subnet",
         "type": "Microsoft.Network/virtualNetworks/subnets",
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/maint-test-subnet",
+        "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/maint-test-subnet",
         "etag": "W/\"d9c53728-55a0-4e37-ae74-f3297679f2ac\""
       },
       {
@@ -461,7 +461,7 @@
           "privateLinkServiceNetworkPolicies": "Enabled",
           "privateEndpointNetworkPolicies": "Enabled",
           "networkSecurityGroup": {
-            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-adds-test-nsg"
+            "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-adds-test-nsg"
           },
           "delegations": [],
           "serviceEndpoints": [
@@ -526,7 +526,7 @@
         },
         "name": "adds-test",
         "type": "Microsoft.Network/virtualNetworks/subnets",
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/adds-test",
+        "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/adds-test",
         "etag": "W/\"d9c53728-55a0-4e37-ae74-f3297679f2ac\""
       },
       {
@@ -534,7 +534,7 @@
           "provisioningState": "Succeeded",
           "ipConfigurations": [
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/LZ-NETWORK-NORWAYEAST/providers/Microsoft.Network/bastionHosts/LZ-NETWORK-NORWAYEAST-VNET-BASTION/bastionHostIpConfigurations/IPCONF"
+              "id": "/subscriptions/0/resourceGroups/LZ-NETWORK-NORWAYEAST/providers/Microsoft.Network/bastionHosts/LZ-NETWORK-NORWAYEAST-VNET-BASTION/bastionHostIpConfigurations/IPCONF"
             }
           ],
           "addressPrefix": "10.0.0.64/26",
@@ -544,7 +544,7 @@
         },
         "name": "AzureBastionSubnet",
         "type": "Microsoft.Network/virtualNetworks/subnets",
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/AzureBastionSubnet",
+        "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/AzureBastionSubnet",
         "etag": "W/\"d9c53728-55a0-4e37-ae74-f3297679f2ac\""
       },
       {
@@ -552,20 +552,20 @@
           "provisioningState": "Succeeded",
           "ipConfigurations": [
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-ALEKSANDER/providers/Microsoft.Network/networkInterfaces/D-AWH-APPWM1-NIC/ipConfigurations/IPCONFIG"
+              "id": "/subscriptions/0/resourceGroups/RG-ALEKSANDER/providers/Microsoft.Network/networkInterfaces/D-AWH-APPWM1-NIC/ipConfigurations/IPCONFIG"
             },
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-ALEKSANDER/providers/Microsoft.Network/networkInterfaces/D-AWH-WM1-NIC/ipConfigurations/IPCONFIG"
+              "id": "/subscriptions/0/resourceGroups/RG-ALEKSANDER/providers/Microsoft.Network/networkInterfaces/D-AWH-WM1-NIC/ipConfigurations/IPCONFIG"
             },
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Network/networkInterfaces/S-VM-AUJTEST-NIC-68983728F2824EC69836F3235BD9DD73/ipConfigurations/011A8D02B4F24C578EBDD2BE693834BA"
+              "id": "/subscriptions/0/resourceGroups/RG-AUDUN/providers/Microsoft.Network/networkInterfaces/S-VM-AUJTEST-NIC-68983728F2824EC69836F3235BD9DD73/ipConfigurations/011A8D02B4F24C578EBDD2BE693834BA"
             }
           ],
           "addressPrefix": "10.0.0.16/28",
           "privateLinkServiceNetworkPolicies": "Enabled",
           "privateEndpointNetworkPolicies": "Enabled",
           "networkSecurityGroup": {
-            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-default-nsg"
+            "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-default-nsg"
           },
           "delegations": [],
           "serviceEndpoints": [
@@ -630,7 +630,7 @@
         },
         "name": "default",
         "type": "Microsoft.Network/virtualNetworks/subnets",
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/default",
+        "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/default",
         "etag": "W/\"d9c53728-55a0-4e37-ae74-f3297679f2ac\""
       }
     ],

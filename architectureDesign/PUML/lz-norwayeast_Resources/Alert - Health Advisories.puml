@@ -9,7 +9,7 @@ json  Resource_Properties {
   "actions": {
     "actionGroups": [
       {
-        "actionGroupId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-norwayeast/providers/Microsoft.Insights/actionGroups/lz-sre-teams-health-advisories-ag"
+        "actionGroupId": "/subscriptions/0/resourceGroups/lz-norwayeast/providers/Microsoft.Insights/actionGroups/lz-sre-teams-health-advisories-ag"
       }
     ]
   },
@@ -44,7 +44,7 @@ json  Resource_Properties {
     ]
   },
   "scopes": [
-    "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8"
+    "/subscriptions/0"
   ]
 }
 }

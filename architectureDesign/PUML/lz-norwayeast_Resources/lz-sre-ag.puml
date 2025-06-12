@@ -15,10 +15,10 @@ json  Resource_Properties {
   "armRoleReceivers": [],
   "emailReceivers": [
     {
-      "name": "SRE-Team@klp.no",
+      "name": "SRE-Team@kl.no",
       "status": "Enabled",
       "useCommonAlertSchema": false,
-      "emailAddress": "SRE-Team@klp.no"
+      "emailAddress": "SRE-Team@kl.no"
     }
   ],
   "groupShortName": "lz-sre-ag",

@@ -10,10 +10,10 @@
           "actionsRequired": "None"
         },
         "privateEndpoint": {
-          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Network/privateEndpoints/finopshub-6xisw66qnemiw-ep"
+          "id": "/subscriptions/0/resourceGroups/maksym-finops-private/providers/Microsoft.Network/privateEndpoints/finopshub-6xisw66qnemiw-ep"
         }
       },
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.KeyVault/vaults/finopshub-6xisw66qnemiw/privateEndpointConnections/keyVaultLink"
+      "id": "/subscriptions/0/resourceGroups/maksym-finops-private/providers/Microsoft.KeyVault/vaults/finopshub-6xisw66qnemiw/privateEndpointConnections/keyVaultLink"
     },
     {
       "properties": {
@@ -27,7 +27,7 @@
           "id": "/subscriptions/1b5ab6d2-a8ac-4bf5-bd65-32fa94881a8a/resourceGroups/vnet-1b5ab6d2-norwayeast-85-rg/providers/Microsoft.Network/privateEndpoints/finopshub-engine-6xisw66qnemiw.finopshub-6xisw66qnemiw"
         }
       },
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.KeyVault/vaults/finopshub-6xisw66qnemiw/privateEndpointConnections/finopshub-engine-6xisw66qnemiw.finopshub-6xisw66qnemiw-conn"
+      "id": "/subscriptions/0/resourceGroups/maksym-finops-private/providers/Microsoft.KeyVault/vaults/finopshub-6xisw66qnemiw/privateEndpointConnections/finopshub-engine-6xisw66qnemiw.finopshub-6xisw66qnemiw-conn"
     }
   ],
   "networkAcls": {
@@ -36,7 +36,7 @@
     "ipRules": [],
     "bypass": "AzureServices"
   },
-  "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
+  "tenantId": "0",
   "sku": {
     "name": "premium",
     "family": "A"
@@ -48,7 +48,7 @@
   "enableRbacAuthorization": false,
   "accessPolicies": [
     {
-      "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
+      "tenantId": "0",
       "permissions": {
         "secrets": [
           "get"

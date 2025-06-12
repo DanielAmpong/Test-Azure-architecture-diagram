@@ -18,7 +18,7 @@ json  Resource_Properties {
   "creationData": {
     "createOption": "FromImage",
     "imageReference": {
-      "id": "/Subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/Providers/Microsoft.Compute/Locations/NorwayEast/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer/Skus/2019-Datacenter/Versions/17763.7240.250409"
+      "id": "/subscriptions/0/Providers/Microsoft.Compute/Locations/NorwayEast/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer/Skus/2019-Datacenter/Versions/17763.7240.250409"
     }
   },
   "LastOwnershipUpdateTime": "2025-06-03T07:08:23.7220388Z",
@@ -40,13 +40,13 @@ json  Resource_Properties {
       {
         "diskEncryptionKey": {
           "sourceVault": {
-            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.KeyVault/vaults/t-bjs2-win-kv-k4l6"
+            "id": "/subscriptions/0/resourceGroups/rg-bjornjorgen/providers/Microsoft.KeyVault/vaults/t-bjs2-win-kv-k4l6"
           },
           "secretUrl": "https://t-bjs2-win-kv-k4l6.vault.azure.net/secrets/51CFA2E5-9CE1-47B8-A0C3-1268FE2AA992/470f1b07f2354bdf99c1b664b2d524d5"
         },
         "keyEncryptionKey": {
           "sourceVault": {
-            "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.KeyVault/vaults/t-bjs2-win-kv-k4l6"
+            "id": "/subscriptions/0/resourceGroups/rg-bjornjorgen/providers/Microsoft.KeyVault/vaults/t-bjs2-win-kv-k4l6"
           },
           "keyUrl": "https://t-bjs2-win-kv-k4l6.vault.azure.net/keys/lz-vm-disk-encrypt-key/7b93e8f294ef4be5b18fbc6552914237"
         }

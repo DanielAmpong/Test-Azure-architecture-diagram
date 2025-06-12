@@ -16,7 +16,7 @@
         "createOption": "FromImage",
         "deleteOption": "Delete",
         "managedDisk": {
-          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/LINUX-TEST/providers/Microsoft.Compute/disks/t-linux-vm-osdisk"
+          "id": "/subscriptions/0/resourceGroups/LINUX-TEST/providers/Microsoft.Compute/disks/t-linux-vm-osdisk"
         },
         "osType": "Linux",
         "caching": "ReadWrite"
@@ -28,7 +28,7 @@
           "properties": {
             "deleteOption": "Delete"
           },
-          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/linux-test/providers/Microsoft.Network/networkInterfaces/t-linux-vm-nic"
+          "id": "/subscriptions/0/resourceGroups/linux-test/providers/Microsoft.Network/networkInterfaces/t-linux-vm-nic"
         }
       ]
     },
@@ -84,7 +84,7 @@
         "createOption": "FromImage",
         "deleteOption": "Delete",
         "managedDisk": {
-          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/LINUX-TEST/providers/Microsoft.Compute/disks/t-linux-vm-osdisk"
+          "id": "/subscriptions/0/resourceGroups/LINUX-TEST/providers/Microsoft.Compute/disks/t-linux-vm-osdisk"
         },
         "osType": "Linux",
         "caching": "ReadWrite"
@@ -96,7 +96,7 @@
           "properties": {
             "deleteOption": "Delete"
           },
-          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/linux-test/providers/Microsoft.Network/networkInterfaces/t-linux-vm-nic"
+          "id": "/subscriptions/0/resourceGroups/linux-test/providers/Microsoft.Network/networkInterfaces/t-linux-vm-nic"
         }
       ]
     },

@@ -13,7 +13,7 @@ json  Resource_Properties {
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "azureResourceId": "/subscriptions/0/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
       "vNextEnabled": true,
       "autoUpdate": true
     },
@@ -27,7 +27,7 @@ json  Resource_Properties {
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "azureResourceId": "/subscriptions/0/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
       "vNextEnabled": true,
       "autoUpdate": true
     },
@@ -41,7 +41,7 @@ json  Resource_Properties {
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "azureResourceId": "/subscriptions/0/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
       "vNextEnabled": true,
       "autoUpdate": true
     },
@@ -55,7 +55,7 @@ json  Resource_Properties {
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "azureResourceId": "/subscriptions/0/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
       "vNextEnabled": true,
       "autoUpdate": true
     },
@@ -69,7 +69,7 @@ json  Resource_Properties {
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "azureResourceId": "/subscriptions/0/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
       "vNextEnabled": true,
       "autoUpdate": true
     },
@@ -83,7 +83,7 @@ json  Resource_Properties {
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "azureResourceId": "/subscriptions/0/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
       "vNextEnabled": true,
       "autoUpdate": true
     },
@@ -97,7 +97,7 @@ json  Resource_Properties {
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "azureResourceId": "/subscriptions/0/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
       "vNextEnabled": true,
       "autoUpdate": true
     },

@@ -8,7 +8,7 @@
         "createOption": "Attach",
         "deleteOption": "Detach",
         "managedDisk": {
-          "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Compute/disks/svmaujtest-datadisk-000-20241128-110010"
+          "id": "/subscriptions/0/resourceGroups/rg-audun/providers/Microsoft.Compute/disks/svmaujtest-datadisk-000-20241128-110010"
         },
         "caching": "None",
         "toBeDetached": false,
@@ -20,7 +20,7 @@
       "createOption": "Attach",
       "deleteOption": "Detach",
       "managedDisk": {
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Compute/disks/svmaujtest-osdisk-20241128-110010"
+        "id": "/subscriptions/0/resourceGroups/rg-audun/providers/Microsoft.Compute/disks/svmaujtest-osdisk-20241128-110010"
       },
       "osType": "Windows",
       "caching": "ReadWrite"
@@ -32,7 +32,7 @@
         "properties": {
           "primary": true
         },
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkInterfaces/s-vm-aujtest-nic-68983728f2824ec69836f3235bd9dd73"
+        "id": "/subscriptions/0/resourceGroups/rg-audun/providers/Microsoft.Network/networkInterfaces/s-vm-aujtest-nic-68983728f2824ec69836f3235bd9dd73"
       }
     ]
   },

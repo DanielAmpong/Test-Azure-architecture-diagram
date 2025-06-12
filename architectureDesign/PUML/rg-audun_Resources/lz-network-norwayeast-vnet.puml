@@ -17,7 +17,7 @@ json  Resource_Properties {
           "provisioningState": "Succeeded",
           "ipConfigurations": [
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Network/networkInterfaces/LINUX-BACKUP-TESTVMNIC/ipConfigurations/IPCONFIGLINUX-BACKUP-TEST"
+              "id": "/subscriptions/0/resourceGroups/RG-AUDUN/providers/Microsoft.Network/networkInterfaces/LINUX-BACKUP-TESTVMNIC/ipConfigurations/IPCONFIGLINUX-BACKUP-TEST"
             }
           ],
           "privateLinkServiceNetworkPolicies": "Enabled",
@@ -27,7 +27,7 @@ json  Resource_Properties {
         },
         "name": "default",
         "type": "Microsoft.Network/virtualNetworks/subnets",
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/default",
+        "id": "/subscriptions/0/resourceGroups/rg-audun/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/default",
         "etag": "W/\"15194983-ad8d-4d31-8114-10bf55a130f6\""
       }
     ],
@@ -49,7 +49,7 @@ json  Resource_Properties {
           "provisioningState": "Succeeded",
           "ipConfigurations": [
             {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Network/networkInterfaces/LINUX-BACKUP-TESTVMNIC/ipConfigurations/IPCONFIGLINUX-BACKUP-TEST"
+              "id": "/subscriptions/0/resourceGroups/RG-AUDUN/providers/Microsoft.Network/networkInterfaces/LINUX-BACKUP-TESTVMNIC/ipConfigurations/IPCONFIGLINUX-BACKUP-TEST"
             }
           ],
           "privateLinkServiceNetworkPolicies": "Enabled",
@@ -59,7 +59,7 @@ json  Resource_Properties {
         },
         "name": "default",
         "type": "Microsoft.Network/virtualNetworks/subnets",
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/default",
+        "id": "/subscriptions/0/resourceGroups/rg-audun/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/default",
         "etag": "W/\"15194983-ad8d-4d31-8114-10bf55a130f6\""
       }
     ],

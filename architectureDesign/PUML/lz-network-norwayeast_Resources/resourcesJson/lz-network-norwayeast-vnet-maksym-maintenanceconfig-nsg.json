@@ -21,7 +21,7 @@
       },
       "name": "AllowVnetInBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/defaultSecurityRules/AllowVnetInBound",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/defaultSecurityRules/AllowVnetInBound",
       "etag": "W/\"0ebac6e4-f37e-4532-af4f-22111490f966\""
     },
     {
@@ -43,7 +43,7 @@
       },
       "name": "AllowAzureLoadBalancerInBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/defaultSecurityRules/AllowAzureLoadBalancerInBound",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/defaultSecurityRules/AllowAzureLoadBalancerInBound",
       "etag": "W/\"0ebac6e4-f37e-4532-af4f-22111490f966\""
     },
     {
@@ -65,7 +65,7 @@
       },
       "name": "DenyAllInBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/defaultSecurityRules/DenyAllInBound",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/defaultSecurityRules/DenyAllInBound",
       "etag": "W/\"0ebac6e4-f37e-4532-af4f-22111490f966\""
     },
     {
@@ -87,7 +87,7 @@
       },
       "name": "AllowVnetOutBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/defaultSecurityRules/AllowVnetOutBound",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/defaultSecurityRules/AllowVnetOutBound",
       "etag": "W/\"0ebac6e4-f37e-4532-af4f-22111490f966\""
     },
     {
@@ -109,7 +109,7 @@
       },
       "name": "AllowInternetOutBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/defaultSecurityRules/AllowInternetOutBound",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/defaultSecurityRules/AllowInternetOutBound",
       "etag": "W/\"0ebac6e4-f37e-4532-af4f-22111490f966\""
     },
     {
@@ -131,7 +131,7 @@
       },
       "name": "DenyAllOutBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/defaultSecurityRules/DenyAllOutBound",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/defaultSecurityRules/DenyAllOutBound",
       "etag": "W/\"0ebac6e4-f37e-4532-af4f-22111490f966\""
     }
   ],
@@ -155,7 +155,7 @@
       },
       "name": "allow-inbound-azureloadbalancer",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/securityRules/allow-inbound-azureloadbalancer",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/securityRules/allow-inbound-azureloadbalancer",
       "etag": "W/\"0ebac6e4-f37e-4532-af4f-22111490f966\""
     },
     {
@@ -177,7 +177,7 @@
       },
       "name": "deny-inbound-all",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/securityRules/deny-inbound-all",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/securityRules/deny-inbound-all",
       "etag": "W/\"0ebac6e4-f37e-4532-af4f-22111490f966\""
     },
     {
@@ -199,7 +199,7 @@
       },
       "name": "allow-outbound-dns-fwd",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/securityRules/allow-outbound-dns-fwd",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/securityRules/allow-outbound-dns-fwd",
       "etag": "W/\"0ebac6e4-f37e-4532-af4f-22111490f966\""
     },
     {
@@ -317,7 +317,7 @@
       },
       "name": "deny-outbound-internal-public-addresses",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/securityRules/deny-outbound-internal-public-addresses",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/securityRules/deny-outbound-internal-public-addresses",
       "etag": "W/\"0ebac6e4-f37e-4532-af4f-22111490f966\""
     },
     {
@@ -339,7 +339,7 @@
       },
       "name": "allow-outbound-internet",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/securityRules/allow-outbound-internet",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/securityRules/allow-outbound-internet",
       "etag": "W/\"0ebac6e4-f37e-4532-af4f-22111490f966\""
     },
     {
@@ -361,7 +361,7 @@
       },
       "name": "deny-outbound-all",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/securityRules/deny-outbound-all",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/securityRules/deny-outbound-all",
       "etag": "W/\"0ebac6e4-f37e-4532-af4f-22111490f966\""
     },
     {
@@ -387,7 +387,7 @@
         "sourceAddressPrefix": "*",
         "sourcePortRanges": [],
         "sourcePortRange": "*",
-        "description": "Allows AD client traffic to Active Directory DCs in KLP Platform Identity Prod",
+        "description": "Allows AD client traffic to Active Directory DCs in kl Platform Identity Prod",
         "protocol": "tcp",
         "direction": "Outbound",
         "priority": 4001,
@@ -395,7 +395,7 @@
       },
       "name": "allow-outbound-tcp-to-adds",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/securityRules/allow-outbound-tcp-to-adds",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/securityRules/allow-outbound-tcp-to-adds",
       "etag": "W/\"0ebac6e4-f37e-4532-af4f-22111490f966\""
     },
     {
@@ -416,7 +416,7 @@
         "sourceAddressPrefix": "*",
         "sourcePortRanges": [],
         "sourcePortRange": "*",
-        "description": "Allows AD client traffic to Active Directory DCs in KLP Platform Identity Prod",
+        "description": "Allows AD client traffic to Active Directory DCs in kl Platform Identity Prod",
         "protocol": "udp",
         "direction": "Outbound",
         "priority": 4002,
@@ -424,7 +424,7 @@
       },
       "name": "allow-outbound-udp-to-adds",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/securityRules/allow-outbound-udp-to-adds",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/securityRules/allow-outbound-udp-to-adds",
       "etag": "W/\"0ebac6e4-f37e-4532-af4f-22111490f966\""
     },
     {
@@ -441,7 +441,7 @@
         "sourceAddressPrefix": "*",
         "sourcePortRanges": [],
         "sourcePortRange": "*",
-        "description": "Allow CRL check to subca1klp, suca2klp",
+        "description": "Allow CRL check to subca1kl, suca2kl",
         "protocol": "tcp",
         "direction": "Outbound",
         "priority": 4004,
@@ -449,7 +449,7 @@
       },
       "name": "allow-outbound-pki-onprem",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/securityRules/allow-outbound-pki-onprem",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/securityRules/allow-outbound-pki-onprem",
       "etag": "W/\"0ebac6e4-f37e-4532-af4f-22111490f966\""
     },
     {
@@ -467,7 +467,7 @@
         "sourceAddressPrefix": "*",
         "sourcePortRanges": [],
         "sourcePortRange": "*",
-        "description": "Allow outbound PKI traffic (CRL + Certificate request) to CA in KLP Platform Identity PKI",
+        "description": "Allow outbound PKI traffic (CRL + Certificate request) to CA in kl Platform Identity PKI",
         "protocol": "tcp",
         "direction": "Outbound",
         "priority": 4005,
@@ -475,13 +475,13 @@
       },
       "name": "allow-outbound-pki-az",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/securityRules/allow-outbound-pki-az",
+      "id": "/subscriptions/0/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/networkSecurityGroups/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg/securityRules/allow-outbound-pki-az",
       "etag": "W/\"0ebac6e4-f37e-4532-af4f-22111490f966\""
     }
   ],
   "flowLogs": [
     {
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_norwayeast/flowLogs/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg-flowlog"
+      "id": "/subscriptions/0/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_norwayeast/flowLogs/lz-network-norwayeast-vnet-maksym-maintenanceconfig-nsg-flowlog"
     }
   ]
 }

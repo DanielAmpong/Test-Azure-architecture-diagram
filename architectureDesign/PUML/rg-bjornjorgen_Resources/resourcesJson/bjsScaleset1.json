@@ -39,7 +39,7 @@
                   "privateIPAddressVersion": "IPv4",
                   "primary": true,
                   "subnet": {
-                    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/virtualNetworks/vnet-norwayeast/subnets/snet-norwayeast-1"
+                    "id": "/subscriptions/0/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/virtualNetworks/vnet-norwayeast/subnets/snet-norwayeast-1"
                   },
                   "loadBalancerBackendAddressPools": [],
                   "applicationSecurityGroups": [],
@@ -65,7 +65,7 @@
             },
             "auxiliarySku": "None",
             "networkSecurityGroup": {
-              "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkSecurityGroups/basicNsgvnet-norwayeast-nic01"
+              "id": "/subscriptions/0/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkSecurityGroups/basicNsgvnet-norwayeast-nic01"
             },
             "effectiveEnableAcceleratedNetworking": false
           },

@@ -3,7 +3,7 @@
   "resourceGuid": "247b248c-b99e-44f7-8de5-9b4b010c16e5",
   "networkInterfaces": [
     {
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkInterfaces/linux-backup-testVMNic"
+      "id": "/subscriptions/0/resourceGroups/rg-audun/providers/Microsoft.Network/networkInterfaces/linux-backup-testVMNic"
     }
   ],
   "defaultSecurityRules": [
@@ -26,7 +26,7 @@
       },
       "name": "AllowVnetInBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/defaultSecurityRules/AllowVnetInBound",
+      "id": "/subscriptions/0/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/defaultSecurityRules/AllowVnetInBound",
       "etag": "W/\"07391abd-c9a1-46c7-93ba-7d928565dfcb\""
     },
     {
@@ -48,7 +48,7 @@
       },
       "name": "AllowAzureLoadBalancerInBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/defaultSecurityRules/AllowAzureLoadBalancerInBound",
+      "id": "/subscriptions/0/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/defaultSecurityRules/AllowAzureLoadBalancerInBound",
       "etag": "W/\"07391abd-c9a1-46c7-93ba-7d928565dfcb\""
     },
     {
@@ -70,7 +70,7 @@
       },
       "name": "DenyAllInBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/defaultSecurityRules/DenyAllInBound",
+      "id": "/subscriptions/0/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/defaultSecurityRules/DenyAllInBound",
       "etag": "W/\"07391abd-c9a1-46c7-93ba-7d928565dfcb\""
     },
     {
@@ -92,7 +92,7 @@
       },
       "name": "AllowVnetOutBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/defaultSecurityRules/AllowVnetOutBound",
+      "id": "/subscriptions/0/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/defaultSecurityRules/AllowVnetOutBound",
       "etag": "W/\"07391abd-c9a1-46c7-93ba-7d928565dfcb\""
     },
     {
@@ -114,7 +114,7 @@
       },
       "name": "AllowInternetOutBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/defaultSecurityRules/AllowInternetOutBound",
+      "id": "/subscriptions/0/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/defaultSecurityRules/AllowInternetOutBound",
       "etag": "W/\"07391abd-c9a1-46c7-93ba-7d928565dfcb\""
     },
     {
@@ -136,7 +136,7 @@
       },
       "name": "DenyAllOutBound",
       "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/defaultSecurityRules/DenyAllOutBound",
+      "id": "/subscriptions/0/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/defaultSecurityRules/DenyAllOutBound",
       "etag": "W/\"07391abd-c9a1-46c7-93ba-7d928565dfcb\""
     }
   ],
@@ -159,7 +159,7 @@
       },
       "name": "default-allow-ssh",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/securityRules/default-allow-ssh",
+      "id": "/subscriptions/0/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/securityRules/default-allow-ssh",
       "etag": "W/\"07391abd-c9a1-46c7-93ba-7d928565dfcb\""
     },
     {
@@ -181,13 +181,13 @@
       },
       "name": "MicrosoftDefenderForCloud-JITRule_1730047975_5C0B6BD3835644F59F9DE2E575618737",
       "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/securityRules/MicrosoftDefenderForCloud-JITRule_1730047975_5C0B6BD3835644F59F9DE2E575618737",
+      "id": "/subscriptions/0/resourceGroups/rg-audun/providers/Microsoft.Network/networkSecurityGroups/linux-backup-testNSG/securityRules/MicrosoftDefenderForCloud-JITRule_1730047975_5C0B6BD3835644F59F9DE2E575618737",
       "etag": "W/\"07391abd-c9a1-46c7-93ba-7d928565dfcb\""
     }
   ],
   "flowLogs": [
     {
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_norwayeast/flowLogs/linux-backup-testNSG-flowlog"
+      "id": "/subscriptions/0/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_norwayeast/flowLogs/linux-backup-testNSG-flowlog"
     }
   ]
 }
