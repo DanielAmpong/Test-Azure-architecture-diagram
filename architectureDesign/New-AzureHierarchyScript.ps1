@@ -184,11 +184,11 @@ resources
                 $propertiesJson = $jsonObject | ConvertTo-Json -Depth 30
             } 
     
-            $resourceOutputFile = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources\resourcesJson").FullName)\$($resourceLabel_).json"
+            $resourceOutputFile = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources\resourcesJson").FullName)\$($resourceLabel).json"
             if (Test-Path -Path $resourceOutputFile) { Clear-Content -Path $resourceOutputFile -Force | Out-Null }
             $propertiesJson | Out-File -FilePath $resourceOutputFile -Append -Encoding utf8
 
-            $resourceOutputFolder = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources").FullName)\$($resourceLabel_).puml"
+            $resourceOutputFolder = "$((Get-item -Path ".\architectureDesign\PUML\$($resourceGroupName)_Resources").FullName)\$($resourceLabel).puml"
             if (Test-Path -Path $resourceOutputFolder) { Clear-Content -Path $resourceOutputFolder -Force | Out-Null }
 
             "@startuml" | Out-File -Path $resourceOutputFolder -Append -Encoding utf8

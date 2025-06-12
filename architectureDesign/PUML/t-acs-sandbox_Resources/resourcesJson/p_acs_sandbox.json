@@ -1,9 +1,0 @@
-{
-  "provisioningState": "Succeeded",
-  "immutableResourceId": "a8cfbfa4-c388-4a60-86a5-cdeb9873a56f",
-  "hostName": "p-acs-sandbox.norway.communication.azure.com",
-  "dataLocation": "Norway",
-  "linkedDomains": [
-    "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-email/providers/Microsoft.Communication/emailServices/email-poc-sre/domains/klp.no"
-  ]
-}
