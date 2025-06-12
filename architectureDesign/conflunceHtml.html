@@ -21,14 +21,29 @@ In your Confluence page, add an HTML macro with this code:
 <body>
     <div id="dynamic-diagram-container">
         <style>
-            .confluence-diagram-container {
-                max-width: 100%;
-                margin: 20px 0;
-                border: 1px solid #ddd;
-                border-radius: 8px;
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
                 overflow: hidden;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .confluence-diagram-container {
+                width: 100vw;
+                height: 100vh;
+                margin: 0;
+                border: none;
+                border-radius: 0;
+                overflow: hidden;
+                box-shadow: none;
                 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+                display: flex;
+                flex-direction: column;
             }
 
             .confluence-diagram-header {
@@ -108,7 +123,7 @@ In your Confluence page, add an HTML macro with this code:
             .confluence-diagram-content {
                 position: relative;
                 background: white;
-                min-height: 400px;
+                flex: 1;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -324,31 +339,12 @@ In your Confluence page, add an HTML macro with this code:
             <div class="confluence-diagram-controls">
                 <div class="confluence-control-group">
                     <label>View:</label>
-                    <div class="confluence-btn-group">
-                        <button class="confluence-btn active" onclick="confluenceSwitchDiagram('AzLandingZone')">Azure
-                            Landing Zone</button>
-                        <button class="confluence-btn" onclick="confluenceSwitchDiagram('resourceGroup')">Resource
-                            Group</button>
-                        <button class="confluence-btn" onclick="confluenceSwitchDiagram('deployment')">Deploy</button>
-                    </div>
-                </div>
-
-                <div class="confluence-control-group">
-                    <label>Env:</label>
-                    <select id="confluence-environment-select" onchange="confluenceUpdateEnvironment()"
-                        class="confluence-btn" style="padding: 6px 8px;">
-                        <option value="dev">Development</option>
-                        <option value="staging">Staging</option>
-                        <option value="prod" selected>Production</option>
+                    <select id="confluence-view-select" onchange="confluenceUpdateView()" class="confluence-btn"
+                        style="padding: 6px 8px;">
+                        <option value="AzLandingZone">Azure Landing Zone</option>
+                        <option value="resourceGroup">Resource Group</option>
+                        <option value="resource">Resource</option>
                     </select>
-                </div>
-
-                <div class="confluence-control-group">
-                    <label>Format:</label>
-                    <div class="confluence-btn-group">
-                        <button class="confluence-btn active" onclick="confluenceSwitchFormat('svg')">SVG</button>
-                        <button class="confluence-btn" onclick="confluenceSwitchFormat('png')">PNG</button>
-                    </div>
                 </div>
             </div>
 
@@ -361,27 +357,21 @@ In your Confluence page, add an HTML macro with this code:
 
                 <!-- Clickable areas overlay -->
                 <div class="confluence-clickable-areas" id="confluence-clickable-areas">
-                    <div class="confluence-click-area" style="top: 10%; left: 10%; width: 35%; height: 35%;"
-                        data-label="AzLandingZone" onclick="confluenceSwitchDiagram('AzLandingZone')"
-                        title="Click for Azure Landing Zone Architecture Overview"></div>
-                    <div class="confluence-click-area" style="top: 10%; right: 10%; width: 35%; height: 35%;"
-                        data-label="resourceGroup" onclick="confluenceSwitchDiagram('resourceGroup')"
-                        title="Click for Resource Group View"></div>
-                    <div class="confluence-click-area" style="bottom: 10%; left: 10%; width: 35%; height: 35%;"
-                        data-label="Deploy" onclick="confluenceSwitchDiagram('deployment')"
-                        title="Click for Deployment View"></div>
+                    <div class="confluence-click-area" style="top: 20%; left: 20%; width: 60%; height: 60%;"
+                        data-label="Click to view Resource Group" onclick="confluenceNavigateNext()"
+                        title="Click to navigate to next level view"></div>
                 </div>
 
                 <div class="confluence-click-overlay">
-                    Click different areas of the diagram to switch views
+                    Click on the diagram to navigate to the next detailed view
                 </div>
 
                 <img id="confluence-main-diagram" class="confluence-diagram-img"
-                    src="https://via.placeholder.com/800x600/0052cc/white?text=System+Overview"
+                    src="https://via.placeholder.com/800x600/0052cc/white?text=Azure+Landing+Zone+Overview"
                     alt="Azure Landing Zone Architecture Diagram" onerror="confluenceHandleImageError(this)">
 
                 <div class="confluence-diagram-meta" id="confluence-diagram-meta">
-                    Production | SVG | Updated: 2025-06-02
+                    Production | SVG | Updated: 2025-06-13
                 </div>
 
                 <div class="confluence-loading" id="confluence-loading">Loading diagram...</div>
@@ -403,24 +393,26 @@ In your Confluence page, add an HTML macro with this code:
                     AzLandingZone: {
                         title: "Azure Landing Zone Architecture - Overview",
                         description: "High-level architecture showing subscription, and which resource group that is included.",
-                        filename: "AzLandingZone-overview"
+                        filename: "AzLandingZone-architecture",
+                        format: "svg" // Default format for overview
                     },
                     resourceGroup: {
                         title: "Resource Group Architecture - Detailed View",
                         description: "Detailed component architecture of Resource Group including internal resources.",
-                        filename: "resourceGroup-detailed"
+                        filename: "resourceGroup-detailed",
+                        format: "svg" // SVG format for resource group
                     },
-                    deployment: {
-                        title: "Deployment Architecture",
-                        description: "Infrastructure layout showing container orchestration, load balancing, and deployment strategy.",
-                        filename: "deployment-architecture"
+                    resource: {
+                        title: "Resource Properties",
+                        description: "Properties of the resource in the resource group of landing zone.",
+                        filename: "resource-properties",
+                        format: "png" // PNG format for resource view
                     }
                 },
 
                 state: {
                     currentDiagram: 'AzLandingZone',
                     currentEnvironment: 'prod',
-                    currentFormat: 'svg',
                     currentZoom: 1,
                     pageId: 'PAGE_ID', // Replace with actual page ID
                     maxZoom: 3,
@@ -428,12 +420,19 @@ In your Confluence page, add an HTML macro with this code:
                     zoomStep: 0.25
                 },
 
-                // Build the diagram URL
-                buildDiagramUrl: function (diagram, environment, format) {
+                // Build the diagram URL with appropriate file format
+                buildDiagramUrl: function (diagram, environment) {
                     // Replace PAGE_ID with actual page ID in production
                     const baseUrl = '/download/attachments/' + this.state.pageId + '/';
-                    const filename = this.config[diagram].filename;
+                    const config = this.config[diagram];
+                    const filename = config.filename;
+                    const format = config.format;
                     return baseUrl + filename + '-' + environment + '.' + format;
+                },
+
+                // Get current format for display
+                getCurrentFormat: function () {
+                    return this.config[this.state.currentDiagram].format;
                 },
 
                 // Update diagram display
@@ -457,25 +456,38 @@ In your Confluence page, add an HTML macro with this code:
 
                         // Update content
                         title.textContent = config.title;
-                        descTitle.textContent = config.title.replace('System Architecture - ', '');
+                        descTitle.textContent = config.title.replace('Azure Landing Zone Architecture - ', '');
                         descText.textContent = config.description;
 
-                        // Update meta information
+                        // Update meta information with correct format
                         const envName = this.state.currentEnvironment.charAt(0).toUpperCase() +
                             this.state.currentEnvironment.slice(1);
-                        const formatName = this.state.currentFormat.toUpperCase();
+                        const formatName = config.format.toUpperCase();
                         const currentDate = new Date().toISOString().split('T')[0];
                         meta.textContent = `${envName} | ${formatName} | Updated: ${currentDate}`;
 
                         // Update image source
                         const newSrc = this.buildDiagramUrl(
                             this.state.currentDiagram,
-                            this.state.currentEnvironment,
-                            this.state.currentFormat
+                            this.state.currentEnvironment
                         );
 
-                        // For demo purposes, use placeholder images
-                        const placeholderUrl = `https://via.placeholder.com/800x600/0052cc/white?text=${encodeURIComponent(config.title)}`;
+                        // For demo purposes, use placeholder images with different content and indicate format
+                        let placeholderText = '';
+                        let placeholderColor = '0052cc';
+
+                        if (this.state.currentDiagram === 'resourceGroup') {
+                            placeholderText = 'Resource+Group+Details+(SVG)';
+                            placeholderColor = '28a745'; // Green for SVG
+                        } else if (this.state.currentDiagram === 'resource') {
+                            placeholderText = 'Resource+Details+(PNG)';
+                            placeholderColor = 'dc3545'; // Red for PNG
+                        } else {
+                            placeholderText = 'Azure+Landing+Zone+(SVG)';
+                            placeholderColor = '0052cc'; // Blue for overview
+                        }
+
+                        const placeholderUrl = `https://via.placeholder.com/800x600/${placeholderColor}/white?text=${placeholderText}`;
                         img.src = placeholderUrl;
 
                         // Set fallback for real implementation
@@ -501,27 +513,13 @@ In your Confluence page, add an HTML macro with this code:
                 // Update button states
                 updateButtonStates: function () {
                     try {
-                        // Update diagram buttons
-                        const diagramButtons = document.querySelectorAll('.confluence-btn-group .confluence-btn');
-                        diagramButtons.forEach(btn => {
-                            btn.classList.remove('active');
-                            const onclick = btn.getAttribute('onclick');
-                            if (onclick && onclick.includes(this.state.currentDiagram)) {
-                                btn.classList.add('active');
-                            }
-                        });
+                        // Update view select
+                        const viewSelect = document.getElementById('confluence-view-select');
+                        if (viewSelect) {
+                            viewSelect.value = this.state.currentDiagram;
+                        }
 
-                        // Update format buttons
-                        const formatButtons = document.querySelectorAll('.confluence-btn-group:last-child .confluence-btn');
-                        formatButtons.forEach(btn => {
-                            btn.classList.remove('active');
-                            const onclick = btn.getAttribute('onclick');
-                            if (onclick && onclick.includes(this.state.currentFormat)) {
-                                btn.classList.add('active');
-                            }
-                        });
-
-                        // Update environment select
+                        // Update environment select if it exists
                         const envSelect = document.getElementById('confluence-environment-select');
                         if (envSelect) {
                             envSelect.value = this.state.currentEnvironment;
@@ -584,24 +582,61 @@ In your Confluence page, add an HTML macro with this code:
                 updateClickableAreas: function () {
                     const areas = document.querySelectorAll('.confluence-click-area');
                     const currentDiagram = this.state.currentDiagram;
+                    const clickArea = areas[0]; // We now have only one main clickable area
 
-                    areas.forEach(area => {
-                        const onclick = area.getAttribute('onclick');
-                        if (onclick && onclick.includes(currentDiagram)) {
-                            area.style.backgroundColor = 'rgba(0, 82, 204, 0.2)';
-                            area.style.borderColor = 'rgba(0, 82, 204, 0.5)';
+                    if (clickArea) {
+                        if (currentDiagram === 'AzLandingZone') {
+                            clickArea.setAttribute('data-label', 'Click to view Resource Group (SVG)');
+                            clickArea.style.backgroundColor = 'rgba(0, 82, 204, 0.1)';
+                            clickArea.style.borderColor = 'rgba(0, 82, 204, 0.3)';
+                        } else if (currentDiagram === 'resourceGroup') {
+                            clickArea.setAttribute('data-label', 'Click to view Resource Details (PNG)');
+                            clickArea.style.backgroundColor = 'rgba(40, 167, 69, 0.1)';
+                            clickArea.style.borderColor = 'rgba(40, 167, 69, 0.3)';
                         } else {
-                            area.style.backgroundColor = 'transparent';
-                            area.style.borderColor = 'transparent';
+                            // At resource level - no more navigation
+                            clickArea.setAttribute('data-label', 'Resource Details View (PNG)');
+                            clickArea.style.backgroundColor = 'transparent';
+                            clickArea.style.borderColor = 'transparent';
+                            clickArea.style.cursor = 'default';
                         }
-                    });
+                    }
                 }
             };
 
             // Global functions for onclick handlers
+            window.confluenceNavigateNext = function () {
+                const cd = window.ConfluenceDiagrams;
+                const currentDiagram = cd.state.currentDiagram;
+
+                // Navigate in sequence: AzLandingZone → resourceGroup → resource
+                if (currentDiagram === 'AzLandingZone') {
+                    cd.state.currentDiagram = 'resourceGroup';
+                } else if (currentDiagram === 'resourceGroup') {
+                    cd.state.currentDiagram = 'resource';
+                } else {
+                    // If at resource level, stay there or optionally go back to start
+                    return;
+                }
+
+                cd.updateDiagram();
+                cd.updateButtonStates();
+                cd.updateClickableAreas();
+            };
+
             window.confluenceSwitchDiagram = function (diagram) {
                 if (window.ConfluenceDiagrams.config[diagram]) {
                     window.ConfluenceDiagrams.state.currentDiagram = diagram;
+                    window.ConfluenceDiagrams.updateDiagram();
+                    window.ConfluenceDiagrams.updateButtonStates();
+                    window.ConfluenceDiagrams.updateClickableAreas();
+                }
+            };
+
+            window.confluenceUpdateView = function () {
+                const select = document.getElementById('confluence-view-select');
+                if (select) {
+                    window.ConfluenceDiagrams.state.currentDiagram = select.value;
                     window.ConfluenceDiagrams.updateDiagram();
                     window.ConfluenceDiagrams.updateButtonStates();
                     window.ConfluenceDiagrams.updateClickableAreas();
@@ -614,12 +649,6 @@ In your Confluence page, add an HTML macro with this code:
                     window.ConfluenceDiagrams.state.currentEnvironment = select.value;
                     window.ConfluenceDiagrams.updateDiagram();
                 }
-            };
-
-            window.confluenceSwitchFormat = function (format) {
-                window.ConfluenceDiagrams.state.currentFormat = format;
-                window.ConfluenceDiagrams.updateDiagram();
-                window.ConfluenceDiagrams.updateButtonStates();
             };
 
             window.confluenceZoomIn = function () {
