@@ -10,11 +10,11 @@ json  Resource_Properties {
   "networkAccessPolicy": "AllowAll",
   "timeCreated": "2025-01-13T11:23:03.4727243Z",
   "diskSizeGB": 30,
-  "hyperVGeneration": "V2",
   "encryption": {
     "type": "EncryptionAtRestWithPlatformKey"
   },
   "diskSizeBytes": 32213303296,
+  "hyperVGeneration": "V2",
   "creationData": {
     "createOption": "FromImage",
     "imageReference": {
@@ -26,12 +26,12 @@ json  Resource_Properties {
     "acceleratedNetwork": true,
     "diskControllerTypes": "SCSI, NVMe"
   },
-  "LastOwnershipUpdateTime": "2025-01-14T10:09:59.6010895Z",
   "diskState": "Unattached",
+  "LastOwnershipUpdateTime": "2025-01-14T10:09:59.6010895Z",
   "uniqueId": "129dd182-211d-4de2-935e-0c81ea1c731a",
+  "osType": "Linux",
   "diskIOPSReadWrite": 120,
   "diskMBpsReadWrite": 25,
-  "osType": "Linux",
   "securityProfile": {
     "securityType": "TrustedLaunch"
   },

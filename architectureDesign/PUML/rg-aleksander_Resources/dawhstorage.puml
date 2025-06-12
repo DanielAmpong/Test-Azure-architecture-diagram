@@ -25,8 +25,8 @@ json  Resource_Properties {
   "privateEndpointConnections": [],
   "supportsHttpsTrafficOnly": true,
   "allowBlobPublicAccess": false,
-  "minimumTlsVersion": "TLS1_2",
   "allowCrossTenantReplication": false,
+  "minimumTlsVersion": "TLS1_2",
   "primaryEndpoints": {
     "blob": "https://dawhstorage.blob.core.windows.net/",
     "file": "https://dawhstorage.file.core.windows.net/",
@@ -35,11 +35,11 @@ json  Resource_Properties {
     "web": "https://dawhstorage.z1.web.core.windows.net/",
     "dfs": "https://dawhstorage.dfs.core.windows.net/"
   },
-  "statusOfPrimary": "available",
   "keyCreationTime": {
-    "key2": "2025-05-23T07:16:56.7751993Z",
-    "key1": "2025-05-23T07:16:56.7751993Z"
+    "key1": "2025-05-23T07:16:56.7751993Z",
+    "key2": "2025-05-23T07:16:56.7751993Z"
   },
+  "statusOfPrimary": "available",
   "primaryLocation": "norwayeast",
   "creationTime": "2025-05-23T07:16:56.7282732Z",
   "networkAcls": {

@@ -51,6 +51,11 @@
   "hardwareProfile": {
     "vmSize": "Standard_D4s_v5"
   },
+  "diagnosticsProfile": {
+    "bootDiagnostics": {
+      "enabled": true
+    }
+  },
   "osProfile": {
     "requireGuestProvisionSignal": true,
     "computerName": "t-dna-rhel1",
@@ -64,11 +69,6 @@
         "assessmentMode": "ImageDefault",
         "patchMode": "ImageDefault"
       }
-    }
-  },
-  "diagnosticsProfile": {
-    "bootDiagnostics": {
-      "enabled": true
     }
   },
   "extended": {

@@ -19,6 +19,16 @@ json  Resource_Properties {
       "status": "Connected"
     }
   ],
+  "api": {
+    "name": "azuremonitorlogs",
+    "type": "Microsoft.Web/locations/managedApis",
+    "description": "Use this connector to query your Azure Monitor Logs across Log Analytics workspace and Application Insights component, to list or visualize results.",
+    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/providers/Microsoft.Web/locations/norwayeast/managedApis/azuremonitorlogs",
+    "displayName": "Azure Monitor Logs",
+    "category": "Standard",
+    "brandColor": "#0072C6",
+    "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1702/1.0.1702.3810/azuremonitorlogs/icon.png"
+  },
   "parameterValueSet": {
     "name": "oauthServicePrincipal",
     "values": {
@@ -29,16 +39,6 @@ json  Resource_Properties {
         "value": "541fd53c-2052-4176-95c3-5d985a02cfd6"
       }
     }
-  },
-  "api": {
-    "name": "azuremonitorlogs",
-    "type": "Microsoft.Web/locations/managedApis",
-    "description": "Use this connector to query your Azure Monitor Logs across Log Analytics workspace and Application Insights component, to list or visualize results.",
-    "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/providers/Microsoft.Web/locations/norwayeast/managedApis/azuremonitorlogs",
-    "displayName": "Azure Monitor Logs",
-    "category": "Standard",
-    "brandColor": "#0072C6",
-    "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1702/1.0.1702.3810/azuremonitorlogs/icon.png"
   }
 }
 }

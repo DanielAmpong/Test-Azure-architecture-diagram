@@ -43,7 +43,6 @@ json  Resource_Properties {
   "supportsHttpsTrafficOnly": true,
   "allowBlobPublicAccess": false,
   "minimumTlsVersion": "TLS1_2",
-  "allowCrossTenantReplication": false,
   "primaryEndpoints": {
     "blob": "https://finscript6xisw66qnemiw.blob.core.windows.net/",
     "file": "https://finscript6xisw66qnemiw.file.core.windows.net/",
@@ -52,12 +51,13 @@ json  Resource_Properties {
     "web": "https://finscript6xisw66qnemiw.z1.web.core.windows.net/",
     "dfs": "https://finscript6xisw66qnemiw.dfs.core.windows.net/"
   },
-  "statusOfPrimary": "available",
   "primaryLocation": "norwayeast",
   "keyCreationTime": {
     "key1": "2025-06-05T09:59:36.6102551Z",
     "key2": "2025-06-05T09:59:36.6102551Z"
   },
+  "statusOfPrimary": "available",
+  "allowCrossTenantReplication": false,
   "creationTime": "2025-06-05T09:59:36.5321205Z",
   "networkAcls": {
     "virtualNetworkRules": [

@@ -11,8 +11,8 @@ json  Resource_Properties {
   "azureAppPushReceivers": [],
   "eventHubReceivers": [],
   "logicAppReceivers": [],
-  "webhookReceivers": [],
   "armRoleReceivers": [],
+  "webhookReceivers": [],
   "emailReceivers": [
     {
       "name": "SRE-Team@klp.no",

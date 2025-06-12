@@ -13,14 +13,14 @@
     "bypass": "AzureServices"
   },
   "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
+  "enabledForTemplateDeployment": true,
+  "enabledForDiskEncryption": true,
+  "enabledForDeployment": true,
+  "enableRbacAuthorization": true,
   "sku": {
     "name": "standard",
     "family": "A"
   },
-  "enabledForTemplateDeployment": true,
-  "enabledForDeployment": true,
-  "enabledForDiskEncryption": true,
-  "enableRbacAuthorization": true,
   "accessPolicies": [],
   "enableSoftDelete": true,
   "enablePurgeProtection": true,

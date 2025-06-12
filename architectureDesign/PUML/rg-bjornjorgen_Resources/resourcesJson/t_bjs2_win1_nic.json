@@ -1,8 +1,8 @@
 {
   "provisioningState": "Succeeded",
   "enableAcceleratedNetworking": false,
-  "defaultOutboundConnectivityEnabled": false,
   "resourceGuid": "fa46756e-e1bc-4d84-9474-6e799632de72",
+  "defaultOutboundConnectivityEnabled": false,
   "disableTcpStateTracking": false,
   "vnetEncryptionSupported": false,
   "ipConfigurations": [
@@ -11,11 +11,11 @@
         "provisioningState": "Succeeded",
         "privateIPAddressVersion": "IPv4",
         "privateIPAllocationMethod": "Dynamic",
+        "privateIPAddress": "10.0.0.12",
+        "primary": true,
         "subnet": {
           "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/dna-test-1"
-        },
-        "privateIPAddress": "10.0.0.12",
-        "primary": true
+        }
       },
       "name": "ipconfig",
       "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
@@ -24,8 +24,8 @@
     }
   ],
   "enableIPForwarding": false,
-  "tapConfigurations": [],
   "primary": true,
+  "tapConfigurations": [],
   "hostedWorkloads": [],
   "allowPort25Out": true,
   "auxiliaryMode": "None",
@@ -33,8 +33,8 @@
     "appliedDnsServers": [],
     "dnsServers": []
   },
-  "macAddress": "00-22-48-DD-1B-F0",
   "auxiliarySku": "None",
+  "macAddress": "00-22-48-DD-1B-F0",
   "virtualMachine": {
     "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Compute/virtualMachines/t-bjs2-win1"
   },

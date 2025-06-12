@@ -8,8 +8,8 @@ json  Resource_Properties {
   "provisioningState": "Succeeded",
   "publicNetworkAccess": "Enabled",
   "networkAccessPolicy": "AllowAll",
-  "diskSizeGB": 128,
   "timeCreated": "2025-06-11T13:50:28.1258567Z",
+  "diskSizeGB": 128,
   "hyperVGeneration": "V1",
   "encryption": {
     "type": "EncryptionAtRestWithPlatformKey"
@@ -29,9 +29,9 @@ json  Resource_Properties {
   },
   "diskState": "Attached",
   "uniqueId": "2be7e257-c0f3-4696-b938-b3cc808906df",
+  "osType": "Windows",
   "diskMBpsReadWrite": 100,
   "diskIOPSReadWrite": 500,
-  "osType": "Windows",
   "supportsHibernation": true,
   "tier": "P10",
   "encryptionSettingsCollection": {

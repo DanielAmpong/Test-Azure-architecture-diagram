@@ -82,11 +82,11 @@ json  Resource_Properties {
     "dfs": "https://finopshub6xisw66qnemiw.dfs.core.windows.net/"
   },
   "statusOfPrimary": "available",
-  "keyCreationTime": {
-    "key1": "2025-06-05T09:59:36.719623Z",
-    "key2": "2025-06-05T09:59:36.719623Z"
-  },
   "primaryLocation": "norwayeast",
+  "keyCreationTime": {
+    "key2": "2025-06-05T09:59:36.719623Z",
+    "key1": "2025-06-05T09:59:36.719623Z"
+  },
   "creationTime": "2025-06-05T09:59:36.6414969Z",
   "networkAcls": {
     "virtualNetworkRules": [],

@@ -5,10 +5,8 @@
   "azureAppPushReceivers": [],
   "logicAppReceivers": [],
   "eventHubReceivers": [],
-  "webhookReceivers": [],
   "armRoleReceivers": [],
-  "groupShortName": "lz-sec-ag",
-  "voiceReceivers": [],
+  "webhookReceivers": [],
   "emailReceivers": [
     {
       "name": "cyberwarriors@klp.no",
@@ -17,6 +15,8 @@
       "emailAddress": "cyberwarriors@klp.no"
     }
   ],
+  "groupShortName": "lz-sec-ag",
+  "voiceReceivers": [],
   "itsmReceivers": [],
   "smsReceivers": []
 }

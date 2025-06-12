@@ -30,13 +30,14 @@
     "web": "https://sweethomealabamaandback.z1.web.core.windows.net/",
     "dfs": "https://sweethomealabamaandback.dfs.core.windows.net/"
   },
+  "primaryLocation": "norwayeast",
   "statusOfPrimary": "available",
   "keyCreationTime": {
     "key1": "2024-11-27T13:03:26.9587902Z",
     "key2": "2024-11-27T13:03:26.9587902Z"
   },
-  "primaryLocation": "norwayeast",
   "creationTime": "2024-11-27T13:03:26.8961819Z",
+  "allowSharedKeyAccess": true,
   "networkAcls": {
     "virtualNetworkRules": [],
     "defaultAction": "Allow",
@@ -44,10 +45,9 @@
     "ipRules": [],
     "bypass": "AzureServices"
   },
-  "allowSharedKeyAccess": true,
   "accessTier": "Hot",
   "defaultToOAuthAuthentication": false,
-  "dnsEndpointType": "Standard",
   "largeFileSharesState": "Enabled",
+  "dnsEndpointType": "Standard",
   "allowCrossTenantReplicationToAzureBackup": true
 }

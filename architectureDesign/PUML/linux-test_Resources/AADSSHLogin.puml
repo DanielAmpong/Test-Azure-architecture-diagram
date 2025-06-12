@@ -7,8 +7,8 @@ component Component {
 json  Resource_Properties {
   "provisioningState": "Updating",
   "type": "AADSSHLoginForLinux",
-  "typeHandlerVersion": "1.0",
   "autoUpgradeMinorVersion": true,
+  "typeHandlerVersion": "1.0",
   "publisher": "Microsoft.Azure.ActiveDirectory"
 }
 }

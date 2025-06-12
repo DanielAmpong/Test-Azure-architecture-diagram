@@ -20,10 +20,10 @@ json  Resource_Properties {
   "conditions": [
     {
       "operator": "Equals",
+      "field": "MonitorCondition",
       "values": [
         "Fired"
-      ],
-      "field": "MonitorCondition"
+      ]
     }
   ]
 }

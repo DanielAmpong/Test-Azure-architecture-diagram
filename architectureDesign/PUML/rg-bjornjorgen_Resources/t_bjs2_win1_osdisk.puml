@@ -8,13 +8,13 @@ json  Resource_Properties {
   "provisioningState": "Succeeded",
   "publicNetworkAccess": "Enabled",
   "networkAccessPolicy": "AllowAll",
-  "timeCreated": "2025-05-07T11:21:21.5074097Z",
   "diskSizeGB": 128,
+  "timeCreated": "2025-05-07T11:21:21.5074097Z",
+  "hyperVGeneration": "V1",
   "encryption": {
     "type": "EncryptionAtRestWithPlatformKey"
   },
   "diskSizeBytes": 137438953472,
-  "hyperVGeneration": "V1",
   "creationData": {
     "createOption": "FromImage",
     "imageReference": {
@@ -29,8 +29,8 @@ json  Resource_Properties {
   },
   "diskState": "Reserved",
   "uniqueId": "947197f1-1bd1-4f89-acaa-94c219665f73",
-  "diskIOPSReadWrite": 500,
   "diskMBpsReadWrite": 100,
+  "diskIOPSReadWrite": 500,
   "osType": "Windows",
   "supportsHibernation": true,
   "tier": "P10",

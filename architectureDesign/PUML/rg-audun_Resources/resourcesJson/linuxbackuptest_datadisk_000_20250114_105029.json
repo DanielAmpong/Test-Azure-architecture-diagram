@@ -15,7 +15,7 @@
   "LastOwnershipUpdateTime": "2025-01-14T12:37:32.0945351Z",
   "diskState": "Unattached",
   "uniqueId": "36d874aa-3dfe-4582-8ca3-2785079a00f2",
-  "diskMBpsReadWrite": 50,
   "diskIOPSReadWrite": 240,
+  "diskMBpsReadWrite": 50,
   "tier": "P6"
 }

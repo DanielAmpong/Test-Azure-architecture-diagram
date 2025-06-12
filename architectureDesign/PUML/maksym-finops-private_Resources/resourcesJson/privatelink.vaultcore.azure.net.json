@@ -6,8 +6,8 @@
     "maxNumberOfVirtualNetworkLinks": 1000,
     "numberOfVirtualNetworkLinks": 1,
     "maxNumberOfRecordSets": 25000,
-    "numberOfRecordSets": 2,
-    "internalId": "SW1tdXRhYmxlWm9uZUlkZW50aXR5O2ZhMWE5ZmQ5LTkxNTgtNDU2OC1iNzI4LTZkN2UzOGVlZjU1NTsw"
+    "numberOfRecordSets": 1,
+    "internalId": "SW1tdXRhYmxlWm9uZUlkZW50aXR5O2ZmZWY0MmE1LWZhNGItNDg3OC04ZDU3LWUzOTRjNTFiZmM4NDsw"
   },
   "1": {
     "provisioningState": "Succeeded",
@@ -16,7 +16,7 @@
     "maxNumberOfVirtualNetworkLinks": 1000,
     "numberOfVirtualNetworkLinks": 1,
     "maxNumberOfRecordSets": 25000,
-    "numberOfRecordSets": 2,
-    "internalId": "SW1tdXRhYmxlWm9uZUlkZW50aXR5O2ZhMWE5ZmQ5LTkxNTgtNDU2OC1iNzI4LTZkN2UzOGVlZjU1NTsw"
+    "numberOfRecordSets": 1,
+    "internalId": "SW1tdXRhYmxlWm9uZUlkZW50aXR5O2ZmZWY0MmE1LWZhNGItNDg3OC04ZDU3LWUzOTRjNTFiZmM4NDsw"
   }
 }

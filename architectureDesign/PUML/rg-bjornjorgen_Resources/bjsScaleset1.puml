@@ -25,8 +25,8 @@ json  Resource_Properties {
       "osDisk": {
         "createOption": "FromImage",
         "diskSizeGB": 30,
-        "osType": "Windows",
         "deleteOption": "Delete",
+        "osType": "Windows",
         "managedDisk": {
           "storageAccountType": "Premium_LRS"
         },
@@ -43,10 +43,10 @@ json  Resource_Properties {
               {
                 "properties": {
                   "privateIPAddressVersion": "IPv4",
+                  "primary": true,
                   "subnet": {
                     "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/virtualNetworks/vnet-norwayeast/subnets/snet-norwayeast-1"
                   },
-                  "primary": true,
                   "loadBalancerBackendAddressPools": [],
                   "applicationSecurityGroups": [],
                   "applicationGatewayBackendAddressPools": [],
@@ -81,11 +81,16 @@ json  Resource_Properties {
       "networkApiVersion": "2020-11-01"
     },
     "licenseType": "Windows_Server",
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true
+      }
+    },
     "osProfile": {
       "requireGuestProvisionSignal": true,
       "allowExtensionOperations": true,
-      "adminUsername": "testss",
       "secrets": [],
+      "adminUsername": "testss",
       "windowsConfiguration": {
         "provisionVMAgent": true,
         "patchSettings": {
@@ -96,11 +101,6 @@ json  Resource_Properties {
         "enableAutomaticUpdates": true
       },
       "computerNamePrefix": "bjsscales"
-    },
-    "diagnosticsProfile": {
-      "bootDiagnostics": {
-        "enabled": true
-      }
     },
     "extensionProfile": {
       "extensions": []

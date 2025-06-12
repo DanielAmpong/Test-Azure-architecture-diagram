@@ -8,8 +8,8 @@ json  Resource_Properties {
   "provisioningState": "Succeeded",
   "enableAcceleratedNetworking": false,
   "resourceGuid": "683c7fcd-80b9-4827-8dcc-eee6ca354b64",
-  "defaultOutboundConnectivityEnabled": false,
   "disableTcpStateTracking": false,
+  "defaultOutboundConnectivityEnabled": false,
   "vnetEncryptionSupported": false,
   "ipConfigurations": [
     {

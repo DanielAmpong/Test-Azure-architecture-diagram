@@ -22,11 +22,11 @@ json  Resource_Properties {
     }
   },
   "storageId": "/subscriptions/3c30e703-3724-46ce-983a-91b9a78d5941/resourceGroups/p-log/providers/Microsoft.Storage/storageAccounts/nsgflowlogs14423",
+  "targetResourceGuid": "1ff1c847-d0d9-4979-865c-081002a40dd0",
   "format": {
     "type": "JSON",
     "version": 2
-  },
-  "targetResourceGuid": "1ff1c847-d0d9-4979-865c-081002a40dd0"
+  }
 }
 }
 @enduml

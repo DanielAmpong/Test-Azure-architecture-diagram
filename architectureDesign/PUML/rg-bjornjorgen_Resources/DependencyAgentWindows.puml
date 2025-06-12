@@ -8,8 +8,8 @@ json  Resource_Properties {
   "2": {
     "provisioningState": "Succeeded",
     "type": "DependencyAgentWindows",
-    "typeHandlerVersion": "9.6",
     "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "9.6",
     "enableAutomaticUpgrade": true,
     "publisher": "Microsoft.Azure.Monitoring.DependencyAgent",
     "settings": {
@@ -19,8 +19,8 @@ json  Resource_Properties {
   "1": {
     "provisioningState": "Succeeded",
     "type": "DependencyAgentWindows",
-    "typeHandlerVersion": "9.6",
     "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "9.6",
     "enableAutomaticUpgrade": true,
     "publisher": "Microsoft.Azure.Monitoring.DependencyAgent",
     "settings": {
@@ -30,8 +30,8 @@ json  Resource_Properties {
   "4": {
     "provisioningState": "Succeeded",
     "type": "DependencyAgentWindows",
-    "typeHandlerVersion": "9.6",
     "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "9.6",
     "enableAutomaticUpgrade": true,
     "publisher": "Microsoft.Azure.Monitoring.DependencyAgent",
     "settings": {
@@ -41,8 +41,8 @@ json  Resource_Properties {
   "0": {
     "provisioningState": "Succeeded",
     "type": "DependencyAgentWindows",
-    "typeHandlerVersion": "9.6",
     "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "9.6",
     "enableAutomaticUpgrade": true,
     "publisher": "Microsoft.Azure.Monitoring.DependencyAgent",
     "settings": {
@@ -52,8 +52,8 @@ json  Resource_Properties {
   "3": {
     "provisioningState": "Succeeded",
     "type": "DependencyAgentWindows",
-    "typeHandlerVersion": "9.6",
     "autoUpgradeMinorVersion": true,
+    "typeHandlerVersion": "9.6",
     "enableAutomaticUpgrade": true,
     "publisher": "Microsoft.Azure.Monitoring.DependencyAgent",
     "settings": {

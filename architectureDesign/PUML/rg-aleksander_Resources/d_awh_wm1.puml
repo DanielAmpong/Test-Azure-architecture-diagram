@@ -56,15 +56,10 @@ json  Resource_Properties {
   "hardwareProfile": {
     "vmSize": "Standard_D8s_v5"
   },
-  "diagnosticsProfile": {
-    "bootDiagnostics": {
-      "enabled": true
-    }
-  },
   "osProfile": {
     "requireGuestProvisionSignal": true,
-    "allowExtensionOperations": true,
     "computerName": "d-awh-wm1",
+    "allowExtensionOperations": true,
     "adminUsername": "sysadmin",
     "secrets": [],
     "windowsConfiguration": {
@@ -76,6 +71,11 @@ json  Resource_Properties {
       "enableAutomaticUpdates": true,
       "enableVMAgentPlatformUpdates": true,
       "timeZone": "W. Europe Standard Time"
+    }
+  },
+  "diagnosticsProfile": {
+    "bootDiagnostics": {
+      "enabled": true
     }
   },
   "extended": {

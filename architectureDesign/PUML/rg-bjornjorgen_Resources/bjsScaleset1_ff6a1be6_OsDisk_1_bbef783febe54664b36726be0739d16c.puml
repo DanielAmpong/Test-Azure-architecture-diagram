@@ -10,10 +10,10 @@ json  Resource_Properties {
   "networkAccessPolicy": "AllowAll",
   "diskSizeGB": 30,
   "timeCreated": "2025-05-07T08:54:00.8349868Z",
+  "diskSizeBytes": 32214351872,
   "encryption": {
     "type": "EncryptionAtRestWithPlatformKey"
   },
-  "diskSizeBytes": 32214351872,
   "hyperVGeneration": "V2",
   "creationData": {
     "createOption": "FromImage",
@@ -29,9 +29,9 @@ json  Resource_Properties {
     "diskControllerTypes": "SCSI, NVMe"
   },
   "uniqueId": "bbef783f-ebe5-4664-b367-26be0739d16c",
+  "osType": "Windows",
   "diskIOPSReadWrite": 120,
   "diskMBpsReadWrite": 25,
-  "osType": "Windows",
   "supportsHibernation": true,
   "tier": "P4"
 }

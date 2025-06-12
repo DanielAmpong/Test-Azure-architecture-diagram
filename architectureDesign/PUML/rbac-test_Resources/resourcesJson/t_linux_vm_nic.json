@@ -2,8 +2,8 @@
   "0": {
     "provisioningState": "Succeeded",
     "enableAcceleratedNetworking": false,
-    "resourceGuid": "1e03799c-7d27-41f9-a008-594e1bb822d8",
     "defaultOutboundConnectivityEnabled": false,
+    "resourceGuid": "1e03799c-7d27-41f9-a008-594e1bb822d8",
     "disableTcpStateTracking": false,
     "vnetEncryptionSupported": false,
     "ipConfigurations": [
@@ -12,11 +12,11 @@
           "provisioningState": "Succeeded",
           "privateIPAddressVersion": "IPv4",
           "privateIPAllocationMethod": "Dynamic",
-          "privateIPAddress": "10.0.0.10",
-          "primary": true,
           "subnet": {
             "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/dna-test-1"
-          }
+          },
+          "privateIPAddress": "10.0.0.10",
+          "primary": true
         },
         "name": "ipconfig1",
         "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
@@ -25,17 +25,17 @@
       }
     ],
     "enableIPForwarding": false,
-    "primary": true,
     "tapConfigurations": [],
+    "primary": true,
     "hostedWorkloads": [],
     "allowPort25Out": true,
+    "auxiliaryMode": "None",
     "dnsSettings": {
       "appliedDnsServers": [],
       "dnsServers": []
     },
-    "auxiliaryMode": "None",
-    "auxiliarySku": "None",
     "macAddress": "60-45-BD-C6-93-DD",
+    "auxiliarySku": "None",
     "virtualMachine": {
       "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/linux-test/providers/Microsoft.Compute/virtualMachines/t-linux-vm"
     },
@@ -44,8 +44,8 @@
   "1": {
     "provisioningState": "Succeeded",
     "enableAcceleratedNetworking": false,
-    "resourceGuid": "1e03799c-7d27-41f9-a008-594e1bb822d8",
     "defaultOutboundConnectivityEnabled": false,
+    "resourceGuid": "1e03799c-7d27-41f9-a008-594e1bb822d8",
     "disableTcpStateTracking": false,
     "vnetEncryptionSupported": false,
     "ipConfigurations": [
@@ -54,11 +54,11 @@
           "provisioningState": "Succeeded",
           "privateIPAddressVersion": "IPv4",
           "privateIPAllocationMethod": "Dynamic",
-          "privateIPAddress": "10.0.0.10",
-          "primary": true,
           "subnet": {
             "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/dna-test-1"
-          }
+          },
+          "privateIPAddress": "10.0.0.10",
+          "primary": true
         },
         "name": "ipconfig1",
         "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
@@ -67,17 +67,17 @@
       }
     ],
     "enableIPForwarding": false,
-    "primary": true,
     "tapConfigurations": [],
+    "primary": true,
     "hostedWorkloads": [],
     "allowPort25Out": true,
+    "auxiliaryMode": "None",
     "dnsSettings": {
       "appliedDnsServers": [],
       "dnsServers": []
     },
-    "auxiliaryMode": "None",
-    "auxiliarySku": "None",
     "macAddress": "60-45-BD-C6-93-DD",
+    "auxiliarySku": "None",
     "virtualMachine": {
       "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/linux-test/providers/Microsoft.Compute/virtualMachines/t-linux-vm"
     },

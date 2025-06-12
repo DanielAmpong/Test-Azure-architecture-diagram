@@ -23,17 +23,17 @@ json  Resource_Properties {
     "bypass": "AzureServices"
   },
   "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
+  "enabledForTemplateDeployment": true,
   "sku": {
     "name": "standard",
     "family": "A"
   },
-  "enabledForTemplateDeployment": true,
   "enabledForDeployment": true,
-  "softDeleteRetentionInDays": 90,
   "enabledForDiskEncryption": true,
   "enableRbacAuthorization": true,
-  "enableSoftDelete": true,
+  "softDeleteRetentionInDays": 90,
   "accessPolicies": [],
+  "enableSoftDelete": true,
   "enablePurgeProtection": true,
   "vaultUri": "https://t-bjs2-win-kv-k4l6.vault.azure.net/"
 }

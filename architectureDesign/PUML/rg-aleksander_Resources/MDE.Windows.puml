@@ -13,11 +13,11 @@ json  Resource_Properties {
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-MAINTENANCECONFIG/providers/Microsoft.Compute/virtualMachines/vm-mf2",
       "vNextEnabled": true,
       "autoUpdate": true
     },
-    "forceUpdateTag": "99efd676-824b-4eb9-9fd7-9afb880317dd"
+    "forceUpdateTag": "d7306e0f-72ba-4919-8e91-e6708becf837"
   },
   "1": {
     "provisioningState": "Succeeded",
@@ -27,11 +27,11 @@ json  Resource_Properties {
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-MAINTENANCECONFIG/providers/Microsoft.Compute/virtualMachines/vm-mf2",
       "vNextEnabled": true,
       "autoUpdate": true
     },
-    "forceUpdateTag": "99efd676-824b-4eb9-9fd7-9afb880317dd"
+    "forceUpdateTag": "d7306e0f-72ba-4919-8e91-e6708becf837"
   },
   "5": {
     "provisioningState": "Succeeded",
@@ -41,11 +41,11 @@ json  Resource_Properties {
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-MAINTENANCECONFIG/providers/Microsoft.Compute/virtualMachines/vm-mf2",
       "vNextEnabled": true,
       "autoUpdate": true
     },
-    "forceUpdateTag": "99efd676-824b-4eb9-9fd7-9afb880317dd"
+    "forceUpdateTag": "d7306e0f-72ba-4919-8e91-e6708becf837"
   },
   "4": {
     "provisioningState": "Succeeded",
@@ -55,11 +55,11 @@ json  Resource_Properties {
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-MAINTENANCECONFIG/providers/Microsoft.Compute/virtualMachines/vm-mf2",
       "vNextEnabled": true,
       "autoUpdate": true
     },
-    "forceUpdateTag": "99efd676-824b-4eb9-9fd7-9afb880317dd"
+    "forceUpdateTag": "d7306e0f-72ba-4919-8e91-e6708becf837"
   },
   "0": {
     "provisioningState": "Succeeded",
@@ -69,11 +69,11 @@ json  Resource_Properties {
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-MAINTENANCECONFIG/providers/Microsoft.Compute/virtualMachines/vm-mf2",
       "vNextEnabled": true,
       "autoUpdate": true
     },
-    "forceUpdateTag": "99efd676-824b-4eb9-9fd7-9afb880317dd"
+    "forceUpdateTag": "d7306e0f-72ba-4919-8e91-e6708becf837"
   },
   "6": {
     "provisioningState": "Succeeded",
@@ -83,11 +83,11 @@ json  Resource_Properties {
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-MAINTENANCECONFIG/providers/Microsoft.Compute/virtualMachines/vm-mf2",
       "vNextEnabled": true,
       "autoUpdate": true
     },
-    "forceUpdateTag": "99efd676-824b-4eb9-9fd7-9afb880317dd"
+    "forceUpdateTag": "d7306e0f-72ba-4919-8e91-e6708becf837"
   },
   "3": {
     "provisioningState": "Succeeded",
@@ -97,11 +97,11 @@ json  Resource_Properties {
     "publisher": "Microsoft.Azure.AzureDefenderForServers",
     "settings": {
       "forceReOnboarding": false,
-      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/RG-AUDUN/providers/Microsoft.Compute/virtualMachines/s-vm-aujtest",
+      "azureResourceId": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/MAKSYM-MAINTENANCECONFIG/providers/Microsoft.Compute/virtualMachines/vm-mf2",
       "vNextEnabled": true,
       "autoUpdate": true
     },
-    "forceUpdateTag": "99efd676-824b-4eb9-9fd7-9afb880317dd"
+    "forceUpdateTag": "d7306e0f-72ba-4919-8e91-e6708becf837"
   }
 }
 }

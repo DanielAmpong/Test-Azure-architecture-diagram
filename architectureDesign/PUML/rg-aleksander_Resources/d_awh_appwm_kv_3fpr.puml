@@ -24,8 +24,8 @@ json  Resource_Properties {
     "name": "standard",
     "family": "A"
   },
-  "enabledForDeployment": true,
   "enabledForDiskEncryption": true,
+  "enabledForDeployment": true,
   "enableRbacAuthorization": true,
   "accessPolicies": [],
   "enableSoftDelete": true,

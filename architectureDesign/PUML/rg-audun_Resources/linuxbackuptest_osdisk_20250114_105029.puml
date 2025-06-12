@@ -27,8 +27,8 @@ json  Resource_Properties {
   },
   "diskState": "Unattached",
   "uniqueId": "07b364ff-805e-4efc-abd3-f180c000481c",
-  "diskMBpsReadWrite": 25,
   "diskIOPSReadWrite": 120,
+  "diskMBpsReadWrite": 25,
   "osType": "Linux",
   "securityProfile": {
     "securityType": "TrustedLaunch"

@@ -3,29 +3,29 @@
     "provisioningState": "Succeeded",
     "publicNetworkAccess": "Enabled",
     "networkAccessPolicy": "AllowAll",
+    "timeCreated": "2025-04-03T08:13:51.8852745Z",
     "diskSizeGB": 30,
-    "timeCreated": "2024-09-16T09:09:24.4555473Z",
-    "hyperVGeneration": "V1",
     "encryption": {
       "type": "EncryptionAtRestWithPlatformKey"
     },
     "diskSizeBytes": 32213303296,
+    "hyperVGeneration": "V1",
     "creationData": {
       "createOption": "FromImage",
       "imageReference": {
-        "id": "/Subscriptions/655737a7-e4fa-4f19-8c60-194cc7a2ca11/Providers/Microsoft.Compute/Locations/NorwayEast/Publishers/canonical/ArtifactTypes/VMImage/Offers/0001-com-ubuntu-server-jammy/Skus/22_04-lts/Versions/22.04.202409130"
+        "id": "/Subscriptions/94460934-16ae-42df-af06-1cf4f1a6bb7c/Providers/Microsoft.Compute/Locations/NorwayEast/Publishers/canonical/ArtifactTypes/VMImage/Offers/0001-com-ubuntu-server-jammy/Skus/22_04-lts/Versions/22.04.202503240"
       }
     },
-    "LastOwnershipUpdateTime": "2025-03-26T14:43:54.3385019Z",
-    "diskState": "Reserved",
-    "uniqueId": "09fcf68f-4446-415a-b82c-ded944c180b7",
     "supportedCapabilities": {
       "architecture": "x64",
       "acceleratedNetwork": true,
       "diskControllerTypes": "SCSI, NVMe"
     },
-    "diskMBpsReadWrite": 60,
+    "LastOwnershipUpdateTime": "2025-04-03T08:13:51.8852745Z",
+    "diskState": "Attached",
+    "uniqueId": "f979c197-47eb-403e-a980-97272193df3c",
     "diskIOPSReadWrite": 500,
+    "diskMBpsReadWrite": 60,
     "osType": "Linux",
     "supportsHibernation": true
   },
@@ -33,29 +33,29 @@
     "provisioningState": "Succeeded",
     "publicNetworkAccess": "Enabled",
     "networkAccessPolicy": "AllowAll",
+    "timeCreated": "2025-04-03T08:13:51.8852745Z",
     "diskSizeGB": 30,
-    "timeCreated": "2024-09-16T09:09:24.4555473Z",
-    "hyperVGeneration": "V1",
     "encryption": {
       "type": "EncryptionAtRestWithPlatformKey"
     },
     "diskSizeBytes": 32213303296,
+    "hyperVGeneration": "V1",
     "creationData": {
       "createOption": "FromImage",
       "imageReference": {
-        "id": "/Subscriptions/655737a7-e4fa-4f19-8c60-194cc7a2ca11/Providers/Microsoft.Compute/Locations/NorwayEast/Publishers/canonical/ArtifactTypes/VMImage/Offers/0001-com-ubuntu-server-jammy/Skus/22_04-lts/Versions/22.04.202409130"
+        "id": "/Subscriptions/94460934-16ae-42df-af06-1cf4f1a6bb7c/Providers/Microsoft.Compute/Locations/NorwayEast/Publishers/canonical/ArtifactTypes/VMImage/Offers/0001-com-ubuntu-server-jammy/Skus/22_04-lts/Versions/22.04.202503240"
       }
     },
-    "LastOwnershipUpdateTime": "2025-03-26T14:43:54.3385019Z",
-    "diskState": "Reserved",
-    "uniqueId": "09fcf68f-4446-415a-b82c-ded944c180b7",
     "supportedCapabilities": {
       "architecture": "x64",
       "acceleratedNetwork": true,
       "diskControllerTypes": "SCSI, NVMe"
     },
-    "diskMBpsReadWrite": 60,
+    "LastOwnershipUpdateTime": "2025-04-03T08:13:51.8852745Z",
+    "diskState": "Attached",
+    "uniqueId": "f979c197-47eb-403e-a980-97272193df3c",
     "diskIOPSReadWrite": 500,
+    "diskMBpsReadWrite": 60,
     "osType": "Linux",
     "supportsHibernation": true
   }

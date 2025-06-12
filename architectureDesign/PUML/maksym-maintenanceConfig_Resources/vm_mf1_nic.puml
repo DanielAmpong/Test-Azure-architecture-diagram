@@ -6,9 +6,9 @@ component Component {
 
 json  Resource_Properties {
   "provisioningState": "Succeeded",
-  "resourceGuid": "ceccadac-65e8-43a3-85f4-649ee233130e",
   "enableAcceleratedNetworking": false,
   "defaultOutboundConnectivityEnabled": true,
+  "resourceGuid": "ceccadac-65e8-43a3-85f4-649ee233130e",
   "disableTcpStateTracking": false,
   "vnetEncryptionSupported": false,
   "ipConfigurations": [

@@ -9,8 +9,8 @@
   "runtimeEnvironment": null,
   "lastModifiedBy": null,
   "logActivityTrace": 0,
-  "logProgress": false,
   "runbookType": "Python3",
+  "logProgress": false,
   "outputTypes": [],
   "logVerbose": false,
   "jobCount": 0

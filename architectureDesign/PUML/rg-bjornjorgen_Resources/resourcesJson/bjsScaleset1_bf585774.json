@@ -15,10 +15,10 @@
       "name": "bjsScaleset1_bf585774_OsDisk_1_c491f3779cb94873b00f269bbb890b2c",
       "createOption": "FromImage",
       "deleteOption": "Delete",
-      "osType": "Windows",
       "managedDisk": {
         "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Compute/disks/bjsScaleset1_bf585774_OsDisk_1_c491f3779cb94873b00f269bbb890b2c"
       },
+      "osType": "Windows",
       "caching": "ReadWrite"
     }
   },
@@ -47,7 +47,6 @@
     "computerName": "bjsscalesHXTIMK",
     "allowExtensionOperations": true,
     "adminUsername": "testss",
-    "secrets": [],
     "windowsConfiguration": {
       "provisionVMAgent": true,
       "patchSettings": {
@@ -57,7 +56,8 @@
       },
       "enableAutomaticUpdates": true,
       "enableVMAgentPlatformUpdates": true
-    }
+    },
+    "secrets": []
   },
   "extended": {
     "instanceView": {

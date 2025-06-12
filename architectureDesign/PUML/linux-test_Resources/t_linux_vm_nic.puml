@@ -8,8 +8,8 @@ json  Resource_Properties {
   "0": {
     "provisioningState": "Succeeded",
     "enableAcceleratedNetworking": false,
-    "resourceGuid": "f6dd2278-f10e-4317-8069-ce5a3f2226c2",
-    "defaultOutboundConnectivityEnabled": true,
+    "resourceGuid": "1e03799c-7d27-41f9-a008-594e1bb822d8",
+    "defaultOutboundConnectivityEnabled": false,
     "disableTcpStateTracking": false,
     "vnetEncryptionSupported": false,
     "ipConfigurations": [
@@ -18,7 +18,7 @@ json  Resource_Properties {
           "provisioningState": "Succeeded",
           "privateIPAddressVersion": "IPv4",
           "privateIPAllocationMethod": "Dynamic",
-          "privateIPAddress": "10.0.0.11",
+          "privateIPAddress": "10.0.0.10",
           "primary": true,
           "subnet": {
             "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/dna-test-1"
@@ -26,8 +26,8 @@ json  Resource_Properties {
         },
         "name": "ipconfig1",
         "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rbac-test/providers/Microsoft.Network/networkInterfaces/t-linux-vm-nic/ipConfigurations/ipconfig1",
-        "etag": "W/\"771555a8-4160-4375-84d9-7d9936cb7026\""
+        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/linux-test/providers/Microsoft.Network/networkInterfaces/t-linux-vm-nic/ipConfigurations/ipconfig1",
+        "etag": "W/\"f230be45-2521-4a16-a829-ec43d5af927c\""
       }
     ],
     "enableIPForwarding": false,
@@ -38,21 +38,20 @@ json  Resource_Properties {
     "auxiliaryMode": "None",
     "dnsSettings": {
       "appliedDnsServers": [],
-      "internalDomainNameSuffix": "pquq0qan4vse5gqto15kewgzsd.oslx.internal.cloudapp.net",
       "dnsServers": []
     },
+    "macAddress": "60-45-BD-C6-93-DD",
     "auxiliarySku": "None",
-    "macAddress": "00-22-48-DC-F5-F0",
     "virtualMachine": {
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rbac-test/providers/Microsoft.Compute/virtualMachines/t-linux-vm"
+      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/linux-test/providers/Microsoft.Compute/virtualMachines/t-linux-vm"
     },
     "nicType": "Standard"
   },
   "1": {
     "provisioningState": "Succeeded",
     "enableAcceleratedNetworking": false,
-    "resourceGuid": "f6dd2278-f10e-4317-8069-ce5a3f2226c2",
-    "defaultOutboundConnectivityEnabled": true,
+    "resourceGuid": "1e03799c-7d27-41f9-a008-594e1bb822d8",
+    "defaultOutboundConnectivityEnabled": false,
     "disableTcpStateTracking": false,
     "vnetEncryptionSupported": false,
     "ipConfigurations": [
@@ -61,7 +60,7 @@ json  Resource_Properties {
           "provisioningState": "Succeeded",
           "privateIPAddressVersion": "IPv4",
           "privateIPAllocationMethod": "Dynamic",
-          "privateIPAddress": "10.0.0.11",
+          "privateIPAddress": "10.0.0.10",
           "primary": true,
           "subnet": {
             "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/dna-test-1"
@@ -69,8 +68,8 @@ json  Resource_Properties {
         },
         "name": "ipconfig1",
         "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rbac-test/providers/Microsoft.Network/networkInterfaces/t-linux-vm-nic/ipConfigurations/ipconfig1",
-        "etag": "W/\"771555a8-4160-4375-84d9-7d9936cb7026\""
+        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/linux-test/providers/Microsoft.Network/networkInterfaces/t-linux-vm-nic/ipConfigurations/ipconfig1",
+        "etag": "W/\"f230be45-2521-4a16-a829-ec43d5af927c\""
       }
     ],
     "enableIPForwarding": false,
@@ -81,13 +80,12 @@ json  Resource_Properties {
     "auxiliaryMode": "None",
     "dnsSettings": {
       "appliedDnsServers": [],
-      "internalDomainNameSuffix": "pquq0qan4vse5gqto15kewgzsd.oslx.internal.cloudapp.net",
       "dnsServers": []
     },
+    "macAddress": "60-45-BD-C6-93-DD",
     "auxiliarySku": "None",
-    "macAddress": "00-22-48-DC-F5-F0",
     "virtualMachine": {
-      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rbac-test/providers/Microsoft.Compute/virtualMachines/t-linux-vm"
+      "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/linux-test/providers/Microsoft.Compute/virtualMachines/t-linux-vm"
     },
     "nicType": "Standard"
   }

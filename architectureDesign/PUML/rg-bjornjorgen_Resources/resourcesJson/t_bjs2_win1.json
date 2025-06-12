@@ -1,16 +1,6 @@
 {
   "provisioningState": "Succeeded",
   "timeCreated": "2025-05-07T11:21:20.2215208Z",
-  "networkProfile": {
-    "networkInterfaces": [
-      {
-        "properties": {
-          "primary": true
-        },
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkInterfaces/t-bjs2-win1-nic"
-      }
-    ]
-  },
   "storageProfile": {
     "imageReference": {
       "publisher": "MicrosoftWindowsServer",
@@ -23,33 +13,43 @@
     "osDisk": {
       "name": "t-bjs2-win1-osdisk",
       "createOption": "FromImage",
-      "osType": "Windows",
       "deleteOption": "Detach",
       "managedDisk": {
         "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Compute/disks/t-bjs2-win1-osdisk"
       },
+      "osType": "Windows",
       "caching": "ReadWrite"
     }
+  },
+  "networkProfile": {
+    "networkInterfaces": [
+      {
+        "properties": {
+          "primary": true
+        },
+        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Network/networkInterfaces/t-bjs2-win1-nic"
+      }
+    ]
   },
   "hardwareProfile": {
     "vmSize": "Standard_D4s_v5"
   },
   "osProfile": {
     "requireGuestProvisionSignal": true,
-    "computerName": "t-bjs2-win1",
     "allowExtensionOperations": true,
+    "computerName": "t-bjs2-win1",
     "secrets": [],
+    "adminUsername": "sysadmin",
     "windowsConfiguration": {
       "provisionVMAgent": true,
-      "enableAutomaticUpdates": true,
       "patchSettings": {
         "assessmentMode": "ImageDefault",
         "patchMode": "AutomaticByOS"
       },
+      "enableAutomaticUpdates": true,
       "enableVMAgentPlatformUpdates": true,
       "timeZone": "W. Europe Standard Time"
-    },
-    "adminUsername": "sysadmin"
+    }
   },
   "diagnosticsProfile": {
     "bootDiagnostics": {

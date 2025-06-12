@@ -17,9 +17,9 @@ json  Resource_Properties {
   "creationData": {
     "createOption": "Empty"
   },
+  "LastOwnershipUpdateTime": "2025-05-21T09:52:16.5757089Z",
   "diskState": "Attached",
   "uniqueId": "864d8c72-4d09-4fdf-bb13-bab2e4b152dd",
-  "LastOwnershipUpdateTime": "2025-05-21T09:52:16.5757089Z",
   "diskIOPSReadWrite": 500,
   "diskMBpsReadWrite": 100,
   "tier": "P10"

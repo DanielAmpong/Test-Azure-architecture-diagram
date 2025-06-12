@@ -10,11 +10,11 @@ json  Resource_Properties {
   "networkAccessPolicy": "AllowAll",
   "diskSizeGB": 128,
   "timeCreated": "2025-06-11T13:50:28.1101652Z",
+  "hyperVGeneration": "V1",
   "encryption": {
     "type": "EncryptionAtRestWithPlatformKey"
   },
   "diskSizeBytes": 137438953472,
-  "hyperVGeneration": "V1",
   "creationData": {
     "createOption": "FromImage",
     "imageReference": {
@@ -23,14 +23,14 @@ json  Resource_Properties {
   },
   "LastOwnershipUpdateTime": "2025-06-11T13:50:28.1258567Z",
   "diskState": "Attached",
-  "uniqueId": "3ce9e81d-a964-4fcd-95fb-d0e89816f97a",
-  "diskIOPSReadWrite": 500,
-  "diskMBpsReadWrite": 100,
   "supportedCapabilities": {
     "architecture": "x64",
     "acceleratedNetwork": true,
     "diskControllerTypes": "SCSI"
   },
+  "uniqueId": "3ce9e81d-a964-4fcd-95fb-d0e89816f97a",
+  "diskMBpsReadWrite": 100,
+  "diskIOPSReadWrite": 500,
   "osType": "Windows",
   "supportsHibernation": true,
   "tier": "P10",

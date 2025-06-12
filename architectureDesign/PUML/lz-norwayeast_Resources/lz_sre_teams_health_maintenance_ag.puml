@@ -9,7 +9,6 @@ json  Resource_Properties {
   "automationRunbookReceivers": [],
   "azureFunctionReceivers": [],
   "azureAppPushReceivers": [],
-  "logicAppReceivers": [],
   "eventHubReceivers": [
     {
       "name": "planned maintenance",
@@ -20,11 +19,12 @@ json  Resource_Properties {
       "eventHubName": "p-plannedmaintenance-evh"
     }
   ],
-  "webhookReceivers": [],
+  "logicAppReceivers": [],
   "armRoleReceivers": [],
-  "groupShortName": "SRE Teams",
+  "webhookReceivers": [],
   "emailReceivers": [],
   "voiceReceivers": [],
+  "groupShortName": "SRE Teams",
   "itsmReceivers": [],
   "smsReceivers": []
 }

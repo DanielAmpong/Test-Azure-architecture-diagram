@@ -8,16 +8,16 @@
     "bypass": "None"
   },
   "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
-  "enabledForTemplateDeployment": false,
   "sku": {
     "name": "Standard",
     "family": "A"
   },
-  "enabledForDiskEncryption": false,
+  "enabledForTemplateDeployment": false,
   "enabledForDeployment": false,
   "softDeleteRetentionInDays": 90,
-  "accessPolicies": [],
-  "enableSoftDelete": true,
+  "enabledForDiskEncryption": false,
   "enableRbacAuthorization": true,
+  "enableSoftDelete": true,
+  "accessPolicies": [],
   "vaultUri": "https://test12345789.vault.azure.net/"
 }

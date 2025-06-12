@@ -28,12 +28,12 @@
     "web": "https://dawhwmdiagsett3f.z1.web.core.windows.net/",
     "dfs": "https://dawhwmdiagsett3f.dfs.core.windows.net/"
   },
-  "keyCreationTime": {
-    "key2": "2025-05-21T09:51:33.34107Z",
-    "key1": "2025-05-21T09:51:33.34107Z"
-  },
-  "statusOfPrimary": "available",
   "primaryLocation": "norwayeast",
+  "statusOfPrimary": "available",
+  "keyCreationTime": {
+    "key1": "2025-05-21T09:51:33.34107Z",
+    "key2": "2025-05-21T09:51:33.34107Z"
+  },
   "creationTime": "2025-05-21T09:51:33.278573Z",
   "networkAcls": {
     "virtualNetworkRules": [

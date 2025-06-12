@@ -3,6 +3,7 @@
   "publicNetworkAccess": "Enabled",
   "encryption": {
     "keySource": "Microsoft.Storage",
+    "requireInfrastructureEncryption": false,
     "services": {
       "blob": {
         "enabled": true,
@@ -14,8 +15,7 @@
         "lastEnabledTime": "2025-05-27T11:53:44.7289584Z",
         "keyType": "Account"
       }
-    },
-    "requireInfrastructureEncryption": false
+    }
   },
   "privateEndpointConnections": [],
   "supportsHttpsTrafficOnly": true,
@@ -34,8 +34,8 @@
     "key2": "2025-05-27T11:53:44.7289584Z",
     "key1": "2025-05-27T11:53:44.7289584Z"
   },
-  "statusOfPrimary": "available",
   "primaryLocation": "norwayeast",
+  "statusOfPrimary": "available",
   "creationTime": "2025-05-27T11:53:44.6664537Z",
   "networkAcls": {
     "virtualNetworkRules": [],

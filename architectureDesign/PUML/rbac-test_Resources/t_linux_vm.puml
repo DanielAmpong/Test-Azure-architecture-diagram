@@ -21,10 +21,10 @@ json  Resource_Properties {
         "name": "t-linux-vm-osdisk",
         "createOption": "FromImage",
         "deleteOption": "Delete",
+        "osType": "Linux",
         "managedDisk": {
           "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/LINUX-TEST/providers/Microsoft.Compute/disks/t-linux-vm-osdisk"
         },
-        "osType": "Linux",
         "caching": "ReadWrite"
       }
     },
@@ -48,8 +48,8 @@ json  Resource_Properties {
     },
     "osProfile": {
       "requireGuestProvisionSignal": true,
-      "allowExtensionOperations": true,
       "computerName": "t-linux-vm",
+      "allowExtensionOperations": true,
       "adminUsername": "sysadm",
       "secrets": [],
       "linuxConfiguration": {
@@ -89,10 +89,10 @@ json  Resource_Properties {
         "name": "t-linux-vm-osdisk",
         "createOption": "FromImage",
         "deleteOption": "Delete",
+        "osType": "Linux",
         "managedDisk": {
           "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/LINUX-TEST/providers/Microsoft.Compute/disks/t-linux-vm-osdisk"
         },
-        "osType": "Linux",
         "caching": "ReadWrite"
       }
     },
@@ -116,8 +116,8 @@ json  Resource_Properties {
     },
     "osProfile": {
       "requireGuestProvisionSignal": true,
-      "allowExtensionOperations": true,
       "computerName": "t-linux-vm",
+      "allowExtensionOperations": true,
       "adminUsername": "sysadm",
       "secrets": [],
       "linuxConfiguration": {

@@ -8,48 +8,48 @@ json  Resource_Properties {
   "2": {
     "provisioningState": "Succeeded",
     "type": "AzureMonitorWindowsAgent",
-    "autoUpgradeMinorVersion": true,
     "typeHandlerVersion": "1.0",
+    "autoUpgradeMinorVersion": true,
     "enableAutomaticUpgrade": true,
     "publisher": "Microsoft.Azure.Monitor"
   },
   "1": {
     "provisioningState": "Succeeded",
     "type": "AzureMonitorWindowsAgent",
-    "autoUpgradeMinorVersion": true,
     "typeHandlerVersion": "1.0",
+    "autoUpgradeMinorVersion": true,
     "enableAutomaticUpgrade": true,
     "publisher": "Microsoft.Azure.Monitor"
   },
   "5": {
     "provisioningState": "Succeeded",
     "type": "AzureMonitorWindowsAgent",
-    "autoUpgradeMinorVersion": true,
     "typeHandlerVersion": "1.0",
+    "autoUpgradeMinorVersion": true,
     "enableAutomaticUpgrade": true,
     "publisher": "Microsoft.Azure.Monitor"
   },
   "4": {
     "provisioningState": "Succeeded",
     "type": "AzureMonitorWindowsAgent",
-    "autoUpgradeMinorVersion": true,
     "typeHandlerVersion": "1.0",
+    "autoUpgradeMinorVersion": true,
     "enableAutomaticUpgrade": true,
     "publisher": "Microsoft.Azure.Monitor"
   },
   "0": {
     "provisioningState": "Succeeded",
     "type": "AzureMonitorWindowsAgent",
-    "autoUpgradeMinorVersion": true,
     "typeHandlerVersion": "1.0",
+    "autoUpgradeMinorVersion": true,
     "enableAutomaticUpgrade": true,
     "publisher": "Microsoft.Azure.Monitor"
   },
   "3": {
     "provisioningState": "Succeeded",
     "type": "AzureMonitorWindowsAgent",
-    "autoUpgradeMinorVersion": true,
     "typeHandlerVersion": "1.0",
+    "autoUpgradeMinorVersion": true,
     "enableAutomaticUpgrade": true,
     "publisher": "Microsoft.Azure.Monitor"
   }

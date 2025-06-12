@@ -8,8 +8,8 @@ json  Resource_Properties {
   "provisioningState": "Succeeded",
   "enableAcceleratedNetworking": false,
   "resourceGuid": "c4a04399-0d4f-4ddb-9826-5ba17d20ede8",
-  "disableTcpStateTracking": false,
   "defaultOutboundConnectivityEnabled": false,
+  "disableTcpStateTracking": false,
   "vnetEncryptionSupported": false,
   "ipConfigurations": [
     {
@@ -40,7 +40,6 @@ json  Resource_Properties {
   "tapConfigurations": [],
   "hostedWorkloads": [],
   "allowPort25Out": true,
-  "macAddress": "",
   "auxiliaryMode": "None",
   "dnsSettings": {
     "appliedDnsServers": [],
@@ -48,6 +47,7 @@ json  Resource_Properties {
     "dnsServers": []
   },
   "auxiliarySku": "None",
+  "macAddress": "",
   "nicType": "Standard",
   "privateEndpoint": {
     "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-finops-private/providers/Microsoft.Network/privateEndpoints/finscript6xisw66qnemiw-blob-ep"

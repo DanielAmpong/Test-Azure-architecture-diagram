@@ -14,15 +14,15 @@
   },
   "tenantId": "67508d80-2b69-484e-ab62-ab263ca94733",
   "enabledForTemplateDeployment": true,
-  "enabledForDeployment": true,
   "enabledForDiskEncryption": true,
   "sku": {
     "name": "standard",
     "family": "A"
   },
-  "enableSoftDelete": true,
-  "accessPolicies": [],
+  "enabledForDeployment": true,
   "enableRbacAuthorization": true,
+  "accessPolicies": [],
+  "enableSoftDelete": true,
   "enablePurgeProtection": true,
   "vaultUri": "https://vm-mf-kv-gssb.vault.azure.net/"
 }

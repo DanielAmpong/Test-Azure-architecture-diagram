@@ -6,15 +6,15 @@
     }
   },
   "privateEndpointConnections": [],
-  "creationTime": "2025-02-05T07:40:00.93Z",
   "state": "Ok",
+  "creationTime": "2025-02-05T07:40:00.93Z",
   "sku": {
     "name": "Basic",
     "capacity": null,
     "family": null
   },
-  "disableLocalAuth": false,
   "lastModifiedTime": "2025-02-19T08:20:50.0533333Z",
+  "disableLocalAuth": false,
   "lastModifiedBy": null,
   "automationHybridServiceUrl": "https://8303b635-e1a6-4db3-9026-d345e5acad5e.jrds.noe.azure-automation.net/automationAccounts/8303b635-e1a6-4db3-9026-d345e5acad5e",
   "RuntimeConfiguration": {

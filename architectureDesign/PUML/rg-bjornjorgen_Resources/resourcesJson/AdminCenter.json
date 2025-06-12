@@ -1,8 +1,8 @@
 {
   "provisioningState": "Succeeded",
   "type": "AdminCenter",
-  "typeHandlerVersion": "0.0",
   "autoUpgradeMinorVersion": true,
+  "typeHandlerVersion": "0.0",
   "enableAutomaticUpgrade": true,
   "publisher": "Microsoft.AdminCenter",
   "settings": {

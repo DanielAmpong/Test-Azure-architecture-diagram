@@ -25,19 +25,19 @@ json  Resource_Properties {
   "privateEndpointConnections": [],
   "supportsHttpsTrafficOnly": true,
   "allowBlobPublicAccess": false,
-  "minimumTlsVersion": "TLS1_2",
   "allowCrossTenantReplication": false,
+  "minimumTlsVersion": "TLS1_2",
   "primaryEndpoints": {
     "blob": "https://myhubpublictj5eravonizvq.blob.core.windows.net/",
     "web": "https://myhubpublictj5eravonizvq.z1.web.core.windows.net/",
     "dfs": "https://myhubpublictj5eravonizvq.dfs.core.windows.net/"
   },
-  "primaryLocation": "norwayeast",
-  "statusOfPrimary": "available",
   "keyCreationTime": {
     "key1": "2025-04-11T15:45:39.1495327Z",
     "key2": "2025-04-11T15:45:39.1495327Z"
   },
+  "statusOfPrimary": "available",
+  "primaryLocation": "norwayeast",
   "creationTime": "2025-04-11T15:45:39.0870457Z",
   "networkAcls": {
     "virtualNetworkRules": [],

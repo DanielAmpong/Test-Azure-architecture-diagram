@@ -2,8 +2,8 @@
   "provisioningState": "Succeeded",
   "enableAcceleratedNetworking": false,
   "resourceGuid": "e704e8f3-9181-472d-b1f8-e9f3ddc56b9e",
-  "disableTcpStateTracking": false,
   "defaultOutboundConnectivityEnabled": true,
+  "disableTcpStateTracking": false,
   "vnetEncryptionSupported": false,
   "ipConfigurations": [
     {
@@ -12,10 +12,10 @@
         "privateIPAddressVersion": "IPv4",
         "privateIPAllocationMethod": "Dynamic",
         "privateIPAddress": "10.1.0.10",
-        "primary": true,
         "subnet": {
           "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/lz-network-norwayeast/providers/Microsoft.Network/virtualNetworks/lz-network-norwayeast-vnet/subnets/maint-test-subnet"
-        }
+        },
+        "primary": true
       },
       "name": "ipconfig",
       "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
@@ -24,11 +24,10 @@
     }
   ],
   "enableIPForwarding": false,
-  "primary": true,
   "tapConfigurations": [],
+  "primary": true,
   "hostedWorkloads": [],
   "allowPort25Out": true,
-  "macAddress": "00-22-48-DD-14-B9",
   "auxiliaryMode": "None",
   "dnsSettings": {
     "appliedDnsServers": [],
@@ -36,6 +35,7 @@
     "dnsServers": []
   },
   "auxiliarySku": "None",
+  "macAddress": "00-22-48-DD-14-B9",
   "virtualMachine": {
     "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/maksym-maintenanceConfig/providers/Microsoft.Compute/virtualMachines/vm-mf2"
   },

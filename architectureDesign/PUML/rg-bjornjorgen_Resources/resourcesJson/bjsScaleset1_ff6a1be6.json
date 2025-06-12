@@ -1,6 +1,27 @@
 {
   "provisioningState": "Succeeded",
   "timeCreated": "2025-05-07T08:53:58.7364775Z",
+  "storageProfile": {
+    "imageReference": {
+      "publisher": "MicrosoftWindowsServer",
+      "version": "latest",
+      "exactVersion": "20348.3561.250409",
+      "sku": "2022-datacenter-smalldisk-g2",
+      "offer": "WindowsServer"
+    },
+    "diskControllerType": "SCSI",
+    "dataDisks": [],
+    "osDisk": {
+      "name": "bjsScaleset1_ff6a1be6_OsDisk_1_bbef783febe54664b36726be0739d16c",
+      "createOption": "FromImage",
+      "deleteOption": "Delete",
+      "managedDisk": {
+        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Compute/disks/bjsScaleset1_ff6a1be6_OsDisk_1_bbef783febe54664b36726be0739d16c"
+      },
+      "osType": "Windows",
+      "caching": "ReadWrite"
+    }
+  },
   "networkProfile": {
     "networkInterfaces": [
       {
@@ -12,36 +33,13 @@
       }
     ]
   },
-  "storageProfile": {
-    "imageReference": {
-      "version": "latest",
-      "publisher": "MicrosoftWindowsServer",
-      "exactVersion": "20348.3561.250409",
-      "sku": "2022-datacenter-smalldisk-g2",
-      "offer": "WindowsServer"
-    },
-    "diskControllerType": "SCSI",
-    "dataDisks": [],
-    "osDisk": {
-      "name": "bjsScaleset1_ff6a1be6_OsDisk_1_bbef783febe54664b36726be0739d16c",
-      "createOption": "FromImage",
-      "deleteOption": "Delete",
-      "osType": "Windows",
-      "managedDisk": {
-        "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-bjornjorgen/providers/Microsoft.Compute/disks/bjsScaleset1_ff6a1be6_OsDisk_1_bbef783febe54664b36726be0739d16c"
-      },
-      "caching": "ReadWrite"
-    }
-  },
   "hardwareProfile": {
     "vmSize": "Standard_DS1_v2"
   },
-  "licenseType": "Windows_Server",
   "osProfile": {
     "requireGuestProvisionSignal": true,
-    "allowExtensionOperations": true,
     "computerName": "bjsscales05UJOA",
-    "secrets": [],
+    "allowExtensionOperations": true,
     "adminUsername": "testss",
     "windowsConfiguration": {
       "provisionVMAgent": true,
@@ -52,13 +50,15 @@
       },
       "enableAutomaticUpdates": true,
       "enableVMAgentPlatformUpdates": true
-    }
+    },
+    "secrets": []
   },
   "diagnosticsProfile": {
     "bootDiagnostics": {
       "enabled": true
     }
   },
+  "licenseType": "Windows_Server",
   "extended": {
     "instanceView": {
       "hyperVGeneration": "V2",

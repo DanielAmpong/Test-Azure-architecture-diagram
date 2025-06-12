@@ -34,12 +34,12 @@ json  Resource_Properties {
     "web": "https://vmmfdiagsettgs.z1.web.core.windows.net/",
     "dfs": "https://vmmfdiagsettgs.dfs.core.windows.net/"
   },
-  "statusOfPrimary": "available",
   "keyCreationTime": {
-    "key1": "2025-06-11T13:49:11.9709788Z",
-    "key2": "2025-06-11T13:49:11.9709788Z"
+    "key2": "2025-06-11T13:49:11.9709788Z",
+    "key1": "2025-06-11T13:49:11.9709788Z"
   },
   "primaryLocation": "norwayeast",
+  "statusOfPrimary": "available",
   "creationTime": "2025-06-11T13:49:11.892858Z",
   "networkAcls": {
     "virtualNetworkRules": [

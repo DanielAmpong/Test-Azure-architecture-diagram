@@ -27,10 +27,10 @@ json  Resource_Properties {
     "osDisk": {
       "name": "linuxbackuptest-osdisk-20250114-123657",
       "createOption": "FromImage",
-      "osType": "Linux",
       "managedDisk": {
         "id": "/subscriptions/996465bb-34d8-4c7d-99c1-bab3805301c8/resourceGroups/rg-audun/providers/Microsoft.Compute/disks/linuxbackuptest-osdisk-20250114-123657"
       },
+      "osType": "Linux",
       "caching": "ReadWrite"
     }
   },
@@ -46,8 +46,8 @@ json  Resource_Properties {
   },
   "osProfile": {
     "requireGuestProvisionSignal": true,
-    "computerName": "linux-backup-test",
     "allowExtensionOperations": true,
+    "computerName": "linux-backup-test",
     "secrets": [],
     "adminUsername": "audun",
     "linuxConfiguration": {
