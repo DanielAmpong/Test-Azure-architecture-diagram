@@ -389,6 +389,25 @@ In your Confluence page, add an HTML macro with this code:
         (function () {
             // Confluence-specific namespace to avoid conflicts
             window.ConfluenceDiagrams = {
+                // SECTION 1: Define your actual image URLs here
+                imageUrls: {
+                    AzLandingZone: {
+                        prod: "YOUR_AZURE_LANDING_ZONE_IMAGE_URL_HERE",
+                        dev: "YOUR_DEV_AZURE_LANDING_ZONE_IMAGE_URL_HERE",
+                        test: "YOUR_TEST_AZURE_LANDING_ZONE_IMAGE_URL_HERE"
+                    },
+                    resourceGroup: {
+                        prod: "YOUR_RESOURCE_GROUP_IMAGE_URL_HERE",
+                        dev: "YOUR_DEV_RESOURCE_GROUP_IMAGE_URL_HERE",
+                        test: "YOUR_TEST_RESOURCE_GROUP_IMAGE_URL_HERE"
+                    },
+                    resource: {
+                        prod: "YOUR_RESOURCE_IMAGE_URL_HERE",
+                        dev: "YOUR_DEV_RESOURCE_IMAGE_URL_HERE",
+                        test: "YOUR_TEST_RESOURCE_IMAGE_URL_HERE"
+                    }
+                },
+
                 config: {
                     AzLandingZone: {
                         title: "Azure Landing Zone Architecture - Overview",
@@ -414,20 +433,29 @@ In your Confluence page, add an HTML macro with this code:
                     currentDiagram: 'AzLandingZone',
                     currentEnvironment: 'prod',
                     currentZoom: 1,
-                    pageId: 'PAGE_ID', // Replace with actual page ID
+                    pageId: '123456789', // Replace with your actual Confluence page ID
                     maxZoom: 3,
                     minZoom: 0.5,
                     zoomStep: 0.25
                 },
 
-                // Build the diagram URL with appropriate file format
+                // SECTION 2: Confluence attachment URL builder
                 buildDiagramUrl: function (diagram, environment) {
-                    // Replace PAGE_ID with actual page ID in production
+                    // Confluence attachment URL pattern:
+                    // /download/attachments/{pageId}/{filename}
+                    // OR
+                    // /download/attachments/{pageId}/{filename}?version={version}
+
                     const baseUrl = '/download/attachments/' + this.state.pageId + '/';
                     const config = this.config[diagram];
                     const filename = config.filename;
                     const format = config.format;
-                    return baseUrl + filename + '-' + environment + '.' + format;
+
+                    // Build filename: {filename}-{environment}.{format}
+                    // Example: AzLandingZone-architecture-prod.svg
+                    const fullFilename = filename + '-' + environment + '.' + format;
+
+                    return baseUrl + fullFilename;
                 },
 
                 // Get current format for display
@@ -466,29 +494,27 @@ In your Confluence page, add an HTML macro with this code:
                         const currentDate = new Date().toISOString().split('T')[0];
                         meta.textContent = `${envName} | ${formatName} | Updated: ${currentDate}`;
 
-                        // Update image source
+                        // SECTION 3: Use Confluence attachment URL
                         const newSrc = this.buildDiagramUrl(
                             this.state.currentDiagram,
                             this.state.currentEnvironment
                         );
 
-                        // For demo purposes, use placeholder images with different content and indicate format
-                        let placeholderText = '';
-                        let placeholderColor = '0052cc';
+                        // For production, use the Confluence attachment URL directly
+                        // For demo/testing, fall back to placeholders if attachment doesn't exist
+                        img.src = newSrc;
 
-                        if (this.state.currentDiagram === 'resourceGroup') {
-                            placeholderText = 'Resource+Group+Details+(SVG)';
-                            placeholderColor = '28a745'; // Green for SVG
-                        } else if (this.state.currentDiagram === 'resource') {
-                            placeholderText = 'Resource+Details+(PNG)';
-                            placeholderColor = 'dc3545'; // Red for PNG
-                        } else {
-                            placeholderText = 'Azure+Landing+Zone+(SVG)';
-                            placeholderColor = '0052cc'; // Blue for overview
-                        }
+                        // Set fallback placeholder for demo purposes
+                        const fallbackPlaceholders = {
+                            'AzLandingZone': 'https://via.placeholder.com/800x600/0052cc/white?text=Azure+Landing+Zone+(SVG)',
+                            'resourceGroup': 'https://via.placeholder.com/800x600/28a745/white?text=Resource+Group+Details+(SVG)',
+                            'resource': 'https://via.placeholder.com/800x600/dc3545/white?text=Resource+Details+(PNG)'
+                        };
 
-                        const placeholderUrl = `https://via.placeholder.com/800x600/${placeholderColor}/white?text=${placeholderText}`;
-                        img.src = placeholderUrl;
+                        img.onerror = function () {
+                            // If Confluence attachment fails, show placeholder
+                            this.src = fallbackPlaceholders[window.ConfluenceDiagrams.state.currentDiagram];
+                        };
 
                         // Set fallback for real implementation
                         img.setAttribute('data-real-src', newSrc);
