@@ -112,6 +112,19 @@ In your Confluence page, add an HTML macro with this code:
                 justify-content: center;
                 padding: 20px;
                 overflow: hidden;
+                user-select: none;
+            }
+
+            .confluence-diagram-wrapper {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                cursor: grab;
+            }
+
+            .confluence-diagram-wrapper.dragging {
+                cursor: grabbing;
             }
 
             .confluence-clickable-areas {
@@ -181,21 +194,27 @@ In your Confluence page, add an HTML macro with this code:
             }
 
             .confluence-diagram-img {
-                max-width: 100%;
+                max-width: none;
                 height: auto;
-                transition: all 0.3s ease;
+                transition: none;
                 border-radius: 4px;
                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-                cursor: pointer;
+                cursor: grab;
+                position: absolute;
+                transform-origin: center;
+            }
+
+            .confluence-diagram-img.dragging {
+                cursor: grabbing;
+                transition: none;
             }
 
             .confluence-diagram-img.zoomed {
-                cursor: pointer;
+                cursor: grab;
             }
 
             .confluence-diagram-img:hover {
                 box-shadow: 0 2px 8px rgba(0, 82, 204, 0.2);
-                transform: translateY(-1px);
             }
 
             .confluence-diagram-meta {
@@ -291,6 +310,24 @@ In your Confluence page, add an HTML macro with this code:
                 margin: 10px;
             }
 
+            .confluence-drag-instructions {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                background: rgba(0, 0, 0, 0.7);
+                color: white;
+                padding: 4px 8px;
+                border-radius: 3px;
+                font-size: 11px;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                pointer-events: none;
+            }
+
+            .confluence-diagram-content:hover .confluence-drag-instructions {
+                opacity: 1;
+            }
+
             @media (max-width: 768px) {
                 .confluence-diagram-controls {
                     flex-direction: column;
@@ -329,41 +366,54 @@ In your Confluence page, add an HTML macro with this code:
                         <option value="resource">Resource</option>
                     </select>
                 </div>
+                <div class="confluence-control-group">
+                    <button class="confluence-btn" onclick="confluenceResetPosition()" title="Reset Position">
+                        Reset Position
+                    </button>
+                </div>
             </div>
 
             <div class="confluence-diagram-content">
-                <div class="confluence-zoom-controls">
-                    <button class="confluence-zoom-btn" onclick="confluenceZoomIn()" title="Zoom In">+</button>
-                    <button class="confluence-zoom-btn" onclick="confluenceZoomOut()" title="Zoom Out">−</button>
-                    <button class="confluence-zoom-btn" onclick="confluenceResetZoom()" title="Reset Zoom">⌂</button>
+                <div class="confluence-diagram-wrapper" id="confluence-diagram-wrapper">
+                    <div class="confluence-zoom-controls">
+                        <button class="confluence-zoom-btn" onclick="confluenceZoomIn()" title="Zoom In">+</button>
+                        <button class="confluence-zoom-btn" onclick="confluenceZoomOut()" title="Zoom Out">−</button>
+                        <button class="confluence-zoom-btn" onclick="confluenceResetZoom()"
+                            title="Reset Zoom">⌂</button>
+                    </div>
+
+                    <!-- Clickable areas overlay -->
+                    <div class="confluence-clickable-areas" id="confluence-clickable-areas">
+                        <div class="confluence-click-area" style="top: 20%; left: 20%; width: 60%; height: 60%;"
+                            data-label="Click to view Resource Group" onclick="confluenceNavigateNext()"
+                            title="Click to navigate to next level view"></div>
+                    </div>
+
+                    <div class="confluence-click-overlay">
+                        Click on the diagram to navigate to the next detailed view
+                    </div>
+
+                    <img id="confluence-main-diagram" class="confluence-diagram-img"
+                        src="https://via.placeholder.com/800x600/0052cc/white?text=Azure+Landing+Zone+Overview"
+                        alt="Azure Landing Zone Architecture Diagram" onerror="confluenceHandleImageError(this)">
+
+                    <div class="confluence-diagram-meta" id="confluence-diagram-meta">
+                        SVG | Updated: 2025-06-13
+                    </div>
+
+                    <div class="confluence-drag-instructions">
+                        Drag to pan • Scroll to zoom
+                    </div>
+
+                    <div class="confluence-loading" id="confluence-loading">Loading diagram...</div>
                 </div>
-
-                <!-- Clickable areas overlay -->
-                <div class="confluence-clickable-areas" id="confluence-clickable-areas">
-                    <div class="confluence-click-area" style="top: 20%; left: 20%; width: 60%; height: 60%;"
-                        data-label="Click to view Resource Group" onclick="confluenceNavigateNext()"
-                        title="Click to navigate to next level view"></div>
-                </div>
-
-                <div class="confluence-click-overlay">
-                    Click on the diagram to navigate to the next detailed view
-                </div>
-
-                <img id="confluence-main-diagram" class="confluence-diagram-img"
-                    src="https://via.placeholder.com/800x600/0052cc/white?text=Azure+Landing+Zone+Overview"
-                    alt="Azure Landing Zone Architecture Diagram" onerror="confluenceHandleImageError(this)">
-
-                <div class="confluence-diagram-meta" id="confluence-diagram-meta">
-                    SVG | Updated: 2025-06-13
-                </div>
-
-                <div class="confluence-loading" id="confluence-loading">Loading diagram...</div>
             </div>
 
             <div class="confluence-diagram-description">
                 <h4 id="confluence-description-title">Azure Landing Zone Interactive Diagrams</h4>
                 <p id="confluence-description-text">This diagram shows the high-level architecture of our Azure Landing
-                    Zone including Subscription, Resource Groups, and Resources.</p>
+                    Zone including Subscription, Resource Groups, and Resources. Drag to pan around the diagram and use
+                    zoom controls.</p>
             </div>
         </div>
     </div>
@@ -374,9 +424,9 @@ In your Confluence page, add an HTML macro with this code:
             window.ConfluenceDiagrams = {
                 // Define your actual image URLs here
                 imageUrls: {
-                    AzLandingZone: "ADd url",
-                    resourceGroup: "https://via.placeholder.com/800x600/28a745/white?text=Resource+Group+Details",
-                    resource: "https://via.placeholder.com/800x600/dc3545/white?text=Resource+Details"
+                    AzLandingZone: "https://raw.githubusercontent.com/DanielAmpong/Test-Azure-architecture-diagram/refs/heads/main/diagrams/subscriptionAzureHierarchy.svg",
+                    resourceGroup: "https://raw.githubusercontent.com/DanielAmpong/Test-Azure-architecture-diagram/refs/heads/main/diagrams/lz-norwayeastAzureHierarchy.svg",
+                    resource: "https://github.com/DanielAmpong/Test-Azure-architecture-diagram/blob/c9984c21593e6e834027c1e66b5f696b11fd622a/diagrams/Alert%20-%20Service%20Issues.png"
                 },
 
                 config: {
@@ -406,7 +456,125 @@ In your Confluence page, add an HTML macro with this code:
                     pageId: '123456789',
                     maxZoom: 3,
                     minZoom: 0.5,
-                    zoomStep: 0.25
+                    zoomStep: 0.25,
+                    // Drag state
+                    isDragging: false,
+                    dragStart: { x: 0, y: 0 },
+                    imagePosition: { x: 0, y: 0 },
+                    lastImagePosition: { x: 0, y: 0 }
+                },
+
+                // Initialize drag functionality
+                initializeDrag: function () {
+                    const img = document.getElementById('confluence-main-diagram');
+                    const wrapper = document.getElementById('confluence-diagram-wrapper');
+
+                    if (!img || !wrapper) return;
+
+                    // Mouse events
+                    img.addEventListener('mousedown', this.handleDragStart.bind(this));
+                    document.addEventListener('mousemove', this.handleDragMove.bind(this));
+                    document.addEventListener('mouseup', this.handleDragEnd.bind(this));
+
+                    // Touch events for mobile
+                    img.addEventListener('touchstart', this.handleTouchStart.bind(this));
+                    document.addEventListener('touchmove', this.handleTouchMove.bind(this));
+                    document.addEventListener('touchend', this.handleDragEnd.bind(this));
+
+                    // Wheel event for zoom
+                    wrapper.addEventListener('wheel', this.handleWheel.bind(this));
+
+                    // Prevent default drag behavior
+                    img.addEventListener('dragstart', function (e) {
+                        e.preventDefault();
+                    });
+                },
+
+                // Handle drag start
+                handleDragStart: function (e) {
+                    e.preventDefault();
+                    this.state.isDragging = true;
+
+                    const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+                    const clientY = e.clientY || (e.touches && e.touches[0].clientY);
+
+                    this.state.dragStart = {
+                        x: clientX - this.state.imagePosition.x,
+                        y: clientY - this.state.imagePosition.y
+                    };
+
+                    const img = document.getElementById('confluence-main-diagram');
+                    const wrapper = document.getElementById('confluence-diagram-wrapper');
+
+                    if (img) img.classList.add('dragging');
+                    if (wrapper) wrapper.classList.add('dragging');
+                },
+
+                // Handle touch start
+                handleTouchStart: function (e) {
+                    if (e.touches.length === 1) {
+                        this.handleDragStart(e);
+                    }
+                },
+
+                // Handle drag move
+                handleDragMove: function (e) {
+                    if (!this.state.isDragging) return;
+
+                    e.preventDefault();
+
+                    const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+                    const clientY = e.clientY || (e.touches && e.touches[0].clientY);
+
+                    this.state.imagePosition = {
+                        x: clientX - this.state.dragStart.x,
+                        y: clientY - this.state.dragStart.y
+                    };
+
+                    this.updateImagePosition();
+                },
+
+                // Handle touch move
+                handleTouchMove: function (e) {
+                    if (e.touches.length === 1) {
+                        this.handleDragMove(e);
+                    }
+                },
+
+                // Handle drag end
+                handleDragEnd: function (e) {
+                    if (!this.state.isDragging) return;
+
+                    this.state.isDragging = false;
+                    this.state.lastImagePosition = { ...this.state.imagePosition };
+
+                    const img = document.getElementById('confluence-main-diagram');
+                    const wrapper = document.getElementById('confluence-diagram-wrapper');
+
+                    if (img) img.classList.remove('dragging');
+                    if (wrapper) wrapper.classList.remove('dragging');
+                },
+
+                // Handle wheel zoom
+                handleWheel: function (e) {
+                    e.preventDefault();
+
+                    const delta = e.deltaY > 0 ? -this.state.zoomStep : this.state.zoomStep;
+                    const newZoom = Math.max(this.state.minZoom, Math.min(this.state.maxZoom, this.state.currentZoom + delta));
+
+                    if (newZoom !== this.state.currentZoom) {
+                        this.state.currentZoom = newZoom;
+                        this.applyZoom();
+                    }
+                },
+
+                // Update image position
+                updateImagePosition: function () {
+                    const img = document.getElementById('confluence-main-diagram');
+                    if (img) {
+                        const transform = `translate(${this.state.imagePosition.x}px, ${this.state.imagePosition.y}px) scale(${this.state.currentZoom})`;
+                        img.style.transform = transform;
+                    }
                 },
 
                 // Get current format for display
@@ -436,7 +604,7 @@ In your Confluence page, add an HTML macro with this code:
                         // Update content
                         title.textContent = config.title;
                         descTitle.textContent = config.title.replace('Azure Landing Zone Architecture - ', '');
-                        descText.textContent = config.description;
+                        descText.textContent = config.description + ' Drag to pan around the diagram and use zoom controls.';
 
                         // Update meta information with correct format
                         const formatName = config.format.toUpperCase();
@@ -447,13 +615,16 @@ In your Confluence page, add an HTML macro with this code:
                         const imageUrl = this.imageUrls[this.state.currentDiagram];
                         img.src = imageUrl;
 
-                        // Reset zoom
+                        // Reset position and zoom
+                        this.resetPosition();
                         this.resetZoom();
 
                         // Hide loading after image loads
-                        img.onload = function () {
+                        img.onload = () => {
                             loading.classList.remove('active');
                             img.style.opacity = '1';
+                            this.centerImage();
+                            this.initializeDrag();
                         };
 
                         this.updateZoomControls();
@@ -462,6 +633,32 @@ In your Confluence page, add an HTML macro with this code:
                         console.error('Error updating diagram:', error);
                         this.showError('Failed to load diagram: ' + error.message);
                     }
+                },
+
+                // Center image in container
+                centerImage: function () {
+                    const img = document.getElementById('confluence-main-diagram');
+                    const wrapper = document.getElementById('confluence-diagram-wrapper');
+
+                    if (!img || !wrapper) return;
+
+                    const wrapperRect = wrapper.getBoundingClientRect();
+                    const imgRect = img.getBoundingClientRect();
+
+                    this.state.imagePosition = {
+                        x: (wrapperRect.width - imgRect.width) / 2,
+                        y: (wrapperRect.height - imgRect.height) / 2
+                    };
+
+                    this.state.lastImagePosition = { ...this.state.imagePosition };
+                    this.updateImagePosition();
+                },
+
+                // Reset position
+                resetPosition: function () {
+                    this.state.imagePosition = { x: 0, y: 0 };
+                    this.state.lastImagePosition = { x: 0, y: 0 };
+                    this.updateImagePosition();
                 },
 
                 // Update button states
@@ -494,7 +691,8 @@ In your Confluence page, add an HTML macro with this code:
                 applyZoom: function () {
                     const img = document.getElementById('confluence-main-diagram');
                     if (img) {
-                        img.style.transform = `scale(${this.state.currentZoom})`;
+                        const transform = `translate(${this.state.imagePosition.x}px, ${this.state.imagePosition.y}px) scale(${this.state.currentZoom})`;
+                        img.style.transform = transform;
                         img.classList.toggle('zoomed', this.state.currentZoom > 1);
                     }
                     this.updateZoomControls();
@@ -597,6 +795,10 @@ In your Confluence page, add an HTML macro with this code:
 
             window.confluenceResetZoom = function () {
                 window.ConfluenceDiagrams.resetZoom();
+            };
+
+            window.confluenceResetPosition = function () {
+                window.ConfluenceDiagrams.centerImage();
             };
 
             window.confluenceHandleImageError = function (img) {
