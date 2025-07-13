@@ -306,6 +306,12 @@ In your Confluence page, add an HTML macro with this code:
                 cursor: not-allowed;
             }
 
+            .confluence-zoom-btn:disabled:hover {
+                background: rgba(255, 255, 255, 0.9);
+                border-color: #ddd;
+                color: #42526e;
+            }
+
             .confluence-error {
                 color: #de350b;
                 font-size: 14px;
@@ -385,6 +391,8 @@ In your Confluence page, add an HTML macro with this code:
                         <button class="confluence-zoom-btn" onclick="confluenceZoomOut()" title="Zoom Out">−</button>
                         <button class="confluence-zoom-btn" onclick="confluenceResetZoom()"
                             title="Reset Zoom">⌂</button>
+                        <button class="confluence-zoom-btn" onclick="confluenceGoToPrevious()" title="Last Preview"
+                            id="confluence-prev-btn">↶</button>
                     </div>
 
                     <!-- Clickable areas overlay -->
@@ -457,6 +465,7 @@ In your Confluence page, add an HTML macro with this code:
 
                 state: {
                     currentDiagram: 'AzLandingZone',
+                    previousDiagram: null,
                     currentZoom: 1,
                     pageId: '123456789',
                     maxZoom: 3,
@@ -467,6 +476,26 @@ In your Confluence page, add an HTML macro with this code:
                     dragStart: { x: 0, y: 0 },
                     imagePosition: { x: 0, y: 0 },
                     lastImagePosition: { x: 0, y: 0 }
+                },
+
+                // Set previous diagram and update current
+                setDiagram: function (newDiagram) {
+                    if (newDiagram !== this.state.currentDiagram) {
+                        this.state.previousDiagram = this.state.currentDiagram;
+                        this.state.currentDiagram = newDiagram;
+                        this.updatePreviousButton();
+                    }
+                },
+
+                // Update previous button state
+                updatePreviousButton: function () {
+                    const prevBtn = document.getElementById('confluence-prev-btn');
+                    if (prevBtn) {
+                        prevBtn.disabled = !this.state.previousDiagram;
+                        prevBtn.title = this.state.previousDiagram ?
+                            `Last Preview: ${this.config[this.state.previousDiagram].title.replace('Azure Landing Zone Architecture - ', '')}` :
+                            'No previous diagram';
+                    }
                 },
 
                 // Initialize drag functionality
@@ -633,6 +662,7 @@ In your Confluence page, add an HTML macro with this code:
                         };
 
                         this.updateZoomControls();
+                        this.updatePreviousButton();
 
                     } catch (error) {
                         console.error('Error updating diagram:', error);
@@ -674,6 +704,7 @@ In your Confluence page, add an HTML macro with this code:
                         if (viewSelect) {
                             viewSelect.value = this.state.currentDiagram;
                         }
+                        this.updatePreviousButton();
                     } catch (error) {
                         console.error('Error updating button states:', error);
                     }
@@ -760,9 +791,9 @@ In your Confluence page, add an HTML macro with this code:
                 const currentDiagram = cd.state.currentDiagram;
 
                 if (currentDiagram === 'AzLandingZone') {
-                    cd.state.currentDiagram = 'resourceGroup';
+                    cd.setDiagram('resourceGroup');
                 } else if (currentDiagram === 'resourceGroup') {
-                    cd.state.currentDiagram = 'resource';
+                    cd.setDiagram('resource');
                 } else {
                     return;
                 }
@@ -775,10 +806,23 @@ In your Confluence page, add an HTML macro with this code:
             window.confluenceUpdateView = function () {
                 const select = document.getElementById('confluence-view-select');
                 if (select) {
-                    window.ConfluenceDiagrams.state.currentDiagram = select.value;
+                    window.ConfluenceDiagrams.setDiagram(select.value);
                     window.ConfluenceDiagrams.updateDiagram();
                     window.ConfluenceDiagrams.updateButtonStates();
                     window.ConfluenceDiagrams.updateClickableAreas();
+                }
+            };
+
+            window.confluenceGoToPrevious = function () {
+                const cd = window.ConfluenceDiagrams;
+                if (cd.state.previousDiagram) {
+                    const tempPrevious = cd.state.previousDiagram;
+                    cd.state.previousDiagram = cd.state.currentDiagram;
+                    cd.state.currentDiagram = tempPrevious;
+
+                    cd.updateDiagram();
+                    cd.updateButtonStates();
+                    cd.updateClickableAreas();
                 }
             };
 
